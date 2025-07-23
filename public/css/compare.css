@@ -1,0 +1,388 @@
+/**
+ * Apple Compare - 产品对比页样式文件
+ * 包含参数对比页特定的样式
+ */
+
+/* 面包屑导航 */
+.breadcrumb {
+    margin-bottom: 20px;
+    color: var(--text-secondary);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.breadcrumb a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.breadcrumb a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+.breadcrumb i {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+/* 页面标题 */
+.page-title {
+    font-size: 38px;
+    margin-bottom: 24px;
+    font-weight: 600;
+    background: linear-gradient(135deg, var(--text-color) 0%, #555 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* 使用标准color属性作为后备 */
+}
+
+/* 视图选项 */
+.view-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--card-background);
+    padding: 18px 24px;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 30px;
+    border: 1px solid rgba(0,0,0,0.03);
+    position: relative;
+    overflow: hidden;
+}
+
+.view-options::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+.view-toggle {
+    display: flex;
+    gap: 10px;
+}
+
+.view-toggle button {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all var(--transition-fast);
+}
+
+.view-toggle button:hover, .view-toggle button.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* 参数部分 */
+.parameter-section {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius-lg);
+    margin-bottom: 30px;
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.03);
+}
+
+.parameter-header {
+    padding: 20px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #fafafa;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.parameter-header i {
+    color: var(--primary-color);
+}
+
+.parameter-toggle {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--text-secondary);
+}
+
+.parameter-content {
+    padding: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-normal);
+}
+
+/* 表格样式 */
+.table-container {
+    position: relative;
+    overflow: auto;
+    max-height: 600px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    background-color: var(--card-background);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    table-layout: fixed;
+}
+
+.comparison-table th, .comparison-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border-color);
+    text-align: left;
+    line-height: 1.4;
+}
+
+.comparison-table th {
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 14px;
+    background-color: #fafafa;
+}
+
+.fixed-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background-color: var(--card-background);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+th:first-child {
+    width: 200px;
+    min-width: 150px;
+    max-width: 220px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #fafafa;
+    border-right: 1px solid var(--border-color);
+    position: sticky;
+    left: 0;
+    z-index: 10;
+}
+
+.fixed-column {
+    position: sticky;
+    left: 0;
+    z-index: 10;
+    background-color: var(--card-background);
+    box-shadow: 2px 0 4px rgba(0,0,0,0.1);
+}
+
+.comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
+.comparison-table tr:hover td {
+    background-color: rgba(0,0,0,0.02);
+}
+
+/* 产品选择 */
+.product-header {
+    position: relative;
+    min-width: 200px;
+    width: 250px;
+    max-width: 300px;
+}
+
+.product-select {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.product-checkbox {
+    display: none;
+}
+
+.checkbox-label {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    margin-right: 8px;
+    position: relative;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.checkbox-label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: all var(--transition-fast);
+}
+
+.product-checkbox:checked + .checkbox-label {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.product-checkbox:checked + .checkbox-label:after {
+    opacity: 1;
+}
+
+.product-name {
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 高亮差异 */
+.highlight {
+    background-color: var(--highlight-bg);
+    border-left: 3px solid var(--highlight-border);
+    padding-left: 17px !important;
+}
+
+.parameter-diff {
+    color: var(--diff-color);
+    font-weight: 500;
+}
+
+/* 性能图表 */
+.performance-charts {
+    padding: 30px;
+    background-color: #fafafa;
+    border-top: 1px solid var(--border-color);
+}
+
+.performance-charts h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.performance-charts h3 i {
+    color: var(--primary-color);
+}
+
+.chart-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.chart-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.chart-tab {
+    padding: 8px 16px;
+    border-radius: var(--border-radius-pill);
+    border: 1px solid var(--border-color);
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.chart-tab:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.chart-tab.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    box-shadow: 0 2px 8px rgba(0, 113, 227, 0.3);
+}
+
+.chart-area {
+    height: 300px;
+    margin-top: 20px;
+}
+
+/* 响应式设计调整 */
+@media (max-width: 768px) {
+    .view-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .view-toggle {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 5px;
+    }
+    
+    .product-header {
+        min-width: 180px;
+    }
+    
+    .parameter-header {
+        padding: 15px;
+    }
+    
+    .comparison-table th, .comparison-table td {
+        padding: 12px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 28px;
+    }
+    
+    .product-header {
+        min-width: 150px;
+    }
+    
+    .chart-tabs {
+        flex-wrap: wrap;
+    }
+}

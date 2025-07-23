@@ -1,0 +1,17 @@
+{
+  "redirects": [
+    { "source": "/", "destination": "/src/index.html", "permanent": false }
+  ],
+  "rewrites": [
+    { "source": "/index.html", "destination": "/src/index.html" },
+
+    { "source": "/iphone-compare", "destination": "/src/iphone-compare.html" },
+    { "source": "/iphone-compare.html", "destination": "/src/iphone-compare.html" },
+
+    { "source": "/ipad-compare", "destination": "/src/ipad-compare.html" },
+    { "source": "/ipad-compare.html", "destination": "/src/ipad-compare.html" },
+
+    { "source": "/watch-compare", "destination": "/src/watch-compare.html" },
+    { "source": "/watch-compare.html", "destination": "/src/watch-compare.html" }
+  ]
+}

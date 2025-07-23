@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apple Compare - 最新苹果产品资讯，发布会消息，功能对比分析">
+    <meta name="keywords" content="Apple,苹果,苹果资讯,iPhone,iPad,Apple Watch,Mac,新品发布">
+    <title data-lang-key="news.page.title">Apple Compare - 苹果资讯</title>
+    <!-- 引入Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 引入CSS文件 -->
+    <link rel="stylesheet" href="../public/css/common.css">
+    <link rel="stylesheet" href="../public/css/news.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"><i class="fas fa-apple-alt"></i> Apple Compare</div>
+            <div class="nav">
+                <a href="index.html" data-lang-key="nav.home"><i class="fas fa-home"></i> 首页</a>
+                <a href="iphone-compare.html" data-lang-key="nav.compare"><i class="fas fa-exchange-alt"></i> 产品对比</a>
+                <a href="news.html" class="active" data-lang-key="nav.news"><i class="fas fa-newspaper"></i> 苹果资讯</a>
+                <a href="feedback.html" data-lang-key="nav.feedback"><i class="fas fa-comment"></i> 用户反馈</a>
+                <div class="language-switcher">
+                    <button class="language-btn active" data-lang="zh-CN">中文</button>
+                    <span>|</span>
+                    <button class="language-btn" data-lang="en-US">EN</button>
+                </div>
+            </div>
+        </header>
+        
+        <div class="breadcrumb">
+            <a href="index.html" data-lang-key="nav.home">首页</a> &gt; <span data-lang-key="nav.news">苹果资讯</span>
+        </div>
+        
+        <h1 class="page-title" data-lang-key="news.title">苹果资讯</h1>
+        
+        <div class="news-wrapper">
+            <div class="news-sidebar">
+                <div class="search-box">
+                    <input type="text" placeholder="搜索文章..." data-lang-key="news.search.placeholder">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="category-filter">
+                    <h3 data-lang-key="news.categories">文章分类</h3>
+                    <ul class="category-list">
+                        <li class="active" data-category="all" data-lang-key="news.category.all">全部</li>
+                        <li data-category="news" data-lang-key="news.category.news">新闻动态</li>
+                        <li data-category="reviews" data-lang-key="news.category.reviews">产品评测</li>
+                        <li data-category="guides" data-lang-key="news.category.guides">使用指南</li>
+                        <li data-category="comparisons" data-lang-key="news.category.comparisons">产品对比</li>
+                        <li data-category="rumors" data-lang-key="news.category.rumors">传闻爆料</li>
+                    </ul>
+                </div>
+                
+                <div class="product-filter">
+                    <h3 data-lang-key="news.products">相关产品</h3>
+                    <ul class="product-list">
+                        <li data-product="iphone" data-lang-key="product.iphone.title">iPhone</li>
+                        <li data-product="ipad" data-lang-key="product.ipad.title">iPad</li>
+                        <li data-product="mac" data-lang-key="product.mac.title">Mac</li>
+                        <li data-product="watch" data-lang-key="product.watch.title">Apple Watch</li>
+                        <li data-product="airpods" data-lang-key="product.airpods.title">AirPods</li>
+                        <li data-product="ios" data-lang-key="product.ios.title">iOS/iPadOS</li>
+                        <li data-product="macos" data-lang-key="product.macos.title">macOS</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="news-content">
+                <div class="featured-article">
+                    <div class="featured-image">
+                        <img src="../public/images/news/featured-article.jpg" alt="Featured article image">
+                        <div class="featured-tag" data-lang-key="news.featured">置顶</div>
+                    </div>
+                    <div class="featured-details">
+                        <div class="article-meta">
+                            <span class="article-category" data-lang-key="news.category.news">新闻动态</span>
+                            <span class="article-date">2024-10-15</span>
+                        </div>
+                        <h2 class="article-title">iPhone 16 Pro性能测试：A18 Pro芯片提升幅度惊人</h2>
+                        <p class="article-excerpt">
+                            苹果公司最新发布的iPhone 16 Pro搭载A18 Pro芯片，根据我们的详细测试，其GPU性能比上一代提升了近25%，CPU多核性能提升约20%。本文将带您深入了解这款强大芯片的各项性能表现。
+                        </p>
+                        <a href="article.html?id=001" class="read-more" data-lang-key="news.readMore">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="articles-grid">
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="../public/images/news/article1.jpg" alt="Article 1 image">
+                            <div class="article-category" data-lang-key="news.category.comparisons">产品对比</div>
+                        </div>
+                        <div class="article-details">
+                            <div class="article-meta">
+                                <span class="article-date">2024-10-10</span>
+                                <span class="article-views"><i class="fas fa-eye"></i> 3.2k</span>
+                            </div>
+                            <h3 class="article-title">iPad Pro M4 vs M2：是否值得升级？</h3>
+                            <p class="article-excerpt">
+                                苹果最新的iPad Pro M4带来了哪些变化？相比上一代M2版本是否值得升级？本文将从显示屏、性能、续航等多方面进行详细对比。
+                            </p>
+                            <a href="article.html?id=002" class="read-more" data-lang-key="news.readMore">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="../public/images/news/article2.jpg" alt="Article 2 image">
+                            <div class="article-category" data-lang-key="news.category.reviews">产品评测</div>
+                        </div>
+                        <div class="article-details">
+                            <div class="article-meta">
+                                <span class="article-date">2024-10-05</span>
+                                <span class="article-views"><i class="fas fa-eye"></i> 2.8k</span>
+                            </div>
+                            <h3 class="article-title">Apple Watch Series 10深度评测：更大的屏幕，更强的续航</h3>
+                            <p class="article-excerpt">
+                                全新的Apple Watch Series 10采用了更大的显示屏和更高效的处理器，续航能力得到明显提升。我们进行了为期一周的深度测试。
+                            </p>
+                            <a href="article.html?id=003" class="read-more" data-lang-key="news.readMore">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="../public/images/news/article3.jpg" alt="Article 3 image">
+                            <div class="article-category" data-lang-key="news.category.rumors">传闻爆料</div>
+                        </div>
+                        <div class="article-details">
+                            <div class="article-meta">
+                                <span class="article-date">2024-09-30</span>
+                                <span class="article-views"><i class="fas fa-eye"></i> 4.5k</span>
+                            </div>
+                            <h3 class="article-title">消息称MacBook Pro M4有望年底发布，将搭载M4 Pro和M4 Max芯片</h3>
+                            <p class="article-excerpt">
+                                根据供应链消息，苹果计划于今年12月推出搭载M4 Pro和M4 Max芯片的新款MacBook Pro，性能预计将有30%以上的提升。
+                            </p>
+                            <a href="article.html?id=004" class="read-more" data-lang-key="news.readMore">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="../public/images/news/article4.jpg" alt="Article 4 image">
+                            <div class="article-category" data-lang-key="news.category.guides">使用指南</div>
+                        </div>
+                        <div class="article-details">
+                            <div class="article-meta">
+                                <span class="article-date">2024-09-25</span>
+                                <span class="article-views"><i class="fas fa-eye"></i> 2.1k</span>
+                            </div>
+                            <h3 class="article-title">iOS 18.1正式版新功能详解：Apple Intelligence全面体验</h3>
+                            <p class="article-excerpt">
+                                iOS 18.1正式版已经推送，带来了Apple Intelligence的首批功能。本文详细介绍如何使用和设置这些AI功能，提升您的使用体验。
+                            </p>
+                            <a href="article.html?id=005" class="read-more" data-lang-key="news.readMore">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="article-card">
+                        <div class="article-image">
+                            <img src="../public/images/news/article5.jpg" alt="Article 5 image">
+                            <div class="article-category" data-lang-key="news.category.news">新闻动态</div>
+                        </div>
+                        <div class="article-details">
+                            <div class="article-meta">
+                                <span class="article-date">2024-09-20</span>
+                                <span class="article-views"><i class="fas fa-eye"></i> 1.9k</span>
+                            </div>
+                            <h3 class="article-title">苹果收购AI初创公司，为Apple Intelligence添加更多功能</h3>
+                            <p class="article-excerpt">
+                                苹果公司近日收购了一家专注于自然语言处理的AI初创公司，据分析师称，这将为Apple Intelligence添加更强大的文本生成和理解能力。
+                            </p>
+                            <a href="article.html?id=006" class="read-more" data-lang-key="news.readMore">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4 data-lang-key="footer.about.title">关于我们</h4>
+                    <a href="#" data-lang-key="footer.about.who">我们是谁</a>
+                    <a href="#" data-lang-key="footer.about.mission">我们的使命</a>
+                    <a href="#" data-lang-key="footer.about.contact">联系我们</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-lang-key="footer.legal.title">法律信息</h4>
+                    <a href="#" data-lang-key="footer.legal.terms">使用条款</a>
+                    <a href="#" data-lang-key="footer.legal.privacy">隐私政策</a>
+                    <a href="#" data-lang-key="footer.legal.cookies">Cookie 政策</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-lang-key="footer.resources.title">资源链接</h4>
+                    <a href="https://www.apple.com" target="_blank" data-lang-key="footer.resources.apple">Apple 官网</a>
+                    <a href="https://www.apple.com/support" target="_blank" data-lang-key="footer.resources.support">Apple 支持</a>
+                    <a href="https://developer.apple.com" target="_blank" data-lang-key="footer.resources.developer">Apple 开发者</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p data-lang-key="footer.copyright">&copy; 2025 Apple Compare. 所有权利均保留。</p>
+                <p data-lang-key="footer.disclaimer">本网站与Apple Inc.没有任何关联。Apple、iPhone、iPad、Mac、Apple Watch等是Apple Inc.的商标。</p>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- 顶部返回按钮 -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <!-- 引入语言资源和JavaScript文件 -->
+    <script src="../public/js/languages.js"></script>
+    <script src="../public/js/language-switcher.js"></script>
+    <script src="../public/js/news.js"></script>
+</body>
+</html>

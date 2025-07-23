@@ -1,0 +1,5076 @@
+[
+  {
+    "name": {
+      "zh-CN": "iPad Pro 13 英寸(M4)",
+      "en-US": "iPad Pro 13-inch (M4)"
+    },
+    "id": "ipad-ipad-pro-13-inchm4",
+    "marketingSlogan": {
+      "zh-CN": "磅示的薄",
+      "en-US": "Impossibly thin"
+    },
+    "releaseDate": {
+      "zh-CN": "2024.05.07",
+      "en-US": "May 7, 2024"
+    },
+    "os": {
+      "zh-CN": "iPadOS 17 ~ 最新",
+      "en-US": "iPadOS 17 ~ Latest"
+    },
+    "model": "iPad16,5 / iPad16,6",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空黑色",
+          "en-US": "Space Black"
+        },
+        "code": "#2e2c2e"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e3e4e5"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持深空黑色银色",
+      "en-US": "Current browser doesn't support Space Black Silver"
+    },
+    "processor": {
+      "zh-CN": "M4(3/4P+6E+10GPU)",
+      "en-US": "M4(3/4P+6E+10GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "13\" 双层串联 OLED",
+      "en-US": "13\" Tandem OLED"
+    },
+    "displayResolution": {
+      "zh-CN": "2752×2064, 264ppi",
+      "en-US": "2752×2064, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "10-120Hz ProMotion",
+      "en-US": "10-120Hz ProMotion"
+    },
+    "displayBrightness": {
+      "zh-CN": "1000(典型), 1600(HDR)",
+      "en-US": "1000(typical), 1600(HDR)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "主摄：1200W 像素 ƒ/1.8",
+      "en-US": "Main: 12MP ƒ/1.8"
+    },
+    "frontCamera": {
+      "zh-CN": "1200W 像素 ƒ/2.0",
+      "en-US": "12MP ƒ/2.0"
+    },
+    "lidar": {
+      "zh-CN": "IMX591 dToF 距离感应",
+      "en-US": "IMX591 dToF LiDAR Scanner"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil ProApple Pencil (USB‑C)",
+      "en-US": "Apple Pencil Pro, Apple Pencil (USB‑C)"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 40Gb/s)",
+      "en-US": "USB-C (up to 40Gb/s)"
+    },
+    "baseband": "Qualcomm X70M",
+    "wifiStandard": {
+      "zh-CN": "802.11ax HT160 2x2 MIMO",
+      "en-US": "802.11ax HT160 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 5.3",
+      "en-US": "Bluetooth 5.3"
+    },
+    "security": {
+      "zh-CN": "面容 ID",
+      "en-US": "Face ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "38.99Wh",
+      "en-US": "38.99Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×4 + 扬声器系统 ×4",
+      "en-US": "4 microphones + 4-speaker audio system"
+    },
+    "dimensions": {
+      "zh-CN": "215.5×281.6×5.1, 579/582g",
+      "en-US": "215.5×281.6×5.1mm, 579/582g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/119891"
+    },
+    "series": {
+      "zh-CN": "Pro",
+      "en-US": "Pro"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ax HT160 2x2 MIMO, 蓝牙 Bluetooth 5.3",
+      "en-US": "802.11ax HT160 2x2 MIMO, Bluetooth 5.3"
+    },
+    "benchmarks": {
+      "singleCore": "3679",
+      "multiCore": "13393",
+      "gpu": "54110"
+    },
+    "ram": [
+      "8GB",
+      "16GB"
+    ],
+    "storage": [
+      "1TB",
+      "2TB",
+      "256GB",
+      "512GB"
+    ],
+    "ramType": "LPDDR5X"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Pro 11 英寸(M4)",
+      "en-US": "iPad Pro 11-inch (M4)"
+    },
+    "id": "ipad-ipad-pro-11-inchm4",
+    "marketingSlogan": {
+      "zh-CN": "磅示的薄",
+      "en-US": "Impossibly thin"
+    },
+    "releaseDate": {
+      "zh-CN": "2024.05.07",
+      "en-US": "May 7, 2024"
+    },
+    "os": {
+      "zh-CN": "iPadOS 17 ~ 最新",
+      "en-US": "iPadOS 17 ~ Latest"
+    },
+    "model": "iPad16,3 / iPad16,4",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空黑色",
+          "en-US": "Space Black"
+        },
+        "code": "#2e2c2e"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e3e4e5"
+      }
+    ],
+    "processor": {
+      "zh-CN": "M4(3/4P+6E+10GPU)",
+      "en-US": "M4(3/4P+6E+10GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "11\" 双层串联 OLED",
+      "en-US": "11\" Tandem OLED"
+    },
+    "displayResolution": {
+      "zh-CN": "2420×1668, 264ppi",
+      "en-US": "2420×1668, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "10-120Hz ProMotion",
+      "en-US": "10-120Hz ProMotion"
+    },
+    "displayBrightness": {
+      "zh-CN": "1000(典型), 1600(HDR)",
+      "en-US": "1000(typical), 1600(HDR)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "主摄：1200W 像素 ƒ/1.8",
+      "en-US": "Main: 12MP ƒ/1.8"
+    },
+    "frontCamera": {
+      "zh-CN": "1200W 像素 ƒ/2.0",
+      "en-US": "12MP ƒ/2.0"
+    },
+    "lidar": {
+      "zh-CN": "IMX591 dToF 距离感应",
+      "en-US": "IMX591 dToF LiDAR Scanner"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil ProApple Pencil (USB‑C)",
+      "en-US": "Apple Pencil Pro, Apple Pencil (USB‑C)"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 40Gb/s)",
+      "en-US": "USB-C (up to 40Gb/s)"
+    },
+    "baseband": "Qualcomm X70M",
+    "wifiStandard": {
+      "zh-CN": "802.11ax HT160 2x2 MIMO",
+      "en-US": "802.11ax HT160 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 5.3",
+      "en-US": "Bluetooth 5.3"
+    },
+    "security": {
+      "zh-CN": "面容 ID",
+      "en-US": "Face ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "31.29Wh",
+      "en-US": "31.29Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×4 + 扬声器 ×4",
+      "en-US": "4 microphones + 4 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "177.5×249.7×5.3, 444/446g",
+      "en-US": "177.5×249.7×5.3mm, 444/446g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/119892"
+    },
+    "series": {
+      "zh-CN": "Pro",
+      "en-US": "Pro"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ax HT160 2x2 MIMO, 蓝牙 Bluetooth 5.3",
+      "en-US": "802.11ax HT160 2x2 MIMO, Bluetooth 5.3"
+    },
+    "benchmarks": {
+      "singleCore": "3650",
+      "multiCore": "13073",
+      "gpu": "54066"
+    },
+    "ram": [
+      "4GB",
+      "6GB"
+    ],
+    "storage": [
+      "1TB",
+      "512GB"
+    ],
+    "ramType": "LPDDR4X"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Pro 12.9 英寸(第 6 代)",
+      "en-US": "iPad Pro 12.9-inch (6th generation)"
+    },
+    "id": "ipad-ipad-pro-129-inch-6",
+    "marketingSlogan": {
+      "zh-CN": "由 M2 强势驱动",
+      "en-US": "Supercharged by M2"
+    },
+    "releaseDate": {
+      "zh-CN": "2022.10.18",
+      "en-US": "October 18, 2022"
+    },
+    "os": {
+      "zh-CN": "iPadOS 16 ~ 最新",
+      "en-US": "iPadOS 16 ~ Latest"
+    },
+    "model": "iPad14,5 / iPad14,6",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#68696d"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e2e3e4"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持查看",
+      "en-US": "Current browser doesn't support viewing"
+    },
+    "processor": {
+      "zh-CN": "M2(4P+4E+10GPU)",
+      "en-US": "M2(4P+4E+10GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "12.9\" Liquid mini-LED",
+      "en-US": "12.9\" Liquid mini-LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2732×2048, 264ppi",
+      "en-US": "2732×2048, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "24-120Hz ProMotion",
+      "en-US": "24-120Hz ProMotion"
+    },
+    "displayBrightness": {
+      "zh-CN": "600(典型), 1600(HDR)",
+      "en-US": "600(typical), 1600(HDR)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "主摄：1200W 像素 ƒ/1.8超广角：1000W 像素 ƒ/2.4",
+      "en-US": "Main: 12MP ƒ/1.8, Ultra Wide: 10MP ƒ/2.4"
+    },
+    "frontCamera": {
+      "zh-CN": "1200W 像素 ƒ/2.4",
+      "en-US": "12MP ƒ/2.4"
+    },
+    "lidar": {
+      "zh-CN": "IMX590 dToF 距离感应",
+      "en-US": "IMX590 dToF LiDAR Scanner"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil (第 2 代)Apple Pencil (USB‑C)",
+      "en-US": "Apple Pencil (2nd generation), Apple Pencil (USB‑C)"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 40Gb/s)",
+      "en-US": "USB-C (up to 40Gb/s)"
+    },
+    "wifiStandard": {
+      "zh-CN": "802.11ax HT160 2x2 MIMO",
+      "en-US": "802.11ax HT160 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 5.3",
+      "en-US": "Bluetooth 5.3"
+    },
+    "security": {
+      "zh-CN": "面容 ID",
+      "en-US": "Face ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "40.88Wh",
+      "en-US": "40.88Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×5 + 扬声器 ×4",
+      "en-US": "5 microphones + 4 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "214.9×280.6×6.4, 682/684g",
+      "en-US": "214.9×280.6×6.4mm, 682/684g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/111841"
+    },
+    "series": {
+      "zh-CN": "Pro",
+      "en-US": "Pro"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ax HT160 2x2 MIMO, 蓝牙 Bluetooth 5.3",
+      "en-US": "802.11ax HT160 2x2 MIMO, Bluetooth 5.3"
+    },
+    "benchmarks": {
+      "singleCore": "2573",
+      "multiCore": "9761",
+      "gpu": "46044"
+    },
+    "ram": [
+      "4GB"
+    ],
+    "storage": [
+      "32GB",
+      "64GB",
+      "128GB",
+      "256GB"
+    ],
+    "ramType": "LPDDR4"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Pro 11 英寸(第 4 代)",
+      "en-US": "iPad Pro 11-inch (4th generation)"
+    },
+    "id": "ipad-ipad-pro-11-inch-4",
+    "marketingSlogan": {
+      "zh-CN": "由 M2 强势驱动",
+      "en-US": "Supercharged by M2"
+    },
+    "releaseDate": {
+      "zh-CN": "2022.10.18",
+      "en-US": "October 18, 2022"
+    },
+    "os": {
+      "zh-CN": "iPadOS 16 ~ 最新",
+      "en-US": "iPadOS 16 ~ Latest"
+    },
+    "model": "iPad14,3 / iPad14,4",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#68696d"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e2e3e4"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持查看",
+      "en-US": "Current browser doesn't support viewing"
+    },
+    "processor": {
+      "zh-CN": "M2(4P+4E+10GPU)",
+      "en-US": "M2(4P+4E+10GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "11\" Liquid LED",
+      "en-US": "11\" Liquid LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2388×1668, 264ppi",
+      "en-US": "2388×1668, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "24-120Hz ProMotion",
+      "en-US": "24-120Hz ProMotion"
+    },
+    "displayBrightness": {
+      "zh-CN": "600(典型)",
+      "en-US": "600(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "主摄：1200W 像素 ƒ/1.8超广角：1000W 像素 ƒ/2.4",
+      "en-US": "Main: 12MP ƒ/1.8, Ultra Wide: 10MP ƒ/2.4"
+    },
+    "frontCamera": {
+      "zh-CN": "1200W 像素 ƒ/2.4",
+      "en-US": "12MP ƒ/2.4"
+    },
+    "lidar": {
+      "zh-CN": "IMX590 dToF 距离感应",
+      "en-US": "IMX590 dToF LiDAR Scanner"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil (第 2 代)Apple Pencil (USB‑C)",
+      "en-US": "Apple Pencil (2nd generation), Apple Pencil (USB‑C)"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 40Gb/s)",
+      "en-US": "USB-C (up to 40Gb/s)"
+    },
+    "wifiStandard": {
+      "zh-CN": "802.11ax HT160 2x2 MIMO",
+      "en-US": "802.11ax HT160 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 5.3",
+      "en-US": "Bluetooth 5.3"
+    },
+    "security": {
+      "zh-CN": "面容 ID",
+      "en-US": "Face ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "28.65Wh",
+      "en-US": "28.65Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×5 + 扬声器 ×4",
+      "en-US": "5 microphones + 4 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "178.5×247.6×5.9, 466/468g",
+      "en-US": "178.5×247.6×5.9mm, 466/468g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/111842"
+    },
+    "series": {
+      "zh-CN": "Pro",
+      "en-US": "Pro"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ax HT160 2x2 MIMO, 蓝牙 Bluetooth 5.3",
+      "en-US": "802.11ax HT160 2x2 MIMO, Bluetooth 5.3"
+    },
+    "benchmarks": {
+      "singleCore": "2570",
+      "multiCore": "9770",
+      "gpu": "45736"
+    },
+    "ram": [
+      "4GB",
+      "6GB"
+    ],
+    "storage": [
+      "1TB",
+      "512GB"
+    ],
+    "ramType": "LPDDR4X"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Pro 12.9 英寸(第 5 代)",
+      "en-US": "iPad Pro 12.9-inch (5th generation)"
+    },
+    "id": "ipad-ipad-pro-129-inch-5",
+    "marketingSlogan": {
+      "zh-CN": "终极 iPad 体验",
+      "en-US": "The Ultimate iPad Experience"
+    },
+    "releaseDate": {
+      "zh-CN": "2021.04.21",
+      "en-US": "April 21, 2021"
+    },
+    "os": {
+      "zh-CN": "iPadOS 14 ~ 最新",
+      "en-US": "iPadOS 14 ~ Latest"
+    },
+    "model": "iPad13,8 / 13,9 / 13,10 / 13,11",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#68696d"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e2e3e4"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持查看",
+      "en-US": "Current browser doesn't support viewing"
+    },
+    "processor": {
+      "zh-CN": "M1(4P+4E+8GPU)",
+      "en-US": "M1(4P+4E+8GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "12.9\" Liquid mini-LED",
+      "en-US": "12.9\" Liquid mini-LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2732×2048, 264ppi",
+      "en-US": "2732×2048, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "24-120Hz ProMotion",
+      "en-US": "24-120Hz ProMotion"
+    },
+    "displayBrightness": {
+      "zh-CN": "600(典型), 1600(HDR)",
+      "en-US": "600(typical), 1600(HDR)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "主摄：1200W 像素 ƒ/1.8超广角：1000W 像素 ƒ/2.4",
+      "en-US": "Main: 12MP ƒ/1.8, Ultra Wide: 10MP ƒ/2.4"
+    },
+    "frontCamera": {
+      "zh-CN": "1200W 像素 ƒ/2.4",
+      "en-US": "12MP ƒ/2.4"
+    },
+    "lidar": {
+      "zh-CN": "IMX590 dToF 距离感应",
+      "en-US": "IMX590 dToF LiDAR Scanner"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil (第 2 代)Apple Pencil (USB‑C)",
+      "en-US": "Apple Pencil (2nd generation), Apple Pencil (USB‑C)"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 40Gb/s)",
+      "en-US": "USB-C (up to 40Gb/s)"
+    },
+    "baseband": "Qualcomm X55M",
+    "wifiStandard": {
+      "zh-CN": "802.11ax HT80 2x2 MIMO",
+      "en-US": "802.11ax HT80 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 5.0",
+      "en-US": "Bluetooth 5.0"
+    },
+    "security": {
+      "zh-CN": "面容 ID",
+      "en-US": "Face ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "40.88Wh",
+      "en-US": "40.88Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×5 + 扬声器 ×4",
+      "en-US": "5 microphones + 4 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "214.9×280.6×6.4, 682/684g",
+      "en-US": "214.9×280.6×6.4mm, 682/684g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/111896"
+    },
+    "series": {
+      "zh-CN": "Pro",
+      "en-US": "Pro"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ax HT80 2x2 MIMO, 蓝牙 Bluetooth 5.0",
+      "en-US": "802.11ax HT80 2x2 MIMO, Bluetooth 5.0"
+    },
+    "benchmarks": {
+      "singleCore": "2307",
+      "multiCore": "8366",
+      "gpu": "32682"
+    },
+    "ram": [
+      "4GB"
+    ],
+    "storage": [
+      "32GB",
+      "64GB",
+      "128GB",
+      "256GB"
+    ],
+    "ramType": "LPDDR4"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Pro 11 英寸(第 3 代)",
+      "en-US": "iPad Pro 11-inch (3rd generation)"
+    },
+    "id": "ipad-ipad-pro-11-inch-3",
+    "marketingSlogan": {
+      "zh-CN": "终极 iPad 体验",
+      "en-US": "The Ultimate iPad Experience"
+    },
+    "releaseDate": {
+      "zh-CN": "2021.04.21",
+      "en-US": "April 21, 2021"
+    },
+    "os": {
+      "zh-CN": "iPadOS 14 ~ 最新",
+      "en-US": "iPadOS 14 ~ Latest"
+    },
+    "model": "iPad13,4 / 13,5 / 13,6 / 13,7",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#68696d"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e2e3e4"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持查看",
+      "en-US": "Current browser doesn't support viewing"
+    },
+    "processor": {
+      "zh-CN": "M1(4P+4E+8GPU)",
+      "en-US": "M1(4P+4E+8GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "11\" Liquid LED",
+      "en-US": "11\" Liquid LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2388×1668, 264ppi",
+      "en-US": "2388×1668, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "24-120Hz ProMotion",
+      "en-US": "24-120Hz ProMotion"
+    },
+    "displayBrightness": {
+      "zh-CN": "600(典型)",
+      "en-US": "600(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "主摄：1200W 像素 ƒ/1.8超广角：1000W 像素 ƒ/2.4",
+      "en-US": "Main: 12MP ƒ/1.8, Ultra Wide: 10MP ƒ/2.4"
+    },
+    "frontCamera": {
+      "zh-CN": "1200W 像素 ƒ/2.4",
+      "en-US": "12MP ƒ/2.4"
+    },
+    "lidar": {
+      "zh-CN": "IMX590 dToF 距离感应",
+      "en-US": "IMX590 dToF LiDAR Scanner"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil (第 2 代)Apple Pencil (USB‑C)",
+      "en-US": "Apple Pencil (2nd generation), Apple Pencil (USB‑C)"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 40Gb/s)",
+      "en-US": "USB-C (up to 40Gb/s)"
+    },
+    "baseband": "Qualcomm X55M",
+    "wifiStandard": {
+      "zh-CN": "802.11ax HT80 2x2 MIMO",
+      "en-US": "802.11ax HT80 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 5.0",
+      "en-US": "Bluetooth 5.0"
+    },
+    "security": {
+      "zh-CN": "面容 ID",
+      "en-US": "Face ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "28.65Wh",
+      "en-US": "28.65Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×5 + 扬声器 ×4",
+      "en-US": "5 microphones + 4 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "178.5×247.6×5.9, 466/468g",
+      "en-US": "178.5×247.6×5.9mm, 466/468g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/111897"
+    },
+    "series": {
+      "zh-CN": "Pro",
+      "en-US": "Pro"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ax HT80 2x2 MIMO, 蓝牙 Bluetooth 5.0",
+      "en-US": "802.11ax HT80 2x2 MIMO, Bluetooth 5.0"
+    },
+    "benchmarks": {
+      "singleCore": "2302",
+      "multiCore": "8321",
+      "gpu": "32630"
+    },
+    "ram": [
+      "4GB",
+      "6GB"
+    ],
+    "storage": [
+      "1TB",
+      "512GB"
+    ],
+    "ramType": "LPDDR4X"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Pro 12.9 英寸(第 4 代)",
+      "en-US": "iPad Pro 12.9-inch (4th generation)"
+    },
+    "id": "ipad-ipad-pro-129-inch-4",
+    "marketingSlogan": {
+      "zh-CN": "你的下一台电脑，何必是电脑。",
+      "en-US": "Your next computer is not a computer."
+    },
+    "releaseDate": {
+      "zh-CN": "2020.03.18",
+      "en-US": "March 18, 2020"
+    },
+    "os": {
+      "zh-CN": "iPadOS 13 ~ 最新",
+      "en-US": "iPadOS 13 ~ Latest"
+    },
+    "model": "iPad8,11 / iPad8,12",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#68696d"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e2e3e4"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持查看",
+      "en-US": "Current browser doesn't support viewing"
+    },
+    "processor": {
+      "zh-CN": "A12Z Bionic(4P+4E+8GPU)",
+      "en-US": "A12Z Bionic(4P+4E+8GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "12.9\" Liquid LED",
+      "en-US": "12.9\" Liquid LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2732×2048, 264ppi",
+      "en-US": "2732×2048, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "24-120Hz ProMotion",
+      "en-US": "24-120Hz ProMotion"
+    },
+    "displayBrightness": {
+      "zh-CN": "600(典型)",
+      "en-US": "600(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "主摄：1200W 像素 ƒ/1.8超广角：1000W 像素 ƒ/2.4",
+      "en-US": "Main: 12MP ƒ/1.8, Ultra Wide: 10MP ƒ/2.4"
+    },
+    "frontCamera": {
+      "zh-CN": "700W 像素 ƒ/2.2",
+      "en-US": "7MP ƒ/2.2"
+    },
+    "lidar": {
+      "zh-CN": "IMX590 dToF 距离感应",
+      "en-US": "IMX590 dToF LiDAR Scanner"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil (第 2 代)Apple Pencil (USB‑C)",
+      "en-US": "Apple Pencil (2nd generation), Apple Pencil (USB‑C)"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 10Gb/s)",
+      "en-US": "USB-C (up to 10Gb/s)"
+    },
+    "baseband": "Intel XMM7660",
+    "wifiStandard": {
+      "zh-CN": "802.11ax HT80 2x2 MIMO",
+      "en-US": "802.11ax HT80 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 5.0",
+      "en-US": "Bluetooth 5.0"
+    },
+    "security": {
+      "zh-CN": "面容 ID",
+      "en-US": "Face ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "36.71Wh",
+      "en-US": "36.71Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×5 + 扬声器 ×4",
+      "en-US": "5 microphones + 4 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "214.9×280.6×5.9, 641/643g",
+      "en-US": "214.9×280.6×5.9mm, 641/643g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/111977"
+    },
+    "series": {
+      "zh-CN": "Pro",
+      "en-US": "Pro"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ax HT80 2x2 MIMO, 蓝牙 Bluetooth 5.0",
+      "en-US": "802.11ax HT80 2x2 MIMO, Bluetooth 5.0"
+    },
+    "benchmarks": {
+      "singleCore": "1331",
+      "multiCore": "4649",
+      "gpu": "18403"
+    },
+    "ram": [
+      "4GB"
+    ],
+    "storage": [
+      "32GB",
+      "64GB",
+      "128GB",
+      "256GB"
+    ],
+    "ramType": "LPDDR4"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Pro 11 英寸(第 2 代)",
+      "en-US": "iPad Pro 11-inch (2nd generation)"
+    },
+    "id": "ipad-ipad-pro-11-inch-2",
+    "marketingSlogan": {
+      "zh-CN": "你的下一台电脑，何必是电脑。",
+      "en-US": "Your next computer is not a computer."
+    },
+    "releaseDate": {
+      "zh-CN": "2020.03.18",
+      "en-US": "March 18, 2020"
+    },
+    "os": {
+      "zh-CN": "iPadOS 13 ~ 最新",
+      "en-US": "iPadOS 13 ~ Latest"
+    },
+    "model": "iPad8,9 / iPad8,10",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#68696d"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e2e3e4"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "processor": {
+      "zh-CN": "A12Z Bionic(4P+4E+8GPU)",
+      "en-US": "A12Z Bionic(4P+4E+8GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "11\" Liquid LED",
+      "en-US": "11\" Liquid LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2388×1668, 264ppi",
+      "en-US": "2388×1668, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "24-120Hz ProMotion",
+      "en-US": "24-120Hz ProMotion"
+    },
+    "displayBrightness": {
+      "zh-CN": "600(典型)",
+      "en-US": "600(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "主摄：1200W 像素 ƒ/1.8超广角：1000W 像素 ƒ/2.4",
+      "en-US": "Main: 12MP ƒ/1.8, Ultra Wide: 10MP ƒ/2.4"
+    },
+    "frontCamera": {
+      "zh-CN": "700W 像素 ƒ/2.2",
+      "en-US": "7MP ƒ/2.2"
+    },
+    "lidar": {
+      "zh-CN": "IMX590 dToF 距离感应",
+      "en-US": "IMX590 dToF LiDAR Scanner"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil (第 2 代)Apple Pencil (USB‑C)",
+      "en-US": "Apple Pencil (2nd generation), Apple Pencil (USB‑C)"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 10Gb/s)",
+      "en-US": "USB-C (up to 10Gb/s)"
+    },
+    "baseband": "Intel XMM7660",
+    "wifiStandard": {
+      "zh-CN": "802.11ax HT80 2x2 MIMO",
+      "en-US": "802.11ax HT80 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 5.0",
+      "en-US": "Bluetooth 5.0"
+    },
+    "security": {
+      "zh-CN": "面容 ID",
+      "en-US": "Face ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "28.65Wh",
+      "en-US": "28.65Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×5 + 扬声器 ×4",
+      "en-US": "5 microphones + 4 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "178.5×247.6×5.9, 471/473g",
+      "en-US": "178.5×247.6×5.9mm, 471/473g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/118452"
+    },
+    "series": {
+      "zh-CN": "Pro",
+      "en-US": "Pro"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ax HT80 2x2 MIMO, 蓝牙 Bluetooth 5.0",
+      "en-US": "802.11ax HT80 2x2 MIMO, Bluetooth 5.0"
+    },
+    "benchmarks": {
+      "singleCore": "1325",
+      "multiCore": "4634",
+      "gpu": "18426"
+    },
+    "ram": [
+      "4GB",
+      "6GB"
+    ],
+    "storage": [
+      "1TB",
+      "512GB"
+    ],
+    "ramType": "LPDDR4X"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Pro 12.9 英寸(第 3 代)",
+      "en-US": "iPad Pro 12.9-inch (3rd generation)"
+    },
+    "id": "ipad-ipad-pro-129-inch-3",
+    "marketingSlogan": {
+      "zh-CN": "新一代 iPad Pro，全面新生。",
+      "en-US": "The new iPad Pro. All-new, all screen."
+    },
+    "releaseDate": {
+      "zh-CN": "2018.10.31",
+      "en-US": "October 31, 2018"
+    },
+    "os": {
+      "zh-CN": "iOS 12 ~ 最新",
+      "en-US": "iOS 12 ~ Latest"
+    },
+    "model": "iPad8,5 / 8,6 / 8,7 / 8,8",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#68696d"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e2e3e4"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "processor": {
+      "zh-CN": "A12X Bionic(4P+4E+7GPU)",
+      "en-US": "A12X Bionic(4P+4E+7GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "12.9\" Liquid LED",
+      "en-US": "12.9\" Liquid LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2732×2048, 264ppi",
+      "en-US": "2732×2048, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "24-120Hz ProMotion",
+      "en-US": "24-120Hz ProMotion"
+    },
+    "displayBrightness": {
+      "zh-CN": "600(典型)",
+      "en-US": "600(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "主摄：1200W 像素 ƒ/1.8",
+      "en-US": "Main: 12MP ƒ/1.8"
+    },
+    "frontCamera": {
+      "zh-CN": "700W 像素 ƒ/2.2",
+      "en-US": "7MP ƒ/2.2"
+    },
+    "lidar": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil (第 2 代)Apple Pencil (USB‑C)",
+      "en-US": "Apple Pencil (2nd generation), Apple Pencil (USB‑C)"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 10Gb/s)",
+      "en-US": "USB-C (up to 10Gb/s)"
+    },
+    "baseband": "Intel XMM7560",
+    "wifiStandard": {
+      "zh-CN": "802.11ac HT80 2x2 MIMO",
+      "en-US": "802.11ac HT80 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 5.0",
+      "en-US": "Bluetooth 5.0"
+    },
+    "security": {
+      "zh-CN": "面容 ID",
+      "en-US": "Face ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "36.71Wh",
+      "en-US": "36.71Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×5 + 扬声器 ×4",
+      "en-US": "5 microphones + 4 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "214.9×280.6×5.9, 631/633g",
+      "en-US": "214.9×280.6×5.9mm, 631/633g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/111979"
+    },
+    "series": {
+      "zh-CN": "Pro",
+      "en-US": "Pro"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ac HT80 2x2 MIMO, 蓝牙 Bluetooth 5.0",
+      "en-US": "802.11ac HT80 2x2 MIMO, Bluetooth 5.0"
+    },
+    "benchmarks": {
+      "singleCore": "1322",
+      "multiCore": "4440",
+      "gpu": "15883"
+    },
+    "ram": [
+      "4GB"
+    ],
+    "storage": [
+      "32GB",
+      "64GB",
+      "128GB",
+      "256GB"
+    ],
+    "ramType": "LPDDR4"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Pro 11 英寸(第 1 代)",
+      "en-US": "iPad Pro 11-inch (1st generation)"
+    },
+    "id": "ipad-ipad-pro-11-inch-1",
+    "marketingSlogan": {
+      "zh-CN": "新一代 iPad Pro，全面新生。",
+      "en-US": "The new iPad Pro. All-new, all screen."
+    },
+    "releaseDate": {
+      "zh-CN": "2018.10.31",
+      "en-US": "October 31, 2018"
+    },
+    "os": {
+      "zh-CN": "iOS 12 ~ 最新",
+      "en-US": "iOS 12 ~ Latest"
+    },
+    "model": "iPad8,1 / 8,2 / 8,3 / 8,4",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#68696d"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e2e3e4"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "processor": {
+      "zh-CN": "A12X Bionic(4P+4E+7GPU)",
+      "en-US": "A12X Bionic(4P+4E+7GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "11\" Liquid LED",
+      "en-US": "11\" Liquid LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2388×1668, 264ppi",
+      "en-US": "2388×1668, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "24-120Hz ProMotion",
+      "en-US": "24-120Hz ProMotion"
+    },
+    "displayBrightness": {
+      "zh-CN": "600(典型)",
+      "en-US": "600(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "主摄：1200W 像素 ƒ/1.8",
+      "en-US": "Main: 12MP ƒ/1.8"
+    },
+    "frontCamera": {
+      "zh-CN": "700W 像素 ƒ/2.2",
+      "en-US": "7MP ƒ/2.2"
+    },
+    "lidar": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil (第 2 代)Apple Pencil (USB‑C)",
+      "en-US": "Apple Pencil (2nd generation), Apple Pencil (USB‑C)"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 10Gb/s)",
+      "en-US": "USB-C (up to 10Gb/s)"
+    },
+    "baseband": "Intel XMM7560",
+    "wifiStandard": {
+      "zh-CN": "802.11ac HT80 2x2 MIMO",
+      "en-US": "802.11ac HT80 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 5.0",
+      "en-US": "Bluetooth 5.0"
+    },
+    "security": {
+      "zh-CN": "面容 ID",
+      "en-US": "Face ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "29.37Wh",
+      "en-US": "29.37Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×5 + 扬声器 ×4",
+      "en-US": "5 microphones + 4 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "178.6×247.6×5.9, 468g",
+      "en-US": "178.6×247.6×5.9mm, 468g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/111974"
+    },
+    "series": {
+      "zh-CN": "Pro",
+      "en-US": "Pro"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ac HT80 2x2 MIMO, 蓝牙 Bluetooth 5.0",
+      "en-US": "802.11ac HT80 2x2 MIMO, Bluetooth 5.0"
+    },
+    "benchmarks": {
+      "singleCore": "1328",
+      "multiCore": "4586",
+      "gpu": "16692"
+    },
+    "ram": [
+      "4GB",
+      "6GB"
+    ],
+    "storage": [
+      "1TB",
+      "512GB"
+    ],
+    "ramType": "LPDDR4X"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Pro 12.9 英寸(第 2 代)",
+      "en-US": "iPad Pro 12.9-inch (2nd generation)"
+    },
+    "id": "ipad-ipad-pro-129-inch-2",
+    "marketingSlogan": {
+      "zh-CN": "不止能做好，还能做到更好。",
+      "en-US": "Not just better. Better at everything."
+    },
+    "releaseDate": {
+      "zh-CN": "2017.06.06",
+      "en-US": "June 6, 2017"
+    },
+    "os": {
+      "zh-CN": "iOS 10 ~ iPadOS 17",
+      "en-US": "iOS 10 ~ iPadOS 17"
+    },
+    "model": "iPad7,1 / iPad7,2",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#b1b2b7"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e2e3e4"
+      },
+      {
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "Gold"
+        },
+        "code": "#e3ccb4"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "processor": {
+      "zh-CN": "A10X Fusion(3P+3E+12GPU)",
+      "en-US": "A10X Fusion(3P+3E+12GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "12.9\" LED",
+      "en-US": "12.9\" LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2732×2048, 264ppi",
+      "en-US": "2732×2048, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "24-120Hz ProMotion",
+      "en-US": "24-120Hz ProMotion"
+    },
+    "displayBrightness": {
+      "zh-CN": "600(典型)",
+      "en-US": "600(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "主摄：1200W 像素 ƒ/1.8",
+      "en-US": "Main: 12MP ƒ/1.8"
+    },
+    "frontCamera": {
+      "zh-CN": "700W 像素 ƒ/2.2",
+      "en-US": "7MP ƒ/2.2"
+    },
+    "lidar": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil (第 1 代)",
+      "en-US": "Apple Pencil (1st generation)"
+    },
+    "ports": {
+      "zh-CN": "闪电接口",
+      "en-US": "Lightning connector"
+    },
+    "baseband": "Qualcomm MDM9645",
+    "wifiStandard": {
+      "zh-CN": "802.11ac HT80 2x2 MIMO",
+      "en-US": "802.11ac HT80 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 4.2",
+      "en-US": "Bluetooth 4.2"
+    },
+    "security": {
+      "zh-CN": "触控 ID",
+      "en-US": "Touch ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "41Wh",
+      "en-US": "41Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×4",
+      "en-US": "2 microphones + 4 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "220.6×305.7×6.9, 677/692g",
+      "en-US": "220.6×305.7×6.9mm, 677/692g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/111964"
+    },
+    "series": {
+      "zh-CN": "Pro",
+      "en-US": "Pro"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ac HT80 2x2 MIMO, 蓝牙 Bluetooth 4.2",
+      "en-US": "802.11ac HT80 2x2 MIMO, Bluetooth 4.2"
+    },
+    "benchmarks": {
+      "singleCore": "1050",
+      "multiCore": "2500",
+      "gpu": "6000"
+    },
+    "ram": [
+      "4GB"
+    ],
+    "storage": [
+      "32GB",
+      "64GB",
+      "128GB",
+      "256GB"
+    ],
+    "ramType": "LPDDR4"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Pro 10.5 英寸",
+      "en-US": "iPad Pro 10.5-inch"
+    },
+    "id": "ipad-ipad-pro-105-inch",
+    "marketingSlogan": {
+      "zh-CN": "不止能做好，还能做到更好。",
+      "en-US": "Not just better. Better at everything."
+    },
+    "releaseDate": {
+      "zh-CN": "2017.06.06",
+      "en-US": "June 6, 2017"
+    },
+    "os": {
+      "zh-CN": "iOS 10 ~ iPadOS 17",
+      "en-US": "iOS 10 ~ iPadOS 17"
+    },
+    "model": "iPad7,3 / iPad7,4",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#b1b2b7"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e2e3e4"
+      },
+      {
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "Gold"
+        },
+        "code": "#e3ccb4"
+      },
+      {
+        "name": {
+          "zh-CN": "玫瑰金色",
+          "en-US": "Rose Gold"
+        },
+        "code": "#ecc6c1"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "processor": {
+      "zh-CN": "A10X Fusion(3P+3E+12GPU)",
+      "en-US": "A10X Fusion(3P+3E+12GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "10.5\" LED",
+      "en-US": "10.5\" LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2224×1668, 264ppi",
+      "en-US": "2224×1668, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "24-120Hz ProMotion",
+      "en-US": "24-120Hz ProMotion"
+    },
+    "displayBrightness": {
+      "zh-CN": "600(典型)",
+      "en-US": "600(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "主摄：1200W 像素 ƒ/1.8",
+      "en-US": "Main: 12MP ƒ/1.8"
+    },
+    "frontCamera": {
+      "zh-CN": "700W 像素 ƒ/2.2",
+      "en-US": "7MP ƒ/2.2"
+    },
+    "lidar": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil (第 1 代)",
+      "en-US": "Apple Pencil (1st generation)"
+    },
+    "ports": {
+      "zh-CN": "闪电接口",
+      "en-US": "Lightning connector"
+    },
+    "baseband": "Qualcomm MDM9645",
+    "wifiStandard": {
+      "zh-CN": "802.11ac HT80 2x2 MIMO",
+      "en-US": "802.11ac HT80 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 4.2",
+      "en-US": "Bluetooth 4.2"
+    },
+    "security": {
+      "zh-CN": "触控 ID",
+      "en-US": "Touch ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "30.4Wh",
+      "en-US": "30.4Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×4",
+      "en-US": "2 microphones + 4 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "174.1×250.6×6.1, 469/477g",
+      "en-US": "174.1×250.6×6.1mm, 469/477g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/111927"
+    },
+    "series": {
+      "zh-CN": "Pro",
+      "en-US": "Pro"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ac HT80 2x2 MIMO, 蓝牙 Bluetooth 4.2",
+      "en-US": "802.11ac HT80 2x2 MIMO, Bluetooth 4.2"
+    },
+    "benchmarks": {
+      "singleCore": "941",
+      "multiCore": "2210",
+      "gpu": "8337"
+    },
+    "ram": [
+      "4GB"
+    ],
+    "storage": [
+      "64GB",
+      "256GB",
+      "512GB"
+    ],
+    "ramType": "LPDDR4"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Pro 9.7 英寸",
+      "en-US": "iPad Pro 9.7-inch"
+    },
+    "id": "ipad-ipad-pro-97-inch",
+    "marketingSlogan": {
+      "zh-CN": "你的下一台电脑，现更以两种尺寸呈现",
+      "en-US": "Your next computer, now in two sizes"
+    },
+    "releaseDate": {
+      "zh-CN": "2016.03.22",
+      "en-US": "March 22, 2016"
+    },
+    "os": {
+      "zh-CN": "iOS 9 ~ iPadOS 16",
+      "en-US": "iOS 9 ~ iPadOS 16"
+    },
+    "model": "iPad6,3 / iPad6,4",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#b1b2b7"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e2e3e4"
+      },
+      {
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "Gold"
+        },
+        "code": "#e3ccb4"
+      },
+      {
+        "name": {
+          "zh-CN": "玫瑰金色",
+          "en-US": "Rose Gold"
+        },
+        "code": "#ecc5c1"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "processor": {
+      "zh-CN": "A9X(2P+12GPU)",
+      "en-US": "A9X(2P+12GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "9.7\" LED",
+      "en-US": "9.7\" LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2048×1536, 264ppi",
+      "en-US": "2048×1536, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "30Hz、60Hz",
+      "en-US": "30Hz, 60Hz"
+    },
+    "displayBrightness": {
+      "zh-CN": "500(典型)",
+      "en-US": "500(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "主摄：1200W 像素 ƒ/2.2",
+      "en-US": "Main: 12MP ƒ/2.2"
+    },
+    "frontCamera": {
+      "zh-CN": "500W 像素 ƒ/2.2",
+      "en-US": "5MP ƒ/2.2"
+    },
+    "lidar": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil (第 1 代)",
+      "en-US": "Apple Pencil (1st generation)"
+    },
+    "ports": {
+      "zh-CN": "闪电接口",
+      "en-US": "Lightning connector"
+    },
+    "baseband": "Qualcomm MDM9635",
+    "wifiStandard": {
+      "zh-CN": "802.11ac HT80 2x2 MIMO",
+      "en-US": "802.11ac HT80 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 4.2",
+      "en-US": "Bluetooth 4.2"
+    },
+    "security": {
+      "zh-CN": "触控 ID",
+      "en-US": "Touch ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "27.5Wh",
+      "en-US": "27.5Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×4",
+      "en-US": "2 microphones + 4 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "169.5×240×6.1, 437/444g",
+      "en-US": "169.5×240×6.1mm, 437/444g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/111965"
+    },
+    "series": {
+      "zh-CN": "Pro",
+      "en-US": "Pro"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ac HT80 2x2 MIMO, 蓝牙 Bluetooth 4.2",
+      "en-US": "802.11ac HT80 2x2 MIMO, Bluetooth 4.2"
+    },
+    "benchmarks": {
+      "singleCore": "738",
+      "multiCore": "1097",
+      "gpu": "5665"
+    },
+    "ram": [
+      "2GB"
+    ],
+    "storage": [
+      "32GB",
+      "128GB",
+      "256GB"
+    ],
+    "ramType": "LPDDR4"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Pro 12.9 英寸",
+      "en-US": "iPad Pro 12.9-inch"
+    },
+    "id": "ipad-ipad-pro-129-inch",
+    "marketingSlogan": {
+      "zh-CN": "轻，薄，磅礼。",
+      "en-US": "Thin. Light. Epic."
+    },
+    "releaseDate": {
+      "zh-CN": "2015.09.10",
+      "en-US": "September 10, 2015"
+    },
+    "os": {
+      "zh-CN": "iOS 9 ~ iPadOS 16",
+      "en-US": "iOS 9 ~ iPadOS 16"
+    },
+    "model": "iPad6,7 / iPad6,8",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#b1b2b7"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e2e3e4"
+      },
+      {
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "Gold"
+        },
+        "code": "#e3ccb4"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "processor": {
+      "zh-CN": "A9X(2P+12GPU)",
+      "en-US": "A9X(2P+12GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "12.9\" LED",
+      "en-US": "12.9\" LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2732×2048, 264ppi",
+      "en-US": "2732×2048, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "30Hz、60Hz",
+      "en-US": "30Hz, 60Hz"
+    },
+    "displayBrightness": {
+      "zh-CN": "400(典型)",
+      "en-US": "400(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "sRGB",
+      "en-US": "sRGB"
+    },
+    "camera": {
+      "zh-CN": "主摄：800W 像素 ƒ/2.4",
+      "en-US": "Main: 8MP ƒ/2.4"
+    },
+    "frontCamera": {
+      "zh-CN": "120W 像素 ƒ/2.2",
+      "en-US": "1.2MP ƒ/2.2"
+    },
+    "lidar": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil (第 1 代)",
+      "en-US": "Apple Pencil (1st generation)"
+    },
+    "ports": {
+      "zh-CN": "闪电接口",
+      "en-US": "Lightning connector"
+    },
+    "baseband": "Qualcomm MDM9625",
+    "wifiStandard": {
+      "zh-CN": "802.11ac HT80 2x2 MIMO",
+      "en-US": "802.11ac HT80 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 4.2",
+      "en-US": "Bluetooth 4.2"
+    },
+    "security": {
+      "zh-CN": "触控 ID",
+      "en-US": "Touch ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "38.5Wh",
+      "en-US": "38.5Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×4",
+      "en-US": "2 microphones + 4 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "220.6×305.7×6.9, 713/723g",
+      "en-US": "220.6×305.7×6.9mm, 713/723g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/112024"
+    },
+    "series": {
+      "zh-CN": "Pro",
+      "en-US": "Pro"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ac HT80 2x2 MIMO, 蓝牙 Bluetooth 4.2",
+      "en-US": "802.11ac HT80 2x2 MIMO, Bluetooth 4.2"
+    },
+    "benchmarks": {
+      "singleCore": "752",
+      "multiCore": "1250",
+      "gpu": "5844"
+    },
+    "ram": [
+      "4GB"
+    ],
+    "storage": [
+      "32GB",
+      "128GB",
+      "256GB"
+    ],
+    "ramType": "LPDDR4"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Air 13 英寸(M3)",
+      "en-US": "iPad Air 13-inch (M3)"
+    },
+    "id": "ipad-ipad-air-13-inchm3",
+    "marketingSlogan": {
+      "zh-CN": "快如飞",
+      "en-US": "Light. Bright. Full of might."
+    },
+    "releaseDate": {
+      "zh-CN": "2025.03.04",
+      "en-US": "March 4, 2025"
+    },
+    "os": {
+      "zh-CN": "iPadOS 18 ~ 最新",
+      "en-US": "iPadOS 18 ~ Latest"
+    },
+    "model": "iPad15,5 / iPad15,6",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "蓝色",
+          "en-US": "Blue"
+        },
+        "code": "#d7e5e6"
+      },
+      {
+        "name": {
+          "zh-CN": "紫色",
+          "en-US": "Purple"
+        },
+        "code": "#e3dee9"
+      },
+      {
+        "name": {
+          "zh-CN": "星光色",
+          "en-US": "Starlight"
+        },
+        "code": "#e3dcd1"
+      },
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#6b696e"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持蓝色紫色星光色深空灰色",
+      "en-US": "Current browser does not support Blue, Purple, Starlight, Space Gray"
+    },
+    "processor": {
+      "zh-CN": "M3(4P+4E+9GPU)",
+      "en-US": "M3(4P+4E+9GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "13\" Liquid LED",
+      "en-US": "13\" Liquid LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2732×2048, 264ppi",
+      "en-US": "2732×2048, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "60Hz",
+      "en-US": "60Hz"
+    },
+    "displayBrightness": {
+      "zh-CN": "600(典型)",
+      "en-US": "600(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "1200W 像素 ƒ/1.8",
+      "en-US": "12MP ƒ/1.8"
+    },
+    "frontCamera": {
+      "zh-CN": "1200W 像素 ƒ/2.0",
+      "en-US": "12MP ƒ/2.0"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil ProApple Pencil (USB‑C)",
+      "en-US": "Apple Pencil Pro, Apple Pencil (USB‑C)"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 10Gb/s)",
+      "en-US": "USB-C (up to 10Gb/s)"
+    },
+    "wifiStandard": {
+      "zh-CN": "802.11ax HT160 2x2 MIMO",
+      "en-US": "802.11ax HT160 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 5.3",
+      "en-US": "Bluetooth 5.3"
+    },
+    "security": {
+      "zh-CN": "触控 ID",
+      "en-US": "Touch ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "36.59Wh",
+      "en-US": "36.59Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×2",
+      "en-US": "2 microphones + 2 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "280.6×214.9×6.1, 616/617g",
+      "en-US": "280.6×214.9×6.1mm, 616/617g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/122242"
+    },
+    "series": {
+      "zh-CN": "Air",
+      "en-US": "Air"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ax HT160 2x2 MIMO, 蓝牙 Bluetooth 5.3",
+      "en-US": "802.11ax HT160 2x2 MIMO, Bluetooth 5.3"
+    },
+    "ram": "8GB",
+    "storage": [
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "ramType": "LPDDR5",
+    "baseband": "Qualcomm X65M",
+    "benchmarks": {
+      "singleCore": "2591",
+      "multiCore": "9828",
+      "gpu": "41995"
+    }
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Air 11 英寸(M3)",
+      "en-US": "iPad Air 11-inch (M3)"
+    },
+    "id": "ipad-ipad-air-11-inchm3",
+    "marketingSlogan": {
+      "zh-CN": "快如飞",
+      "en-US": "Light. Bright. Full of might."
+    },
+    "releaseDate": {
+      "zh-CN": "2025.03.04",
+      "en-US": "March 4, 2025"
+    },
+    "os": {
+      "zh-CN": "iPadOS 18 ~ 最新",
+      "en-US": "iPadOS 18 ~ Latest"
+    },
+    "model": "iPad15,3 / iPad15,4",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "蓝色",
+          "en-US": "Blue"
+        },
+        "code": "#d7e5e6"
+      },
+      {
+        "name": {
+          "zh-CN": "紫色",
+          "en-US": "Purple"
+        },
+        "code": "#e3dee9"
+      },
+      {
+        "name": {
+          "zh-CN": "星光色",
+          "en-US": "Starlight"
+        },
+        "code": "#e3dcd1"
+      },
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#6b696e"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持蓝色紫色星光色深空灰色",
+      "en-US": "Current browser does not support Blue, Purple, Starlight, Space Gray"
+    },
+    "processor": {
+      "zh-CN": "M3(4P+4E+9GPU)",
+      "en-US": "M3(4P+4E+9GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "11\" Liquid LED",
+      "en-US": "11\" Liquid LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2360×1640, 264ppi",
+      "en-US": "2360×1640, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "60Hz",
+      "en-US": "60Hz"
+    },
+    "displayBrightness": {
+      "zh-CN": "500(典型)",
+      "en-US": "500(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "1200W 像素 ƒ/1.8",
+      "en-US": "12MP ƒ/1.8"
+    },
+    "frontCamera": {
+      "zh-CN": "1200W 像素 ƒ/2.0",
+      "en-US": "12MP ƒ/2.0"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil ProApple Pencil (USB‑C)",
+      "en-US": "Apple Pencil Pro, Apple Pencil (USB‑C)"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 10Gb/s)",
+      "en-US": "USB-C (up to 10Gb/s)"
+    },
+    "wifiStandard": {
+      "zh-CN": "802.11ax HT160 2x2 MIMO",
+      "en-US": "802.11ax HT160 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 5.3",
+      "en-US": "Bluetooth 5.3"
+    },
+    "security": {
+      "zh-CN": "触控 ID",
+      "en-US": "Touch ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "28.93Wh",
+      "en-US": "28.93Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×2",
+      "en-US": "2 microphones + 2 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "247.6×178.5×6.1, 460g",
+      "en-US": "247.6×178.5×6.1mm, 460g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/122241"
+    },
+    "series": {
+      "zh-CN": "Air",
+      "en-US": "Air"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ax HT160 2x2 MIMO, 蓝牙 Bluetooth 5.3",
+      "en-US": "802.11ax HT160 2x2 MIMO, Bluetooth 5.3"
+    },
+    "ram": "8GB",
+    "storage": [
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "ramType": "LPDDR5",
+    "baseband": "Qualcomm X65M",
+    "benchmarks": {
+      "singleCore": "2586",
+      "multiCore": "9795",
+      "gpu": "42035"
+    }
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Air 13 英寸(M2)",
+      "en-US": "iPad Air 13-inch (M2)"
+    },
+    "id": "ipad-ipad-air-13-inchm2",
+    "marketingSlogan": {
+      "zh-CN": "好清新",
+      "en-US": "Light. Bright. Full of might."
+    },
+    "releaseDate": {
+      "zh-CN": "2024.05.07",
+      "en-US": "May 7, 2024"
+    },
+    "os": {
+      "zh-CN": "iPadOS 17 ~ 最新",
+      "en-US": "iPadOS 17 ~ Latest"
+    },
+    "model": "iPad14,10 / iPad14,11",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "蓝色",
+          "en-US": "Blue"
+        },
+        "code": "#d7e5e6"
+      },
+      {
+        "name": {
+          "zh-CN": "紫色",
+          "en-US": "Purple"
+        },
+        "code": "#e3dee9"
+      },
+      {
+        "name": {
+          "zh-CN": "星光色",
+          "en-US": "Starlight"
+        },
+        "code": "#e5e0d8"
+      },
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#6b696e"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持蓝色紫色星光色深空灰色",
+      "en-US": "Current browser does not support Blue, Purple, Starlight, Space Gray"
+    },
+    "processor": {
+      "zh-CN": "M2(4P+4E+9GPU)",
+      "en-US": "M2(4P+4E+9GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "13\" Liquid LED",
+      "en-US": "13\" Liquid LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2732×2048, 264ppi",
+      "en-US": "2732×2048, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "60Hz",
+      "en-US": "60Hz"
+    },
+    "displayBrightness": {
+      "zh-CN": "600(典型)",
+      "en-US": "600(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "1200W 像素 ƒ/1.8",
+      "en-US": "12MP ƒ/1.8"
+    },
+    "frontCamera": {
+      "zh-CN": "1200W 像素 ƒ/2.0",
+      "en-US": "12MP ƒ/2.0"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil ProApple Pencil (USB‑C)",
+      "en-US": "Apple Pencil Pro, Apple Pencil (USB‑C)"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 10Gb/s)",
+      "en-US": "USB-C (up to 10Gb/s)"
+    },
+    "wifiStandard": {
+      "zh-CN": "802.11ax HT160 2x2 MIMO",
+      "en-US": "802.11ax HT160 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 5.3",
+      "en-US": "Bluetooth 5.3"
+    },
+    "security": {
+      "zh-CN": "触控 ID",
+      "en-US": "Touch ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "36.59Wh",
+      "en-US": "36.59Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×2",
+      "en-US": "2 microphones + 2 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "280.6×214.9×6.1, 617/618g",
+      "en-US": "280.6×214.9×6.1mm, 617/618g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/119893"
+    },
+    "series": {
+      "zh-CN": "Air",
+      "en-US": "Air"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ax HT160 2x2 MIMO, 蓝牙 Bluetooth 5.3",
+      "en-US": "802.11ax HT160 2x2 MIMO, Bluetooth 5.3"
+    },
+    "benchmarks": {
+      "singleCore": "2591",
+      "multiCore": "9828",
+      "gpu": "41995"
+    },
+    "ram": "8GB",
+    "storage": [
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "ramType": "LPDDR5"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Air 11 英寸(M2)",
+      "en-US": "iPad Air 11-inch (M2)"
+    },
+    "id": "ipad-ipad-air-11-inchm2",
+    "marketingSlogan": {
+      "zh-CN": "好清新",
+      "en-US": "Light. Bright. Full of might."
+    },
+    "releaseDate": {
+      "zh-CN": "2024.05.07",
+      "en-US": "May 7, 2024"
+    },
+    "os": {
+      "zh-CN": "iPadOS 17 ~ 最新",
+      "en-US": "iPadOS 17 ~ Latest"
+    },
+    "model": "iPad14,8 / iPad14,9",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "蓝色",
+          "en-US": "Blue"
+        },
+        "code": "#d7e5e6"
+      },
+      {
+        "name": {
+          "zh-CN": "紫色",
+          "en-US": "Purple"
+        },
+        "code": "#e3dee9"
+      },
+      {
+        "name": {
+          "zh-CN": "星光色",
+          "en-US": "Starlight"
+        },
+        "code": "#e5e0d8"
+      },
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#6b696e"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持蓝色紫色星光色深空灰色",
+      "en-US": "Current browser does not support Blue, Purple, Starlight, Space Gray"
+    },
+    "processor": {
+      "zh-CN": "M2(4P+4E+9GPU)",
+      "en-US": "M2(4P+4E+9GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "11\" Liquid LED",
+      "en-US": "11\" Liquid LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2360×1640, 264ppi",
+      "en-US": "2360×1640, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "60Hz",
+      "en-US": "60Hz"
+    },
+    "displayBrightness": {
+      "zh-CN": "500(典型)",
+      "en-US": "500(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "1200W 像素 ƒ/1.8",
+      "en-US": "12MP ƒ/1.8"
+    },
+    "frontCamera": {
+      "zh-CN": "1200W 像素 ƒ/2.0",
+      "en-US": "12MP ƒ/2.0"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil ProApple Pencil (USB‑C)",
+      "en-US": "Apple Pencil Pro, Apple Pencil (USB‑C)"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 10Gb/s)",
+      "en-US": "USB-C (up to 10Gb/s)"
+    },
+    "wifiStandard": {
+      "zh-CN": "802.11ax HT160 2x2 MIMO",
+      "en-US": "802.11ax HT160 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 5.3",
+      "en-US": "Bluetooth 5.3"
+    },
+    "security": {
+      "zh-CN": "触控 ID",
+      "en-US": "Touch ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "28.93Wh",
+      "en-US": "28.93Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×2",
+      "en-US": "2 microphones + 2 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "247.6×178.5×6.1, 462g",
+      "en-US": "247.6×178.5×6.1mm, 462g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/119894"
+    },
+    "series": {
+      "zh-CN": "Air",
+      "en-US": "Air"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ax HT160 2x2 MIMO, 蓝牙 Bluetooth 5.3",
+      "en-US": "802.11ax HT160 2x2 MIMO, Bluetooth 5.3"
+    },
+    "benchmarks": {
+      "singleCore": "2586",
+      "multiCore": "9795",
+      "gpu": "42035"
+    },
+    "ram": "8GB",
+    "storage": [
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "ramType": "LPDDR5"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Air(第 5 代)",
+      "en-US": "iPad Air (5th generation)"
+    },
+    "id": "ipad-ipad-air-5",
+    "marketingSlogan": {
+      "zh-CN": "轻，靓，重量级。",
+      "en-US": "Light. Bright. Full of might."
+    },
+    "releaseDate": {
+      "zh-CN": "2022.03.09",
+      "en-US": "March 9, 2022"
+    },
+    "os": {
+      "zh-CN": "iPadOS 15 ~ 最新",
+      "en-US": "iPadOS 15 ~ Latest"
+    },
+    "model": "iPad13,16 / 13,17",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#6b696e"
+      },
+      {
+        "name": {
+          "zh-CN": "星光色",
+          "en-US": "Starlight"
+        },
+        "code": "#e5e0d8"
+      },
+      {
+        "name": {
+          "zh-CN": "粉色",
+          "en-US": "Pink"
+        },
+        "code": "#e8d2cf"
+      },
+      {
+        "name": {
+          "zh-CN": "紫色",
+          "en-US": "Purple"
+        },
+        "code": "#b9b8d1"
+      },
+      {
+        "name": {
+          "zh-CN": "蓝色",
+          "en-US": "Blue"
+        },
+        "code": "#88aebf"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持查看",
+      "en-US": "Current browser does not support viewing"
+    },
+    "processor": {
+      "zh-CN": "M1(4P+4E+8GPU)",
+      "en-US": "M1(4P+4E+8GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "10.9\" Liquid LED",
+      "en-US": "10.9\" Liquid LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2360×1640, 264ppi",
+      "en-US": "2360×1640, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "60Hz",
+      "en-US": "60Hz"
+    },
+    "displayBrightness": {
+      "zh-CN": "500(典型)",
+      "en-US": "500(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "1200W 像素 ƒ/1.8",
+      "en-US": "12MP ƒ/1.8"
+    },
+    "frontCamera": {
+      "zh-CN": "1200W 像素 ƒ/2.4",
+      "en-US": "12MP ƒ/2.4"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil (第 2 代)Apple Pencil (USB‑C)",
+      "en-US": "Apple Pencil (2nd generation), Apple Pencil (USB‑C)"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 10Gb/s)",
+      "en-US": "USB-C (up to 10Gb/s)"
+    },
+    "baseband": "Qualcomm X60M",
+    "wifiStandard": {
+      "zh-CN": "802.11ax HT80 2x2 MIMO",
+      "en-US": "802.11ax HT80 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 5.0",
+      "en-US": "Bluetooth 5.0"
+    },
+    "security": {
+      "zh-CN": "触控 ID",
+      "en-US": "Touch ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "28.6Wh",
+      "en-US": "28.6Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×2",
+      "en-US": "2 microphones + 2 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "247.6×178.5×6.1, 461/462g",
+      "en-US": "247.6×178.5×6.1mm, 461/462g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/111887"
+    },
+    "series": {
+      "zh-CN": "Air",
+      "en-US": "Air"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ax HT80 2x2 MIMO, 蓝牙 Bluetooth 5.0",
+      "en-US": "802.11ax HT80 2x2 MIMO, Bluetooth 5.0"
+    },
+    "benchmarks": {
+      "singleCore": "2289",
+      "multiCore": "8252",
+      "gpu": "32264"
+    },
+    "ram": "8GB",
+    "storage": [
+      "64GB",
+      "256GB"
+    ],
+    "ramType": "LPDDR4X"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Air(第 4 代)",
+      "en-US": "iPad Air (4th generation)"
+    },
+    "id": "ipad-ipad-air-4",
+    "marketingSlogan": {
+      "zh-CN": "凭实力出彩。",
+      "en-US": "Powerful. Colorful. Wonderful."
+    },
+    "releaseDate": {
+      "zh-CN": "2020.09.16",
+      "en-US": "September 16, 2020"
+    },
+    "os": {
+      "zh-CN": "iPadOS 14 ~ 最新",
+      "en-US": "iPadOS 14 ~ Latest"
+    },
+    "model": "iPad13,1 / 13,2",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#68696d"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e2e3e4"
+      },
+      {
+        "name": {
+          "zh-CN": "玫瑰金色",
+          "en-US": "Rose Gold"
+        },
+        "code": "#ecc5c1"
+      },
+      {
+        "name": {
+          "zh-CN": "天蓝色",
+          "en-US": "Sky Blue"
+        },
+        "code": "#cee3f6"
+      },
+      {
+        "name": {
+          "zh-CN": "绿色",
+          "en-US": "Green"
+        },
+        "code": "#ccdfc9"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持查看",
+      "en-US": "Current browser does not support viewing"
+    },
+    "processor": {
+      "zh-CN": "A14 Bionic(2P+4E+4GPU)",
+      "en-US": "A14 Bionic(2P+4E+4GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "10.9\" Liquid LED",
+      "en-US": "10.9\" Liquid LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2360×1640, 264ppi",
+      "en-US": "2360×1640, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "60Hz",
+      "en-US": "60Hz"
+    },
+    "displayBrightness": {
+      "zh-CN": "500(典型)",
+      "en-US": "500(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "1200W 像素 ƒ/1.8",
+      "en-US": "12MP ƒ/1.8"
+    },
+    "frontCamera": {
+      "zh-CN": "700W 像素 ƒ/2.2",
+      "en-US": "7MP ƒ/2.2"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil (第 2 代)Apple Pencil (USB‑C)",
+      "en-US": "Apple Pencil (2nd generation), Apple Pencil (USB‑C)"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 5Gb/s)",
+      "en-US": "USB-C (up to 5Gb/s)"
+    },
+    "baseband": "Intel XMM7660",
+    "wifiStandard": {
+      "zh-CN": "802.11ax HT80 2x2 MIMO",
+      "en-US": "802.11ax HT80 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 5.0",
+      "en-US": "Bluetooth 5.0"
+    },
+    "security": {
+      "zh-CN": "触控 ID",
+      "en-US": "Touch ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "28.6Wh",
+      "en-US": "28.6Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×2",
+      "en-US": "2 microphones + 2 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "247.6×178.5×6.1, 458/460g",
+      "en-US": "247.6×178.5×6.1mm, 458/460g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/111905"
+    },
+    "series": {
+      "zh-CN": "Air",
+      "en-US": "Air"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ax HT80 2x2 MIMO, 蓝牙 Bluetooth 5.0",
+      "en-US": "802.11ax HT80 2x2 MIMO, Bluetooth 5.0"
+    },
+    "benchmarks": {
+      "singleCore": "2083",
+      "multiCore": "4999",
+      "gpu": "16461"
+    },
+    "ram": "4GB",
+    "storage": [
+      "64GB",
+      "256GB"
+    ],
+    "ramType": "LPDDR4X"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Air(第 3 代)",
+      "en-US": "iPad Air (3rd generation)"
+    },
+    "id": "ipad-ipad-air-3",
+    "marketingSlogan": {
+      "zh-CN": "强劲在手，无论高手新手。",
+      "en-US": "Power in your hands, for pros and beginners alike."
+    },
+    "releaseDate": {
+      "zh-CN": "2019.03.18",
+      "en-US": "March 18, 2019"
+    },
+    "os": {
+      "zh-CN": "iOS 12 ~ 最新",
+      "en-US": "iOS 12 ~ Latest"
+    },
+    "model": "iPad11,3 / 11,4",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#68696d"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e2e3e4"
+      },
+      {
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "Gold"
+        },
+        "code": "#f6cdb9"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "processor": {
+      "zh-CN": "A12 Bionic(2P+4E+4GPU)",
+      "en-US": "A12 Bionic(2P+4E+4GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "10.5\" LED",
+      "en-US": "10.5\" LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2224×1668, 264ppi",
+      "en-US": "2224×1668, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "60Hz",
+      "en-US": "60Hz"
+    },
+    "displayBrightness": {
+      "zh-CN": "500(典型)",
+      "en-US": "500(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "800W 像素 ƒ/1.8",
+      "en-US": "8MP ƒ/1.8"
+    },
+    "frontCamera": {
+      "zh-CN": "700W 像素 ƒ/2.2",
+      "en-US": "7MP ƒ/2.2"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil (第 1 代)",
+      "en-US": "Apple Pencil (1st generation)"
+    },
+    "ports": {
+      "zh-CN": "闪电接口",
+      "en-US": "Lightning connector"
+    },
+    "baseband": "Intel XMM7560",
+    "wifiStandard": {
+      "zh-CN": "802.11ac HT80 2x2 MIMO",
+      "en-US": "802.11ac HT80 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 5.0",
+      "en-US": "Bluetooth 5.0"
+    },
+    "security": {
+      "zh-CN": "触控 ID",
+      "en-US": "Touch ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "30.2Wh",
+      "en-US": "30.2Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×2",
+      "en-US": "2 microphones + 2 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "250.6×174.1×6.1, 456/464g",
+      "en-US": "250.6×174.1×6.1mm, 456/464g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/111939"
+    },
+    "series": {
+      "zh-CN": "Air",
+      "en-US": "Air"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ac HT80 2x2 MIMO, 蓝牙 Bluetooth 5.0",
+      "en-US": "802.11ac HT80 2x2 MIMO, Bluetooth 5.0"
+    },
+    "benchmarks": {
+      "singleCore": "1326",
+      "multiCore": "2947",
+      "gpu": "9659"
+    },
+    "ram": "3GB",
+    "storage": [
+      "64GB",
+      "256GB"
+    ],
+    "ramType": "LPDDR4X"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Air 2",
+      "en-US": "iPad Air 2"
+    },
+    "id": "ipad-ipad-air-2",
+    "marketingSlogan": {
+      "zh-CN": "轻轻地，改变一切。",
+      "en-US": "Change everything. Lightly."
+    },
+    "releaseDate": {
+      "zh-CN": "2014.10.17",
+      "en-US": "October 17, 2014"
+    },
+    "os": {
+      "zh-CN": "iOS 8 ~ iPadOS 15",
+      "en-US": "iOS 8 ~ iPadOS 15"
+    },
+    "model": "iPad5,3 / 5,4",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#b1b2b7"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e2e3e4"
+      },
+      {
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "Gold"
+        },
+        "code": "#e3ccb4"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "processor": {
+      "zh-CN": "A8X(3P+8GPU)",
+      "en-US": "A8X(3P+8GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "9.7\" LED",
+      "en-US": "9.7\" LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2048×1536, 264ppi",
+      "en-US": "2048×1536, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "60Hz",
+      "en-US": "60Hz"
+    },
+    "displayBrightness": {
+      "zh-CN": "400(典型)",
+      "en-US": "400(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "sRGB",
+      "en-US": "sRGB"
+    },
+    "camera": {
+      "zh-CN": "800W 像素 ƒ/2.4",
+      "en-US": "8MP ƒ/2.4"
+    },
+    "frontCamera": {
+      "zh-CN": "120W 像素 ƒ/2.2",
+      "en-US": "1.2MP ƒ/2.2"
+    },
+    "pencilSupport": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "ports": {
+      "zh-CN": "闪电接口",
+      "en-US": "Lightning connector"
+    },
+    "baseband": "Qualcomm MDM9625",
+    "wifiStandard": {
+      "zh-CN": "802.11ac HT80 2x2 MIMO",
+      "en-US": "802.11ac HT80 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 4.2",
+      "en-US": "Bluetooth 4.2"
+    },
+    "security": {
+      "zh-CN": "触控 ID",
+      "en-US": "Touch ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "27.3Wh",
+      "en-US": "27.3Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×2",
+      "en-US": "2 microphones + 2 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "240×169.5×6.1, 437/444g",
+      "en-US": "240×169.5×6.1mm, 437/444g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/112017"
+    },
+    "series": {
+      "zh-CN": "Air",
+      "en-US": "Air"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ac HT80 2x2 MIMO, 蓝牙 Bluetooth 4.2",
+      "en-US": "802.11ac HT80 2x2 MIMO, Bluetooth 4.2"
+    },
+    "benchmarks": {
+      "singleCore": "441",
+      "multiCore": "949",
+      "gpu": "762"
+    },
+    "ram": "2GB",
+    "storage": [
+      "16GB",
+      "32GB",
+      "64GB",
+      "128GB"
+    ],
+    "ramType": "LPDDR3"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Air",
+      "en-US": "iPad Air"
+    },
+    "id": "ipad-ipad-air",
+    "marketingSlogan": {
+      "zh-CN": "轻出份量",
+      "en-US": "Lightness carries weight"
+    },
+    "releaseDate": {
+      "zh-CN": "2013.10.23",
+      "en-US": "October 23, 2013"
+    },
+    "os": {
+      "zh-CN": "iOS 7 ~ iOS 12",
+      "en-US": "iOS 7 ~ iOS 12"
+    },
+    "model": "iPad4,1 / 4,2",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#b1b2b7"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e2e3e4"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "processor": {
+      "zh-CN": "A7(2P+4GPU)",
+      "en-US": "A7(2P+4GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "9.7\" LED",
+      "en-US": "9.7\" LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2048×1536, 264ppi",
+      "en-US": "2048×1536, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "60Hz",
+      "en-US": "60Hz"
+    },
+    "displayBrightness": {
+      "zh-CN": "400(典型)",
+      "en-US": "400(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "sRGB",
+      "en-US": "sRGB"
+    },
+    "camera": {
+      "zh-CN": "500W 像素 ƒ/2.4",
+      "en-US": "5MP ƒ/2.4"
+    },
+    "frontCamera": {
+      "zh-CN": "120W 像素",
+      "en-US": "1.2MP"
+    },
+    "pencilSupport": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "ports": {
+      "zh-CN": "闪电接口",
+      "en-US": "Lightning connector"
+    },
+    "baseband": "Qualcomm MDM9615",
+    "wifiStandard": {
+      "zh-CN": "802.11a/b/g/n 2x2 MIMO",
+      "en-US": "802.11a/b/g/n 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 4.0",
+      "en-US": "Bluetooth 4.0"
+    },
+    "security": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "batteryCapacity": {
+      "zh-CN": "32.4Wh",
+      "en-US": "32.4Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×1",
+      "en-US": "2 microphones + 1 speaker"
+    },
+    "dimensions": {
+      "zh-CN": "240×169.5×7.5, 469/478g",
+      "en-US": "240×169.5×7.5mm, 469/478g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/112020"
+    },
+    "series": {
+      "zh-CN": "Air",
+      "en-US": "Air"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11a/b/g/n 2x2 MIMO, 蓝牙 Bluetooth 4.0",
+      "en-US": "802.11a/b/g/n 2x2 MIMO, Bluetooth 4.0"
+    },
+    "ram": "1GB",
+    "storage": [
+      "16GB",
+      "32GB",
+      "64GB",
+      "128GB"
+    ],
+    "ramType": "LPDDR3",
+    "benchmarks": {}
+  },
+  {
+    "name": {
+      "zh-CN": "iPad mini(A17 Pro)",
+      "en-US": "iPad mini(A17 Pro)"
+    },
+    "id": "ipad-ipad-minia17-pro",
+    "marketingSlogan": {
+      "zh-CN": "单手炫大招",
+      "en-US": "Big power in one hand"
+    },
+    "releaseDate": {
+      "zh-CN": "2024.10.15",
+      "en-US": "October 15, 2024"
+    },
+    "os": {
+      "zh-CN": "iPadOS 18 ~ 最新",
+      "en-US": "iPadOS 18 ~ Latest"
+    },
+    "model": "iPad16,1 / 16,2",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#6b696e"
+      },
+      {
+        "name": {
+          "zh-CN": "星光色",
+          "en-US": "Starlight"
+        },
+        "code": "#e5e0d8"
+      },
+      {
+        "name": {
+          "zh-CN": "紫色",
+          "en-US": "Purple"
+        },
+        "code": "#e3dee9"
+      },
+      {
+        "name": {
+          "zh-CN": "蓝色",
+          "en-US": "Blue"
+        },
+        "code": "#d7e5e6"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持查看",
+      "en-US": "Not supported in current browser"
+    },
+    "processor": {
+      "zh-CN": "A17 Pro(2P+4E+5GPU)",
+      "en-US": "A17 Pro(2P+4E+5GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "8.3\" Liquid LED",
+      "en-US": "8.3\" Liquid LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2266×1488, 326ppi",
+      "en-US": "2266×1488, 326ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "60Hz",
+      "en-US": "60Hz"
+    },
+    "displayBrightness": {
+      "zh-CN": "500(典型)",
+      "en-US": "500(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "1200W 像素 ƒ/1.8",
+      "en-US": "12MP ƒ/1.8"
+    },
+    "frontCamera": {
+      "zh-CN": "1200W 像素 ƒ/2.4",
+      "en-US": "12MP ƒ/2.4"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil ProApple Pencil (USB‑C)",
+      "en-US": "Apple Pencil Pro, Apple Pencil (USB‑C)"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 10Gb/s)",
+      "en-US": "USB-C (up to 10Gb/s)"
+    },
+    "wifiStandard": {
+      "zh-CN": "802.11ax 2x2 MIMO",
+      "en-US": "802.11ax 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 5.3",
+      "en-US": "Bluetooth 5.3"
+    },
+    "security": {
+      "zh-CN": "触控 ID",
+      "en-US": "Touch ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "19.3Wh",
+      "en-US": "19.3Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×2",
+      "en-US": "2 microphones + 2 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "195.4×134.8×6.3, 293/297g",
+      "en-US": "195.4×134.8×6.3mm, 293/297g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/121456"
+    },
+    "series": {
+      "zh-CN": "Mini",
+      "en-US": "Mini"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ax 2x2 MIMO, 蓝牙 Bluetooth 5.3",
+      "en-US": "802.11ax 2x2 MIMO, Bluetooth 5.3"
+    },
+    "storage": [
+      "128GB",
+      "256GB",
+      "512GB"
+    ],
+    "ram": "8GB",
+    "ramType": "LPDDR5",
+    "benchmarks": {
+      "singleCore": "2979",
+      "multiCore": "7408",
+      "gpu": "29173"
+    }
+  },
+  {
+    "name": {
+      "zh-CN": "iPad mini(第 6 代)",
+      "en-US": "iPad mini(6th generation)"
+    },
+    "id": "ipad-ipad-mini-6",
+    "marketingSlogan": {
+      "zh-CN": "小写的大",
+      "en-US": "Small in size, big in capability"
+    },
+    "releaseDate": {
+      "zh-CN": "2021.09.15",
+      "en-US": "September 15, 2021"
+    },
+    "os": {
+      "zh-CN": "iPadOS 15 ~ 最新",
+      "en-US": "iPadOS 15 ~ Latest"
+    },
+    "model": "iPad14,1 / 14,2",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#6b696e"
+      },
+      {
+        "name": {
+          "zh-CN": "星光色",
+          "en-US": "Starlight"
+        },
+        "code": "#e3dcd1"
+      },
+      {
+        "name": {
+          "zh-CN": "粉色",
+          "en-US": "Pink"
+        },
+        "code": "#e8d1cf"
+      },
+      {
+        "name": {
+          "zh-CN": "紫色",
+          "en-US": "Purple"
+        },
+        "code": "#b9b8d1"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持查看",
+      "en-US": "Not supported in current browser"
+    },
+    "processor": {
+      "zh-CN": "A15 Bionic(2P+4E+5GPU)",
+      "en-US": "A15 Bionic(2P+4E+5GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "8.3\" Liquid LED",
+      "en-US": "8.3\" Liquid LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2266×1488, 326ppi",
+      "en-US": "2266×1488, 326ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "60Hz",
+      "en-US": "60Hz"
+    },
+    "displayBrightness": {
+      "zh-CN": "500(典型)",
+      "en-US": "500(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "1200W 像素 ƒ/1.8",
+      "en-US": "12MP ƒ/1.8"
+    },
+    "frontCamera": {
+      "zh-CN": "1200W 像素 ƒ/2.4",
+      "en-US": "12MP ƒ/2.4"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil (第 2 代)Apple Pencil (USB‑C)",
+      "en-US": "Apple Pencil (2nd generation), Apple Pencil (USB‑C)"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 5Gb/s)",
+      "en-US": "USB-C (up to 5Gb/s)"
+    },
+    "baseband": "Qualcomm X60M",
+    "wifiStandard": {
+      "zh-CN": "802.11ax HT80 2x2 MIMO",
+      "en-US": "802.11ax HT80 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 5.0",
+      "en-US": "Bluetooth 5.0"
+    },
+    "security": {
+      "zh-CN": "触控 ID",
+      "en-US": "Touch ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "19.3Wh",
+      "en-US": "19.3Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×2",
+      "en-US": "2 microphones + 2 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "195.4×134.8×6.3, 293/297g",
+      "en-US": "195.4×134.8×6.3mm, 293/297g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/111886"
+    },
+    "series": {
+      "zh-CN": "Mini",
+      "en-US": "Mini"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ax HT80 2x2 MIMO, 蓝牙 Bluetooth 5.0",
+      "en-US": "802.11ax HT80 2x2 MIMO, Bluetooth 5.0"
+    },
+    "benchmarks": {
+      "singleCore": "2124",
+      "multiCore": "5369",
+      "gpu": "19604"
+    },
+    "storage": [
+      "64GB",
+      "256GB"
+    ],
+    "ram": "4GB",
+    "ramType": "LPDDR4X"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad mini(第 5 代)",
+      "en-US": "iPad mini(5th generation)"
+    },
+    "id": "ipad-ipad-mini-5",
+    "marketingSlogan": {
+      "zh-CN": "小身材，更有才。",
+      "en-US": "Small size, big talent."
+    },
+    "releaseDate": {
+      "zh-CN": "2019.03.18",
+      "en-US": "March 18, 2019"
+    },
+    "os": {
+      "zh-CN": "iOS 12 ~ 最新",
+      "en-US": "iOS 12 ~ Latest"
+    },
+    "model": "iPad11,1 / 11,2",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#68696d"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e2e3e4"
+      },
+      {
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "Gold"
+        },
+        "code": "#f6cdb9"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "processor": {
+      "zh-CN": "A12 Bionic(2P+4E+4GPU)",
+      "en-US": "A12 Bionic(2P+4E+4GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "7.9\" LED",
+      "en-US": "7.9\" LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2048×1536, 326ppi",
+      "en-US": "2048×1536, 326ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "60Hz",
+      "en-US": "60Hz"
+    },
+    "displayBrightness": {
+      "zh-CN": "500(典型)",
+      "en-US": "500(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "800W 像素 ƒ/2.4",
+      "en-US": "8MP ƒ/2.4"
+    },
+    "frontCamera": {
+      "zh-CN": "700W 像素 ƒ/2.2",
+      "en-US": "7MP ƒ/2.2"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil (第 1 代)",
+      "en-US": "Apple Pencil (1st generation)"
+    },
+    "ports": {
+      "zh-CN": "闪电接口",
+      "en-US": "Lightning connector"
+    },
+    "baseband": "Intel XMM7560",
+    "wifiStandard": {
+      "zh-CN": "802.11ac HT80 2x2 MIMO",
+      "en-US": "802.11ac HT80 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 5.0",
+      "en-US": "Bluetooth 5.0"
+    },
+    "security": {
+      "zh-CN": "触控 ID",
+      "en-US": "Touch ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "19.1Wh",
+      "en-US": "19.1Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×2",
+      "en-US": "2 microphones + 2 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "203.2×134.8×6.1,300.5/308.2g",
+      "en-US": "203.2×134.8×6.1mm, 300.5/308.2g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/111904"
+    },
+    "series": {
+      "zh-CN": "Mini",
+      "en-US": "Mini"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ac HT80 2x2 MIMO, 蓝牙 Bluetooth 5.0",
+      "en-US": "802.11ac HT80 2x2 MIMO, Bluetooth 5.0"
+    },
+    "benchmarks": {
+      "singleCore": "1321",
+      "multiCore": "2887",
+      "gpu": "9373"
+    },
+    "storage": [
+      "64GB",
+      "256GB"
+    ],
+    "ram": "3GB",
+    "ramType": "LPDDR4X"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad mini 4",
+      "en-US": "iPad mini 4"
+    },
+    "id": "ipad-ipad-mini-4",
+    "marketingSlogan": {
+      "zh-CN": "小身形，大有身手。",
+      "en-US": "Small in size, big in capability."
+    },
+    "releaseDate": {
+      "zh-CN": "2015.09.10",
+      "en-US": "September 10, 2015"
+    },
+    "os": {
+      "zh-CN": "iOS 9 ~ iPadOS 15",
+      "en-US": "iOS 9 ~ iPadOS 15"
+    },
+    "model": "iPad5,1 / 5,2",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#b1b2b7"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e2e3e4"
+      },
+      {
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "Gold"
+        },
+        "code": "#e3ccb4"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "processor": {
+      "zh-CN": "A8(2P+4GPU)",
+      "en-US": "A8(2P+4GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "7.9\" LED",
+      "en-US": "7.9\" LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2048×1536, 326ppi",
+      "en-US": "2048×1536, 326ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "60Hz",
+      "en-US": "60Hz"
+    },
+    "displayBrightness": {
+      "zh-CN": "400(典型)",
+      "en-US": "400(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "sRGB",
+      "en-US": "sRGB"
+    },
+    "camera": {
+      "zh-CN": "800W 像素 ƒ/2.4",
+      "en-US": "8MP ƒ/2.4"
+    },
+    "frontCamera": {
+      "zh-CN": "120W 像素 ƒ/2.2",
+      "en-US": "1.2MP ƒ/2.2"
+    },
+    "pencilSupport": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "ports": {
+      "zh-CN": "闪电接口",
+      "en-US": "Lightning connector"
+    },
+    "baseband": "Qualcomm MDM9625",
+    "wifiStandard": {
+      "zh-CN": "802.11ac HT80 2x2 MIMO",
+      "en-US": "802.11ac HT80 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 4.2",
+      "en-US": "Bluetooth 4.2"
+    },
+    "security": {
+      "zh-CN": "触控 ID",
+      "en-US": "Touch ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "19.1Wh",
+      "en-US": "19.1Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×2",
+      "en-US": "2 microphones + 2 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "203.2×134.8×6.1, 298.8/304g",
+      "en-US": "203.2×134.8×6.1mm, 298.8/304g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/112002"
+    },
+    "series": {
+      "zh-CN": "Mini",
+      "en-US": "Mini"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11ac HT80 2x2 MIMO, 蓝牙 Bluetooth 4.2",
+      "en-US": "802.11ac HT80 2x2 MIMO, Bluetooth 4.2"
+    },
+    "benchmarks": {
+      "singleCore": "413",
+      "multiCore": "604",
+      "gpu": "554"
+    },
+    "storage": [
+      "16GB",
+      "32GB",
+      "64GB",
+      "128GB"
+    ],
+    "ram": "2GB",
+    "ramType": "LPDDR3"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad mini 3",
+      "en-US": "iPad mini 3"
+    },
+    "id": "ipad-ipad-mini-3",
+    "marketingSlogan": {
+      "zh-CN": "配备 Touch ID",
+      "en-US": "With Touch ID"
+    },
+    "releaseDate": {
+      "zh-CN": "2014.10.17",
+      "en-US": "October 17, 2014"
+    },
+    "os": {
+      "zh-CN": "iOS 8 ~ iOS 12",
+      "en-US": "iOS 8 ~ iOS 12"
+    },
+    "model": "iPad4,7 / 4,8",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#b1b2b7"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e2e3e4"
+      },
+      {
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "Gold"
+        },
+        "code": "#e3ccb4"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "processor": {
+      "zh-CN": "A7(2P+4GPU)",
+      "en-US": "A7(2P+4GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "7.9\" LED",
+      "en-US": "7.9\" LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2048×1536, 326ppi",
+      "en-US": "2048×1536, 326ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "60Hz",
+      "en-US": "60Hz"
+    },
+    "displayBrightness": {
+      "zh-CN": "400(典型)",
+      "en-US": "400(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "sRGB",
+      "en-US": "sRGB"
+    },
+    "camera": {
+      "zh-CN": "500W 像素 ƒ/2.4",
+      "en-US": "5MP ƒ/2.4"
+    },
+    "frontCamera": {
+      "zh-CN": "120W 像素",
+      "en-US": "1.2MP"
+    },
+    "pencilSupport": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "ports": {
+      "zh-CN": "闪电接口",
+      "en-US": "Lightning connector"
+    },
+    "baseband": "Qualcomm MDM9615",
+    "wifiStandard": {
+      "zh-CN": "802.11a/b/g/n 2x2 MIMO",
+      "en-US": "802.11a/b/g/n 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 4.0",
+      "en-US": "Bluetooth 4.0"
+    },
+    "security": {
+      "zh-CN": "触控 ID",
+      "en-US": "Touch ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "23.8Wh",
+      "en-US": "23.8Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×1",
+      "en-US": "2 microphones + 1 speaker"
+    },
+    "dimensions": {
+      "zh-CN": "200×134.7×7.5, 331/341g",
+      "en-US": "200×134.7×7.5mm, 331/341g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/112018"
+    },
+    "series": {
+      "zh-CN": "Mini",
+      "en-US": "Mini"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11a/b/g/n 2x2 MIMO, 蓝牙 Bluetooth 4.0",
+      "en-US": "802.11a/b/g/n 2x2 MIMO, Bluetooth 4.0"
+    },
+    "storage": [
+      "16GB",
+      "64GB",
+      "128GB"
+    ],
+    "ram": "1GB",
+    "ramType": "LPDDR3",
+    "benchmarks": {}
+  },
+  {
+    "name": {
+      "zh-CN": "iPad mini 2",
+      "en-US": "iPad mini 2"
+    },
+    "id": "ipad-ipad-mini-2",
+    "marketingSlogan": {
+      "zh-CN": "配备 Retina 显示屏，小有乾坤",
+      "en-US": "With Retina display, small but mighty"
+    },
+    "releaseDate": {
+      "zh-CN": "2013.10.23",
+      "en-US": "October 23, 2013"
+    },
+    "os": {
+      "zh-CN": "iOS 7 ~ iOS 12",
+      "en-US": "iOS 7 ~ iOS 12"
+    },
+    "model": "iPad4,4 / 4,5",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#b1b2b7"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e2e3e4"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "processor": {
+      "zh-CN": "A7(2P+4GPU)",
+      "en-US": "A7(2P+4GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "7.9\" LED",
+      "en-US": "7.9\" LED"
+    },
+    "displayResolution": {
+      "zh-CN": "2048×1536, 326ppi",
+      "en-US": "2048×1536, 326ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "60Hz",
+      "en-US": "60Hz"
+    },
+    "displayBrightness": {
+      "zh-CN": "400(典型)",
+      "en-US": "400(typical)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "sRGB",
+      "en-US": "sRGB"
+    },
+    "camera": {
+      "zh-CN": "500W 像素 ƒ/2.4",
+      "en-US": "5MP ƒ/2.4"
+    },
+    "frontCamera": {
+      "zh-CN": "120W 像素",
+      "en-US": "1.2MP"
+    },
+    "pencilSupport": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "ports": {
+      "zh-CN": "闪电接口",
+      "en-US": "Lightning connector"
+    },
+    "baseband": "Qualcomm MDM9615",
+    "wifiStandard": {
+      "zh-CN": "802.11a/b/g/n 2x2 MIMO",
+      "en-US": "802.11a/b/g/n 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 4.0",
+      "en-US": "Bluetooth 4.0"
+    },
+    "security": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "batteryCapacity": {
+      "zh-CN": "23.8Wh",
+      "en-US": "23.8Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×1",
+      "en-US": "2 microphones + 1 speaker"
+    },
+    "dimensions": {
+      "zh-CN": "200×134.7×7.5, 331/341g",
+      "en-US": "200×134.7×7.5mm, 331/341g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/112019"
+    },
+    "series": {
+      "zh-CN": "Mini",
+      "en-US": "Mini"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11a/b/g/n 2x2 MIMO, 蓝牙 Bluetooth 4.0",
+      "en-US": "802.11a/b/g/n 2x2 MIMO, Bluetooth 4.0"
+    },
+    "storage": [
+      "16GB",
+      "32GB",
+      "64GB",
+      "128GB"
+    ],
+    "ram": "1GB",
+    "ramType": "LPDDR3",
+    "benchmarks": {}
+  },
+  {
+    "name": {
+      "zh-CN": "iPad mini",
+      "en-US": "iPad mini"
+    },
+    "id": "ipad-ipad-mini",
+    "marketingSlogan": {
+      "zh-CN": "分分寸寸尽 iPad",
+      "en-US": "Every inch an iPad"
+    },
+    "releaseDate": {
+      "zh-CN": "2012.10.24",
+      "en-US": "October 24, 2012"
+    },
+    "os": {
+      "zh-CN": "iOS 6 ~ iOS 9",
+      "en-US": "iOS 6 ~ iOS 9"
+    },
+    "model": "iPad2,5 / 2,6 / 2,7",
+    "colors": [],
+    "arSupport": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "processor": {
+      "zh-CN": "A5(2P+2GPU)",
+      "en-US": "A5(2P+2GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "7.9\" LED",
+      "en-US": "7.9\" LED"
+    },
+    "displayResolution": {
+      "zh-CN": "1024×768, 163ppi",
+      "en-US": "1024×768, 163ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "60Hz",
+      "en-US": "60Hz"
+    },
+    "displayColorGamut": {
+      "zh-CN": "sRGB",
+      "en-US": "sRGB"
+    },
+    "camera": {
+      "zh-CN": "500W 像素 ƒ/2.4",
+      "en-US": "5MP ƒ/2.4"
+    },
+    "frontCamera": {
+      "zh-CN": "120W 像素",
+      "en-US": "1.2MP"
+    },
+    "pencilSupport": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "ports": {
+      "zh-CN": "闪电接口",
+      "en-US": "Lightning connector"
+    },
+    "baseband": "Qualcomm MDM9615",
+    "wifiStandard": {
+      "zh-CN": "802.11a/b/g/n",
+      "en-US": "802.11a/b/g/n"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 4.0",
+      "en-US": "Bluetooth 4.0"
+    },
+    "security": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "batteryCapacity": {
+      "zh-CN": "16.3Wh",
+      "en-US": "16.3Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Web browsing on Wi-Fi: 10h, Web browsing on cellular: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×1 + 扬声器 ×1",
+      "en-US": "1 microphone + 1 speaker"
+    },
+    "dimensions": {
+      "zh-CN": "200×134.7×7.2, 308/312g",
+      "en-US": "200×134.7×7.2mm, 308/312g"
+    },
+    "technicalSpecsLink": {
+      "text": {
+        "zh-CN": "技术规格",
+        "en-US": "Technical Specifications"
+      },
+      "url": "https://support.apple.com/zh-cn/111978"
+    },
+    "series": {
+      "zh-CN": "Mini",
+      "en-US": "Mini"
+    },
+    "waterResistance": {
+      "zh-CN": "无官方防水等级",
+      "en-US": "No official water resistance rating"
+    },
+    "connectivity": {
+      "zh-CN": "802.11a/b/g/n, 蓝牙 Bluetooth 4.0",
+      "en-US": "802.11a/b/g/n, Bluetooth 4.0"
+    },
+    "storage": [
+      "16GB",
+      "32GB",
+      "64GB"
+    ],
+    "ram": "512MB",
+    "ramType": "DDR2",
+    "benchmarks": {}
+  },
+  {
+    "name": "iPad(A16)",
+    "id": "ipad-ipada16",
+    "marketingSlogan": "可圈可点可画心",
+    "releaseDate": "2025.03.04",
+    "os": "iPadOS 18 ~ 最新",
+    "model": "iPad15,7 / 15,8",
+    "colors": [
+      {
+        "name": "银色",
+        "code": "#e3e4e5"
+      },
+      {
+        "name": "粉色",
+        "code": "#de6274"
+      },
+      {
+        "name": "蓝色",
+        "code": "#6480a3"
+      },
+      {
+        "name": "黄色",
+        "code": "#f0d95b"
+      }
+    ],
+    "arSupport": "当前浏览器不支持银色粉色蓝色黄色",
+    "processor": "A16(2P+3E+4GPU)",
+    "displayTechnology": "11\" Liquid LED",
+    "displayResolution": "2360×1640, 264ppi",
+    "displayRefreshRate": "60Hz",
+    "displayBrightness": "500(典型)",
+    "displayColorGamut": "原彩显示, sRGB",
+    "camera": "1200W 像素 ƒ/1.8",
+    "frontCamera": "1200W 像素 ƒ/2.4",
+    "pencilSupport": "Apple Pencil（第1代）Apple Pencil (USB‑C)",
+    "ports": "USB-C (最高可达 480Mb/s)",
+    "wifiStandard": "802.11ax HT80 2x2 MIMO",
+    "bluetoothVersion": "Bluetooth 5.3",
+    "security": "触控 ID",
+    "batteryCapacity": "28.93Wh",
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Wi-Fi web browsing: 10h Cellular web browsing: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×2",
+      "en-US": "2 microphones + 2 speakers"
+    },
+    "dimensions": "248.6×179.5×7, 477/481g",
+    "technicalSpecsLink": {
+      "text": "技术规格",
+      "url": "https://support.apple.com/zh-cn/122240"
+    },
+    "series": "Standard",
+    "waterResistance": "无官方防水等级",
+    "connectivity": "802.11ax HT80 2x2 MIMO, 蓝牙 Bluetooth 5.3",
+    "benchmarks": {
+      "singleCore": "2572",
+      "multiCore": "5928",
+      "gpu": "19767"
+    },
+    "storage": [
+      "128GB",
+      "256GB",
+      "512GB"
+    ],
+    "ram": "6GB",
+    "ramType": "LPDDR5"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad(第 10 代)",
+      "en-US": "iPad (10th generation)"
+    },
+    "id": "ipad-ipad-10",
+    "marketingSlogan": "可圈可点可画心",
+    "releaseDate": "2022.10.18",
+    "os": "iPadOS 16 ~ 最新",
+    "model": "iPad13,18 / 13,19",
+    "colors": [
+      {
+        "name": "银色",
+        "code": "#e3e4e5"
+      },
+      {
+        "name": "粉色",
+        "code": "#de6274"
+      },
+      {
+        "name": "蓝色",
+        "code": "#6480a3"
+      },
+      {
+        "name": "黄色",
+        "code": "#f0d95b"
+      }
+    ],
+    "arSupport": "当前浏览器不支持银色粉色蓝色黄色",
+    "processor": "A14 Bionic(2P+4E+4GPU)",
+    "displayTechnology": "10.9\" Liquid LED",
+    "displayResolution": "2360×1640, 264ppi",
+    "displayRefreshRate": "60Hz",
+    "displayBrightness": "500(典型)",
+    "displayColorGamut": "原彩显示, sRGB",
+    "camera": "1200W 像素 ƒ/1.8",
+    "frontCamera": "1200W 像素 ƒ/2.4",
+    "pencilSupport": "Apple Pencil（第1代）Apple Pencil (USB‑C)",
+    "ports": "USB-C (最高可达 480Mb/s)",
+    "wifiStandard": "802.11ax HT80 2x2 MIMO",
+    "bluetoothVersion": "Bluetooth 5.2",
+    "security": "触控 ID",
+    "batteryCapacity": "28.6Wh",
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Wi-Fi web browsing: 10h Cellular web browsing: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×2",
+      "en-US": "2 microphones + 2 speakers"
+    },
+    "dimensions": "248.6×179.5×7, 477g",
+    "technicalSpecsLink": {
+      "text": "技术规格",
+      "url": "https://support.apple.com/zh-cn/111840"
+    },
+    "series": "Standard",
+    "waterResistance": "无官方防水等级",
+    "connectivity": "802.11ax HT80 2x2 MIMO, 蓝牙 Bluetooth 5.2",
+    "benchmarks": {
+      "singleCore": "1564",
+      "multiCore": "4027",
+      "gpu": "15536"
+    },
+    "storage": [
+      "64GB",
+      "256GB"
+    ],
+    "ram": "4GB",
+    "ramType": "LPDDR4X"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad(第 9 代)",
+      "en-US": "iPad (9th generation)"
+    },
+    "id": "ipad-ipad-9",
+    "marketingSlogan": "事事玩得转",
+    "releaseDate": "2021.09.15",
+    "os": "iPadOS 15 ~ 最新",
+    "model": "iPad12,1 / 12,2",
+    "colors": [
+      {
+        "name": "深空灰色",
+        "code": "#68696e"
+      },
+      {
+        "name": "银色",
+        "code": "#e2e3e4"
+      }
+    ],
+    "arSupport": "当前浏览器不支持查看",
+    "processor": "A13 Bionic(2P+4E+4GPU)",
+    "displayTechnology": "10.2\" LED",
+    "displayResolution": "2160×1620, 264ppi",
+    "displayRefreshRate": "60Hz",
+    "displayBrightness": "500(典型)",
+    "displayColorGamut": "原彩显示, sRGB",
+    "camera": "800W 像素 ƒ/2.4",
+    "frontCamera": "1200W 像素 ƒ/2.4",
+    "pencilSupport": "Apple Pencil (第 1 代)",
+    "waterResistance": "无官方防水等级",
+    "connectivity": "802.11ac HT80 2x2 MIMO, 蓝牙 Bluetooth 4.2",
+    "benchmarks": {
+      "singleCore": "1736",
+      "multiCore": "3853",
+      "gpu": "13619"
+    },
+    "storage": [
+      "64GB",
+      "256GB"
+    ],
+    "ram": "3GB",
+    "ramType": "LPDDR4X"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad(第 8 代)",
+      "en-US": "iPad (8th generation)"
+    },
+    "id": "ipad-ipad-8",
+    "marketingSlogan": "特有本事，特超值。",
+    "releaseDate": "2020.09.16",
+    "os": "iPadOS 14 ~ 最新",
+    "model": "iPad11,6 / 11,7",
+    "colors": [
+      {
+        "name": "深空灰色",
+        "code": "#68696d"
+      },
+      {
+        "name": "银色",
+        "code": "#e2e3e4"
+      },
+      {
+        "name": "金色",
+        "code": "#f6cdb9"
+      }
+    ],
+    "arSupport": "当前浏览器不支持查看",
+    "processor": "A12 Bionic(2P+4E+4GPU)",
+    "displayTechnology": "10.2\" LED",
+    "displayResolution": "2160×1620, 264ppi",
+    "displayRefreshRate": "60Hz",
+    "displayBrightness": "500(典型)",
+    "displayColorGamut": "sRGB",
+    "camera": "800W 像素 ƒ/2.4",
+    "frontCamera": "120W 像素 ƒ/2.4",
+    "pencilSupport": "Apple Pencil (第 1 代)",
+    "ports": "闪电接口",
+    "baseband": "Intel XMM7560",
+    "wifiStandard": "802.11ac HT80 2x2 MIMO",
+    "bluetoothVersion": "Bluetooth 4.2",
+    "security": "触控 ID",
+    "batteryCapacity": "32.4Wh",
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Wi-Fi web browsing: 10h, Cellular web browsing: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×2",
+      "en-US": "2 microphones + 2 speakers"
+    },
+    "dimensions": "250.6×174.1×7.5, 490/495g",
+    "technicalSpecsLink": {
+      "text": "技术规格",
+      "url": "https://support.apple.com/zh-cn/118451"
+    },
+    "series": "Standard",
+    "waterResistance": "无官方防水等级",
+    "connectivity": "802.11ac HT80 2x2 MIMO, 蓝牙 Bluetooth 4.2",
+    "benchmarks": {
+      "singleCore": "1304",
+      "multiCore": "2805",
+      "gpu": "9148"
+    },
+    "storage": [
+      "32GB",
+      "128GB"
+    ],
+    "ram": "3GB",
+    "ramType": "LPDDR4X"
+  },
+  {
+    "name": "iPad(第 7 代)",
+    "id": "ipad-ipad-7",
+    "marketingSlogan": "这个电脑, 拿掉了电脑的条条框框。",
+    "releaseDate": "2019.09.11",
+    "os": "iPadOS 13 ~ iPadOS 18",
+    "model": "iPad7,11 / 7,12",
+    "colors": [
+      {
+        "name": "深空灰色",
+        "code": "#68696d"
+      },
+      {
+        "name": "银色",
+        "code": "#e2e3e4"
+      },
+      {
+        "name": "金色",
+        "code": "#f6cdb9"
+      }
+    ],
+    "arSupport": "当前浏览器不支持查看",
+    "processor": "A10 Fusion(2P+2E+6GPU)",
+    "displayTechnology": "10.2\" LED",
+    "displayResolution": "2160×1620, 264ppi",
+    "displayRefreshRate": "60Hz",
+    "displayBrightness": "500(典型)",
+    "displayColorGamut": "sRGB",
+    "camera": "800W 像素 ƒ/2.4",
+    "frontCamera": "120W 像素 ƒ/2.2",
+    "pencilSupport": "Apple Pencil (第 1 代)",
+    "ports": "闪电接口",
+    "baseband": "Intel XMM7560",
+    "wifiStandard": "802.11ac HT80 2x2 MIMO",
+    "bluetoothVersion": "Bluetooth 4.2",
+    "security": "触控 ID",
+    "batteryCapacity": "32.4Wh",
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Wi-Fi web browsing: 10h, Cellular web browsing: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×2",
+      "en-US": "2 microphones + 2 speakers"
+    },
+    "dimensions": "250.6×174.1×7.5, 483/493g",
+    "technicalSpecsLink": {
+      "text": "技术规格",
+      "url": "https://support.apple.com/zh-cn/111911"
+    },
+    "series": "Standard",
+    "waterResistance": "无官方防水等级",
+    "connectivity": "802.11ac HT80 2x2 MIMO, 蓝牙 Bluetooth 4.2",
+    "benchmarks": {
+      "singleCore": "860",
+      "multiCore": "1384",
+      "gpu": "4190"
+    },
+    "storage": [
+      "32GB",
+      "128GB"
+    ],
+    "ram": "3GB",
+    "ramType": "LPDDR4"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad(第 6 代)",
+      "en-US": "iPad (6th generation)"
+    },
+    "id": "ipad-ipad-6",
+    "marketingSlogan": "这个电脑, 拿掉了电脑的条条框框。",
+    "releaseDate": "2018.03.27",
+    "os": "iOS 11 ~ iPadOS 17",
+    "model": "iPad7,5 / 7,6",
+    "colors": [
+      {
+        "name": "深空灰色",
+        "code": "#b1b2b7"
+      },
+      {
+        "name": "银色",
+        "code": "#e2e3e4"
+      },
+      {
+        "name": "金色",
+        "code": "#f6cdb9"
+      }
+    ],
+    "arSupport": "/",
+    "processor": "A10 Fusion(2P+2E+6GPU)",
+    "displayTechnology": "9.7\" LED",
+    "displayResolution": "2048×1536, 264ppi",
+    "displayRefreshRate": "60Hz",
+    "displayBrightness": "500(典型)",
+    "displayColorGamut": "sRGB",
+    "camera": "800W 像素 ƒ/2.4",
+    "frontCamera": "120W 像素 ƒ/2.4",
+    "pencilSupport": "Apple Pencil (第 1 代)",
+    "ports": "闪电接口",
+    "baseband": "Qualcomm MDM9635",
+    "wifiStandard": "802.11ac HT80 2x2 MIMO",
+    "bluetoothVersion": "Bluetooth 4.2",
+    "security": "触控 ID",
+    "batteryCapacity": "32.4Wh",
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Wi-Fi web browsing: 10h Cellular web browsing: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×2",
+      "en-US": "2 microphones + 2 speakers"
+    },
+    "dimensions": "240×169.5×7.5, 469/478g",
+    "technicalSpecsLink": {
+      "text": "技术规格",
+      "url": "https://support.apple.com/zh-cn/111957"
+    },
+    "series": "Standard",
+    "waterResistance": "无官方防水等级",
+    "connectivity": "802.11ac HT80 2x2 MIMO, 蓝牙 Bluetooth 4.2",
+    "benchmarks": {
+      "singleCore": "829",
+      "multiCore": "1140",
+      "gpu": "4310"
+    },
+    "storage": [
+      "64GB",
+      "256GB"
+    ],
+    "ram": "4GB",
+    "ramType": "LPDDR4X"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad(第 5 代)",
+      "en-US": "iPad (5th generation)"
+    },
+    "id": "ipad-ipad-5",
+    "marketingSlogan": "这方寸间，乐趣全开。",
+    "releaseDate": "2017.03.21",
+    "os": "iOS 10 ~ iPadOS 16",
+    "model": "iPad6,11 / 6,12",
+    "colors": [
+      {
+        "name": "深空灰色",
+        "code": "#b1b2b7"
+      },
+      {
+        "name": "银色",
+        "code": "#e2e3e4"
+      },
+      {
+        "name": "金色",
+        "code": "#e3ccb4"
+      }
+    ],
+    "arSupport": "/",
+    "processor": "A9(2P+6GPU)",
+    "displayTechnology": "9.7\" LED",
+    "displayResolution": "2048×1536, 264ppi",
+    "displayRefreshRate": "60Hz",
+    "displayBrightness": "500(典型)",
+    "displayColorGamut": "sRGB",
+    "camera": "800W 像素 ƒ/2.4",
+    "frontCamera": "120W 像素 ƒ/2.4",
+    "pencilSupport": "/",
+    "ports": "闪电接口",
+    "baseband": "Qualcomm MDM9625",
+    "wifiStandard": "802.11ac HT80 2x2 MIMO",
+    "bluetoothVersion": "Bluetooth 4.2",
+    "security": "触控 ID",
+    "batteryCapacity": "32.4Wh",
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+      "en-US": "Wi-Fi web browsing: 10h Cellular web browsing: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×2 + 扬声器 ×2",
+      "en-US": "2 microphones + 2 speakers"
+    },
+    "dimensions": "240×169.5×7.5, 469/478g",
+    "technicalSpecsLink": {
+      "text": "技术规格",
+      "url": "https://support.apple.com/zh-cn/111960"
+    },
+    "series": "Standard",
+    "waterResistance": "无官方防水等级",
+    "connectivity": "802.11ac HT80 2x2 MIMO, 蓝牙 Bluetooth 4.2",
+    "benchmarks": {
+      "singleCore": "630",
+      "multiCore": "965",
+      "gpu": "3092"
+    },
+    "storage": [
+      "64GB",
+      "256GB"
+    ],
+    "ram": "3GB",
+    "ramType": "LPDDR4X"
+  },
+  {
+    "name": "iPad(第 4 代)",
+    "id": "ipad-ipad-4",
+    "marketingSlogan": "绚丽夺目一如既往, 速度提升 2 倍。",
+    "releaseDate": "2012.10.24",
+    "os": "iOS 6 ~ iOS 10",
+    "model": "iPad3,4 / 3,5 / 3,6",
+    "colors": [],
+    "arSupport": "/",
+    "processor": "A6X(2P+4GPU)",
+    "displayTechnology": "9.7\" LED",
+    "displayResolution": "2048×1536, 264ppi",
+    "displayRefreshRate": "60Hz",
+    "displayColorGamut": "sRGB",
+    "camera": "500W 像素 ƒ/2.4",
+    "frontCamera": "120W 像素",
+    "pencilSupport": "/",
+    "ports": "闪电接口",
+    "baseband": "Qualcomm MDM9615",
+    "wifiStandard": "802.11a/b/g/n",
+    "bluetoothVersion": "Bluetooth 4.0",
+    "security": "/",
+    "batteryCapacity": "42.5Wh",
+    "batteryLife": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+    "audioFeatures": "麦克风 ×1 + 扬声器 ×1",
+    "dimensions": "241.2×185.7×9.4, 652/662g",
+    "technicalSpecsLink": {
+      "text": "技术规格",
+      "url": "https://support.apple.com/zh-cn/111993"
+    },
+    "series": "Standard",
+    "waterResistance": "无官方防水等级",
+    "connectivity": "802.11a/b/g/n, 蓝牙 Bluetooth 4.0",
+    "storage": [
+      "16GB",
+      "32GB",
+      "64GB",
+      "128GB"
+    ],
+    "ram": "1GB",
+    "ramType": "LPDDR2",
+    "benchmarks": {}
+  },
+  {
+    "name": "iPad(第 3 代)",
+    "id": "ipad-ipad-3",
+    "marketingSlogan": "配备绚丽夺目的 Retina 显示屏",
+    "releaseDate": "2012.03.08",
+    "os": "iOS 5 ~ iOS 9",
+    "model": "iPad3,1 / 3,2",
+    "colors": [],
+    "arSupport": "/",
+    "processor": "A5X(2P+4GPU)",
+    "displayTechnology": "9.7\" LED",
+    "displayResolution": "2048×1536, 264ppi",
+    "displayRefreshRate": "60Hz",
+    "displayColorGamut": "sRGB",
+    "camera": "500W 像素",
+    "frontCamera": "30W 像素",
+    "pencilSupport": "/",
+    "ports": "30-pin 基座接口",
+    "baseband": "Qualcomm MDM9600",
+    "wifiStandard": "802.11a/b/g/n",
+    "bluetoothVersion": "Bluetooth 4.0",
+    "security": "/",
+    "batteryCapacity": "42.5Wh",
+    "batteryLife": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+    "audioFeatures": "麦克风 ×1 + 扬声器 ×1",
+    "dimensions": "241.2×185.7×9.4, 652/662g",
+    "technicalSpecsLink": {
+      "text": "技术规格",
+      "url": "https://support.apple.com/zh-cn/111992"
+    },
+    "series": "Standard",
+    "waterResistance": "无官方防水等级",
+    "connectivity": "802.11a/b/g/n, 蓝牙 Bluetooth 4.0",
+    "storage": [
+      "16GB",
+      "32GB",
+      "64GB"
+    ],
+    "ram": "1GB",
+    "ramType": "LPDDR2",
+    "benchmarks": {}
+  },
+  {
+    "name": "iPad 2",
+    "id": "ipad-ipad-2",
+    "marketingSlogan": "薄了，轻了，快了。",
+    "releaseDate": "2011.03.03",
+    "os": "iOS 4 ~ iOS 9",
+    "model": "iPad2,1 / 2,2 / 2,3 / 2,4",
+    "colors": [],
+    "arSupport": "/",
+    "processor": "A5(2P+2GPU)",
+    "displayTechnology": "9.7\" LED",
+    "displayResolution": "1024×768, 132ppi",
+    "displayRefreshRate": "60Hz",
+    "displayColorGamut": "sRGB",
+    "camera": "70W 像素",
+    "frontCamera": "30W 像素",
+    "pencilSupport": "/",
+    "ports": "30-pin 基座接口",
+    "baseband": "Qualcomm MDM6600",
+    "wifiStandard": "802.11a/b/g/n",
+    "bluetoothVersion": "Bluetooth 2.1",
+    "security": "/",
+    "batteryCapacity": "25Wh",
+    "batteryLife": "无线局域网浏览网页：10h蜂窝网络浏览网页：9h",
+    "audioFeatures": "麦克风 ×1 + 扬声器 ×1",
+    "dimensions": "241.2×185.7×8.8, 601/613g",
+    "technicalSpecsLink": {
+      "text": "技术规格",
+      "url": "https://support.apple.com/zh-cn/111990"
+    },
+    "series": "Standard",
+    "waterResistance": "无官方防水等级",
+    "connectivity": "802.11a/b/g/n, 蓝牙 Bluetooth 2.1",
+    "storage": [
+      "16GB",
+      "32GB",
+      "64GB"
+    ],
+    "ram": "512MB",
+    "ramType": "DDR2",
+    "benchmarks": {}
+  },
+  {
+    "name": "iPad",
+    "id": "ipad-ipad",
+    "marketingSlogan": "奇妙与革命性的产品",
+    "releaseDate": "2010.01.28",
+    "os": "iPhoneOS 3 ~ iOS 5",
+    "model": "iPad1,1",
+    "colors": [],
+    "arSupport": "/",
+    "processor": "A4(1P+1GPU)",
+    "displayTechnology": "9.7\" LED",
+    "displayResolution": "1024×768, 132ppi",
+    "displayRefreshRate": "60Hz",
+    "displayColorGamut": "sRGB",
+    "camera": "/",
+    "frontCamera": "/",
+    "pencilSupport": "/",
+    "ports": "30-pin 基座接口",
+    "wifiStandard": "802.11a/b/g/n",
+    "bluetoothVersion": "Bluetooth 2.1",
+    "security": "/",
+    "batteryCapacity": "25Wh",
+    "batteryLife": "无线局域网浏览网页：10h",
+    "audioFeatures": "麦克风 ×1 + 扬声器 ×1",
+    "dimensions": "242.8×189.7×13.4, 680/730g",
+    "technicalSpecsLink": {
+      "text": "技术规格",
+      "url": "https://support.apple.com/zh-cn/112438"
+    },
+    "series": "Standard",
+    "waterResistance": "无官方防水等级",
+    "connectivity": "802.11a/b/g/n, 蓝牙 Bluetooth 2.1",
+    "ram": "256MB",
+    "storage": [
+      "16GB",
+      "32GB",
+      "64GB"
+    ],
+    "ramType": "DDR",
+    "benchmarks": {}
+  }
+]

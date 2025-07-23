@@ -1,0 +1,348 @@
+[
+  {
+    "id": "iphone-16-pro-max",
+    "name": "iPhone 16 Pro Max",
+    "model": "A2849",
+    "releaseDate": "2024-09-20",
+    "price": 9999,
+    "colors": [
+      {
+        "name": "自然钛金属",
+        "code": "#E3D0BA"
+      },
+      {
+        "name": "白色钛金属",
+        "code": "#F5F5F0"
+      },
+      {
+        "name": "黑色钛金属",
+        "code": "#505050"
+      },
+      {
+        "name": "沙金色钛金属",
+        "code": "#D9C5AD"
+      }
+    ],
+    "storage": [
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "dimensions": "163.0 × 77.6 × 8.25 mm",
+    "weight": "227克",
+    "materials": "钛金属边框，Ceramic Shield前面板，磨砂玻璃背板",
+    "displaySize": "6.9英寸",
+    "displayResolution": "2868 × 1320 像素，460 ppi",
+    "displayTechnology": "Super Retina XDR OLED，ProMotion，Always-On，Dynamic Island",
+    "displayBrightness": "普通亮度1000尼特，峰值1600尼特，HDR峰值2000尼特",
+    "displayRefreshRate": "1-120Hz 自适应刷新率",
+    "processor": "A18 Pro",
+    "processorDetails": "台积电第二代3纳米工艺，6核CPU (2性能核心+4能效核心)，6核GPU，16核神经网络引擎",
+    "cpuPerformance": 8650,
+    "gpuPerformance": 32746,
+    "ram": "8GB",
+    "battery": "4685 mAh (18.15 Wh)",
+    "batteryLife": "视频播放最长可达29小时，音频播放最长可达95小时",
+    "batteryLifeScore": 95,
+    "camera": "4800万像素主摄 (f/1.78)，1200万像素超广角 (f/2.2)，1200万像素5倍光学变焦长焦 (f/2.8)",
+    "frontCamera": "1200万像素原深感前置摄像头 (f/1.9)",
+    "waterResistance": "IP68级防水防尘 (水下深度6米，持续时间不超过30分钟)",
+    "os": "iOS 18",
+    "connectivity": "5G (sub-6 GHz和mmWave)，Wi-Fi 7，蓝牙5.3，UWB，卫星连接",
+    "ports": "USB-C (USB 3.0，最高10Gbps)",
+    "security": "Face ID面容识别",
+    "specialFeatures": "紧急SOS，碰撞检测，卫星通信，视觉控制，拍照按钮",
+    "technicalSpecsLink": "https://www.apple.com.cn/iphone-16-pro/specs/",
+    "marketingSlogan": "非凡的能力。非凡的作为。"
+  },
+  {
+    "id": "iphone-16-pro",
+    "name": "iPhone 16 Pro",
+    "model": "A2848",
+    "releaseDate": "2024-09-20",
+    "price": 8999,
+    "colors": [
+      {
+        "name": "自然钛金属",
+        "code": "#E3D0BA"
+      },
+      {
+        "name": "白色钛金属",
+        "code": "#F5F5F0"
+      },
+      {
+        "name": "黑色钛金属",
+        "code": "#505050"
+      },
+      {
+        "name": "沙金色钛金属",
+        "code": "#D9C5AD"
+      }
+    ],
+    "storage": [
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "dimensions": "149.6 × 71.5 × 8.25 mm",
+    "weight": "199克",
+    "materials": "钛金属边框，Ceramic Shield前面板，磨砂玻璃背板",
+    "displaySize": "6.3英寸",
+    "displayResolution": "2622 × 1206 像素，460 ppi",
+    "displayTechnology": "Super Retina XDR OLED，ProMotion，Always-On，Dynamic Island",
+    "displayBrightness": "普通亮度1000尼特，峰值1600尼特，HDR峰值2000尼特",
+    "displayRefreshRate": "1-120Hz 自适应刷新率",
+    "processor": "A18 Pro",
+    "processorDetails": "台积电第二代3纳米工艺，6核CPU (2性能核心+4能效核心)，6核GPU，16核神经网络引擎",
+    "cpuPerformance": 8650,
+    "gpuPerformance": 32746,
+    "ram": "8GB",
+    "battery": "3582 mAh (13.92 Wh)",
+    "batteryLife": "视频播放最长可达25小时，音频播放最长可达80小时",
+    "batteryLifeScore": 85,
+    "camera": "4800万像素主摄 (f/1.78)，1200万像素超广角 (f/2.2)，1200万像素5倍光学变焦长焦 (f/2.8)",
+    "frontCamera": "1200万像素原深感前置摄像头 (f/1.9)",
+    "waterResistance": "IP68级防水防尘 (水下深度6米，持续时间不超过30分钟)",
+    "os": "iOS 18",
+    "connectivity": "5G (sub-6 GHz和mmWave)，Wi-Fi 7，蓝牙5.3，UWB，卫星连接",
+    "ports": "USB-C (USB 3.0，最高10Gbps)",
+    "security": "Face ID面容识别",
+    "specialFeatures": "紧急SOS，碰撞检测，卫星通信，视觉控制，拍照按钮",
+    "technicalSpecsLink": "https://www.apple.com.cn/iphone-16-pro/specs/",
+    "marketingSlogan": "非凡的能力。非凡的作为。"
+  },
+  {
+    "id": "iphone-16-plus",
+    "name": "iPhone 16 Plus",
+    "model": "A2847",
+    "releaseDate": "2024-09-20",
+    "price": 7599,
+    "colors": [
+      {
+        "name": "黑色",
+        "code": "#1F2123"
+      },
+      {
+        "name": "白色",
+        "code": "#F8F9F4"
+      },
+      {
+        "name": "粉色",
+        "code": "#F5D9D7"
+      },
+      {
+        "name": "超级蓝",
+        "code": "#004B96"
+      },
+      {
+        "name": "绿色",
+        "code": "#C4DAC9"
+      }
+    ],
+    "storage": [
+      "128GB",
+      "256GB",
+      "512GB"
+    ],
+    "dimensions": "160.9 × 77.8 × 7.8 mm",
+    "weight": "199克",
+    "materials": "铝金属边框，Ceramic Shield前面板，有色玻璃背板",
+    "displaySize": "6.7英寸",
+    "displayResolution": "2796 × 1290 像素，460 ppi",
+    "displayTechnology": "Super Retina XDR OLED，Dynamic Island",
+    "displayBrightness": "普通亮度1000尼特，峰值1600尼特，HDR峰值1600尼特",
+    "displayRefreshRate": "60Hz",
+    "processor": "A18",
+    "processorDetails": "台积电第二代3纳米工艺，6核CPU (2性能核心+4能效核心)，5核GPU，16核神经网络引擎",
+    "cpuPerformance": 7950,
+    "gpuPerformance": 28570,
+    "ram": "6GB",
+    "battery": "4676 mAh (18.12 Wh)",
+    "batteryLife": "视频播放最长可达27小时，音频播放最长可达85小时",
+    "batteryLifeScore": 90,
+    "camera": "4800万像素主摄 (f/1.6)，1200万像素超广角 (f/2.4)",
+    "frontCamera": "1200万像素原深感前置摄像头 (f/1.9)",
+    "waterResistance": "IP68级防水防尘 (水下深度6米，持续时间不超过30分钟)",
+    "os": "iOS 18",
+    "connectivity": "5G (sub-6 GHz和mmWave)，Wi-Fi 6E，蓝牙5.3，UWB，卫星连接",
+    "ports": "USB-C (USB 2.0，最高480Mbps)",
+    "security": "Face ID面容识别",
+    "specialFeatures": "紧急SOS，碰撞检测，卫星通信，拍照按钮",
+    "technicalSpecsLink": "https://www.apple.com.cn/iphone-16/specs/",
+    "marketingSlogan": "由先进智能驱动。由你掌控。"
+  },
+  {
+    "id": "iphone-16",
+    "name": "iPhone 16",
+    "model": "A2846",
+    "releaseDate": "2024-09-20",
+    "price": 6799,
+    "colors": [
+      {
+        "name": "黑色",
+        "code": "#1F2123"
+      },
+      {
+        "name": "白色",
+        "code": "#F8F9F4"
+      },
+      {
+        "name": "粉色",
+        "code": "#F5D9D7"
+      },
+      {
+        "name": "超级蓝",
+        "code": "#004B96"
+      },
+      {
+        "name": "绿色",
+        "code": "#C4DAC9"
+      }
+    ],
+    "storage": [
+      "128GB",
+      "256GB",
+      "512GB"
+    ],
+    "dimensions": "147.6 × 71.6 × 7.8 mm",
+    "weight": "170克",
+    "materials": "铝金属边框，Ceramic Shield前面板，有色玻璃背板",
+    "displaySize": "6.1英寸",
+    "displayResolution": "2556 × 1179 像素，460 ppi",
+    "displayTechnology": "Super Retina XDR OLED，Dynamic Island",
+    "displayBrightness": "普通亮度1000尼特，峰值1600尼特，HDR峰值1600尼特",
+    "displayRefreshRate": "60Hz",
+    "processor": "A18",
+    "processorDetails": "台积电第二代3纳米工艺，6核CPU (2性能核心+4能效核心)，5核GPU，16核神经网络引擎",
+    "cpuPerformance": 7950,
+    "gpuPerformance": 28570,
+    "ram": "6GB",
+    "battery": "3561 mAh (13.77 Wh)",
+    "batteryLife": "视频播放最长可达22小时，音频播放最长可达75小时",
+    "batteryLifeScore": 80,
+    "camera": "4800万像素主摄 (f/1.6)，1200万像素超广角 (f/2.4)",
+    "frontCamera": "1200万像素原深感前置摄像头 (f/1.9)",
+    "waterResistance": "IP68级防水防尘 (水下深度6米，持续时间不超过30分钟)",
+    "os": "iOS 18",
+    "connectivity": "5G (sub-6 GHz和mmWave)，Wi-Fi 6E，蓝牙5.3，UWB，卫星连接",
+    "ports": "USB-C (USB 2.0，最高480Mbps)",
+    "security": "Face ID面容识别",
+    "specialFeatures": "紧急SOS，碰撞检测，卫星通信，拍照按钮",
+    "technicalSpecsLink": "https://www.apple.com.cn/iphone-16/specs/",
+    "marketingSlogan": "由先进智能驱动。由你掌控。"
+  },
+  {
+    "id": "iphone-15-pro-max",
+    "name": "iPhone 15 Pro Max",
+    "model": "A2849",
+    "releaseDate": "2023-09-22",
+    "price": 8999,
+    "colors": [
+      {
+        "name": "自然钛金属",
+        "code": "#E3D0BA"
+      },
+      {
+        "name": "白色钛金属",
+        "code": "#F5F5F0"
+      },
+      {
+        "name": "黑色钛金属",
+        "code": "#505050"
+      },
+      {
+        "name": "蓝色钛金属",
+        "code": "#35455C"
+      }
+    ],
+    "storage": [
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "dimensions": "159.9 × 76.7 × 8.25 mm",
+    "weight": "221克",
+    "materials": "钛金属边框，Ceramic Shield前面板，磨砂玻璃背板",
+    "displaySize": "6.7英寸",
+    "displayResolution": "2796 × 1290 像素，460 ppi",
+    "displayTechnology": "Super Retina XDR OLED，ProMotion，Always-On，Dynamic Island",
+    "displayBrightness": "普通亮度1000尼特，峰值1600尼特，HDR峰值1600尼特",
+    "displayRefreshRate": "1-120Hz 自适应刷新率",
+    "processor": "A17 Pro",
+    "processorDetails": "台积电3纳米工艺，6核CPU (2性能核心+4能效核心)，6核GPU，16核神经网络引擎",
+    "cpuPerformance": 7200,
+    "gpuPerformance": 26180,
+    "ram": "8GB",
+    "battery": "4441 mAh (17.20 Wh)",
+    "batteryLife": "视频播放最长可达29小时，音频播放最长可达95小时",
+    "batteryLifeScore": 92,
+    "camera": "4800万像素主摄 (f/1.78)，1200万像素超广角 (f/2.2)，1200万像素5倍光学变焦长焦 (f/2.8)",
+    "frontCamera": "1200万像素原深感前置摄像头 (f/1.9)",
+    "waterResistance": "IP68级防水防尘 (水下深度6米，持续时间不超过30分钟)",
+    "os": "iOS 17 (可升级至iOS 18)",
+    "connectivity": "5G (sub-6 GHz和mmWave)，Wi-Fi 6E，蓝牙5.3，UWB，卫星连接",
+    "ports": "USB-C (USB 3.0，最高10Gbps)",
+    "security": "Face ID面容识别",
+    "specialFeatures": "动态岛，紧急SOS，碰撞检测，卫星通信，动作按钮",
+    "technicalSpecsLink": "https://www.apple.com.cn/iphone-15-pro/specs/",
+    "marketingSlogan": "非凡的强大。非同寻常的大出彩。"
+  },
+  {
+    "id": "iphone-15-pro",
+    "name": "iPhone 15 Pro",
+    "model": "A2848",
+    "releaseDate": "2023-09-22",
+    "price": 7999,
+    "colors": [
+      {
+        "name": "自然钛金属",
+        "code": "#E3D0BA"
+      },
+      {
+        "name": "白色钛金属",
+        "code": "#F5F5F0"
+      },
+      {
+        "name": "黑色钛金属",
+        "code": "#505050"
+      },
+      {
+        "name": "蓝色钛金属",
+        "code": "#35455C"
+      }
+    ],
+    "storage": [
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "dimensions": "146.6 × 70.6 × 8.25 mm",
+    "weight": "187克",
+    "materials": "钛金属边框，Ceramic Shield前面板，磨砂玻璃背板",
+    "displaySize": "6.1英寸",
+    "displayResolution": "2556 × 1179 像素，460 ppi",
+    "displayTechnology": "Super Retina XDR OLED，ProMotion，Always-On，Dynamic Island",
+    "displayBrightness": "普通亮度1000尼特，峰值1600尼特，HDR峰值1600尼特",
+    "displayRefreshRate": "1-120Hz 自适应刷新率",
+    "processor": "A17 Pro",
+    "processorDetails": "台积电3纳米工艺，6核CPU (2性能核心+4能效核心)，6核GPU，16核神经网络引擎",
+    "cpuPerformance": 7200,
+    "gpuPerformance": 26180,
+    "ram": "8GB",
+    "battery": "3274 mAh (12.70 Wh)",
+    "batteryLife": "视频播放最长可达23小时，音频播放最长可达75小时",
+    "batteryLifeScore": 82,
+    "camera": "4800万像素主摄 (f/1.78)，1200万像素超广角 (f/2.2)，1200万像素3倍光学变焦长焦 (f/2.8)",
+    "frontCamera": "1200万像素原深感前置摄像头 (f/1.9)",
+    "waterResistance": "IP68级防水防尘 (水下深度6米，持续时间不超过30分钟)",
+    "os": "iOS 17 (可升级至iOS 18)",
+    "connectivity": "5G (sub-6 GHz和mmWave)，Wi-Fi 6E，蓝牙5.3，UWB，卫星连接",
+    "ports": "USB-C (USB 3.0，最高10Gbps)",
+    "security": "Face ID面容识别",
+    "specialFeatures": "动态岛，紧急SOS，碰撞检测，卫星通信，动作按钮",
+    "technicalSpecsLink": "https://www.apple.com.cn/iphone-15-pro/specs/",
+    "marketingSlogan": "非凡的强大。非同寻常的大出彩。"
+  }
+]

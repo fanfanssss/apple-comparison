@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>双语数据测试</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .language-switcher {
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 8px 16px;
+            margin-right: 10px;
+            background-color: #0071E3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button.active {
+            background-color: #004080;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .product-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .product-slogan {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .product-specs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .spec-item {
+            display: flex;
+            margin-bottom: 8px;
+        }
+        .spec-label {
+            font-weight: bold;
+            width: 120px;
+            flex-shrink: 0;
+        }
+        .spec-value {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>iPad Pro 13英寸 双语数据测试</h1>
+    
+    <div class="language-switcher">
+        <button id="zh-btn" class="active">中文</button>
+        <button id="en-btn">English</button>
+    </div>
+    
+    <div id="product-container"></div>
+    
+    <script>
+        // 模拟本地存储
+        const localStorage = {
+            data: {},
+            getItem(key) {
+                return this.data[key] || null;
+            },
+            setItem(key, value) {
+                this.data[key] = value;
+            }
+        };
+        
+        // 初始化语言
+        let currentLanguage = 'zh-CN';
+        
+        // 双语数据辅助函数
+        function getLocalizedText(field, lang) {
+            // 如果字段是对象且包含当前语言的键
+            if (field && typeof field === 'object' && field[lang]) {
+                return field[lang];
+            }
+            // 如果字段是对象但不包含当前语言，尝试使用另一种语言
+            if (field && typeof field === 'object') {
+                // 如果请求英文但只有中文
+                if (lang === 'en-US' && field['zh-CN']) {
+                    return field['zh-CN'];
+                }
+                // 如果请求中文但只有英文
+                if (lang === 'zh-CN' && field['en-US']) {
+                    return field['en-US'];
+                }
+            }
+            // 否则返回原始值（向后兼容）
+            return field;
+        }
+        
+        // 示例iPad Pro 13英寸数据
+        const ipadPro13 = {
+            "name": {
+                "zh-CN": "iPad Pro 13 英寸(M4)",
+                "en-US": "iPad Pro 13-inch (M4)"
+            },
+            "id": "ipad-ipad-pro-13-inchm4",
+            "marketingSlogan": {
+                "zh-CN": "磅礴的薄",
+                "en-US": "Impossibly thin"
+            },
+            "releaseDate": {
+                "zh-CN": "2024.05.07",
+                "en-US": "May 7, 2024"
+            },
+            "os": {
+                "zh-CN": "iPadOS 17 ~ 最新",
+                "en-US": "iPadOS 17 ~ Latest"
+            },
+            "model": "iPad16,5 / iPad16,6",
+            "colors": [
+                {
+                    "name": {
+                        "zh-CN": "深空黑色",
+                        "en-US": "Space Black"
+                    },
+                    "code": "#2e2c2e"
+                },
+                {
+                    "name": {
+                        "zh-CN": "银色",
+                        "en-US": "Silver"
+                    },
+                    "code": "#e3e4e5"
+                }
+            ],
+            "processor": {
+                "zh-CN": "M4(3/4P+6E+10GPU)",
+                "en-US": "M4(3/4P+6E+10GPU)"
+            },
+            "displayTechnology": {
+                "zh-CN": "13\" 双层串联 OLED",
+                "en-US": "13\" Tandem OLED"
+            },
+            "displayResolution": {
+                "zh-CN": "2752×2064, 264ppi",
+                "en-US": "2752×2064, 264ppi"
+            },
+            "displayRefreshRate": {
+                "zh-CN": "10-120Hz ProMotion",
+                "en-US": "10-120Hz ProMotion"
+            },
+            "displayBrightness": {
+                "zh-CN": "1000(典型), 1600(HDR)",
+                "en-US": "1000(typical), 1600(HDR)"
+            },
+            "displayColorGamut": {
+                "zh-CN": "原彩显示, 广色域显示(P3)",
+                "en-US": "True Tone display, Wide color display (P3)"
+            }
+        };
+        
+        // 渲染产品数据
+        function renderProduct(product, lang) {
+            const container = document.getElementById('product-container');
+            container.innerHTML = '';
+            
+            const card = document.createElement('div');
+            card.className = 'product-card';
+            
+            // 产品名称
+            const name = document.createElement('div');
+            name.className = 'product-name';
+            name.textContent = getLocalizedText(product.name, lang);
+            card.appendChild(name);
+            
+            // 营销口号
+            const slogan = document.createElement('div');
+            slogan.className = 'product-slogan';
+            slogan.textContent = getLocalizedText(product.marketingSlogan, lang);
+            card.appendChild(slogan);
+            
+            // 规格列表
+            const specs = document.createElement('div');
+            specs.className = 'product-specs';
+            
+            // 添加规格项
+            addSpecItem(specs, '发布日期', 'Release Date', product.releaseDate, lang);
+            addSpecItem(specs, '操作系统', 'OS', product.os, lang);
+            addSpecItem(specs, '型号', 'Model', product.model, lang);
+            addSpecItem(specs, '颜色', 'Colors', product.colors.map(c => getLocalizedText(c.name, lang)).join(', '), lang);
+            addSpecItem(specs, '处理器', 'Processor', product.processor, lang);
+            addSpecItem(specs, '显示技术', 'Display Technology', product.displayTechnology, lang);
+            addSpecItem(specs, '分辨率', 'Resolution', product.displayResolution, lang);
+            addSpecItem(specs, '刷新率', 'Refresh Rate', product.displayRefreshRate, lang);
+            addSpecItem(specs, '亮度', 'Brightness', product.displayBrightness, lang);
+            addSpecItem(specs, '色域', 'Color Gamut', product.displayColorGamut, lang);
+            
+            card.appendChild(specs);
+            container.appendChild(card);
+        }
+        
+        // 添加规格项
+        function addSpecItem(container, zhLabel, enLabel, value, lang) {
+            const item = document.createElement('div');
+            item.className = 'spec-item';
+            
+            const label = document.createElement('div');
+            label.className = 'spec-label';
+            label.textContent = lang === 'zh-CN' ? zhLabel : enLabel;
+            
+            const specValue = document.createElement('div');
+            specValue.className = 'spec-value';
+            specValue.textContent = getLocalizedText(value, lang);
+            
+            item.appendChild(label);
+            item.appendChild(specValue);
+            container.appendChild(item);
+        }
+        
+        // 切换语言
+        function switchLanguage(lang) {
+            currentLanguage = lang;
+            localStorage.setItem('preferredLanguage', lang);
+            
+            // 更新按钮状态
+            document.getElementById('zh-btn').classList.toggle('active', lang === 'zh-CN');
+            document.getElementById('en-btn').classList.toggle('active', lang === 'en-US');
+            
+            // 重新渲染产品
+            renderProduct(ipadPro13, lang);
+        }
+        
+        // 绑定按钮事件
+        document.getElementById('zh-btn').addEventListener('click', () => switchLanguage('zh-CN'));
+        document.getElementById('en-btn').addEventListener('click', () => switchLanguage('en-US'));
+        
+        // 初始渲染
+        renderProduct(ipadPro13, currentLanguage);
+    </script>
+</body>
+</html>

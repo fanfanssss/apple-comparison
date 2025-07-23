@@ -1,0 +1,1705 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-key="page.title">产品参数对比 - Apple Compare</title>
+    <!-- 使用iconfont图标库 -->
+    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4356459_zg5dh7jkzx.css">
+    <!-- Chart.js 用于数据可视化 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <!-- 语言切换功能 -->
+    <script src="/public/js/languages.js"></script>
+    <script src="/public/js/language-switcher.js"></script>
+    <!-- 表格样式 -->
+    <link rel="stylesheet" href="/src/table-style.css">
+    <style>
+        /* CSS变量定义 */
+        :root {
+            /* 颜色系统 */
+            --color-primary: #0071E3; /* Apple蓝 */
+            --color-primary-dark: #0061c9;
+            --color-background: #F5F5F7; /* Apple浅灰背景 */
+            --color-surface: #FFFFFF;
+            --color-text-primary: #1D1D1F; /* Apple深灰文本 */
+            --color-text-secondary: #86868B; /* Apple次要文本 */
+            --color-border: #D2D2D7; /* Apple边框色 */
+            --color-border-light: #E5E5E5;
+            --color-error: #FF3B30; /* Apple红色 */
+            --color-success: #34C759; /* Apple绿色 */
+            --color-hover: #F0F0F2; /* 悬停状态背景色 */
+            --color-active: #E8E8ED; /* 激活状态背景色 */
+            
+            /* 间距系统 */
+            --spacing-xs: 4px;
+            --spacing-sm: 8px;
+            --spacing-md: 16px;
+            --spacing-lg: 24px;
+            --spacing-xl: 32px;
+            
+            /* 圆角 */
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            
+            /* 阴影 */
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+            
+            /* 字体 */
+            --font-size-xs: 12px;
+            --font-size-sm: 14px;
+            --font-size-md: 16px;
+            --font-size-lg: 18px;
+            --font-size-xl: 24px;
+            
+            /* 过渡动画 */
+            --transition-fast: 0.15s ease;
+            --transition-normal: 0.25s ease;
+            --transition-slow: 0.4s ease;
+        }
+
+        /* 重置样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+            font-size: var(--font-size-md);
+            line-height: 1.5;
+            color: var(--color-text-primary);
+            background-color: var(--color-background);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth; /* 平滑滚动效果 */
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-lg);
+        }
+
+        /* 导航栏 - 增加透明度效果和微妙阴影 */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid var(--color-border-light);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            box-shadow: var(--shadow-sm);
+            transition: background-color var(--transition-normal), box-shadow var(--transition-normal);
+        }
+
+        .navbar-container {
+            display: flex;
+            align-items: center;
+            height: 48px; /* 降低导航栏高度，更符合Apple风格 */
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--color-text-primary);
+            font-weight: 600;
+            font-size: var(--font-size-lg);
+            letter-spacing: -0.01em; /* 微调字母间距 */
+            transition: opacity var(--transition-fast);
+        }
+
+        .logo:hover {
+            opacity: 0.8;
+        }
+
+        .logo i {
+            font-size: 22px;
+            margin-right: var(--spacing-xs);
+            color: var(--color-primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: var(--spacing-xl);
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--color-text-secondary);
+            font-weight: 500;
+            font-size: var(--font-size-sm); /* 减小导航链接字体 */
+            transition: all var(--transition-normal);
+            position: relative;
+            padding: var(--spacing-xs) 0;
+            letter-spacing: -0.01em; /* 微调字母间距 */
+        }
+
+        .nav-link:hover {
+            color: var(--color-text-primary);
+        }
+
+        .nav-link.active {
+            color: var(--color-primary);
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--color-primary);
+            border-radius: 1px;
+            transform: scaleX(1); /* 动画起始状态 */
+            transition: transform var(--transition-normal);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--color-primary);
+            border-radius: 1px;
+            transform: scaleX(0); /* 默认隐藏 */
+            transition: transform var(--transition-normal);
+        }
+        
+        .nav-link:hover::after {
+            transform: scaleX(1); /* 悬停时显示 */
+        }
+        
+        /* 语言切换按钮样式 */
+        .language-switcher {
+            display: flex;
+            margin-left: var(--spacing-md);
+        }
+        
+        .language-btn {
+            border: none;
+            background: transparent;
+            color: var(--color-text-secondary);
+            font-size: var(--font-size-sm);
+            font-weight: 500;
+            padding: var(--spacing-xs) var(--spacing-sm);
+            cursor: pointer;
+            border-radius: var(--radius-sm);
+            transition: all var(--transition-normal);
+        }
+        
+        .language-btn:hover {
+            color: var(--color-text-primary);
+            background-color: var(--color-hover);
+        }
+        
+        .language-btn.active {
+            color: var(--color-primary);
+            background-color: var(--color-active);
+        }
+
+        /* 主要内容区域 */
+        .main-content {
+            padding: var(--spacing-xl) 0;
+        }
+
+        /* 表格容器 */
+        .table-container {
+            overflow-x: auto;
+            margin: 0 var(--spacing-md);
+            border: 1px solid var(--color-border-light);
+            border-radius: var(--radius-lg);
+            background-color: var(--color-surface);
+            box-shadow: var(--shadow-sm);
+            transition: box-shadow var(--transition-normal);
+        }
+        
+        .table-container:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        /* 操作栏 */
+        .action-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--spacing-xl);
+            background-color: var(--color-surface);
+            padding: var(--spacing-md) var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+        }
+        
+        .action-bar:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-1px);
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: var(--spacing-md);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-xs) var(--spacing-md);
+            border-radius: var(--radius-md);
+            font-weight: 500;
+            font-size: var(--font-size-sm);
+            letter-spacing: -0.01em;
+            transition: all var(--transition-normal);
+            cursor: pointer;
+            border: none;
+            gap: var(--spacing-xs);
+            height: 36px; /* 固定高度，更符合Apple设计 */
+        }
+
+        .btn i {
+            font-size: 16px;
+        }
+
+        .btn-primary {
+            background-color: var(--color-primary);
+            color: white;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-primary-dark);
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn-primary:active {
+            transform: translateY(0);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-secondary {
+            background-color: var(--color-surface);
+            color: var(--color-text-secondary);
+            border: 1px solid var(--color-border);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--color-background);
+            border-color: var(--color-text-secondary);
+            transform: translateY(-1px);
+        }
+        
+        .btn-secondary:active {
+            transform: translateY(0);
+            background-color: var(--color-active);
+        }
+
+        /* 参数表格 */
+        .params-table {
+            background-color: var(--color-surface);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            margin-top: var(--spacing-xl);
+            overflow-x: auto;
+            overflow-y: visible;
+            transition: box-shadow var(--transition-normal);
+        }
+        
+        .params-table:hover {
+            box-shadow: var(--shadow-lg);
+        }
+
+        .table-wrapper {
+            min-width: 100%;
+            padding-bottom: var(--spacing-xl);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 14px 16px; /* 调整单元格内边距，保证呼吸感 */
+            border-bottom: 1px solid var(--color-border-light);
+            white-space: nowrap;
+            background-color: var(--color-surface);
+            transition: background-color var(--transition-fast);
+        }
+
+        thead {
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            background-color: var(--color-surface);
+        }
+
+        th {
+            background-color: var(--color-background);
+            font-weight: 600;
+            color: var(--color-text-primary);
+            padding-top: var(--spacing-md);
+            padding-bottom: var(--spacing-md);
+            border-bottom: 1px solid var(--color-border);
+            letter-spacing: -0.01em;
+        }
+
+        /* 表格头部阴影效果 - 更加精细 */
+        thead::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -8px;
+            height: 8px;
+            background: linear-gradient(180deg, rgba(0,0,0,0.03) 0%, rgba(0,0,0,0) 100%);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* 产品选择器 - 卡片式设计 */
+        .product-selector {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--spacing-xs);
+            padding: var(--spacing-sm);
+            border-radius: var(--radius-md);
+            transition: all var(--transition-normal);
+            position: relative;
+        }
+        
+        .product-selector:hover {
+            background-color: var(--color-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .product-selector:active {
+            transform: translateY(0);
+        }
+
+        .product-checkbox {
+            width: 22px;
+            height: 22px;
+            accent-color: var(--color-primary);
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+            transition: transform var(--transition-fast);
+        }
+        
+        .product-checkbox:checked {
+            transform: scale(1.1);
+        }
+        
+        .product-checkbox:checked + .product-name {
+            color: var(--color-primary);
+            font-weight: 500;
+        }
+
+        .product-name {
+            font-size: var(--font-size-sm);
+            color: var(--color-text-secondary);
+            text-align: center;
+            transition: color var(--transition-normal), font-weight var(--transition-normal);
+            margin-top: var(--spacing-xs);
+            max-width: 120px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        /* 参数名称列 - 增强视觉区分 */
+        .param-name {
+            position: sticky;
+            left: 0;
+            background-color: var(--color-background);
+            font-weight: 500;
+            z-index: 2;
+            min-width: 140px;
+            border-right: 1px solid var(--color-border-light);
+            color: var(--color-text-primary);
+            letter-spacing: -0.01em;
+        }
+
+        /* 参数值单元格 */
+        .param-value {
+            min-width: 120px;
+            text-align: center;
+            transition: all var(--transition-normal);
+            color: var(--color-text-primary);
+        }
+        
+        /* 表格单元格中的超链接样式 */
+        .param-value a {
+            color: var(--color-primary);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+        
+        .param-value a:hover {
+            color: var(--color-primary-dark);
+        }
+        
+        /* 交错条纹背景 */
+        tbody tr:nth-child(even) {
+            background-color: var(--color-surface);
+        }
+        
+        tbody tr:nth-child(odd) {
+            background-color: #FAFAFA;
+        }
+
+        /* 表格行悬停效果 - 更精细的交互反馈 */
+        tbody tr:hover {
+            background-color: var(--color-hover);
+        }
+
+        /* 在悬停时保持第一列的背景色 */
+        tbody tr:hover .param-name {
+            background-color: var(--color-hover);
+        }
+        
+        /* 参数名称列阴影效果 */
+        .param-name-shadow {
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        /* 参数分组间隔 - 通过空间间隔区分参数类别 */
+        tbody tr:nth-child(3n+1) {
+            border-top: 8px solid transparent;
+        }
+        
+        tbody tr:first-child {
+            border-top: none;
+        }
+        
+        /* 按钮点击动画 */
+        .btn-clicked {
+            animation: button-pulse 0.3s ease;
+        }
+        
+        @keyframes button-pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(0.95); }
+            100% { transform: scale(1); }
+        }
+
+        /* 滚动条美化 */
+        .table-container::-webkit-scrollbar {
+            height: 8px;
+            width: 8px;
+        }
+        
+        .table-container::-webkit-scrollbar-track {
+            background: var(--color-background);
+            border-radius: 4px;
+        }
+        
+        .table-container::-webkit-scrollbar-thumb {
+            background: var(--color-border);
+            border-radius: 4px;
+            transition: background var(--transition-normal);
+        }
+        
+        .table-container::-webkit-scrollbar-thumb:hover {
+            background: var(--color-text-secondary);
+        }
+        
+        /* 参数差异高亮 */
+        .highlight-diff {
+            position: relative;
+            font-weight: 500;
+            color: var(--color-primary);
+            transition: all var(--transition-normal);
+        }
+        
+        .highlight-diff::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: var(--color-primary);
+            transition: width var(--transition-normal), left var(--transition-normal);
+        }
+        
+        .highlight-diff:hover::after {
+            width: 100%;
+            left: 0;
+        }
+        
+        /* 表格行动画效果 */
+        tbody tr {
+            transition: background-color var(--transition-normal), transform var(--transition-fast);
+        }
+        
+        tbody tr:hover {
+            transform: translateX(2px);
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 480px) {
+            .product-checkbox + label {
+                font-size: 11px;
+            }
+        }
+        
+        /* 性能图表区域样式 */
+        .performance-charts-section {
+            margin-top: var(--spacing-xl);
+            padding: var(--spacing-lg);
+            background-color: var(--color-surface);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .performance-charts-section h2 {
+            margin-bottom: var(--spacing-lg);
+            font-size: var(--font-size-xl);
+            font-weight: 600;
+        }
+        
+        /* 页面中的普通图表容器 */
+        .chart-container {
+            background-color: var(--color-surface);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            margin-top: var(--spacing-lg);
+            min-height: 300px;
+        }
+        
+        /* 模态框中的图表容器，使用更具体的选择器 */
+        .modal .chart-container {
+            position: relative;
+            min-height: 400px;
+            height: auto;
+            max-height: 80vh;
+            margin: var(--spacing-lg) 0;
+        }
+        
+        .chart-tabs {
+            display: flex;
+            background-color: var(--color-background-secondary);
+            padding: 10px 10px 0;
+        }
+        
+        .chart-tab {
+            padding: 8px 16px;
+            background: none;
+            border: none;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--color-text-secondary);
+        }
+        
+        .chart-tab.active {
+            background-color: var(--color-surface);
+            color: var(--color-text-primary);
+            font-weight: 600;
+        }
+        
+        .chart-wrapper {
+            padding: 20px;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .chart-wrapper canvas {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .chart-wrapper h3 {
+            margin-bottom: var(--spacing-md);
+            font-size: var(--font-size-lg);
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .chart-wrapper {
+                flex: 1 1 100%;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .container {
+                max-width: 100%;
+                padding: 0 var(--spacing-md);
+            }
+            
+            .param-name {
+                min-width: 120px;
+            }
+            
+
+            /* 产品选择器 - 卡片式设计 */
+            .product-selector {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: var(--spacing-xs);
+                gap: var(--spacing-md);
+                padding: var(--spacing-sm);
+            }
+            
+            .btn {
+                font-size: 13px;
+                padding: var(--spacing-xs) var(--spacing-sm);
+                height: 32px;
+            }
+            
+            th, td {
+                padding: 10px 12px;
+            }
+            
+            .product-name {
+                max-width: 80px;
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="../index.html" class="logo">
+                <i class="iconfont icon-apple"></i>Apple Compare
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link" data-lang-key="nav.home">首页</a>
+                <a href="iphone-compare.html" class="nav-link active" data-lang-key="nav.compare">产品对比</a>
+                <a href="news.html" class="nav-link" data-lang-key="nav.news">苹果资讯</a>
+                <a href="feedback.html" class="nav-link" data-lang-key="nav.feedback">用户反馈</a>
+                <div class="language-switcher">
+                    <button class="language-btn" data-lang="zh-CN">中</button>
+                    <button class="language-btn" data-lang="en-US">EN</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <main class="main-content">
+        <div class="container">
+            <!-- 操作栏 -->
+            <div class="action-bar">
+                <h1 data-lang-key="compare.title.iphone">iPhone 产品参数对比</h1>
+                <div class="action-buttons">
+                    <button id="reset-button" class="btn btn-secondary" data-lang-key="compare.reset">
+                        <i class="iconfont icon-refresh"></i>
+                        重置
+                    </button>
+                    <button id="compare-button" class="btn btn-primary" data-lang-key="compare.button">
+                        <i class="iconfont icon-compare"></i>
+                        对比
+                    </button>
+                </div>
+            </div>
+
+            <!-- 参数表格 -->
+            <div class="params-table">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="param-name" data-lang-key="compare.paramHeader">参数 / 产品</th>
+                                <!-- 产品列将由JavaScript动态生成 -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 表格内容将由JavaScript动态生成 -->
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- 性能图表区域 -->
+            <div class="performance-charts-section">
+                <h2 data-lang-key="compare.performanceCharts">性能图表</h2>
+                <div class="chart-container">
+                    <div class="chart-tabs">
+                        <button class="chart-tab active" data-chart="cpuSingle" data-lang-key="chart.cpuSingle">CPU单核性能</button>
+                        <button class="chart-tab" data-chart="cpuMulti" data-lang-key="chart.cpuMulti">CPU多核性能</button>
+                        <button class="chart-tab" data-chart="gpu" data-lang-key="chart.gpu">GPU性能</button>
+                    </div>
+                    <div class="chart-wrapper">
+                        <canvas id="performance-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 性能图表模态框 -->
+    <div id="performance-chart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 data-lang-key="chart.title">性能对比图表</h2>
+            <div class="chart-container">
+                <canvas id="performance-chart"></canvas>
+            </div>
+            <div class="chart-tabs">
+                <button class="chart-tab active" data-chart="cpuSingle" data-lang-key="chart.cpuSingle">CPU单核性能</button>
+                <button class="chart-tab" data-chart="cpuMulti" data-lang-key="chart.cpuMulti">CPU多核性能</button>
+                <button class="chart-tab" data-chart="gpu" data-lang-key="chart.gpu">GPU性能</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 添加页面所需的JavaScript -->
+    <script>
+        // 全局变量
+        let allProducts = [];
+        let performanceChart = null;
+        let currentChartType = 'gpu'; // 默认显示GPU性能
+        
+        // 状态管理系统
+        const AppState = {
+            // 私有状态
+            _selectedProducts: [],
+            
+            // 订阅者列表
+            _subscribers: [],
+            
+            // 获取选中产品
+            get selectedProducts() {
+                return [...this._selectedProducts]; // 返回副本避免直接修改
+            },
+            
+            // 设置选中产品并通知订阅者
+            set selectedProducts(products) {
+                this._selectedProducts = [...products];
+                this._notifySubscribers();
+            },
+            
+            // 添加产品
+            addProduct(productId) {
+                if (!this._selectedProducts.includes(productId)) {
+                    this._selectedProducts.push(productId);
+                    this._notifySubscribers();
+                }
+            },
+            
+            // 移除产品
+            removeProduct(productId) {
+                const index = this._selectedProducts.indexOf(productId);
+                if (index > -1) {
+                    this._selectedProducts.splice(index, 1);
+                    this._notifySubscribers();
+                }
+            },
+            
+            // 重置产品选择
+            resetProducts(allProductIds) {
+                this._selectedProducts = [...allProductIds];
+                this._notifySubscribers();
+            },
+            
+            // 订阅状态变更
+            subscribe(callback) {
+                if (typeof callback === 'function' && !this._subscribers.includes(callback)) {
+                    this._subscribers.push(callback);
+                }
+            },
+            
+            // 取消订阅
+            unsubscribe(callback) {
+                const index = this._subscribers.indexOf(callback);
+                if (index > -1) {
+                    this._subscribers.splice(index, 1);
+                }
+            },
+            
+            // 通知所有订阅者
+            _notifySubscribers() {
+                this._subscribers.forEach(callback => callback(this._selectedProducts));
+            }
+        };
+
+        // 初始化状态订阅
+        function initStateSubscribers() {
+            // 订阅产品选择变更，更新参数差异高亮
+            AppState.subscribe(updateParameterDifferences);
+            
+            // 订阅产品选择变更，更新性能图表
+            AppState.subscribe(products => updatePerformanceCharts());
+            
+            // 订阅产品选择变更，在控制台输出调试信息
+            AppState.subscribe(products => {
+                console.log('状态更新 - 已选择产品：', products.length, products);
+            });
+        }
+        
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 初始化状态订阅
+            initStateSubscribers();
+            
+            // 加载产品数据
+            loadProductData();
+            
+            // 绑定事件
+            bindEvents();
+            
+            // 绑定图表相关事件
+            bindChartEvents();
+        });
+
+        // 加载产品数据
+        async function loadProductData() {
+            try {
+                // 使用新的细化参数数据文件
+                const response = await fetch('../public/data/iphone_refined.json');
+                if (!response.ok) {
+                    throw new Error('网络响应不正常');
+                }
+                allProducts = await response.json();
+                
+                // 按发布日期从新到旧排序
+                allProducts.sort((a, b) => {
+                    const dateA = new Date(a.releaseDate.replace('年', '/').replace('月', '/'));
+                    const dateB = new Date(b.releaseDate.replace('年', '/').replace('月', '/'));
+                    return dateB - dateA;
+                });
+                
+                // 生成表格
+                generateTable(allProducts);
+                
+                // 默认选择所有产品
+                initProductSelection();
+                
+                // 更新参数差异高亮
+                updateParameterDifferences();
+                
+                // 更新性能图表
+                updatePerformanceCharts();
+            } catch (error) {
+                console.error('加载产品数据失败:', error);
+                displayErrorMessage('加载产品数据失败，请刷新页面重试。');
+            }
+        }
+
+        // 生成表格
+        function generateTable(products) {
+            // 生成表头
+            const thead = document.querySelector('table thead tr');
+            // 清空现有表头，保留第一列（参数名称列）
+            while(thead.children.length > 1) {
+                thead.removeChild(thead.lastChild);
+            }
+            
+            // 添加产品列
+            products.forEach(product => {
+                const th = document.createElement('th');
+                const productSelector = document.createElement('div');
+                productSelector.className = 'product-selector';
+                
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.className = 'product-checkbox';
+                checkbox.id = product.id;
+                checkbox.setAttribute('data-product', product.name);
+                checkbox.checked = true;
+                
+                const label = document.createElement('label');
+                label.className = 'product-name';
+                label.setAttribute('for', product.id);
+                label.textContent = product.name;
+                
+                productSelector.appendChild(checkbox);
+                productSelector.appendChild(label);
+                th.appendChild(productSelector);
+                
+                thead.appendChild(th);
+            });
+            
+            // 生成表格主体
+            const tbody = document.querySelector('table tbody');
+            // 清空现有表格内容
+            tbody.innerHTML = '';
+            
+            // 定义要显示的参数列表
+            const params = [
+                // 基本信息
+                { key: 'releaseDate', name: '发布日期', langKey: 'param.releaseDate' },
+                { key: 'price', name: '价格', langKey: 'param.price', formatter: val => `¥${val}` },
+                { key: 'model', name: '型号标识', langKey: 'param.model' },
+                { key: 'colors', name: '颜色', langKey: 'param.colors', formatter: val => val?.map(c => c.name).join(', ') },
+                // { key: 'materials', name: '材料', langKey: 'param.materials' },
+                { key: 'frontPanel', name: '前面板', langKey: 'param.frontPanel' },
+                { key: 'frameMaterial', name: '中框材质', langKey: 'param.frameMaterial' },
+                { key: 'backPanelMaterial', name: '背板材质', langKey: 'param.backPanelMaterial' },
+                { key: 'dimensions', name: '尺寸', langKey: 'param.dimensions' },
+                { key: 'weight', name: '重量', langKey: 'param.weight' },
+                { key: 'waterResistance', name: '防水等级', langKey: 'param.waterResistance' },
+                
+                // 屏幕参数（细分）
+                { key: 'displaySize', name: '屏幕尺寸', langKey: 'param.displaySize' },
+                { key: 'displayResolution', name: '屏幕分辨率', langKey: 'param.displayResolution' },
+                { key: 'displayPpi', name: '像素密度(PPI)', langKey: 'param.displayPpi', formatter: val => val ? `${val} PPI` : '-' },
+                { key: 'displayPanelType', name: '面板类型', langKey: 'param.displayPanelType' },
+                { key: 'displaySpecialTech', name: '特殊显示技术', langKey: 'param.displaySpecialTech' },
+                { key: 'displayStandardBrightness', name: '标准亮度', langKey: 'param.displayStandardBrightness' },
+                { key: 'displayHdrBrightness', name: 'HDR亮度', langKey: 'param.displayHdrBrightness' },
+                // { key: 'displayOutdoorBrightness', name: '户外亮度', langKey: 'param.displayOutdoorBrightness' },
+                { key: 'displayRefreshRate', name: '屏幕刷新率', langKey: 'param.displayRefreshRate' },
+                { key: 'touchTechnology', name: '触控技术', langKey: 'param.touchTechnology' },
+                { key: 'displayColorGamut', name: '显示色域', langKey: 'param.displayColorGamut' },
+                
+                // 处理器和性能（细分）
+                { key: 'processor', name: '处理器型号', langKey: 'param.processor' },
+                { key: 'cpuArchitecture', name: 'CPU架构', langKey: 'param.cpuArchitecture' },
+                { key: 'processTechnology', name: '制程工艺', langKey: 'param.processTechnology' },
+                { key: 'neuralEngine', name: '神经网络引擎', langKey: 'param.neuralEngine' },
+                { key: 'ram', name: '内存容量', langKey: 'param.ram' },
+                { key: 'cpuPerformance.singleCore', name: 'CPU单核性能', langKey: 'param.cpuSingleCore' },
+                { key: 'cpuPerformance.multiCore', name: 'CPU多核性能', langKey: 'param.cpuMultiCore' },
+                { key: 'gpuPerformance', name: 'GPU性能', langKey: 'param.gpuPerformance' },
+                
+                // 存储
+                { key: 'storage', name: '存储容量', langKey: 'param.storage', formatter: val => Array.isArray(val) ? val.join(', ') : val },
+                
+                // 摄像头系统（细分）
+                { key: 'mainCamera', name: '主摄像头', langKey: 'param.mainCamera' },
+                { key: 'ultraWideCamera', name: '超广角摄像头', langKey: 'param.ultraWideCamera' },
+                { key: 'telephotoCamera', name: '长焦摄像头', langKey: 'param.telephotoCamera' },
+                { key: 'opticalZoom', name: '光学变焦', langKey: 'param.opticalZoom' },
+                { key: 'frontCamera', name: '前置摄像头', langKey: 'param.frontCamera' },
+                // 移除摄像头特殊功能参数
+                
+                // 电池和充电（细分）
+                { key: 'batteryCapacityMah', name: '电池容量(mAh)', langKey: 'param.batteryCapacityMah' },
+                { key: 'batteryCapacityWh', name: '电池容量(Wh)', langKey: 'param.batteryCapacityWh' },
+                { key: 'videoPlaybackTime', name: '视频播放时间', langKey: 'param.videoPlaybackTime' },
+                { key: 'audioPlaybackTime', name: '音频播放时间', langKey: 'param.audioPlaybackTime' },
+                // 移除通话时间参数
+                // 移除电池续航评分参数
+                { key: 'wiredChargingSpeed', name: '有线充电速度', langKey: 'param.wiredChargingSpeed' },
+                { key: 'wirelessChargingSpeed', name: '无线充电', langKey: 'param.wirelessChargingSpeed' },
+                
+                // 连接和接口
+                { key: 'wifiStandard', name: 'Wi-Fi标准', langKey: 'param.wifiStandard' },
+                { key: 'bluetoothVersion', name: '蓝牙版本', langKey: 'param.bluetoothVersion' },
+                { key: 'ports', name: '接口类型', langKey: 'param.ports' },
+                { key: 'simCardSupport', name: 'SIM卡', langKey: 'param.simCardSupport' },
+                { key: 'cellularData', name: '蜂窝数据', langKey: 'param.cellularData' },
+                { key: 'baseband', name: '基带芯片', langKey: 'param.baseband' },
+                { key: 'satelliteFeatures', name: '卫星功能', langKey: 'param.satelliteFeatures' },
+                
+                // 音频系统
+                { key: 'speakers', name: '扬声器', langKey: 'param.speakers' },
+                { key: 'microphoneCount', name: '麦克风', langKey: 'param.microphones' },
+                // { key: 'audioFeatures', name: '音频功能', langKey: 'param.audioFeatures' },
+                
+                // 软件和系统
+                { key: 'initialOS', name: '初始系统版本', langKey: 'param.initialOS' },
+                { key: 'maxSupportedOS', name: '最高支持系统版本', langKey: 'param.maxSupportedOS' },
+                // 移除特色软件功能参数
+                
+                // 其他功能
+                { key: 'security', name: '安全功能', langKey: 'param.security' },
+                // 移除传感器参数
+                { key: 'specialFeatures', name: '特色功能', langKey: 'param.specialFeatures' },
+                
+                // 附加信息
+                { key: 'technicalSpecsLink', name: '技术规格链接', langKey: 'param.technicalSpecsLink', formatter: val => val ? `<a href="${val}" target="_blank" rel="noopener noreferrer">查看详情</a>` : '-' },
+                { key: 'marketingSlogan', name: '宣传口号', langKey: 'param.marketingSlogan' }
+            ];
+            
+            // 为每个参数创建行
+            params.forEach((param, index) => {
+                const tr = document.createElement('tr');
+                // 添加行交替颜色
+                if (index % 2 === 1) {
+                    tr.classList.add('alt-row');
+                }
+                // 每第三个参数添加组间距
+                if (index % 3 === 0) {
+                    tr.classList.add('group-separator');
+                }
+                
+                // 参数名称单元格
+                const tdName = document.createElement('td');
+                tdName.className = 'param-name';
+                tdName.setAttribute('data-lang-key', param.langKey);
+                tdName.textContent = param.name;
+                tr.appendChild(tdName);
+                
+                // 为每个产品添加参数值单元格
+                products.forEach(product => {
+                    const tdValue = document.createElement('td');
+                    tdValue.className = 'param-value';
+                    tdValue.setAttribute('data-product', product.id);
+                    
+                    // 支持嵌套属性访问（如cpuPerformance.singleCore）
+                    function getNestedProperty(obj, path) {
+                        return path.split('.').reduce((prev, curr) => 
+                            prev && prev[curr] !== undefined ? prev[curr] : null, obj);
+                    }
+                    
+                    // 获取参数值，支持嵌套属性
+                    let value = getNestedProperty(product, param.key);
+                    if (value !== undefined && value !== null) {
+                        // 如果有格式化函数，使用它处理值
+                        if (param.formatter) {
+                            value = param.formatter(value);
+                            // 如果格式化后的值包含HTML标签（如超链接），使用innerHTML
+                            if (typeof value === 'string' && value.includes('<')) {
+                                tdValue.innerHTML = value;
+                            } else {
+                                tdValue.textContent = value;
+                            }
+                        } else {
+                            tdValue.textContent = value;
+                        }
+                    } else {
+                        tdValue.textContent = '-';
+                        tdValue.classList.add('empty-value');
+                    }
+                    
+                    tr.appendChild(tdValue);
+                });
+                
+                tbody.appendChild(tr);
+            });
+            
+            // 初始化表格后翻译界面
+            if (typeof initLanguage === 'function') {
+                initLanguage();
+            }
+        }
+
+        // 初始化产品选择 - 拆分为初始化和事件绑定两个独立函数
+        function initProductSelection() {
+            // 1. 初始化产品选择状态
+            initProductState();
+            
+            // 2. 绑定产品选择事件处理器
+            bindProductSelectionEvents();
+        }
+
+        // 初始化产品状态
+        function initProductState() {
+            const checkboxes = document.querySelectorAll('.product-checkbox');
+            
+            // 收集所有产品ID
+            const allProductIds = Array.from(checkboxes).map(checkbox => checkbox.id);
+            
+            // 设置所有复选框为选中状态
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = true;
+                
+                // 添加选中样式
+                const productElement = checkbox.closest('.product-selector');
+                if (productElement) {
+                    productElement.classList.add('selected');
+                }
+            });
+            
+            // 使用状态管理系统重置产品选择
+            AppState.resetProducts(allProductIds);
+            
+            // 输出初始化状态信息
+            console.log('产品选择已初始化:', allProductIds.length, allProductIds);
+        }
+
+        // 绑定产品选择事件
+        function bindProductSelectionEvents() {
+            const checkboxes = document.querySelectorAll('.product-checkbox');
+            
+            checkboxes.forEach(checkbox => {
+                // 移除可能存在的旧事件监听器，避免重复绑定
+                checkbox.removeEventListener('change', handleProductSelectionChange);
+                
+                // 添加新的事件监听器
+                checkbox.addEventListener('change', handleProductSelectionChange);
+            });
+        }
+
+        // 产品选择变更事件处理函数
+        function handleProductSelectionChange() {
+            const productId = this.id;
+            const productElement = this.closest('.product-selector');
+            const currentSelectedProducts = AppState.selectedProducts;
+            
+            // 检查当前状态，避免重复操作
+            if (this.checked) {
+                // 确保不重复添加
+                if (!currentSelectedProducts.includes(productId)) {
+                    AppState.addProduct(productId);
+                    console.log(`添加产品: ${productId}`);
+                }
+                productElement.classList.add('selected');
+            } else {
+                // 确保产品存在才移除
+                if (currentSelectedProducts.includes(productId)) {
+                    AppState.removeProduct(productId);
+                    console.log(`移除产品: ${productId}`);
+                }
+                productElement.classList.remove('selected');
+            }
+        }
+
+        // 更新参数差异高亮
+        function updateParameterDifferences(products) {
+            // 获取当前选中的产品（如果没有传入，使用状态系统中的）
+            const selectedProducts = products || AppState.selectedProducts;
+            
+            // 清除所有高亮样式
+            document.querySelectorAll('td.param-value.highlight-diff').forEach(cell => {
+                cell.classList.remove('highlight-diff');
+            });
+            
+            // 如果选中的产品少于2个，直接返回（已清除所有高亮）
+            if (selectedProducts.length < 2) return;
+            
+            const tbody = document.querySelector('table tbody');
+            const rows = tbody.querySelectorAll('tr');
+            
+            rows.forEach(row => {
+                const cells = row.querySelectorAll('td.param-value');
+                const visibleCells = Array.from(cells).filter(cell => {
+                    const productId = cell.getAttribute('data-product');
+                    return selectedProducts.includes(productId);
+                });
+                
+                if (visibleCells.length >= 2) {
+                    // 获取第一个可见单元格的值作为参考
+                    const referenceValue = visibleCells[0].textContent;
+                    
+                    // 检查是否所有值都相同
+                    const allSame = visibleCells.every(cell => cell.textContent === referenceValue);
+                    
+                    // 如果值不同，高亮显示不同的单元格
+                    if (!allSame) {
+                        visibleCells.forEach(cell => {
+                            cell.classList.add('highlight-diff');
+                        });
+                    }
+                }
+            });
+        }
+
+        // 绑定事件
+        function bindEvents() {
+            // 重置按钮事件
+            const resetButton = document.getElementById('reset-button');
+            resetButton.removeEventListener('click', handleResetButtonClick); // 移除可能存在的旧事件监听器
+            resetButton.addEventListener('click', handleResetButtonClick);
+            
+            // 对比按钮事件
+            const compareButton = document.getElementById('compare-button');
+            compareButton.removeEventListener('click', handleCompareButtonClick); // 移除可能存在的旧事件监听器
+            compareButton.addEventListener('click', handleCompareButtonClick);
+            
+            // 添加按钮点击动画
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    this.classList.add('btn-pressed');
+                    setTimeout(() => {
+                        this.classList.remove('btn-pressed');
+                    }, 200);
+                });
+            });
+        }
+        
+        // 重置按钮点击事件处理函数
+        function handleResetButtonClick() {
+            // 获取所有产品复选框
+            const checkboxes = document.querySelectorAll('.product-checkbox');
+            
+            // 收集所有产品ID
+            const allProductIds = Array.from(checkboxes).map(checkbox => checkbox.id);
+            
+            // 当前选中的产品
+            const currentSelectedProducts = AppState.selectedProducts;
+            
+            // 检查是否所有产品都已选中，如果是则无需操作
+            const allSelected = allProductIds.length === currentSelectedProducts.length && 
+                                allProductIds.every(id => currentSelectedProducts.includes(id));
+            
+            if (!allSelected) {
+                console.log('重置产品选择状态');
+                
+                // 重置复选框状态
+                checkboxes.forEach(checkbox => {
+                    checkbox.checked = true;
+                    const productElement = checkbox.closest('.product-selector');
+                    if (productElement) {
+                        productElement.classList.add('selected');
+                    }
+                });
+                
+                // 显示所有产品列
+                document.querySelectorAll('td, th').forEach(cell => {
+                    cell.style.display = '';
+                });
+                
+                // 使用状态管理系统重置产品选择
+                AppState.resetProducts(allProductIds);
+            } else {
+                console.log('所有产品已选中，无需重置');
+            }
+        }
+        
+        // 对比按钮点击事件处理函数
+        function handleCompareButtonClick() {
+            const selectedProducts = AppState.selectedProducts;
+            
+            // 检查是否选择了足够的产品
+            if (selectedProducts.length < 2) {
+                alert('请至少选择两个产品进行对比');
+                return;
+            }
+            
+            console.log(`执行产品对比，已选择${selectedProducts.length}个产品`);
+            
+            // 隐藏未选中的产品列
+            const table = document.querySelector('table');
+            if (!table) {
+                console.error('未找到表格元素');
+                return;
+            }
+            
+            const rows = table.querySelectorAll('tr');
+            
+            // 处理表头行
+            const headerRow = rows[0];
+            const headerCells = headerRow.querySelectorAll('th');
+            
+            // 跳过第一个单元格（参数名称列）
+            for (let i = 1; i < headerCells.length; i++) {
+                const cell = headerCells[i];
+                const checkbox = cell.querySelector('.product-checkbox');
+                const productId = checkbox ? checkbox.id : null;
+                
+                if (productId && !selectedProducts.includes(productId)) {
+                    cell.style.display = 'none';
+                } else {
+                    cell.style.display = '';
+                }
+            }
+            
+            // 处理数据行
+            for (let i = 1; i < rows.length; i++) {
+                const row = rows[i];
+                const cells = row.querySelectorAll('td');
+                
+                // 跳过第一个单元格（参数名称列）
+                for (let j = 1; j < cells.length; j++) {
+                    const cell = cells[j];
+                    const productId = cell.getAttribute('data-product');
+                    
+                    if (!selectedProducts.includes(productId)) {
+                        cell.style.display = 'none';
+                    } else {
+                        cell.style.display = '';
+                    }
+                }
+            }
+            
+            // 滚动到页面顶部
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // 绑定图表相关事件
+        function bindChartEvents() {
+            // 关闭模态框
+            const closeModal = document.querySelector('.close-modal');
+            const modal = document.getElementById('performance-chart-modal');
+            
+            closeModal.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+            
+            // 点击模态框外部关闭
+            window.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+            
+            // 图表类型切换
+            const chartTabs = document.querySelectorAll('.chart-tab');
+            chartTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    chartTabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const chartType = this.getAttribute('data-chart');
+                    updatePerformanceChart(chartType);
+                });
+            });
+        }
+
+        // 显示性能图表
+        function showPerformanceChart() {
+            const modal = document.getElementById('performance-chart-modal');
+            modal.style.display = 'block';
+            
+            // 获取当前激活的图表类型
+            const activeTab = document.querySelector('.chart-tab.active');
+            const chartType = activeTab ? activeTab.getAttribute('data-chart') : 'cpu';
+            
+            updatePerformanceChart(chartType);
+        }
+
+        // 初始化图表切换按钮
+        function initChartTabs() {
+            const chartTabs = document.querySelectorAll('.performance-charts-section .chart-tabs .chart-tab');
+            chartTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // 移除所有活动状态
+                    chartTabs.forEach(t => t.classList.remove('active'));
+                    // 添加当前活动状态
+                    this.classList.add('active');
+                    // 更新图表类型并重绘
+                    currentChartType = this.dataset.chart;
+                    updatePerformanceChart(currentChartType);
+                });
+            });
+        }
+        
+        // 更新性能图表
+        function updatePerformanceChart(chartType) {
+            // 获取选中的产品数据
+            let selectedProductsData = allProducts.filter(product => AppState.selectedProducts.includes(product.id));
+            let title;
+            
+            // 根据图表类型准备数据
+            if (chartType === 'cpuSingle') {
+                title = 'CPU单核性能对比';
+                // 提取单核性能数据
+                selectedProductsData = selectedProductsData.map(p => {
+                    let score = 0;
+                    if (p.cpuPerformance && typeof p.cpuPerformance === 'object' && p.cpuPerformance.singleCore) {
+                        score = p.cpuPerformance.singleCore;
+                    } else if (typeof p.cpuSingleCore === 'number') {
+                        score = p.cpuSingleCore;
+                    }
+                    return { name: p.name, score: score };
+                });
+            } else if (chartType === 'cpuMulti') {
+                title = 'CPU多核性能对比';
+                // 提取多核性能数据
+                selectedProductsData = selectedProductsData.map(p => {
+                    let score = 0;
+                    if (p.cpuPerformance && typeof p.cpuPerformance === 'object' && p.cpuPerformance.multiCore) {
+                        score = p.cpuPerformance.multiCore;
+                    } else if (typeof p.cpuMultiCore === 'number') {
+                        score = p.cpuMultiCore;
+                    }
+                    return { name: p.name, score: score };
+                });
+            } else { // gpu
+                title = 'GPU性能对比';
+                // 提取GPU性能数据
+                selectedProductsData = selectedProductsData.map(p => {
+                    return { name: p.name, score: p.gpuPerformance || 0 };
+                });
+            }
+            
+            // 按性能从高到低排序
+            selectedProductsData.sort((a, b) => b.score - a.score);
+            
+            // 准备图表数据
+            const labels = selectedProductsData.map(p => p.name);
+            const scores = selectedProductsData.map(p => p.score);
+            
+            // 设置图表颜色
+            const backgroundColors = [
+                'rgba(0, 113, 227, 0.7)', // Apple蓝
+                'rgba(255, 59, 48, 0.7)', // Apple红
+                'rgba(52, 199, 89, 0.7)',  // Apple绿
+                'rgba(255, 149, 0, 0.7)',  // Apple橙
+                'rgba(175, 82, 222, 0.7)', // Apple紫
+                'rgba(90, 200, 250, 0.7)'  // Apple天蓝
+            ];
+            
+            // 如果图表已存在，销毁它
+            if (performanceChart) {
+                performanceChart.destroy();
+            }
+            
+            // 创建新图表（横向柱状图）
+            const ctx = document.getElementById('performance-chart').getContext('2d');
+            performanceChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: title,
+                        data: scores,
+                        backgroundColor: backgroundColors.slice(0, labels.length),
+                        borderColor: backgroundColors.map(color => color.replace('0.7', '1')),
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    indexAxis: 'y', // 设置为横向柱状图
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        title: {
+                            display: true,
+                            text: title,
+                            font: {
+                                size: 16,
+                                family: '-apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif'
+                            },
+                            padding: {
+                                bottom: 20
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `${context.label}: ${context.raw}`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: '性能得分',
+                                font: {
+                                    size: 14,
+                                    family: '-apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif'
+                                },
+                                padding: {
+                                    top: 10
+                                }
+                            },
+                            grid: {
+                                drawBorder: false
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: false
+                            },
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                // 确保所有标签都显示
+                                autoSkip: false,
+                                // 增加标签的最大宽度
+                                maxRotation: 0,
+                                minRotation: 0,
+                                padding: 10,
+                                // 确保标签文字完整显示
+                                callback: function(value) {
+                                    const label = this.getLabelForValue(value);
+                                    return label;
+                                },
+                                font: {
+                                    size: 12
+                                }
+                            }
+                        }
+                    },
+                    layout: {
+                        padding: {
+                            top: 20,
+                            right: 20,
+                            bottom: 20,
+                            left: 20
+                        }
+                    },
+                    // 动态调整图表高度以适应所有产品项
+                    onResize: function(chart, size) {
+                        // 根据选中的产品数量动态调整图表高度，每个产品分配更合理的高度
+                        const heightPerItem = 20; // 每个产品项的高度增加到20像素
+                        const padding = 120; // 为标题和边距预留空间
+                        const newHeight = (selectedProductsData.length * heightPerItem) + padding;
+                        chart.canvas.parentNode.style.height = `${newHeight}px`;
+                    },
+                    animation: {
+                        duration: 500
+                    }
+                }
+            });
+        }
+        
+        // 更新性能图表（页面底部的固定图表）
+        function updatePerformanceCharts() {
+            // 只更新当前选中的图表类型
+            updatePerformanceChart(currentChartType);
+        }
+        
+        // 在页面加载完成后初始化图表切换按钮
+        document.addEventListener('DOMContentLoaded', function() {
+            initChartTabs();
+            
+            // 模态框图表选项卡点击事件
+            document.querySelectorAll('.modal-chart .chart-tabs .chart-tab').forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // 移除所有选项卡的活动状态
+                    document.querySelectorAll('.modal-chart .chart-tabs .chart-tab').forEach(t => {
+                        t.classList.remove('active');
+                    });
+                    // 添加当前选项卡的活动状态
+                    this.classList.add('active');
+                    // 更新图表
+                    updatePerformanceChart(this.dataset.chart);
+                });
+            });
+        });
+        
+        // 兼容性函数 - GPU性能图表
+        function updateGPUPerformanceChart() {
+            // 直接调用新的统一图表函数
+            updatePerformanceChart('gpu');
+        }
+        
+        // 兼容性函数 - 单核性能图表
+        function updateCPUSinglePerformanceChart() {
+            updatePerformanceChart('cpuSingle');
+        }
+        
+        // 兼容性函数 - 多核性能图表
+        function updateCPUMultiPerformanceChart() {
+            updatePerformanceChart('cpuMulti');
+        }
+
+        // 显示错误消息
+        function displayErrorMessage(message) {
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error-message';
+            errorDiv.textContent = message;
+            
+            const container = document.querySelector('.main-content .container');
+            container.prepend(errorDiv);
+            
+            // 5秒后自动消失
+            setTimeout(() => {
+                errorDiv.remove();
+            }, 5000);
+        }
+    </script>
+
+    <style>
+        /* 模态框样式 */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(5px);
+        }
+        
+        .modal-content {
+            background-color: var(--color-surface);
+            margin: 10% auto;
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            width: 80%;
+            max-width: 900px;
+            animation: modalFadeIn 0.3s;
+        }
+        
+        @keyframes modalFadeIn {
+            from {opacity: 0; transform: translateY(-20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+        
+        .close-modal {
+            color: var(--color-text-secondary);
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color var(--transition-normal);
+        }
+        
+        .close-modal:hover {
+            color: var(--color-text-primary);
+        }
+        
+        /* 已在上方定义了.modal .chart-container，此处不再重复定义 */
+        
+        .chart-tabs {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+        
+        .chart-tab {
+            padding: var(--spacing-sm) var(--spacing-md);
+            border: none;
+            background-color: var(--color-background);
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            font-weight: 500;
+            transition: all var(--transition-normal);
+        }
+        
+        .chart-tab:hover {
+            background-color: var(--color-hover);
+        }
+        
+        .chart-tab.active {
+            background-color: var(--color-primary);
+            color: white;
+        }
+        
+        /* 错误消息样式 */
+        .error-message {
+            background-color: var(--color-error);
+            color: white;
+            padding: var(--spacing-md);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--spacing-md);
+            animation: fadeIn 0.3s;
+        }
+        
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        
+        /* 按钮点击动画 */
+        .btn-pressed {
+            transform: scale(0.95);
+        }
+    </style>
+</body>
+</html>

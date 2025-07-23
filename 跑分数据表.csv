@@ -1,0 +1,136 @@
+型号,单核跑分,,型号,多核跑分,,型号,GPU性能
+iPad Pro 13-inch (M4),3692,,iPad Pro 13-inch (M4),13724,,,54408
+Apple M4,,,Apple M4,,,iPad Pro 11-inch (M4),
+iPad Pro 13-inch (M4),3679,,iPad Pro 11-inch (M4),13438,,Apple M4,
+Apple M4,,,Apple M4,,,iPad Pro 13-inch (M4),54199
+iPad Pro 11-inch (M4),3667,,iPad Pro 13-inch (M4),13393,,Apple M4,
+Apple M4,,,Apple M4,,,iPad Pro 13-inch (M4),54110
+iPad Pro 11-inch (M4),3650,,iPad Pro 11-inch (M4),13073,,Apple M4,
+Apple M4,,,Apple M4,,,iPad Pro 11-inch (M4),54066
+iPhone 16 Pro,3452,,iPad Air 13-inch (M2),9828,,Apple M4,
+Apple A18 Pro,,,Apple M2,,,"iPad Pro (12.9-inch, 6th generation)",46044
+iPhone 16 Pro Max,3437,,iPad Air 11-inch (M2),9795,,Apple M2,
+Apple A18 Pro,,,Apple M2,,,"iPad Pro (11-inch, 4th generation)",45736
+iPhone 16,3324,,"iPad Pro (11-inch, 4th generation)",9770,,Apple M2,
+Apple A18,,,Apple M2,,,iPad Air 11-inch (M2),42035
+iPhone 16 Plus,3321,,"iPad Pro (12.9-inch, 6th generation)",9761,,Apple M2,
+Apple A18,,,Apple M2,,,iPad Air 13-inch (M2),41995
+iPhone 15 Pro,2893,,iPhone 16 Pro,8570,,Apple M2,
+Apple A17 Pro,,,Apple A18 Pro,,,iPhone 16 Pro,32746
+iPhone 15 Pro Max,2883,,iPhone 16 Pro Max,8504,,Apple A18 Pro,
+Apple A17 Pro,,,Apple A18 Pro,,,iPhone 16 Pro Max,32730
+iPhone 14 Pro,2604,,iPad Pro (12.9-inch 5th generation),8366,,Apple A18 Pro,
+Apple A16 Bionic,,,Apple M1,,,iPad Pro (12.9-inch 5th generation),32682
+iPhone 14 Pro Max,2598,,iPad Pro (11-inch 3rd generation),8321,,Apple M1,
+Apple A16 Bionic,,,Apple M1,,,iPad Pro (11-inch 3rd generation),32630
+iPad Air 13-inch (M2),2591,,iPad Air (5th generation),8252,,Apple M1,
+Apple M2,,,Apple M1,,,iPad Air (5th generation),32264
+iPad Air 11-inch (M2),2586,,iPhone 16,8189,,Apple M1,
+Apple M2,,,Apple A18,,,iPhone 16 Plus,27717
+"iPad Pro (12.9-inch, 6th generation)",2573,,iPhone 16 Plus,8180,,Apple A18,
+Apple M2,,,Apple A18,,,iPhone 16,27695
+"iPad Pro (11-inch, 4th generation)",2570,,iPhone 15 Pro,7181,,Apple A18,
+Apple M2,,,Apple A17 Pro,,,iPhone 15 Pro,27295
+iPhone 15 Plus,2547,,iPhone 15 Pro Max,7145,,Apple A17 Pro,
+Apple A16 Bionic,,,Apple A17 Pro,,,iPhone 15 Pro Max,27228
+iPhone 15,2543,,iPhone 14 Pro,6692,,Apple A17 Pro,
+Apple A16 Bionic,,,Apple A16 Bionic,,,iPhone 15 Plus,22857
+iPhone 13 Pro Max,2340,,iPhone 14 Pro Max,6664,,Apple A16 Bionic,
+Apple A15 Bionic,,,Apple A16 Bionic,,,iPhone 15,22813
+iPhone 13 Pro,2339,,iPhone 15 Plus,6346,,Apple A16 Bionic,
+Apple A15 Bionic,,,Apple A16 Bionic,,,iPhone 14 Pro,22746
+iPad Pro (12.9-inch 5th generation),2307,,iPhone 15,6324,,Apple A16 Bionic,
+Apple M1,,,Apple A16 Bionic,,,iPhone 14 Pro Max,22652
+iPad Pro (11-inch 3rd generation),2302,,iPhone 13 Pro Max,5739,,Apple A16 Bionic,
+Apple M1,,,Apple A15 Bionic,,,iPhone 14 Plus,20530
+iPad Air (5th generation),2289,,iPhone 13 Pro,5724,,Apple A15 Bionic,
+Apple M1,,,Apple A15 Bionic,,,iPhone 14,20486
+iPhone SE (3rd generation),2261,,iPhone 14 Plus,5541,,Apple A15 Bionic,
+Apple A15 Bionic,,,Apple A15 Bionic,,,iPhone 13 Pro,20219
+iPhone 14 Plus,2257,,iPhone 14,5530,,Apple A15 Bionic,
+Apple A15 Bionic,,,Apple A15 Bionic,,,iPhone 13 Pro Max,20001
+iPhone 14,2255,,iPhone SE (3rd generation),5442,,Apple A15 Bionic,
+Apple A15 Bionic,,,Apple A15 Bionic,,,iPad mini (6th generation),19604
+iPhone 13 mini,2220,,iPad mini (6th generation),5369,,Apple A15 Bionic,
+Apple A15 Bionic,,,Apple A15 Bionic,,,iPad Pro 11-inch (2nd generation),18426
+iPhone 13,2213,,iPhone 13,5244,,Apple A12Z Bionic,
+Apple A15 Bionic,,,Apple A15 Bionic,,,iPad Pro 12.9-inch (4th generation),18403
+iPad mini (6th generation),2124,,iPhone 13 mini,5229,,Apple A12Z Bionic,
+Apple A15 Bionic,,,Apple A15 Bionic,,,iPhone 13,17752
+iPhone 12 Pro Max,2122,,iPad Air (4th generation),4999,,Apple A15 Bionic,
+Apple A14 Bionic,,,Apple A14 Bionic,,,iPhone SE (3rd generation),17738
+iPad Air (4th generation),2083,,iPhone 12 Pro Max,4965,,Apple A15 Bionic,
+Apple A14 Bionic,,,Apple A14 Bionic,,,iPhone 13 mini,17351
+iPhone 12 Pro,2076,,iPhone 12 Pro,4736,,Apple A15 Bionic,
+Apple A14 Bionic,,,Apple A14 Bionic,,,iPad Pro (11-inch),16692
+iPhone 12 Mini,2033,,iPad Pro 12.9-inch (4th generation),4649,,Apple A12X Bionic,
+Apple A14 Bionic,,,Apple A12Z Bionic,,,iPad Air (4th generation),16461
+iPhone 12,2030,,iPad Pro 11-inch (2nd generation),4634,,Apple A14 Bionic,
+Apple A14 Bionic,,,Apple A12Z Bionic,,,iPhone 12 Pro Max,16230
+iPad (9th generation),1736,,iPhone 12 Mini,4595,,Apple A14 Bionic,
+Apple A13 Bionic,,,Apple A14 Bionic,,,iPhone 12,16175
+iPhone 11 Pro Max,1724,,iPad Pro (11-inch),4586,,Apple A14 Bionic,
+Apple A13 Bionic,,,Apple A12X Bionic,,,iPhone 12 Mini,16104
+iPhone 11 Pro,1714,,iPhone 12,4586,,Apple A14 Bionic,
+Apple A13 Bionic,,,Apple A14 Bionic,,,iPhone 12 Pro,16097
+iPhone 11,1705,,iPad Pro (12.9-inch 3rd Generation),4440,,Apple A14 Bionic,
+Apple A13 Bionic,,,Apple A12X Bionic,,,iPad Pro (12.9-inch 3rd Generation),15883
+iPhone SE (2nd generation),1670,,iPhone 11 Pro Max,3873,,Apple A12X Bionic,
+Apple A13 Bionic,,,Apple A13 Bionic,,,iPad (9th generation),13619
+iPad Pro 12.9-inch (4th generation),1331,,iPad (9th generation),3853,,Apple A13 Bionic,
+Apple A12Z Bionic,,,Apple A13 Bionic,,,iPhone 11 Pro Max,13595
+iPad Pro (11-inch),1328,,iPhone 11 Pro,3823,,Apple A13 Bionic,
+Apple A12X Bionic,,,Apple A13 Bionic,,,iPhone 11 Pro,13560
+iPad Air (3rd generation),1326,,iPhone 11,3668,,Apple A13 Bionic,
+Apple A12 Bionic,,,Apple A13 Bionic,,,iPhone 11,13409
+iPad Pro 11-inch (2nd generation),1325,,iPhone SE (2nd generation),3034,,Apple A13 Bionic,
+Apple A12Z Bionic,,,Apple A13 Bionic,,,iPhone SE (2nd generation),12759
+iPad Pro (12.9-inch 3rd Generation),1322,,iPad Air (3rd generation),2947,,Apple A13 Bionic,
+Apple A12X Bionic,,,Apple A12 Bionic,,,iPad Air (3rd generation),9659
+iPad mini (5th generation),1321,,iPad mini (5th generation),2887,,Apple A12 Bionic,
+Apple A12 Bionic,,,Apple A12 Bionic,,,iPad mini (5th generation),9373
+iPad (8th generation),1304,,iPad (8th generation),2805,,Apple A12 Bionic,
+Apple A12 Bionic,,,Apple A12 Bionic,,,iPad (8th generation),9148
+iPhone XS Max,1287,,iPhone XS Max,2667,,Apple A12 Bionic,
+Apple A12 Bionic,,,Apple A12 Bionic,,,iPad Pro (10.5-inch),8337
+iPhone XS,1286,,iPhone XS,2660,,Apple A10X Fusion,
+Apple A12 Bionic,,,Apple A12 Bionic,,,iPhone XS Max,8287
+iPhone XR,1250,,iPhone XR,2273,,Apple A12 Bionic,
+Apple A12 Bionic,,,Apple A12 Bionic,,,iPhone XS,8253
+iPhone 8 Plus,1058,,iPhone 8 Plus,2271,,Apple A12 Bionic,
+Apple A11 Bionic,,,Apple A11 Bionic,,,iPhone XR,8245
+iPhone X,1055,,iPad Pro (12.9-inch 2nd Generation),2250,,Apple A12 Bionic,
+Apple A11 Bionic,,,Apple A10X Fusion,,,iPad Pro (12.9-inch 2nd Generation),8061
+iPhone 8,1034,,iPad Pro (10.5-inch),2210,,Apple A10X Fusion,
+Apple A11 Bionic,,,Apple A10X Fusion,,,iPad Pro (12.9-inch),5844
+iPad Pro (10.5-inch),941,,iPhone X,2054,,Apple A9X,
+Apple A10X Fusion,,,Apple A11 Bionic,,,iPad Pro (9.7-inch),5665
+iPad Pro (12.9-inch 2nd Generation),926,,iPhone 8,1697,,Apple A9X,
+Apple A10X Fusion,,,Apple A11 Bionic,,,iPhone 8 Plus,5318
+iPad (7th generation),860,,iPad (7th generation),1384,,Apple A11 Bionic,
+Apple A10 Fusion,,,Apple A10 Fusion,,,iPhone X,5164
+iPad (6th generation),829,,iPad Pro (12.9-inch),1250,,Apple A11 Bionic,
+Apple A10 Fusion,,,Apple A9X,,,iPhone 8,4747
+iPhone 7 Plus,816,,iPhone 7 Plus,1156,,Apple A11 Bionic,
+Apple A10 Fusion,,,Apple A10 Fusion,,,iPad (6th generation),4310
+iPhone 7,786,,iPad (6th generation),1140,,Apple A10 Fusion,
+Apple A10 Fusion,,,Apple A10 Fusion,,,iPad (7th generation),4190
+iPad Pro (12.9-inch),752,,iPad Pro (9.7-inch),1097,,Apple A10 Fusion,
+Apple A9X,,,Apple A9X,,,iPhone 7 Plus,3851
+iPad Pro (9.7-inch),738,,iPod (7th generation),1037,,Apple A10 Fusion,
+Apple A9X,,,Apple A10 Fusion,,,iPhone 7,3708
+iPad (5th generation),630,,iPad (5th generation),965,,Apple A10 Fusion,
+Apple A9,,,Apple A9,,,iPad (5th generation),3092
+iPod (7th generation),630,,iPhone 7,963,,Apple A9,
+Apple A10 Fusion,,,Apple A10 Fusion,,,iPhone 6s Plus,2848
+iPhone SE 第一代,618,,iPad Air 2,949,,Apple A9,
+Apple A9,,,Apple A8X,,,iPod (7th generation),2843
+iPhone 6s,605,,iPhone SE 第一代,933,,Apple A10 Fusion,
+Apple A9,,,Apple A9,,,iPhone 6s,2818
+iPhone 6s Plus,602,,iPhone 6s,876,,Apple A9,
+Apple A9,,,Apple A9,,,iPhone SE 第一代,2764
+iPad Air 2,441,,iPhone 6s Plus,857,,Apple A9,
+Apple A8X,,,Apple A9,,,iPad Air 2,762
+iPad mini 4,413,,iPad mini 4,604,,Apple A8X,
+Apple A8,,,Apple A8,,,iPad mini 4,554
+,,,,,,Apple A8,

@@ -1,0 +1,17 @@
+/* 表格样式修改 - 设置字体大小为13px */
+table {
+    font-size: 13px !important;
+}
+
+th, td {
+    font-size: 13px !important;
+}
+
+.param-name, .param-value {
+    font-size: 13px !important;
+}
+
+/* 确保表格中的所有文本元素都使用13px字体 */
+.comparison-table * {
+    font-size: 13px !important;
+}

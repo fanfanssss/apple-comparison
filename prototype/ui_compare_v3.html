@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品参数展示 - Apple Compare</title>
+    <!-- IconPark图标库 -->
+    <link rel="stylesheet" href="https://lf1-cdn-tos.bytegoofy.com/obj/iconpark/icons/index.css">
+    <style>
+        :root {
+            /* 颜色变量 */
+            --apple-blue: #0071e3;
+            --apple-blue-dark: #0058b0;
+            --apple-gray-50: #fafafa;
+            --apple-gray-100: #f5f5f7;
+            --apple-gray-200: #e8e8ed;
+            --apple-gray-300: #d2d2d7;
+            --apple-gray-400: #a1a1a6;
+            --apple-gray-500: #86868b;
+            --apple-gray-600: #6e6e73;
+            --apple-gray-700: #424245;
+            --apple-gray-800: #333333;
+            --apple-gray-900: #1d1d1f;
+            --apple-white: #ffffff;
+            --apple-black: #000000;
+            --apple-red: #ff3b30;
+            --apple-green: #34c759;
+            
+            /* 布局变量 */
+            --border-radius-sm: 6px;
+            --border-radius-md: 8px;
+            --border-radius-lg: 12px;
+            --box-shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+            --box-shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+            --box-shadow-lg: 0 8px 30px rgba(0,0,0,0.12);
+            --transition-fast: all 0.2s ease;
+            --transition-normal: all 0.3s ease;
+            --spacing-xs: 4px;
+            --spacing-sm: 8px;
+            --spacing-md: 16px;
+            --spacing-lg: 24px;
+            --spacing-xl: 32px;
+        }
+
+        /* 基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: var(--apple-gray-100);
+            color: var(--apple-gray-900);
+            line-height: 1.5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 头部导航 */
+        header {
+            background-color: var(--apple-white);
+            border-bottom: 1px solid var(--apple-gray-200);
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--box-shadow-sm);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--apple-gray-900);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo .icon {
+            color: var(--apple-blue);
+            margin-right: 8px;
+            font-size: 1.6rem;
+        }
+
+        nav {
+            display: flex;
+            gap: 24px;
+        }
+
+        nav a {
+            color: var(--apple-gray-600);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition-fast);
+            position: relative;
+            padding: 4px 0;
+        }
+
+        nav a:hover {
+            color: var(--apple-gray-900);
+        }
+
+        nav a.active {
+            color: var(--apple-blue);
+        }
+
+        nav a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--apple-blue);
+        }
+        
+        /* 语言切换按钮 */
+        .language-switch {
+            display: flex;
+            border: 1px solid var(--apple-gray-300);
+            border-radius: var(--border-radius-md);
+            overflow: hidden;
+        }
+        
+        .lang-btn {
+            background: none;
+            border: none;
+            padding: 4px 8px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            color: var(--apple-gray-600);
+            transition: var(--transition-fast);
+        }
+        
+        .lang-btn.active {
+            background-color: var(--apple-blue);
+            color: var(--apple-white);
+        }
+    /* 主要内容区域 */
+        .main-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: var(--spacing-lg);
+            flex: 1;
+        }
+
+        .page-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--apple-gray-900);
+            margin-bottom: var(--spacing-lg);
+            text-align: center;
+        }
+
+        /* 操作按钮区域 */
+        .action-buttons {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: var(--spacing-lg);
+            gap: var(--spacing-md);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 16px;
+            border-radius: var(--border-radius-md);
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition-fast);
+            border: none;
+            font-size: 0.9rem;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background-color: var(--apple-blue);
+            color: var(--apple-white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--apple-blue-dark);
+        }
+
+        .btn-secondary {
+            background-color: var(--apple-white);
+            color: var(--apple-gray-700);
+            border: 1px solid var(--apple-gray-300);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--apple-gray-50);
+            border-color: var(--apple-gray-400);
+        }
+
+        /* 表格容器 */
+        .table-container {
+            background-color: var(--apple-white);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--box-shadow-md);
+            overflow: auto;
+            max-height: 80vh;
+            position: relative;
+        }
+
+        /* 表格样式 */
+        .comparison-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 1px solid var(--apple-gray-200);
+            border-radius: var(--border-radius-lg);
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 12px 16px;
+            text-align: center;
+            border-bottom: 1px solid var(--apple-gray-200);
+            font-size: 0.9rem;
+        }
+
+        .comparison-table th {
+            background-color: var(--apple-gray-50);
+            font-weight: 600;
+            color: var(--apple-gray-800);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            border-bottom: 2px solid var(--apple-gray-300);
+        }
+
+        /* 参数名称列 */
+        .param-name {
+            position: sticky;
+            left: 0;
+            background-color: var(--apple-gray-50);
+            font-weight: 600;
+            color: var(--apple-gray-800);
+            text-align: left;
+            z-index: 5;
+            border-right: 2px solid var(--apple-gray-300);
+        }
+
+        /* 参数组标题 */
+        .param-group {
+            background-color: var(--apple-gray-100);
+            font-weight: 700;
+            color: var(--apple-gray-900);
+            text-align: left;
+            padding: 14px 16px;
+        }
+
+        .param-group .icon {
+            margin-right: 8px;
+            color: var(--apple-blue);
+        }
+
+        /* 产品选择UI */
+        .product-select {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 8px;
+        }
+
+        .product-select input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: var(--apple-blue);
+            cursor: pointer;
+        }
+
+        .product-select label {
+            cursor: pointer;
+            font-size: 0.9rem;
+            color: var(--apple-gray-700);
+        }
+
+        /* 产品图片 */
+        .product-image {
+            max-width: 80px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        /* 高亮差异和最佳值 */
+        .highlight-diff {
+            background-color: rgba(0, 113, 227, 0.08);
+        }
+
+        .best-value {
+            color: var(--apple-blue);
+            font-weight: 700;
+            position: relative;
+        }
+
+        .best-value::after {
+            content: "";
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background-image: url('https://lf1-cdn-tos.bytegoofy.com/obj/iconpark/icons_svg/star.svg');
+            background-size: contain;
+            margin-left: 4px;
+            vertical-align: middle;
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: var(--apple-gray-50);
+            border-top: 1px solid var(--apple-gray-200);
+            padding: var(--spacing-lg) 0;
+            text-align: center;
+            color: var(--apple-gray-600);
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 1200px) {
+            .main-container {
+                padding: var(--spacing-md);
+                max-width: 100%;
+            }
+            
+            .comparison-table th,
+            .comparison-table td {
+                padding: 10px 12px;
+                font-size: 0.85rem;
+            }
+            
+            .product-image {
+                max-width: 70px;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .page-title {
+                font-size: 1.5rem;
+            }
+            
+            .comparison-table th,
+            .comparison-table td {
+                padding: 8px 10px;
+                font-size: 0.8rem;
+            }
+            
+            .product-image {
+                max-width: 60px;
+            }
+            
+            .product-select label {
+                font-size: 0.8rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-wrap: wrap;
+                padding: 12px 16px;
+            }
+            
+            nav {
+                gap: 16px;
+                order: 3;
+                width: 100%;
+                margin-top: 12px;
+                justify-content: center;
+            }
+            
+            .language-switch {
+                margin-left: auto;
+            }
+            
+            .table-container {
+                overflow-x: auto;
+                max-width: 100vw;
+            }
+            
+            .comparison-table {
+                min-width: 800px;
+            }
+            
+            .product-image {
+                max-width: 50px;
+            }
+            
+            .action-buttons {
+                justify-content: center;
+            }
+            
+            .page-title {
+                font-size: 1.4rem;
+                margin-bottom: var(--spacing-md);
+            }
+        }
+        
+        /* 滚动条样式 */
+        .table-container::-webkit-scrollbar {
+            height: 8px;
+            width: 8px;
+        }
+        
+        .table-container::-webkit-scrollbar-track {
+            background: var(--apple-gray-100);
+            border-radius: 4px;
+        }
+        
+        .table-container::-webkit-scrollbar-thumb {
+            background: var(--apple-gray-300);
+            border-radius: 4px;
+        }
+        
+        .table-container::-webkit-scrollbar-thumb:hover {
+            background: var(--apple-gray-400);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <i class="icon i-apple-fill"></i>
+            <span>Apple Compare</span>
+        </a>
+        <nav>
+            <a href="#">首页</a>
+            <a href="#" class="active">产品参数</a>
+            <a href="#">资讯</a>
+            <a href="#">反馈</a>
+        </nav>
+        <div class="language-switch">
+            <button class="lang-btn active" data-lang="zh">中</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+    </header>
+    
+    <div class="main-container">
+        <h1 class="page-title">iPhone 产品参数展示</h1>
+        
+        <div class="action-buttons">
+            <button class="btn btn-secondary">
+                <i class="icon i-refresh"></i>
+                重置
+            </button>
+            <button class="btn btn-primary">
+                <i class="icon i-compare"></i>
+                对比
+            </button>
+        </div>
+        
+        <div class="table-container">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th class="param-name">参数 / 产品</th>
+                        <th>
+                            <div class="product-select">
+                                <input type="checkbox" id="iphone16promax" checked>
+                                <label for="iphone16promax">iPhone 16 Pro Max</label>
+                            </div>
+                            <img src="https://placehold.co/80x120" alt="iPhone 16 Pro Max" class="product-image">
+                        </th>
+                        <th>
+                            <div class="product-select">
+                                <input type="checkbox" id="iphone16pro" checked>
+                                <label for="iphone16pro">iPhone 16 Pro</label>
+                            </div>
+                            <img src="https://placehold.co/80x120" alt="iPhone 16 Pro" class="product-image">
+                        </th>
+                        <th>
+                            <div class="product-select">
+                                <input type="checkbox" id="iphone16plus" checked>
+                                <label for="iphone16plus">iPhone 16 Plus</label>
+                            </div>
+                            <img src="https://placehold.co/80x120" alt="iPhone 16 Plus" class="product-image">
+                        </th>
+                        <th>
+                            <div class="product-select">
+                                <input type="checkbox" id="iphone16" checked>
+                                <label for="iphone16">iPhone 16</label>
+                            </div>
+                            <img src="https://placehold.co/80x120" alt="iPhone 16" class="product-image">
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 基本信息 -->
+                    <tr>
+                        <td colspan="5" class="param-group">
+                            <i class="icon i-info"></i>基本信息
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">发布日期</td>
+                        <td>2024年9月</td>
+                        <td>2024年9月</td>
+                        <td>2024年9月</td>
+                        <td>2024年9月</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">起售价格</td>
+                        <td class="highlight-diff">¥9,999</td>
+                        <td>¥8,999</td>
+                        <td>¥7,999</td>
+                        <td>¥6,999</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">颜色</td>
+                        <td>黑色钛金属, 白色钛金属, 自然钛金属, 沙漠钛金属</td>
+                        <td>黑色钛金属, 白色钛金属, 自然钛金属, 沙漠钛金属</td>
+                        <td>黑色, 白色, 粉色, 蓝色, 绿色</td>
+                        <td>黑色, 白色, 粉色, 蓝色, 绿色</td>
+                    </tr>
+                    
+                    <!-- 尺寸与重量 -->
+                    <tr>
+                        <td colspan="5" class="param-group">
+                            <i class="icon i-ruler"></i>尺寸与重量
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">高度</td>
+                        <td class="highlight-diff">163.0 毫米</td>
+                        <td>149.6 毫米</td>
+                        <td>160.9 毫米</td>
+                        <td>147.6 毫米</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">宽度</td>
+                        <td>77.6 毫米</td>
+                        <td>71.5 毫米</td>
+                        <td>77.8 毫米</td>
+                        <td>71.6 毫米</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">厚度</td>
+                        <td>8.25 毫米</td>
+                        <td>8.25 毫米</td>
+                        <td>7.80 毫米</td>
+                        <td>7.80 毫米</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">重量</td>
+                        <td class="highlight-diff">227 克</td>
+                        <td>199 克</td>
+                        <td>221 克</td>
+                        <td>173 克</td>
+                    </tr>
+                    
+                    <!-- 芯片 -->
+                    <tr>
+                        <td colspan="5" class="param-group">
+                            <i class="icon i-cpu"></i>芯片
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">芯片</td>
+                        <td class="best-value">A18 Pro</td>
+                        <td class="best-value">A18 Pro</td>
+                        <td>A18</td>
+                        <td>A18</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">CPU</td>
+                        <td>6核心CPU (2性能核心 + 4能效核心)</td>
+                        <td>6核心CPU (2性能核心 + 4能效核心)</td>
+                        <td>6核心CPU (2性能核心 + 4能效核心)</td>
+                        <td>6核心CPU (2性能核心 + 4能效核心)</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">GPU</td>
+                        <td class="best-value">6核心GPU</td>
+                        <td class="best-value">6核心GPU</td>
+                        <td>5核心GPU</td>
+                        <td>5核心GPU</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">GPU性能</td>
+                        <td class="best-value">32746</td>
+                        <td class="best-value">32746</td>
+                        <td>28932</td>
+                        <td>28932</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">神经网络引擎</td>
+                        <td>16核心</td>
+                        <td>16核心</td>
+                        <td>16核心</td>
+                        <td>16核心</td>
+                    </tr>
+                    
+                    <!-- 屏幕 -->
+                    <tr>
+                        <td colspan="5" class="param-group">
+                            <i class="icon i-monitor"></i>屏幕
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">屏幕类型</td>
+                        <td class="best-value">Super Retina XDR OLED</td>
+                        <td class="best-value">Super Retina XDR OLED</td>
+                        <td>Super Retina XDR OLED</td>
+                        <td>Super Retina XDR OLED</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">屏幕尺寸</td>
+                        <td class="highlight-diff best-value">6.9英寸</td>
+                        <td>6.3英寸</td>
+                        <td>6.7英寸</td>
+                        <td>6.1英寸</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">分辨率</td>
+                        <td class="best-value">2796 x 1290</td>
+                        <td>2556 x 1179</td>
+                        <td>2778 x 1284</td>
+                        <td>2532 x 1170</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">像素密度</td>
+                        <td>460 ppi</td>
+                        <td class="best-value">463 ppi</td>
+                        <td>458 ppi</td>
+                        <td>460 ppi</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">亮度</td>
+                        <td class="best-value">峰值亮度高达2000尼特</td>
+                        <td class="best-value">峰值亮度高达2000尼特</td>
+                        <td>峰值亮度高达1600尼特</td>
+                        <td>峰值亮度高达1600尼特</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">刷新率</td>
+                        <td class="best-value">1-120Hz ProMotion</td>
+                        <td class="best-value">1-120Hz ProMotion</td>
+                        <td>60Hz</td>
+                        <td>60Hz</td>
+                    </tr>
+                    
+                    <!-- 摄像头 -->
+                    <tr>
+                        <td colspan="5" class="param-group">
+                            <i class="icon i-camera"></i>摄像头
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">主摄像头</td>
+                        <td class="best-value">4800万像素，f/1.78光圈</td>
+                        <td class="best-value">4800万像素，f/1.78光圈</td>
+                        <td>4800万像素，f/1.6光圈</td>
+                        <td>4800万像素，f/1.6光圈</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">超广角</td>
+                        <td class="best-value">1200万像素，f/2.2光圈</td>
+                        <td class="best-value">1200万像素，f/2.2光圈</td>
+                        <td>1200万像素，f/2.4光圈</td>
+                        <td>1200万像素，f/2.4光圈</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">长焦</td>
+                        <td class="best-value">1200万像素，f/2.8光圈，5倍光学变焦</td>
+                        <td>1200万像素，f/2.8光圈，3倍光学变焦</td>
+                        <td class="highlight-diff">无</td>
+                        <td class="highlight-diff">无</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">前置摄像头</td>
+                        <td>1200万像素，f/1.9光圈</td>
+                        <td>1200万像素，f/1.9光圈</td>
+                        <td>1200万像素，f/1.9光圈</td>
+                        <td>1200万像素，f/1.9光圈</td>
+                    </tr>
+                    
+                    <!-- 电池与续航 -->
+                    <tr>
+                        <td colspan="5" class="param-group">
+                            <i class="icon i-battery"></i>电池与续航
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">电池容量</td>
+                        <td class="best-value">4676 mAh (18.06 Wh)</td>
+                        <td>3650 mAh (14.09 Wh)</td>
+                        <td>4383 mAh (16.95 Wh)</td>
+                        <td>3561 mAh (13.68 Wh)</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">视频播放</td>
+                        <td class="best-value">最长33小时</td>
+                        <td>最长29小时</td>
+                        <td>最长27小时</td>
+                        <td>最长22小时</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">音频播放</td>
+                        <td class="best-value">最长95小时</td>
+                        <td>最长85小时</td>
+                        <td>最长80小时</td>
+                        <td>最长75小时</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">快速充电</td>
+                        <td>支持20W充电器，30分钟充电约50%</td>
+                        <td>支持20W充电器，30分钟充电约50%</td>
+                        <td>支持20W充电器，30分钟充电约50%</td>
+                        <td>支持20W充电器，30分钟充电约50%</td>
+                    </tr>
+                    
+                    <!-- 存储 -->
+                    <tr>
+                        <td colspan="5" class="param-group">
+                            <i class="icon i-storage"></i>存储
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">存储选项</td>
+                        <td class="best-value">256GB / 512GB / 1TB</td>
+                        <td class="best-value">256GB / 512GB / 1TB</td>
+                        <td>128GB / 256GB / 512GB</td>
+                        <td>128GB / 256GB / 512GB</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">RAM</td>
+                        <td class="best-value">8GB</td>
+                        <td class="best-value">8GB</td>
+                        <td>6GB</td>
+                        <td>6GB</td>
+                    </tr>
+                    
+                    <!-- 连接与网络 -->
+                    <tr>
+                        <td colspan="5" class="param-group">
+                            <i class="icon i-wifi"></i>连接与网络
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">基带芯片</td>
+                        <td>Qualcomm X75</td>
+                        <td>Qualcomm X75</td>
+                        <td>Qualcomm X70</td>
+                        <td>Qualcomm X70</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">5G频段</td>
+                        <td class="best-value">毛米波和亚毫米波</td>
+                        <td class="best-value">毛米波和亚毫米波</td>
+                        <td>毛米波和亚毫米波</td>
+                        <td>毛米波和亚毫米波</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">Wi-Fi</td>
+                        <td class="best-value">Wi-Fi 7 (802.11be)</td>
+                        <td class="best-value">Wi-Fi 7 (802.11be)</td>
+                        <td>Wi-Fi 6E (802.11ax)</td>
+                        <td>Wi-Fi 6E (802.11ax)</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">Bluetooth</td>
+                        <td>Bluetooth 5.3</td>
+                        <td>Bluetooth 5.3</td>
+                        <td>Bluetooth 5.3</td>
+                        <td>Bluetooth 5.3</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">NFC</td>
+                        <td>支持</td>
+                        <td>支持</td>
+                        <td>支持</td>
+                        <td>支持</td>
+                    </tr>
+                    
+                    <!-- 其他特性 -->
+                    <tr>
+                        <td colspan="5" class="param-group">
+                            <i class="icon i-all-application"></i>其他特性
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">防水级别</td>
+                        <td>IP68</td>
+                        <td>IP68</td>
+                        <td>IP68</td>
+                        <td>IP68</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">面容ID</td>
+                        <td>支持</td>
+                        <td>支持</td>
+                        <td>支持</td>
+                        <td>支持</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">操作按钮</td>
+                        <td class="best-value">操作按钮</td>
+                        <td class="best-value">操作按钮</td>
+                        <td>无</td>
+                        <td>无</td>
+                    </tr>
+                    <tr>
+                        <td class="param-name">型号标识符</td>
+                        <td>A2846</td>
+                        <td>A2845</td>
+                        <td>A2848</td>
+                        <td>A2847</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Apple Compare. 所有数据仅供参考。</p>
+    </footer>
+
+    <script>
+        // 产品选择功能
+        document.addEventListener('DOMContentLoaded', function() {
+            // 获取所有产品复选框
+            const productCheckboxes = document.querySelectorAll('.product-select input[type="checkbox"]');
+            
+            // 重置按钮
+            const resetButton = document.querySelector('.btn-secondary');
+            
+            // 对比按钮
+            const compareButton = document.querySelector('.btn-primary');
+            
+            // 产品列索引映射
+            const productIndexMap = {};
+            productCheckboxes.forEach((checkbox, index) => {
+                productIndexMap[checkbox.id] = index + 1; // 索引从1开始，因为第0列是参数名称
+            });
+            
+            // 产品选择事件
+            productCheckboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    const columnIndex = productIndexMap[this.id];
+                    const allCells = document.querySelectorAll(`table tr td:nth-child(${columnIndex + 1}), table tr th:nth-child(${columnIndex + 1})`);
+                    
+                    // 如果取消选中，隐藏对应列
+                    allCells.forEach(cell => {
+                        if (!this.checked) {
+                            cell.style.display = 'none';
+                        } else {
+                            cell.style.display = '';
+                        }
+                    });
+                    
+                    // 更新高亮差异和最佳值标记
+                    updateHighlightsAndBestValues();
+                });
+            });
+            
+            // 重置按钮事件
+            resetButton.addEventListener('click', function() {
+                // 选中所有复选框
+                productCheckboxes.forEach(checkbox => {
+                    checkbox.checked = true;
+                });
+                
+                // 显示所有列
+                const allCells = document.querySelectorAll('table tr td, table tr th');
+                allCells.forEach(cell => {
+                    cell.style.display = '';
+                });
+                
+                // 更新高亮和最佳值
+                updateHighlightsAndBestValues();
+            });
+            
+            // 对比按钮事件 - 只显示选中的产品
+            compareButton.addEventListener('click', function() {
+                // 如果没有选中产品，提示选择
+                const selectedCount = Array.from(productCheckboxes).filter(cb => cb.checked).length;
+                if (selectedCount === 0) {
+                    alert('请至少选择一个产品进行对比');
+                    return;
+                }
+                
+                // 高亮显示差异参数
+                highlightDifferences();
+            });
+            
+            // 更新高亮和最佳值标记
+            function updateHighlightsAndBestValues() {
+                // 实际实现中会根据显示的列重新计算最佳值和高亮差异
+                console.log('更新高亮和最佳值标记');
+            }
+            
+            // 高亮显示差异参数
+            function highlightDifferences() {
+                // 实际实现中会对比选中产品的参数差异并高亮显示
+                console.log('高亮显示差异参数');
+                
+                // 模拟效果：添加更多的highlight-diff类
+                const rows = document.querySelectorAll('.comparison-table tbody tr');
+                rows.forEach(row => {
+                    // 跳过参数组标题行
+                    if (row.querySelector('.param-group')) return;
+                    
+                    // 获取当前行的所有可见单元格（排除第一列参数名称）
+                    const cells = Array.from(row.querySelectorAll('td:not(.param-name)')).filter(cell => 
+                        cell.style.display !== 'none'
+                    );
+                    
+                    // 检查是否有不同的值
+                    if (cells.length > 1) {
+                        let allSame = true;
+                        const firstValue = cells[0].textContent.trim();
+                        
+                        for (let i = 1; i < cells.length; i++) {
+                            if (cells[i].textContent.trim() !== firstValue) {
+                                allSame = false;
+                                break;
+                            }
+                        }
+                        
+                        // 如果有不同的值，添加高亮类
+                        if (!allSame) {
+                            cells.forEach(cell => {
+                                if (!cell.classList.contains('highlight-diff') && !cell.classList.contains('best-value')) {
+                                    cell.classList.add('highlight-diff');
+                                }
+                            });
+                        }
+                    }
+                });
+            }
+        });
+        
+        // 响应式设计调整
+        window.addEventListener('resize', function() {
+            adjustTableForMobile();
+        });
+        
+        function adjustTableForMobile() {
+            const tableContainer = document.querySelector('.table-container');
+            if (window.innerWidth < 768) {
+                tableContainer.style.maxWidth = '100vw';
+                tableContainer.style.overflowX = 'auto';
+            } else {
+                tableContainer.style.maxWidth = '';
+            }
+        }
+        
+        // 初始化调用
+        adjustTableForMobile();
+        
+        // 语言切换功能
+        const langButtons = document.querySelectorAll('.lang-btn');
+        langButtons.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // 移除所有按钮的active类
+                langButtons.forEach(b => b.classList.remove('active'));
+                // 添加当前按钮的active类
+                this.classList.add('active');
+                
+                const lang = this.dataset.lang;
+                // 实际项目中这里会切换语言
+                console.log(`切换到${lang === 'zh' ? '中文' : '英文'}界面`);
+                
+                // 模拟语言切换效果
+                if (lang === 'en') {
+                    document.querySelector('.page-title').textContent = 'iPhone Product Parameters';
+                    document.querySelector('.btn-secondary').innerHTML = '<i class="icon i-refresh"></i> Reset';
+                    document.querySelector('.btn-primary').innerHTML = '<i class="icon i-compare"></i> Compare';
+                    document.querySelector('footer p').textContent = '© 2025 Apple Compare. All data is for reference only.';
+                } else {
+                    document.querySelector('.page-title').textContent = 'iPhone 产品参数展示';
+                    document.querySelector('.btn-secondary').innerHTML = '<i class="icon i-refresh"></i> 重置';
+                    document.querySelector('.btn-primary').innerHTML = '<i class="icon i-compare"></i> 对比';
+                    document.querySelector('footer p').textContent = '© 2025 Apple Compare. 所有数据仅供参考。';
+                }
+            });
+        });
+        
+        // 添加表格行悬停效果
+        const tableRows = document.querySelectorAll('.comparison-table tbody tr');
+        tableRows.forEach(row => {
+            if (!row.querySelector('.param-group')) { // 跳过参数组标题行
+                row.addEventListener('mouseenter', function() {
+                    this.style.backgroundColor = 'var(--apple-gray-50)';
+                });
+                row.addEventListener('mouseleave', function() {
+                    this.style.backgroundColor = '';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
