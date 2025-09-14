@@ -1,0 +1,531 @@
+[
+  {
+    "id": "iphone-17-pro-max",
+    "name": {
+      "zh-CN": "iPhone 17 Pro Max",
+      "en-US": "iPhone 17 Pro Max"
+    },
+    "marketingSlogan": {
+      "zh-CN": "全 Pro 实力迸发",
+      "en-US": "全 Pro 实力迸发"
+    },
+    "releaseDate": {
+      "zh-CN": "2025.09.10",
+      "en-US": "2025.09.10"
+    },
+    "os": "iOS 26 ~ 最新",
+    "model": "iPhone18,2",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "星宇橙色",
+          "en-US": "星宇橙色"
+        },
+        "code": "#E67B34"
+      },
+      {
+        "name": {
+          "zh-CN": "深蓝色",
+          "en-US": "深蓝色"
+        },
+        "code": "#2C3143"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#F5F5F5"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持查看",
+      "en-US": "当前浏览器不支持查看"
+    },
+    "processor": {
+      "zh-CN": "A19 Pro(2P+4E+6GPU)",
+      "en-US": "A19 Pro(2P+4E+6GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "6.9\" XDR OLED",
+      "en-US": "6.9\" XDR OLED"
+    },
+    "displayResolution": {
+      "zh-CN": "2868×1320, 460ppi",
+      "en-US": "2868×1320, 460ppi"
+    },
+    "displayRefreshRate": "1-120Hz ProMotion",
+    "displayBrightness": {
+      "zh-CN": "1000(典), 1600(HDR), 3000(外)",
+      "en-US": "1000(典), 1600(HDR), 3000(外)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "原彩显示, 广色域显示(P3)"
+    },
+    "camera": {
+      "zh-CN": "主摄：4800W 像素 ƒ/1.78超广角：4800W 像素 ƒ/2.2长焦：4800W 像素 ƒ/2.8",
+      "en-US": "主摄：4800W 像素 ƒ/1.78超广角：4800W 像素 ƒ/2.2长焦：4800W 像素 ƒ/2.8"
+    },
+    "frontCamera": {
+      "zh-CN": "1800W 像素 ƒ/1.9",
+      "en-US": "1800W 像素 ƒ/1.9"
+    },
+    "lidar": {
+      "zh-CN": "dToF 距离感应",
+      "en-US": "dToF 距离感应"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 10Gb/s)",
+      "en-US": "USB-C (最高可达 10Gb/s)"
+    },
+    "baseband": "Qualcomm X75M",
+    "wifiStandard": {
+      "zh-CN": "802.11be 2x2 MIMO",
+      "en-US": "802.11be 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 6.0",
+      "en-US": "Bluetooth 6.0"
+    },
+    "nfc": "支持读卡器模式 NFC",
+    "security": {
+      "zh-CN": "面容 ID",
+      "en-US": "面容 ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "18.748Wh (4823mAh)",
+      "en-US": "18.748Wh (4823mAh)"
+    },
+    "charging": "USB-C/MagSafe/Qi/Qi2",
+    "batteryLife": {
+      "zh-CN": "视频37小时 流媒体33小时",
+      "en-US": "视频37小时 流媒体33小时"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×4 + 扬声器 ×2",
+      "en-US": "麦克风 ×4 + 扬声器 ×2"
+    },
+    "dimensions": "78.0×163.4×8.75mm, 231g",
+    "weight": "231g",
+    "waterResistance": {
+      "zh-CN": "国行双卡双待, IP68 防尘防水",
+      "en-US": "国行双卡双待, IP68 防尘防水"
+    },
+    "price": {
+      "zh-CN": "256GB: ¥9,999512GB: ¥11,9991TB: ¥13,9992TB: ¥17,999",
+      "en-US": "256GB: ¥9,999512GB: ¥11,9991TB: ¥13,9992TB: ¥17,999"
+    },
+    "connectivity": {
+      "zh-CN": "5G, Wi-Fi, 蓝牙, NFC",
+      "en-US": "5G, Wi-Fi, Bluetooth, NFC"
+    },
+    "cpuPerformance": {
+      "singleCore": "4200",
+      "multiCore": "12000"
+    },
+    "gpuPerformance": 42000
+  },
+  {
+    "id": "iphone-17-pro",
+    "name": {
+      "zh-CN": "iPhone 17 Pro",
+      "en-US": "iPhone 17 Pro"
+    },
+    "marketingSlogan": {
+      "zh-CN": "全 Pro 实力迸发",
+      "en-US": "全 Pro 实力迸发"
+    },
+    "releaseDate": {
+      "zh-CN": "2025.09.10",
+      "en-US": "2025.09.10"
+    },
+    "os": "iOS 26 ~ 最新",
+    "model": "iPhone18,1",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "星宇橙色",
+          "en-US": "星宇橙色"
+        },
+        "code": "#E67B34"
+      },
+      {
+        "name": {
+          "zh-CN": "深蓝色",
+          "en-US": "深蓝色"
+        },
+        "code": "#2C3143"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#F5F5F5"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持查看",
+      "en-US": "当前浏览器不支持查看"
+    },
+    "processor": {
+      "zh-CN": "A19 Pro(2P+4E+6GPU)",
+      "en-US": "A19 Pro(2P+4E+6GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "6.3\" XDR OLED",
+      "en-US": "6.3\" XDR OLED"
+    },
+    "displayResolution": {
+      "zh-CN": "2622×1206, 460ppi",
+      "en-US": "2622×1206, 460ppi"
+    },
+    "displayRefreshRate": "1-120Hz ProMotion",
+    "displayBrightness": {
+      "zh-CN": "1000(典), 1600(HDR), 3000(外)",
+      "en-US": "1000(典), 1600(HDR), 3000(外)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "原彩显示, 广色域显示(P3)"
+    },
+    "camera": {
+      "zh-CN": "主摄：4800W 像素 ƒ/1.78超广角：4800W 像素 ƒ/2.2长焦：4800W 像素 ƒ/2.8",
+      "en-US": "主摄：4800W 像素 ƒ/1.78超广角：4800W 像素 ƒ/2.2长焦：4800W 像素 ƒ/2.8"
+    },
+    "frontCamera": {
+      "zh-CN": "1800W 像素 ƒ/1.9",
+      "en-US": "1800W 像素 ƒ/1.9"
+    },
+    "lidar": {
+      "zh-CN": "dToF 距离感应",
+      "en-US": "dToF 距离感应"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 10Gb/s)",
+      "en-US": "USB-C (最高可达 10Gb/s)"
+    },
+    "baseband": "Qualcomm X75M",
+    "wifiStandard": {
+      "zh-CN": "802.11be 2x2 MIMO",
+      "en-US": "802.11be 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 6.0",
+      "en-US": "Bluetooth 6.0"
+    },
+    "nfc": "支持读卡器模式 NFC",
+    "security": {
+      "zh-CN": "面容 ID",
+      "en-US": "面容 ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "15.534Wh (3988mAh)",
+      "en-US": "15.534Wh (3988mAh)"
+    },
+    "charging": "USB-C/MagSafe/Qi/Qi2",
+    "batteryLife": {
+      "zh-CN": "视频31小时 流媒体28小时",
+      "en-US": "视频31小时 流媒体28小时"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×4 + 扬声器 ×2",
+      "en-US": "麦克风 ×4 + 扬声器 ×2"
+    },
+    "dimensions": "71.9×150.0×8.75mm, 204g",
+    "weight": "204g",
+    "waterResistance": {
+      "zh-CN": "国行双卡双待, IP68 防尘防水",
+      "en-US": "国行双卡双待, IP68 防尘防水"
+    },
+    "price": {
+      "zh-CN": "256GB: ¥8,999512GB: ¥10,9991TB: ¥12,999",
+      "en-US": "256GB: ¥8,999512GB: ¥10,9991TB: ¥12,999"
+    },
+    "connectivity": {
+      "zh-CN": "5G, Wi-Fi, 蓝牙, NFC",
+      "en-US": "5G, Wi-Fi, Bluetooth, NFC"
+    },
+    "cpuPerformance": {
+      "singleCore": "4200",
+      "multiCore": "12000"
+    },
+    "gpuPerformance": 42000
+  },
+  {
+    "id": "iphone-air",
+    "name": {
+      "zh-CN": "iPhone Air",
+      "en-US": "iPhone Air"
+    },
+    "marketingSlogan": {
+      "zh-CN": "迄今最薄 iPhone，身藏高能内核。",
+      "en-US": "迄今最薄 iPhone，身藏高能内核。"
+    },
+    "releaseDate": {
+      "zh-CN": "2025.09.10",
+      "en-US": "2025.09.10"
+    },
+    "os": "iOS 26 ~ 最新",
+    "model": "iPhone18,4",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "天蓝色",
+          "en-US": "天蓝色"
+        },
+        "code": "#EFF8FE"
+      },
+      {
+        "name": {
+          "zh-CN": "浅金色",
+          "en-US": "浅金色"
+        },
+        "code": "#FFFCF3"
+      },
+      {
+        "name": {
+          "zh-CN": "云白色",
+          "en-US": "云白色"
+        },
+        "code": "#FFFFFF"
+      },
+      {
+        "name": {
+          "zh-CN": "深空黑色",
+          "en-US": "深空黑色"
+        },
+        "code": "#000000"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持查看",
+      "en-US": "当前浏览器不支持查看"
+    },
+    "processor": {
+      "zh-CN": "A19 Pro(2P+4E+5GPU)",
+      "en-US": "A19 Pro(2P+4E+5GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "6.5\" XDR OLED",
+      "en-US": "6.5\" XDR OLED"
+    },
+    "displayResolution": {
+      "zh-CN": "2736×1260, 460ppi",
+      "en-US": "2736×1260, 460ppi"
+    },
+    "displayRefreshRate": "1-120Hz ProMotion",
+    "displayBrightness": {
+      "zh-CN": "1000(典), 1600(HDR), 3000(外)",
+      "en-US": "1000(典), 1600(HDR), 3000(外)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "原彩显示, 广色域显示(P3)"
+    },
+    "camera": {
+      "zh-CN": "主摄：4800W 像素 ƒ/1.6",
+      "en-US": "主摄：4800W 像素 ƒ/1.6"
+    },
+    "frontCamera": {
+      "zh-CN": "1800W 像素 ƒ/1.9",
+      "en-US": "1800W 像素 ƒ/1.9"
+    },
+    "lidar": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 480Mb/s)",
+      "en-US": "USB-C (最高可达 480Mb/s)"
+    },
+    "baseband": "Apple C1X",
+    "wifiStandard": {
+      "zh-CN": "802.11be 2x2 MIMO",
+      "en-US": "802.11be 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 6.0",
+      "en-US": "Bluetooth 6.0"
+    },
+    "nfc": "支持读卡器模式 NFC",
+    "security": {
+      "zh-CN": "面容 ID",
+      "en-US": "面容 ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "11.823Wh (3036mAh)",
+      "en-US": "11.823Wh (3036mAh)"
+    },
+    "charging": "USB-C/MagSafe/Qi/Qi2",
+    "batteryLife": {
+      "zh-CN": "视频27小时 流媒体22小时",
+      "en-US": "视频27小时 流媒体22小时"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×4 + 扬声器 ×1",
+      "en-US": "麦克风 ×4 + 扬声器 ×1"
+    },
+    "dimensions": "74.7×156.2×5.64mm, 165g",
+    "weight": "165g",
+    "waterResistance": {
+      "zh-CN": "国行双 eSIM, IP68 防尘防水",
+      "en-US": "国行双 eSIM, IP68 防尘防水"
+    },
+    "price": {
+      "zh-CN": "256GB: ¥7,999512GB: ¥9,9991TB: ¥11,999",
+      "en-US": "256GB: ¥7,999512GB: ¥9,9991TB: ¥11,999"
+    },
+    "connectivity": {
+      "zh-CN": "5G, Wi-Fi, 蓝牙, NFC",
+      "en-US": "5G, Wi-Fi, Bluetooth, NFC"
+    },
+    "cpuPerformance": {
+      "singleCore": "3800",
+      "multiCore": "10000"
+    },
+    "gpuPerformance": 32000
+  },
+  {
+    "id": "iphone-17",
+    "name": {
+      "zh-CN": "iPhone 17",
+      "en-US": "iPhone 17"
+    },
+    "marketingSlogan": {
+      "zh-CN": "神通妙彩",
+      "en-US": "神通妙彩"
+    },
+    "releaseDate": {
+      "zh-CN": "2025.09.10",
+      "en-US": "2025.09.10"
+    },
+    "os": "iOS 26 ~ 最新",
+    "model": "iPhone18,3",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "薰衣草紫色",
+          "en-US": "薰衣草紫色"
+        },
+        "code": "#DCCFE8"
+      },
+      {
+        "name": {
+          "zh-CN": "鼠尾草绿色",
+          "en-US": "鼠尾草绿色"
+        },
+        "code": "#ABB68D"
+      },
+      {
+        "name": {
+          "zh-CN": "青雾蓝色",
+          "en-US": "青雾蓝色"
+        },
+        "code": "#9BADCE"
+      },
+      {
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "#F5F5F5"
+      },
+      {
+        "name": {
+          "zh-CN": "黑色",
+          "en-US": "黑色"
+        },
+        "code": "#363839"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持查看",
+      "en-US": "当前浏览器不支持查看"
+    },
+    "processor": {
+      "zh-CN": "A19(2P+4E+5GPU)",
+      "en-US": "A19(2P+4E+5GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "6.3\" XDR OLED",
+      "en-US": "6.3\" XDR OLED"
+    },
+    "displayResolution": {
+      "zh-CN": "2622×1206, 460ppi",
+      "en-US": "2622×1206, 460ppi"
+    },
+    "displayRefreshRate": "1-120Hz ProMotion",
+    "displayBrightness": {
+      "zh-CN": "1000(典), 1600(HDR), 3000(外)",
+      "en-US": "1000(典), 1600(HDR), 3000(外)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "原彩显示, 广色域显示(P3)"
+    },
+    "camera": {
+      "zh-CN": "主摄：4800W 像素 ƒ/1.6超广角：4800W 像素 ƒ/2.2",
+      "en-US": "主摄：4800W 像素 ƒ/1.6超广角：4800W 像素 ƒ/2.2"
+    },
+    "frontCamera": {
+      "zh-CN": "1800W 像素 ƒ/1.9",
+      "en-US": "1800W 像素 ƒ/1.9"
+    },
+    "lidar": {
+      "zh-CN": "/",
+      "en-US": "/"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 480Mb/s)",
+      "en-US": "USB-C (最高可达 480Mb/s)"
+    },
+    "baseband": "Qualcomm X75M",
+    "wifiStandard": {
+      "zh-CN": "802.11be 2x2 MIMO",
+      "en-US": "802.11be 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 6.0",
+      "en-US": "Bluetooth 6.0"
+    },
+    "nfc": "支持读卡器模式 NFC",
+    "security": {
+      "zh-CN": "面容 ID",
+      "en-US": "面容 ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "14.351Wh (3692mAh)",
+      "en-US": "14.351Wh (3692mAh)"
+    },
+    "charging": "USB-C/MagSafe/Qi/Qi2",
+    "batteryLife": {
+      "zh-CN": "视频30小时 流媒体27小时",
+      "en-US": "视频30小时 流媒体27小时"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×4 + 扬声器 ×2",
+      "en-US": "麦克风 ×4 + 扬声器 ×2"
+    },
+    "dimensions": "71.5×149.6×7.95mm, 177g",
+    "weight": "177g",
+    "waterResistance": {
+      "zh-CN": "国行双卡双待 SIM, IP68 防尘防水",
+      "en-US": "国行双卡双待 SIM, IP68 防尘防水"
+    },
+    "price": {
+      "zh-CN": "256GB: ¥5,999512GB: ¥7,999",
+      "en-US": "256GB: ¥5,999512GB: ¥7,999"
+    },
+    "connectivity": {
+      "zh-CN": "5G, Wi-Fi, 蓝牙, NFC",
+      "en-US": "5G, Wi-Fi, Bluetooth, NFC"
+    },
+    "cpuPerformance": {
+      "singleCore": "3600",
+      "multiCore": "9000"
+    },
+    "gpuPerformance": 28000
+  }
+]
