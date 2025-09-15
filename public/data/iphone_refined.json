@@ -13,7 +13,10 @@
       "zh-CN": "2025.09.10",
       "en-US": "2025.09.10"
     },
-    "os": "iOS 26 ~ 最新",
+    "os": {
+      "zh-CN": "iOS 26 ~ 最新",
+      "en-US": "iOS 26 ~ 最新"
+    },
     "model": "iPhone18,3",
     "colors": [
       {
@@ -64,49 +67,28 @@
       "zh-CN": "6.3\" XDR OLED",
       "en-US": "6.3\" XDR OLED"
     },
-    "displayResolution": {
-      "zh-CN": "2622×1206, 460ppi",
-      "en-US": "2622×1206, 460ppi"
-    },
+    "displayResolution": "2622×1206,",
     "displayRefreshRate": "1-120Hz ProMotion",
     "displayBrightness": {
       "zh-CN": "1000(典), 1600(HDR), 3000(外)",
       "en-US": "1000(典), 1600(HDR), 3000(外)"
     },
-    "displayColorGamut": {
-      "zh-CN": "原彩显示, 广色域显示(P3)",
-      "en-US": "原彩显示, 广色域显示(P3)"
-    },
+    "displayColorGamut": "P3广色域和原彩显示",
     "camera": {
       "zh-CN": "主摄：4800W 像素 ƒ/1.6超广角：4800W 像素 ƒ/2.2",
       "en-US": "主摄：4800W 像素 ƒ/1.6超广角：4800W 像素 ƒ/2.2"
     },
-    "frontCamera": {
-      "zh-CN": "1800W 像素 ƒ/1.9",
-      "en-US": "1800W 像素 ƒ/1.9"
-    },
+    "frontCamera": "1800W 像素 ƒ/1.9",
     "lidar": {
       "zh-CN": "/",
       "en-US": "/"
     },
-    "ports": {
-      "zh-CN": "USB-C (最高可达 480Mb/s)",
-      "en-US": "USB-C (最高可达 480Mb/s)"
-    },
+    "ports": "USB-C (最高可达 480Mb/s)",
     "baseband": "Qualcomm X75M",
-    "wifiStandard": {
-      "zh-CN": "802.11be 2x2 MIMO",
-      "en-US": "802.11be 2x2 MIMO"
-    },
-    "bluetoothVersion": {
-      "zh-CN": "Bluetooth 6.0",
-      "en-US": "Bluetooth 6.0"
-    },
+    "wifiStandard": "802.11be 2x2 MIMO",
+    "bluetoothVersion": "Bluetooth 6.0",
     "nfc": "支持读卡器模式 NFC",
-    "security": {
-      "zh-CN": "面容 ID",
-      "en-US": "面容 ID"
-    },
+    "security": "面容 ID",
     "batteryCapacity": {
       "zh-CN": "14.351Wh (3692mAh)",
       "en-US": "14.351Wh (3692mAh)"
@@ -120,12 +102,9 @@
       "zh-CN": "麦克风 ×4 + 扬声器 ×2",
       "en-US": "麦克风 ×4 + 扬声器 ×2"
     },
-    "dimensions": "71.5×149.6×7.95mm, 177g",
+    "dimensions": "71.5×149.6×7.95mm,",
     "weight": "177g",
-    "waterResistance": {
-      "zh-CN": "国行双卡双待 SIM, IP68 防尘防水",
-      "en-US": "国行双卡双待 SIM, IP68 防尘防水"
-    },
+    "waterResistance": "IP68 防尘防水",
     "price": {
       "zh-CN": "256GB: ¥5,999512GB: ¥7,999",
       "en-US": "256GB: ¥5,999512GB: ¥7,999"
@@ -134,11 +113,36 @@
       "zh-CN": "5G, Wi-Fi, 蓝牙, NFC",
       "en-US": "5G, Wi-Fi, Bluetooth, NFC"
     },
-    "cpuPerformance": {
-      "singleCore": "3600",
-      "multiCore": "9000"
+    "frontPanel": "超瓷晶面板二代",
+    "frameMaterial": "铝合金",
+    "backPanelMaterial": "玻璃",
+    "displaySize": "6.3英寸",
+    "displayPpi": "460PPI",
+    "displayPanelType": "OLED",
+    "displaySpecialTech": "Super Retina XDR",
+    "displayStandardBrightness": "1000尼特",
+    "displayHdrBrightness": "1600尼特",
+    "touchTechnology": "Haptic Touch",
+    "processTechnology": "台积电第三代3纳米",
+    "ram": "8GB LPDDR5X",
+    "storage": "256GB / 512GB",
+    "mainCamera": "4800万像素主摄 (f/1.6光圈)",
+    "ultraWideCamera": "4800万像素超广角 (f/2.2光圈)",
+    "batteryCapacityMah": 3692,
+    "batteryCapacityWh": "14.351",
+    "videoPlaybackTime": "最长30小时",
+    "simCardSupport": "双物理SIM",
+    "cellularData": "5G",
+    "satelliteFeatures": "紧急求救卫星通信",
+    "speakers": "2个扬声器",
+    "microphoneCount": "4个麦克风",
+    "initialOS": "iOS 26",
+    "maxSupportedOS": "最新",
+    "specialFeatures": {
+      "zh-CN": "碰撞检测，拍照按钮",
+      "en-US": "碰撞检测，拍照按钮"
     },
-    "gpuPerformance": 28000
+    "technicalSpecsLink": "https://www.apple.com.cn/iphone-17/specs/"
   },
   {
     "id": "iphone-air",
@@ -154,7 +158,10 @@
       "zh-CN": "2025.09.10",
       "en-US": "2025.09.10"
     },
-    "os": "iOS 26 ~ 最新",
+    "os": {
+      "zh-CN": "iOS 26 ~ 最新",
+      "en-US": "iOS 26 ~ 最新"
+    },
     "model": "iPhone18,4",
     "colors": [
       {
@@ -162,28 +169,28 @@
           "zh-CN": "天蓝色",
           "en-US": "天蓝色"
         },
-        "code": "#EFF8FE"
+        "code": "#87CEEB"
       },
       {
         "name": {
           "zh-CN": "浅金色",
           "en-US": "浅金色"
         },
-        "code": "#FFFCF3"
+        "code": "#F5E6D3"
       },
       {
         "name": {
           "zh-CN": "云白色",
           "en-US": "云白色"
         },
-        "code": "#FFFFFF"
+        "code": "#F8F8FF"
       },
       {
         "name": {
           "zh-CN": "深空黑色",
           "en-US": "深空黑色"
         },
-        "code": "#000000"
+        "code": "#1C1C1E"
       }
     ],
     "arSupport": {
@@ -198,49 +205,28 @@
       "zh-CN": "6.5\" XDR OLED",
       "en-US": "6.5\" XDR OLED"
     },
-    "displayResolution": {
-      "zh-CN": "2736×1260, 460ppi",
-      "en-US": "2736×1260, 460ppi"
-    },
+    "displayResolution": "2736×1260,",
     "displayRefreshRate": "1-120Hz ProMotion",
     "displayBrightness": {
       "zh-CN": "1000(典), 1600(HDR), 3000(外)",
       "en-US": "1000(典), 1600(HDR), 3000(外)"
     },
-    "displayColorGamut": {
-      "zh-CN": "原彩显示, 广色域显示(P3)",
-      "en-US": "原彩显示, 广色域显示(P3)"
-    },
+    "displayColorGamut": "P3广色域和原彩显示",
     "camera": {
       "zh-CN": "主摄：4800W 像素 ƒ/1.6",
       "en-US": "主摄：4800W 像素 ƒ/1.6"
     },
-    "frontCamera": {
-      "zh-CN": "1800W 像素 ƒ/1.9",
-      "en-US": "1800W 像素 ƒ/1.9"
-    },
+    "frontCamera": "1800W 像素 ƒ/1.9",
     "lidar": {
       "zh-CN": "/",
       "en-US": "/"
     },
-    "ports": {
-      "zh-CN": "USB-C (最高可达 480Mb/s)",
-      "en-US": "USB-C (最高可达 480Mb/s)"
-    },
+    "ports": "USB-C (最高可达 480Mb/s)",
     "baseband": "Apple C1X",
-    "wifiStandard": {
-      "zh-CN": "802.11be 2x2 MIMO",
-      "en-US": "802.11be 2x2 MIMO"
-    },
-    "bluetoothVersion": {
-      "zh-CN": "Bluetooth 6.0",
-      "en-US": "Bluetooth 6.0"
-    },
+    "wifiStandard": "802.11be 2x2 MIMO",
+    "bluetoothVersion": "Bluetooth 6.0",
     "nfc": "支持读卡器模式 NFC",
-    "security": {
-      "zh-CN": "面容 ID",
-      "en-US": "面容 ID"
-    },
+    "security": "面容 ID",
     "batteryCapacity": {
       "zh-CN": "11.823Wh (3036mAh)",
       "en-US": "11.823Wh (3036mAh)"
@@ -254,12 +240,9 @@
       "zh-CN": "麦克风 ×4 + 扬声器 ×1",
       "en-US": "麦克风 ×4 + 扬声器 ×1"
     },
-    "dimensions": "74.7×156.2×5.64mm, 165g",
+    "dimensions": "74.7×156.2×5.64mm",
     "weight": "165g",
-    "waterResistance": {
-      "zh-CN": "国行双 eSIM, IP68 防尘防水",
-      "en-US": "国行双 eSIM, IP68 防尘防水"
-    },
+    "waterResistance": "IP68 防尘防水",
     "price": {
       "zh-CN": "256GB: ¥7,999512GB: ¥9,9991TB: ¥11,999",
       "en-US": "256GB: ¥7,999512GB: ¥9,9991TB: ¥11,999"
@@ -268,11 +251,35 @@
       "zh-CN": "5G, Wi-Fi, 蓝牙, NFC",
       "en-US": "5G, Wi-Fi, Bluetooth, NFC"
     },
-    "cpuPerformance": {
-      "singleCore": "3800",
-      "multiCore": "10000"
+    "frontPanel": "超瓷晶面板二代",
+    "frameMaterial": "钛",
+    "backPanelMaterial": "超瓷晶面板二代",
+    "displaySize": "6.5英寸",
+    "displayPpi": "460PPI",
+    "displayPanelType": "OLED",
+    "displaySpecialTech": "Super Retina XDR",
+    "displayStandardBrightness": "1000尼特",
+    "displayHdrBrightness": "1600尼特",
+    "touchTechnology": "Haptic Touch",
+    "processTechnology": "台积电第三代3纳米",
+    "ram": "12GB LPDDR5X",
+    "storage": "256GB / 512GB / 1TB",
+    "mainCamera": "4800万像素主摄 (f/1.6光圈)",
+    "batteryCapacityMah": 3036,
+    "batteryCapacityWh": "11.823",
+    "videoPlaybackTime": "最长27小时",
+    "simCardSupport": "国行双 eSIM",
+    "cellularData": "5G",
+    "satelliteFeatures": "紧急求救卫星通信",
+    "speakers": "1个扬声器",
+    "microphoneCount": "4个麦克风",
+    "initialOS": "iOS 26",
+    "maxSupportedOS": "最新",
+    "specialFeatures": {
+      "zh-CN": "碰撞检测，拍照按钮",
+      "en-US": "碰撞检测，拍照按钮"
     },
-    "gpuPerformance": 32000
+    "technicalSpecsLink": "https://www.apple.com.cn/iphone-air/specs/"
   },
   {
     "id": "iphone-17-pro",
@@ -288,7 +295,10 @@
       "zh-CN": "2025.09.10",
       "en-US": "2025.09.10"
     },
-    "os": "iOS 26 ~ 最新",
+    "os": {
+      "zh-CN": "iOS 26 ~ 最新",
+      "en-US": "iOS 26 ~ 最新"
+    },
     "model": "iPhone18,1",
     "colors": [
       {
@@ -325,49 +335,28 @@
       "zh-CN": "6.3\" XDR OLED",
       "en-US": "6.3\" XDR OLED"
     },
-    "displayResolution": {
-      "zh-CN": "2622×1206, 460ppi",
-      "en-US": "2622×1206, 460ppi"
-    },
+    "displayResolution": "2622×1206,",
     "displayRefreshRate": "1-120Hz ProMotion",
     "displayBrightness": {
       "zh-CN": "1000(典), 1600(HDR), 3000(外)",
       "en-US": "1000(典), 1600(HDR), 3000(外)"
     },
-    "displayColorGamut": {
-      "zh-CN": "原彩显示, 广色域显示(P3)",
-      "en-US": "原彩显示, 广色域显示(P3)"
-    },
+    "displayColorGamut": "P3广色域和原彩显示",
     "camera": {
       "zh-CN": "主摄：4800W 像素 ƒ/1.78超广角：4800W 像素 ƒ/2.2长焦：4800W 像素 ƒ/2.8",
       "en-US": "主摄：4800W 像素 ƒ/1.78超广角：4800W 像素 ƒ/2.2长焦：4800W 像素 ƒ/2.8"
     },
-    "frontCamera": {
-      "zh-CN": "1800W 像素 ƒ/1.9",
-      "en-US": "1800W 像素 ƒ/1.9"
-    },
+    "frontCamera": "1800W 像素 ƒ/1.9",
     "lidar": {
       "zh-CN": "dToF 距离感应",
       "en-US": "dToF 距离感应"
     },
-    "ports": {
-      "zh-CN": "USB-C (最高可达 10Gb/s)",
-      "en-US": "USB-C (最高可达 10Gb/s)"
-    },
+    "ports": "USB-C (最高可达 10Gb/s)",
     "baseband": "Qualcomm X75M",
-    "wifiStandard": {
-      "zh-CN": "802.11be 2x2 MIMO",
-      "en-US": "802.11be 2x2 MIMO"
-    },
-    "bluetoothVersion": {
-      "zh-CN": "Bluetooth 6.0",
-      "en-US": "Bluetooth 6.0"
-    },
+    "wifiStandard": "802.11be 2x2 MIMO",
+    "bluetoothVersion": "Bluetooth 6.0",
     "nfc": "支持读卡器模式 NFC",
-    "security": {
-      "zh-CN": "面容 ID",
-      "en-US": "面容 ID"
-    },
+    "security": "面容 ID",
     "batteryCapacity": {
       "zh-CN": "15.534Wh (3988mAh)",
       "en-US": "15.534Wh (3988mAh)"
@@ -381,12 +370,9 @@
       "zh-CN": "麦克风 ×4 + 扬声器 ×2",
       "en-US": "麦克风 ×4 + 扬声器 ×2"
     },
-    "dimensions": "71.9×150.0×8.75mm, 204g",
+    "dimensions": "71.9×150.0×8.75mm",
     "weight": "204g",
-    "waterResistance": {
-      "zh-CN": "国行双卡双待, IP68 防尘防水",
-      "en-US": "国行双卡双待, IP68 防尘防水"
-    },
+    "waterResistance": "IP68 防尘防水",
     "price": {
       "zh-CN": "256GB: ¥8,999512GB: ¥10,9991TB: ¥12,999",
       "en-US": "256GB: ¥8,999512GB: ¥10,9991TB: ¥12,999"
@@ -395,11 +381,38 @@
       "zh-CN": "5G, Wi-Fi, 蓝牙, NFC",
       "en-US": "5G, Wi-Fi, Bluetooth, NFC"
     },
-    "cpuPerformance": {
-      "singleCore": "4200",
-      "multiCore": "12000"
+    "frontPanel": "超瓷晶面板二代",
+    "frameMaterial": "铝金属一体成型机身",
+    "backPanelMaterial": "超瓷晶面板二代",
+    "displaySize": "6.3英寸",
+    "displayPpi": "460PPI",
+    "displayPanelType": "OLED",
+    "displaySpecialTech": "Super Retina XDR",
+    "displayStandardBrightness": "1000尼特",
+    "displayHdrBrightness": "1600尼特",
+    "touchTechnology": "Haptic Touch",
+    "processTechnology": "台积电第三代3纳米",
+    "ram": "12GB LPDDR5X",
+    "storage": "256GB / 512GB / 1TB",
+    "mainCamera": "4800万像素主摄 (f/1.78光圈)",
+    "ultraWideCamera": "4800万像素超广角 (f/2.2光圈)",
+    "telephotoCamera": "4800万像素 (f/2.8光圈)",
+    "opticalZoom": "4倍/8倍",
+    "batteryCapacityMah": 3988,
+    "batteryCapacityWh": "15.534",
+    "videoPlaybackTime": "最长31小时",
+    "simCardSupport": "双物理SIM",
+    "cellularData": "5G",
+    "satelliteFeatures": "紧急求救卫星通信",
+    "speakers": "2个扬声器",
+    "microphoneCount": "4个麦克风（录音棚级）",
+    "initialOS": "iOS 26",
+    "maxSupportedOS": "最新",
+    "specialFeatures": {
+      "zh-CN": "碰撞检测，拍照按钮",
+      "en-US": "碰撞检测，拍照按钮"
     },
-    "gpuPerformance": 42000
+    "technicalSpecsLink": "https://www.apple.com.cn/iphone-17-pro/specs/"
   },
   {
     "id": "iphone-17-pro-max",
@@ -415,7 +428,10 @@
       "zh-CN": "2025.09.10",
       "en-US": "2025.09.10"
     },
-    "os": "iOS 26 ~ 最新",
+    "os": {
+      "zh-CN": "iOS 26 ~ 最新",
+      "en-US": "iOS 26 ~ 最新"
+    },
     "model": "iPhone18,2",
     "colors": [
       {
@@ -452,49 +468,28 @@
       "zh-CN": "6.9\" XDR OLED",
       "en-US": "6.9\" XDR OLED"
     },
-    "displayResolution": {
-      "zh-CN": "2868×1320, 460ppi",
-      "en-US": "2868×1320, 460ppi"
-    },
+    "displayResolution": "2868×1320,",
     "displayRefreshRate": "1-120Hz ProMotion",
     "displayBrightness": {
       "zh-CN": "1000(典), 1600(HDR), 3000(外)",
       "en-US": "1000(典), 1600(HDR), 3000(外)"
     },
-    "displayColorGamut": {
-      "zh-CN": "原彩显示, 广色域显示(P3)",
-      "en-US": "原彩显示, 广色域显示(P3)"
-    },
+    "displayColorGamut": "P3广色域和原彩显示",
     "camera": {
       "zh-CN": "主摄：4800W 像素 ƒ/1.78超广角：4800W 像素 ƒ/2.2长焦：4800W 像素 ƒ/2.8",
       "en-US": "主摄：4800W 像素 ƒ/1.78超广角：4800W 像素 ƒ/2.2长焦：4800W 像素 ƒ/2.8"
     },
-    "frontCamera": {
-      "zh-CN": "1800W 像素 ƒ/1.9",
-      "en-US": "1800W 像素 ƒ/1.9"
-    },
+    "frontCamera": "1800W 像素 ƒ/1.9",
     "lidar": {
       "zh-CN": "dToF 距离感应",
       "en-US": "dToF 距离感应"
     },
-    "ports": {
-      "zh-CN": "USB-C (最高可达 10Gb/s)",
-      "en-US": "USB-C (最高可达 10Gb/s)"
-    },
+    "ports": "USB-C (最高可达 10Gb/s)",
     "baseband": "Qualcomm X75M",
-    "wifiStandard": {
-      "zh-CN": "802.11be 2x2 MIMO",
-      "en-US": "802.11be 2x2 MIMO"
-    },
-    "bluetoothVersion": {
-      "zh-CN": "Bluetooth 6.0",
-      "en-US": "Bluetooth 6.0"
-    },
+    "wifiStandard": "802.11be 2x2 MIMO",
+    "bluetoothVersion": "Bluetooth 6.0",
     "nfc": "支持读卡器模式 NFC",
-    "security": {
-      "zh-CN": "面容 ID",
-      "en-US": "面容 ID"
-    },
+    "security": "面容 ID",
     "batteryCapacity": {
       "zh-CN": "18.748Wh (4823mAh)",
       "en-US": "18.748Wh (4823mAh)"
@@ -508,12 +503,9 @@
       "zh-CN": "麦克风 ×4 + 扬声器 ×2",
       "en-US": "麦克风 ×4 + 扬声器 ×2"
     },
-    "dimensions": "78.0×163.4×8.75mm, 231g",
+    "dimensions": "78.0×163.4×8.75mm",
     "weight": "231g",
-    "waterResistance": {
-      "zh-CN": "国行双卡双待, IP68 防尘防水",
-      "en-US": "国行双卡双待, IP68 防尘防水"
-    },
+    "waterResistance": "IP68 防尘防水",
     "price": {
       "zh-CN": "256GB: ¥9,999512GB: ¥11,9991TB: ¥13,9992TB: ¥17,999",
       "en-US": "256GB: ¥9,999512GB: ¥11,9991TB: ¥13,9992TB: ¥17,999"
@@ -522,11 +514,38 @@
       "zh-CN": "5G, Wi-Fi, 蓝牙, NFC",
       "en-US": "5G, Wi-Fi, Bluetooth, NFC"
     },
-    "cpuPerformance": {
-      "singleCore": "4200",
-      "multiCore": "12000"
+    "frontPanel": "超瓷晶面板二代",
+    "frameMaterial": "铝金属一体成型机身",
+    "backPanelMaterial": "超瓷晶面板二代",
+    "displaySize": "6.9英寸",
+    "displayPpi": "460PPI",
+    "displayPanelType": "OLED",
+    "displaySpecialTech": "Super Retina XDR",
+    "displayStandardBrightness": "1000尼特",
+    "displayHdrBrightness": "1600尼特",
+    "touchTechnology": "Haptic Touch",
+    "processTechnology": "台积电第三代3纳米",
+    "ram": "12GB LPDDR5X",
+    "storage": "256GB / 512GB / 1TB /2TB",
+    "mainCamera": "4800万像素主摄 (f/1.78光圈)",
+    "ultraWideCamera": "4800万像素超广角 (f/2.2光圈)",
+    "telephotoCamera": "4800万像素 (f/2.8光圈)",
+    "opticalZoom": "4倍/8倍",
+    "batteryCapacityMah": 4823,
+    "batteryCapacityWh": "18.748",
+    "videoPlaybackTime": "最长37小时",
+    "simCardSupport": "双物理SIM",
+    "cellularData": "5G",
+    "satelliteFeatures": "紧急求救卫星通信",
+    "speakers": "2个扬声器",
+    "microphoneCount": "4个麦克风（录音棚级）",
+    "initialOS": "iOS 26",
+    "maxSupportedOS": "最新",
+    "specialFeatures": {
+      "zh-CN": "碰撞检测，拍照按钮",
+      "en-US": "碰撞检测，拍照按钮"
     },
-    "gpuPerformance": 42000
+    "technicalSpecsLink": "https://www.apple.com.cn/iphone-17-pro/specs/"
   },
   {
     "id": "iphone-16-pro-max",
@@ -537,43 +556,47 @@
     "model": "iPhone17,2",
     "releaseDate": {
       "zh-CN": "2024年9月",
-      "en-US": "2024-09"
+      "en-US": "2024年9月"
     },
     "colors": [
       {
-        "name": "钛原色",
-        "code": "#E3D0BA"
+        "name": {
+          "zh-CN": "钛原色",
+          "en-US": "钛原色"
+        },
+        "code": "#D4AF37"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "#F5F5F5"
       },
       {
-        "name": "黑色",
-        "code": "#505050"
+        "name": {
+          "zh-CN": "黑色",
+          "en-US": "黑色"
+        },
+        "code": "#363839"
       },
       {
-        "name": "沙金色",
-        "code": "#D9C5AD"
+        "name": {
+          "zh-CN": "沙金色",
+          "en-US": "沙金色"
+        },
+        "code": "#F4A460"
       }
     ],
-    "storage": [
-      "256GB / 512GB / 1TB"
-    ],
+    "storage": "256GB / 512GB / 1TB",
     "dimensions": "163.0 x 77.6 x 8.25 mm",
     "weight": "227 g",
     "materials": {
       "zh-CN": "钛合金中框，超瓷晶面板二代前面板，强化玻璃背板",
       "en-US": "Premiumaterials includinglass and metal"
     },
-    "displaySize": {
-      "zh-CN": "6.9英寸",
-      "en-US": "6.9 inches"
-    },
-    "displayResolution": {
-      "zh-CN": "2868 × 1320 像素",
-      "en-US": "2868 × 1320 像素"
-    },
+    "displaySize": "6.9英寸",
+    "displayResolution": "2868 × 1320 像素",
     "displayTechnology": {
       "zh-CN": "6.9英寸 Super Retina XDR，2868×1320 分辨率，460ppi，1-120Hz ProMotion",
       "en-US": "6.9\" Super Retina XDR，2868×1320 resolution，460ppi，1-120Hz ProMotion"
@@ -585,21 +608,18 @@
     "displayRefreshRate": "1-120Hz 自适应刷新率",
     "processor": {
       "zh-CN": "A18 Pro (2P+4E+6GPU)",
-      "en-US": "Apple A18"
+      "en-US": "A18 Pro (2P+4E+6GPU)"
     },
     "processorDetails": {
       "zh-CN": "台积电第二代3纳米工艺，6核CPU (2性能核心+4能效核心)，6核GPU，16核神经网络引擎",
       "en-US": "台积电第二代3纳米工艺，6核CPU (2性能核心+4能效核心)，6核GPU，16核神经网络引擎"
     },
     "cpuPerformance": {
-      "singleCore": "3437",
-      "multiCore": "8504"
+      "singleCore": 3437,
+      "multiCore": 8504
     },
     "gpuPerformance": 32730,
-    "ram": {
-      "zh-CN": "8GB LPDDR5X",
-      "en-US": "8GB"
-    },
+    "ram": "8GB LPDDR5X",
     "battery": {
       "zh-CN": "18.169Wh (4685mAh)，最长视频播放时间33小时",
       "en-US": "18.169Wh (4685mAh)，最长视频播放时间33小时"
@@ -613,23 +633,14 @@
       "zh-CN": "4800万像素主摄 (f/1.78光圈) + 4800万像素超广角 (f/2.2光圈) + 1200万像素长焦 (f/2.8光圈，5倍光学变焦)",
       "en-US": "4800万像素主摄 (f/1.78光圈) + 4800万像素超广角 (f/2.2光圈) + 1200万像素长焦 (f/2.8光圈，5倍光学变焦)"
     },
-    "frontCamera": {
-      "zh-CN": "1200万像素，f/1.9光圈",
-      "en-US": "1200万像素，f/1.9光圈"
-    },
-    "waterResistance": {
-      "zh-CN": "IP68，水下6米深处可达30分钟",
-      "en-US": "IP68 water andust resistance，水下6米深处可达30分钟"
-    },
+    "frontCamera": "1200万像素，f/1.9光圈",
+    "waterResistance": "IP68，水下6米深处可达30分钟",
     "os": "iOS 18",
     "connectivity": {
       "zh-CN": "5G, Wi-Fi 7, 蓝牙 5.4, 超宽带",
       "en-US": "5G, Wi-Fi 7, 蓝牙 5.4, 超宽带"
     },
-    "ports": {
-      "zh-CN": "USB-C (USB 3.2，40Gbps)",
-      "en-US": "USB-C (USB 3.2，40Gbps)"
-    },
+    "ports": "USB-C (USB 3.2，40Gbps)",
     "security": "Face ID",
     "specialFeatures": {
       "zh-CN": "碰撞检测，拍照按钮",
@@ -646,18 +657,12 @@
       "zh-CN": "5G，支持双卡双待",
       "en-US": "5G，支持双卡双待"
     },
-    "satelliteFeatures": {
-      "zh-CN": "紧急求救卫星通信",
-      "en-US": "紧急求救卫星通信"
-    },
+    "satelliteFeatures": "紧急求救卫星通信",
     "sensors": {
       "zh-CN": "激光雷达扫描仪，三轴陀螺仪，高动态范围加速度传感器，接近传感器，环境光传感器，气压计",
       "en-US": "激光雷达扫描仪，三轴陀螺仪，高动态范围加速度传感器，接近传感器，环境光传感器，气压计"
     },
-    "baseband": {
-      "zh-CN": "骁龙X71",
-      "en-US": "骁龙X71"
-    },
+    "baseband": "骁龙X71",
     "wiredCharging": {
       "zh-CN": "最高27W有线快充",
       "en-US": "最高27W有线快充"
@@ -666,104 +671,47 @@
       "zh-CN": "15W MagSafe无线充电，15W Qi2无线充电",
       "en-US": "15W MagSafe无线充电，15W Qi2无线充电"
     },
-    "displayColorGamut": {
-      "zh-CN": "P3广色域和原彩显示",
-      "en-US": "P3Wide color gamut和原彩显示"
-    },
-    "displayPpi": 460,
-    "displayPanelType": {
-      "zh-CN": "Retina LCD",
-      "en-US": "Retina LCD"
-    },
-    "displaySpecialTech": {
-      "zh-CN": "Super Retina XDR, ProMotion",
-      "en-US": "Super Retina XDR, ProMotion technology"
-    },
-    "displayStandardBrightness": "2000尼特",
-    "displayHdrBrightness": "2200尼特",
+    "displayColorGamut": "P3广色域和原彩显示",
+    "displayPpi": "460 PPI",
+    "displayPanelType": "Retina LCD",
+    "displaySpecialTech": "Super Retina XDR, ProMotion",
+    "displayStandardBrightness": "1000尼特",
+    "displayHdrBrightness": "1600尼特",
     "displayOutdoorBrightness": {
       "zh-CN": "2000尼特",
       "en-US": "2000尼特"
     },
     "touchTechnology": "Haptic Touch",
-    "mainCamera": {
-      "zh-CN": "4800万像素主摄 (f/1.78光圈)",
-      "en-US": "4800万像素主摄 (f/1.78光圈)"
-    },
-    "ultraWideCamera": {
-      "zh-CN": "4800万像素超广角 (f/2.2光圈)",
-      "en-US": "4800万像素Ultra Wide (f/2.2光圈)"
-    },
-    "telephotoCamera": {
-      "zh-CN": "1200万像素 (f/2.8光圈)",
-      "en-US": "1200万像素 (f/2.8光圈)"
-    },
-    "opticalZoom": {
-      "zh-CN": "5倍",
-      "en-US": "5倍"
-    },
-    "processTechnology": {
-      "zh-CN": "台积电第二代3纳米",
-      "en-US": "3nm process"
-    },
-    "batteryCapacityMah": "4685",
+    "mainCamera": "4800万像素主摄 (f/1.78光圈)",
+    "ultraWideCamera": "4800万像素超广角 (f/2.2光圈)",
+    "telephotoCamera": "1200万像素 (f/2.8光圈)",
+    "opticalZoom": "5倍",
+    "processTechnology": "台积电第二代3纳米",
+    "batteryCapacityMah": 4685,
     "batteryCapacityWh": "18.169",
-    "videoPlaybackTime": {
-      "zh-CN": "最长33小时",
-      "en-US": "Up to 33 hours"
-    },
-    "audioPlaybackTime": {
-      "zh-CN": "最长100小时",
-      "en-US": "Up to 100 hours"
-    },
+    "videoPlaybackTime": "最长33小时",
+    "audioPlaybackTime": "最长100小时",
     "wiredChargingSpeed": "27W",
     "wirelessChargingSpeed": "MagSafe",
-    "simCardSupport": {
-      "zh-CN": "双物理SIM",
-      "en-US": "Dual SIM (nano-SIM and nano-SIM)"
-    },
+    "simCardSupport": "双物理SIM",
     "cellularData": "5G",
-    "speakers": {
-      "zh-CN": "2个扬声器",
-      "en-US": "Built-in speaker"
-    },
+    "speakers": "2个扬声器",
     "initialOS": "iOS 18",
-    "maxSupportedOS": {
-      "zh-CN": "最新",
-      "en-US": "Latest"
-    },
+    "maxSupportedOS": "最新",
     "specialSoftwareFeatures": {
       "zh-CN": "Apple Intelligence, ProRes视频, 实况照片",
       "en-US": "Apple Intelligence, ProRes video, Live Photos"
     },
-    "bluetoothVersion": {
-      "zh-CN": "5.4",
-      "en-US": "Bluetooth 5.4"
-    },
+    "bluetoothVersion": "5.4",
     "wirelessChargingTech": {
       "zh-CN": "MagSafe无线充电，Qi2无线充电",
       "en-US": "MagSafe无线充电，Qi2无线充电"
     },
-    "frontPanel": {
-      "zh-CN": "超瓷晶面板二代",
-      "en-US": "Ceramic Shield front (2nd generation)"
-    },
-    "frameMaterial": {
-      "zh-CN": "钛合金",
-      "en-US": "Titanium frame"
-    },
-    "backPanelMaterial": {
-      "zh-CN": "钛合金",
-      "en-US": "Titanium back"
-    },
-    "microphoneCount": {
-      "zh-CN": "4个麦克风",
-      "en-US": "4 microphones"
-    },
-    "wifiStandard": {
-      "zh-CN": "802.11be HT160 2x2 MIMO",
-      "en-US": "802.11be HT160 2x2 MIMO"
-    }
+    "frontPanel": "超瓷晶面板二代",
+    "frameMaterial": "钛合金",
+    "backPanelMaterial": "钛合金",
+    "microphoneCount": "4个麦克风（录音棚级）",
+    "wifiStandard": "802.11be HT160 2x2 MIMO"
   },
   {
     "id": "iphone-16-pro",
@@ -774,43 +722,47 @@
     "model": "iPhone17,1",
     "releaseDate": {
       "zh-CN": "2024年9月",
-      "en-US": "2024-09"
+      "en-US": "2024年9月"
     },
     "colors": [
       {
-        "name": "钛原色",
-        "code": "#E3D0BA"
+        "name": {
+          "zh-CN": "钛原色",
+          "en-US": "钛原色"
+        },
+        "code": "#D4AF37"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "#F5F5F5"
       },
       {
-        "name": "黑色",
-        "code": "#505050"
+        "name": {
+          "zh-CN": "黑色",
+          "en-US": "黑色"
+        },
+        "code": "#363839"
       },
       {
-        "name": "沙金色",
-        "code": "#D9C5AD"
+        "name": {
+          "zh-CN": "沙金色",
+          "en-US": "沙金色"
+        },
+        "code": "#F4A460"
       }
     ],
-    "storage": [
-      "128GB / 256GB / 512GB / 1TB"
-    ],
+    "storage": "128GB / 256GB / 512GB / 1TB",
     "dimensions": "149.6 x 71.5 x 8.25 mm",
     "weight": "199 g",
     "materials": {
       "zh-CN": "钛合金中框，超瓷晶面板二代前面板，强化玻璃背板",
       "en-US": "Premiumaterials includinglass and metal"
     },
-    "displaySize": {
-      "zh-CN": "6.3英寸",
-      "en-US": "6.3 inches"
-    },
-    "displayResolution": {
-      "zh-CN": "2622 × 1206 像素",
-      "en-US": "2622 × 1206 像素"
-    },
+    "displaySize": "6.3英寸",
+    "displayResolution": "2622 × 1206 像素",
     "displayTechnology": {
       "zh-CN": "6.3英寸 Super Retina XDR，2622×1206 分辨率，460ppi，1-120Hz ProMotion",
       "en-US": "6.3\" Super Retina XDR，2622×1206 resolution，460ppi，1-120Hz ProMotion"
@@ -822,21 +774,18 @@
     "displayRefreshRate": "1-120Hz 自适应刷新率",
     "processor": {
       "zh-CN": "A18 Pro (2P+4E+6GPU)",
-      "en-US": "Apple A18"
+      "en-US": "A18 Pro (2P+4E+6GPU)"
     },
     "processorDetails": {
       "zh-CN": "台积电第二代3纳米工艺，6核CPU (2性能核心+4能效核心)，6核GPU，16核神经网络引擎",
       "en-US": "台积电第二代3纳米工艺，6核CPU (2性能核心+4能效核心)，6核GPU，16核神经网络引擎"
     },
     "cpuPerformance": {
-      "singleCore": "3452",
-      "multiCore": "8570"
+      "singleCore": 3452,
+      "multiCore": 8570
     },
     "gpuPerformance": 32746,
-    "ram": {
-      "zh-CN": "8GB LPDDR5X",
-      "en-US": "8GB"
-    },
+    "ram": "8GB LPDDR5X",
     "battery": {
       "zh-CN": "13.942Wh (3582mAh)，最长视频播放时间27小时",
       "en-US": "13.942Wh (3582mAh)，最长视频播放时间27小时"
@@ -850,23 +799,14 @@
       "zh-CN": "4800万像素主摄 (f/1.78光圈) + 4800万像素超广角 (f/2.2光圈) + 1200万像素长焦 (f/2.8光圈，5倍光学变焦)",
       "en-US": "4800万像素主摄 (f/1.78光圈) + 4800万像素超广角 (f/2.2光圈) + 1200万像素长焦 (f/2.8光圈，5倍光学变焦)"
     },
-    "frontCamera": {
-      "zh-CN": "1200万像素，f/1.9光圈",
-      "en-US": "1200万像素，f/1.9光圈"
-    },
-    "waterResistance": {
-      "zh-CN": "IP68，水下6米深处可达30分钟",
-      "en-US": "IP68 water andust resistance，水下6米深处可达30分钟"
-    },
+    "frontCamera": "1200万像素，f/1.9光圈",
+    "waterResistance": "IP68，水下6米深处可达30分钟",
     "os": "iOS 18",
     "connectivity": {
       "zh-CN": "5G, Wi-Fi 7, 蓝牙 5.4, 超宽带",
       "en-US": "5G, Wi-Fi 7, 蓝牙 5.4, 超宽带"
     },
-    "ports": {
-      "zh-CN": "USB-C (USB 3.2，40Gbps)",
-      "en-US": "USB-C (USB 3.2，40Gbps)"
-    },
+    "ports": "USB-C (USB 3.2，40Gbps)",
     "security": "Face ID",
     "specialFeatures": {
       "zh-CN": "碰撞检测，拍照按钮",
@@ -883,18 +823,12 @@
       "zh-CN": "5G，支持双卡双待",
       "en-US": "5G，支持双卡双待"
     },
-    "satelliteFeatures": {
-      "zh-CN": "紧急求救卫星通信",
-      "en-US": "紧急求救卫星通信"
-    },
+    "satelliteFeatures": "紧急求救卫星通信",
     "sensors": {
       "zh-CN": "激光雷达扫描仪，三轴陀螺仪，高动态范围加速度传感器，接近传感器，环境光传感器，气压计",
       "en-US": "激光雷达扫描仪，三轴陀螺仪，高动态范围加速度传感器，接近传感器，环境光传感器，气压计"
     },
-    "baseband": {
-      "zh-CN": "骁龙X71",
-      "en-US": "骁龙X71"
-    },
+    "baseband": "骁龙X71",
     "wiredCharging": {
       "zh-CN": "最高27W有线快充",
       "en-US": "最高27W有线快充"
@@ -903,104 +837,47 @@
       "zh-CN": "15W MagSafe无线充电，15W Qi2无线充电",
       "en-US": "15W MagSafe无线充电，15W Qi2无线充电"
     },
-    "displayColorGamut": {
-      "zh-CN": "P3广色域和原彩显示",
-      "en-US": "P3Wide color gamut和原彩显示"
-    },
-    "displayPpi": 460,
-    "displayPanelType": {
-      "zh-CN": "Retina LCD",
-      "en-US": "Retina LCD"
-    },
-    "displaySpecialTech": {
-      "zh-CN": "Super Retina XDR, ProMotion",
-      "en-US": "Super Retina XDR, ProMotion technology"
-    },
-    "displayStandardBrightness": "2000尼特",
-    "displayHdrBrightness": "2200尼特",
+    "displayColorGamut": "P3广色域和原彩显示",
+    "displayPpi": "460 PPI",
+    "displayPanelType": "Retina LCD",
+    "displaySpecialTech": "Super Retina XDR, ProMotion",
+    "displayStandardBrightness": "1000尼特",
+    "displayHdrBrightness": "1600尼特",
     "displayOutdoorBrightness": {
       "zh-CN": "2000尼特",
       "en-US": "2000尼特"
     },
     "touchTechnology": "Haptic Touch",
-    "mainCamera": {
-      "zh-CN": "4800万像素主摄 (f/1.78光圈)",
-      "en-US": "4800万像素主摄 (f/1.78光圈)"
-    },
-    "ultraWideCamera": {
-      "zh-CN": "4800万像素超广角 (f/2.2光圈)",
-      "en-US": "4800万像素Ultra Wide (f/2.2光圈)"
-    },
-    "telephotoCamera": {
-      "zh-CN": "1200万像素 (f/2.8光圈)",
-      "en-US": "1200万像素 (f/2.8光圈)"
-    },
-    "opticalZoom": {
-      "zh-CN": "5倍",
-      "en-US": "5倍"
-    },
-    "processTechnology": {
-      "zh-CN": "台积电第二代3纳米",
-      "en-US": "3nm process"
-    },
-    "batteryCapacityMah": "3582",
+    "mainCamera": "4800万像素主摄 (f/1.78光圈)",
+    "ultraWideCamera": "4800万像素超广角 (f/2.2光圈)",
+    "telephotoCamera": "1200万像素 (f/2.8光圈)",
+    "opticalZoom": "5倍",
+    "processTechnology": "台积电第二代3纳米",
+    "batteryCapacityMah": 3582,
     "batteryCapacityWh": "13.942",
-    "videoPlaybackTime": {
-      "zh-CN": "最长27小时",
-      "en-US": "Up to 27 hours"
-    },
-    "audioPlaybackTime": {
-      "zh-CN": "最长85小时",
-      "en-US": "Up to 85 hours"
-    },
+    "videoPlaybackTime": "最长27小时",
+    "audioPlaybackTime": "最长85小时",
     "wiredChargingSpeed": "27W",
     "wirelessChargingSpeed": "MagSafe",
-    "simCardSupport": {
-      "zh-CN": "双物理SIM",
-      "en-US": "Dual SIM (nano-SIM and nano-SIM)"
-    },
+    "simCardSupport": "双物理SIM",
     "cellularData": "5G",
-    "speakers": {
-      "zh-CN": "2个扬声器",
-      "en-US": "Built-in speaker"
-    },
+    "speakers": "2个扬声器",
     "initialOS": "iOS 18",
-    "maxSupportedOS": {
-      "zh-CN": "最新",
-      "en-US": "Latest"
-    },
+    "maxSupportedOS": "最新",
     "specialSoftwareFeatures": {
       "zh-CN": "Apple Intelligence, ProRes视频, 实况照片",
       "en-US": "Apple Intelligence, ProRes video, Live Photos"
     },
-    "bluetoothVersion": {
-      "zh-CN": "5.4",
-      "en-US": "Bluetooth 5.4"
-    },
+    "bluetoothVersion": "5.4",
     "wirelessChargingTech": {
       "zh-CN": "MagSafe无线充电，Qi2无线充电",
       "en-US": "MagSafe无线充电，Qi2无线充电"
     },
-    "frontPanel": {
-      "zh-CN": "超瓷晶面板二代",
-      "en-US": "Ceramic Shield front (2nd generation)"
-    },
-    "frameMaterial": {
-      "zh-CN": "钛合金",
-      "en-US": "Titanium frame"
-    },
-    "backPanelMaterial": {
-      "zh-CN": "钛合金",
-      "en-US": "Titanium back"
-    },
-    "microphoneCount": {
-      "zh-CN": "4个麦克风",
-      "en-US": "4 microphones"
-    },
-    "wifiStandard": {
-      "zh-CN": "802.11be HT160 2x2 MIMO",
-      "en-US": "802.11be HT160 2x2 MIMO"
-    }
+    "frontPanel": "超瓷晶面板二代",
+    "frameMaterial": "钛合金",
+    "backPanelMaterial": "钛合金",
+    "microphoneCount": "4个麦克风（录音棚级）",
+    "wifiStandard": "802.11be HT160 2x2 MIMO"
   },
   {
     "id": "iphone-16-plus",
@@ -1011,47 +888,54 @@
     "model": "iPhone17,0",
     "releaseDate": {
       "zh-CN": "2024年9月",
-      "en-US": "2024-09"
+      "en-US": "2024年9月"
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2123"
+        "name": {
+          "zh-CN": "黑色",
+          "en-US": "黑色"
+        },
+        "code": "#363839"
       },
       {
-        "name": "白色",
-        "code": "#F8F9F4"
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "#F5F5F5"
       },
       {
-        "name": "粉色",
-        "code": "#F5D9D7"
+        "name": {
+          "zh-CN": "粉色",
+          "en-US": "粉色"
+        },
+        "code": "#FFB6C1"
       },
       {
-        "name": "超级蓝",
-        "code": "#004B96"
+        "name": {
+          "zh-CN": "超级蓝",
+          "en-US": "超级蓝"
+        },
+        "code": "#0080FF"
       },
       {
-        "name": "绿色",
-        "code": "#C4DAC9"
+        "name": {
+          "zh-CN": "绿色",
+          "en-US": "绿色"
+        },
+        "code": "#32CD32"
       }
     ],
-    "storage": [
-      "128GB / 256GB / 512GB"
-    ],
+    "storage": "128GB / 256GB / 512GB",
     "dimensions": "77.8×160.9×7.8mm",
     "weight": "199 g",
     "materials": {
       "zh-CN": "铝合金中框，超瓷晶面板前玻璃，玻璃背板",
       "en-US": "Premiumaterials includinglass and metal"
     },
-    "displaySize": {
-      "zh-CN": "6.7英寸",
-      "en-US": "6.7 inches"
-    },
-    "displayResolution": {
-      "zh-CN": "2796 × 1290 像素",
-      "en-US": "2796 × 1290 像素"
-    },
+    "displaySize": "6.7英寸",
+    "displayResolution": "2796 × 1290 像素",
     "displayTechnology": {
       "zh-CN": "6.7英寸 Super Retina XDR OLED，2796×1290分辨率，460ppi，60Hz",
       "en-US": "6.7\" Super Retina XDR OLED，2796×1290resolution，460ppi，60Hz"
@@ -1063,21 +947,18 @@
     "displayRefreshRate": "60Hz",
     "processor": {
       "zh-CN": "A18 (2P+4E+5GPU)",
-      "en-US": "Apple A18"
+      "en-US": "A18 (2P+4E+5GPU)"
     },
     "processorDetails": {
       "zh-CN": "台积电第二代3纳米工艺，6核CPU (2性能核心+4能效核心)，5核GPU，16核神经网络引擎",
       "en-US": "台积电第二代3纳米工艺，6核CPU (2性能核心+4能效核心)，5核GPU，16核神经网络引擎"
     },
     "cpuPerformance": {
-      "singleCore": "3321",
-      "multiCore": "8180"
+      "singleCore": 3321,
+      "multiCore": 8180
     },
     "gpuPerformance": 27717,
-    "ram": {
-      "zh-CN": "8GB LPDDR5",
-      "en-US": "8GB"
-    },
+    "ram": "8GB LPDDR5",
     "battery": {
       "zh-CN": "4006 mAh (15.49Wh)，最长视频播放时间29小时",
       "en-US": "4006 mAh (15.49Wh)，最长视频播放时间29小时"
@@ -1091,23 +972,14 @@
       "zh-CN": "4800万像素主摄 (f/1.6光圈) + 超广角：1200万像素 (f/2.4光圈)",
       "en-US": "4800万像素主摄 (f/1.6光圈) + 超广角：1200万像素 (f/2.4光圈)"
     },
-    "frontCamera": {
-      "zh-CN": "1200万像素，f/1.9光圈",
-      "en-US": "1200万像素，f/1.9光圈"
-    },
-    "waterResistance": {
-      "zh-CN": "IP68，水下6米深处可达30分钟",
-      "en-US": "IP68 water andust resistance，水下6米深处可达30分钟"
-    },
+    "frontCamera": "1200万像素，f/1.9光圈",
+    "waterResistance": "IP68，水下6米深处可达30分钟",
     "os": "iOS 18",
     "connectivity": {
       "zh-CN": "Wi-Fi 6E (802.11ax)，蓝牙5.3，NFC",
       "en-US": "Wi-Fi 6E (802.11ax)，蓝牙5.3，NFC"
     },
-    "ports": {
-      "zh-CN": "USB-C (USB 3.0，10Gbps)",
-      "en-US": "USB-C (USB 3.0，10Gbps)"
-    },
+    "ports": "USB-C (USB 3.0，10Gbps)",
     "security": "Face ID",
     "specialFeatures": {
       "zh-CN": "碰撞检测，拍照按钮",
@@ -1127,10 +999,7 @@
       "zh-CN": "双卡双待，支持5G",
       "en-US": "双卡双待，支持5G"
     },
-    "satelliteFeatures": {
-      "zh-CN": "紧急求救卫星通信",
-      "en-US": "紧急求救卫星通信"
-    },
+    "satelliteFeatures": "紧急求救卫星通信",
     "sensors": {
       "zh-CN": "面容ID传感器，三轴陀螺仪，加速度传感器，接近传感器，环境光传感器，气压计",
       "en-US": "面容ID传感器，三轴陀螺仪，加速度传感器，接近传感器，环境光传感器，气压计"
@@ -1144,11 +1013,8 @@
       "zh-CN": "15W MagSafe无线充电，5W Qi无线充电",
       "en-US": "15W MagSafe无线充电，5W Qi无线充电"
     },
-    "displayColorGamut": {
-      "zh-CN": "P3广色域和原彩显示",
-      "en-US": "P3Wide color gamut和原彩显示"
-    },
-    "displayPpi": 458,
+    "displayColorGamut": "P3广色域和原彩显示",
+    "displayPpi": "458 PPI",
     "displayPanelType": "OLED",
     "displaySpecialTech": "Super Retina XDR",
     "displayStandardBrightness": "1000尼特",
@@ -1158,84 +1024,36 @@
       "en-US": "1600尼特"
     },
     "touchTechnology": "Haptic Touch",
-    "mainCamera": {
-      "zh-CN": "4800万像素主摄 (f/1.6光圈)",
-      "en-US": "4800万像素主摄 (f/1.6光圈)"
-    },
-    "processTechnology": {
-      "zh-CN": "台积电第二代3纳米",
-      "en-US": "3nm process"
-    },
+    "mainCamera": "4800万像素主摄 (f/1.6光圈)",
+    "processTechnology": "台积电第二代3纳米",
     "batteryCapacityWh": "15.49",
-    "videoPlaybackTime": {
-      "zh-CN": "最长29小时",
-      "en-US": "Up to 29 hours"
-    },
-    "audioPlaybackTime": {
-      "zh-CN": "最长100小时",
-      "en-US": "Up to 100 hours"
-    },
+    "videoPlaybackTime": "最长29小时",
+    "audioPlaybackTime": "最长100小时",
     "wiredChargingSpeed": "27W",
     "wirelessChargingSpeed": "MagSafe",
-    "simCardSupport": {
-      "zh-CN": "双物理SIM",
-      "en-US": "Dual SIM (nano-SIM and nano-SIM)"
-    },
+    "simCardSupport": "双物理SIM",
     "cellularData": "5G",
-    "speakers": {
-      "zh-CN": "2个扬声器",
-      "en-US": "Built-in speaker"
-    },
+    "speakers": "2个扬声器",
     "initialOS": "iOS 18",
-    "maxSupportedOS": {
-      "zh-CN": "最新",
-      "en-US": "Latest"
-    },
+    "maxSupportedOS": "最新",
     "specialSoftwareFeatures": {
       "zh-CN": "Apple Intelligence, 实况照片",
       "en-US": "Apple Intelligence, Live Photos"
     },
-    "batteryCapacityMah": "4006",
-    "bluetoothVersion": {
-      "zh-CN": "5.3",
-      "en-US": "Bluetooth 5.3"
-    },
+    "batteryCapacityMah": 4006,
+    "bluetoothVersion": "5.3",
     "wirelessChargingTech": {
       "zh-CN": "MagSafe无线充电，Qi2无线充电",
       "en-US": "MagSafe无线充电，Qi2无线充电"
     },
-    "frontPanel": {
-      "zh-CN": "超瓷晶面板二代",
-      "en-US": "Ceramic Shield front (2nd generation)"
-    },
-    "frameMaterial": {
-      "zh-CN": "铝合金",
-      "en-US": "Aluminum frame"
-    },
-    "backPanelMaterial": {
-      "zh-CN": "玻璃",
-      "en-US": "Glass back"
-    },
-    "microphoneCount": {
-      "zh-CN": "4个麦克风",
-      "en-US": "4 microphones"
-    },
-    "wifiStandard": {
-      "zh-CN": "802.11be HT160 2x2 MIMO",
-      "en-US": "802.11be HT160 2x2 MIMO"
-    },
-    "ultraWideCamera": {
-      "zh-CN": "1200万像素 (f/2.4光圈)",
-      "en-US": "1200万像素 (f/2.4光圈)"
-    },
-    "opticalZoom": {
-      "zh-CN": "无",
-      "en-US": "无"
-    },
-    "telephotoCamera": {
-      "zh-CN": "无",
-      "en-US": "无"
-    }
+    "frontPanel": "超瓷晶面板二代",
+    "frameMaterial": "铝合金",
+    "backPanelMaterial": "玻璃",
+    "microphoneCount": "4个麦克风",
+    "wifiStandard": "802.11be HT160 2x2 MIMO",
+    "ultraWideCamera": "1200万像素 (f/2.4光圈)",
+    "opticalZoom": "无",
+    "telephotoCamera": "无"
   },
   {
     "id": "iphone-16",
@@ -1246,47 +1064,54 @@
     "model": "iPhone17,1",
     "releaseDate": {
       "zh-CN": "2024年9月",
-      "en-US": "2024-09"
+      "en-US": "2024年9月"
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2123"
+        "name": {
+          "zh-CN": "黑色",
+          "en-US": "黑色"
+        },
+        "code": "#363839"
       },
       {
-        "name": "白色",
-        "code": "#F8F9F4"
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "#F5F5F5"
       },
       {
-        "name": "粉色",
-        "code": "#F5D9D7"
+        "name": {
+          "zh-CN": "粉色",
+          "en-US": "粉色"
+        },
+        "code": "#FFB6C1"
       },
       {
-        "name": "超级蓝",
-        "code": "#004B96"
+        "name": {
+          "zh-CN": "超级蓝",
+          "en-US": "超级蓝"
+        },
+        "code": "#0080FF"
       },
       {
-        "name": "绿色",
-        "code": "#C4DAC9"
+        "name": {
+          "zh-CN": "绿色",
+          "en-US": "绿色"
+        },
+        "code": "#32CD32"
       }
     ],
-    "storage": [
-      "128GB / 256GB / 512GB"
-    ],
+    "storage": "128GB / 256GB / 512GB",
     "dimensions": "71.6×147.6×7.8mm",
     "weight": "170 g",
     "materials": {
       "zh-CN": "铝合金中框，超瓷晶面板前玻璃，玻璃背板",
       "en-US": "Premiumaterials includinglass and metal"
     },
-    "displaySize": {
-      "zh-CN": "6.1英寸",
-      "en-US": "6.1 inches"
-    },
-    "displayResolution": {
-      "zh-CN": "2556 × 1179 像素",
-      "en-US": "2556 × 1179 像素"
-    },
+    "displaySize": "6.1英寸",
+    "displayResolution": "2556 × 1179 像素",
     "displayTechnology": {
       "zh-CN": "6.1英寸 Super Retina XDR OLED，2532×1170分辨率，460ppi，60Hz",
       "en-US": "6.1\" Super Retina XDR OLED，2532×1170resolution，460ppi，60Hz"
@@ -1298,21 +1123,18 @@
     "displayRefreshRate": "60Hz",
     "processor": {
       "zh-CN": "A18 (2P+4E+5GPU)",
-      "en-US": "Apple A18"
+      "en-US": "A18 (2P+4E+5GPU)"
     },
     "processorDetails": {
       "zh-CN": "台积电第二代3纳米工艺，6核CPU (2性能核心+4能效核心)，5核GPU，16核神经网络引擎",
       "en-US": "台积电第二代3纳米工艺，6核CPU (2性能核心+4能效核心)，5核GPU，16核神经网络引擎"
     },
     "cpuPerformance": {
-      "singleCore": "3324",
-      "multiCore": "8189"
+      "singleCore": 3324,
+      "multiCore": 8189
     },
     "gpuPerformance": 27695,
-    "ram": {
-      "zh-CN": "8GB LPDDR5",
-      "en-US": "8GB"
-    },
+    "ram": "8GB LPDDR5",
     "battery": {
       "zh-CN": "3561 mAh (13.77Wh)，最长视频播放时间24小时",
       "en-US": "3561 mAh (13.77Wh)，最长视频播放时间24小时"
@@ -1326,23 +1148,14 @@
       "zh-CN": "4800万像素主摄 (f/1.6光圈) + 超广角：1200万像素 (f/2.4光圈)",
       "en-US": "4800万像素主摄 (f/1.6光圈) + 超广角：1200万像素 (f/2.4光圈)"
     },
-    "frontCamera": {
-      "zh-CN": "1200万像素，f/1.9光圈",
-      "en-US": "1200万像素，f/1.9光圈"
-    },
-    "waterResistance": {
-      "zh-CN": "IP68，水下6米深处可达30分钟",
-      "en-US": "IP68 water andust resistance，水下6米深处可达30分钟"
-    },
+    "frontCamera": "1200万像素，f/1.9光圈",
+    "waterResistance": "IP68，水下6米深处可达30分钟",
     "os": "iOS 18",
     "connectivity": {
       "zh-CN": "Wi-Fi 6E (802.11ax)，蓝牙5.3，NFC",
       "en-US": "Wi-Fi 6E (802.11ax)，蓝牙5.3，NFC"
     },
-    "ports": {
-      "zh-CN": "USB-C (USB 3.0，10Gbps)",
-      "en-US": "USB-C (USB 3.0，10Gbps)"
-    },
+    "ports": "USB-C (USB 3.0，10Gbps)",
     "security": "Face ID",
     "specialFeatures": {
       "zh-CN": "碰撞检测，拍照按钮",
@@ -1362,10 +1175,7 @@
       "zh-CN": "双卡双待，支持5G",
       "en-US": "双卡双待，支持5G"
     },
-    "satelliteFeatures": {
-      "zh-CN": "紧急求救卫星通信",
-      "en-US": "紧急求救卫星通信"
-    },
+    "satelliteFeatures": "紧急求救卫星通信",
     "sensors": {
       "zh-CN": "面容ID传感器，三轴陀螺仪，加速度传感器，接近传感器，环境光传感器，气压计",
       "en-US": "面容ID传感器，三轴陀螺仪，加速度传感器，接近传感器，环境光传感器，气压计"
@@ -1379,11 +1189,8 @@
       "zh-CN": "15W MagSafe无线充电，5W Qi无线充电",
       "en-US": "15W MagSafe无线充电，5W Qi无线充电"
     },
-    "displayColorGamut": {
-      "zh-CN": "P3广色域和原彩显示",
-      "en-US": "P3Wide color gamut和原彩显示"
-    },
-    "displayPpi": 460,
+    "displayColorGamut": "P3广色域和原彩显示",
+    "displayPpi": "460 PPI",
     "displayPanelType": "OLED",
     "displaySpecialTech": "Super Retina XDR",
     "displayStandardBrightness": "1000尼特",
@@ -1393,84 +1200,36 @@
       "en-US": "1600尼特"
     },
     "touchTechnology": "Haptic Touch",
-    "mainCamera": {
-      "zh-CN": "4800万像素主摄 (f/1.6光圈)",
-      "en-US": "4800万像素主摄 (f/1.6光圈)"
-    },
-    "processTechnology": {
-      "zh-CN": "台积电第二代3纳米",
-      "en-US": "3nm process"
-    },
+    "mainCamera": "4800万像素主摄 (f/1.6光圈)",
+    "processTechnology": "台积电第二代3纳米",
     "batteryCapacityWh": "13.77",
-    "videoPlaybackTime": {
-      "zh-CN": "最长24小时",
-      "en-US": "Up to 24 hours"
-    },
-    "audioPlaybackTime": {
-      "zh-CN": "最长80小时",
-      "en-US": "Up to 80 hours"
-    },
+    "videoPlaybackTime": "最长24小时",
+    "audioPlaybackTime": "最长80小时",
     "wiredChargingSpeed": "27W",
     "wirelessChargingSpeed": "MagSafe",
-    "simCardSupport": {
-      "zh-CN": "双物理SIM",
-      "en-US": "Dual SIM (nano-SIM and nano-SIM)"
-    },
+    "simCardSupport": "双物理SIM",
     "cellularData": "5G",
-    "speakers": {
-      "zh-CN": "2个扬声器",
-      "en-US": "Built-in speaker"
-    },
+    "speakers": "2个扬声器",
     "initialOS": "iOS 18",
-    "maxSupportedOS": {
-      "zh-CN": "最新",
-      "en-US": "Latest"
-    },
+    "maxSupportedOS": "最新",
     "specialSoftwareFeatures": {
       "zh-CN": "Apple Intelligence, 实况照片",
       "en-US": "Apple Intelligence, Live Photos"
     },
-    "batteryCapacityMah": "3561",
-    "bluetoothVersion": {
-      "zh-CN": "5.3",
-      "en-US": "Bluetooth 5.3"
-    },
+    "batteryCapacityMah": 3561,
+    "bluetoothVersion": "5.3",
     "wirelessChargingTech": {
       "zh-CN": "MagSafe无线充电，Qi2无线充电",
       "en-US": "MagSafe无线充电，Qi2无线充电"
     },
-    "frontPanel": {
-      "zh-CN": "超瓷晶面板二代",
-      "en-US": "Ceramic Shield front (2nd generation)"
-    },
-    "frameMaterial": {
-      "zh-CN": "铝合金",
-      "en-US": "Aluminum frame"
-    },
-    "backPanelMaterial": {
-      "zh-CN": "玻璃",
-      "en-US": "Glass back"
-    },
-    "microphoneCount": {
-      "zh-CN": "4个麦克风",
-      "en-US": "4 microphones"
-    },
-    "wifiStandard": {
-      "zh-CN": "802.11be HT160 2x2 MIMO",
-      "en-US": "802.11be HT160 2x2 MIMO"
-    },
-    "ultraWideCamera": {
-      "zh-CN": "1200万像素 (f/2.4光圈)",
-      "en-US": "1200万像素 (f/2.4光圈)"
-    },
-    "opticalZoom": {
-      "zh-CN": "无",
-      "en-US": "无"
-    },
-    "telephotoCamera": {
-      "zh-CN": "无",
-      "en-US": "无"
-    }
+    "frontPanel": "超瓷晶面板二代",
+    "frameMaterial": "铝合金",
+    "backPanelMaterial": "玻璃",
+    "microphoneCount": "4个麦克风",
+    "wifiStandard": "802.11be HT160 2x2 MIMO",
+    "ultraWideCamera": "1200万像素 (f/2.4光圈)",
+    "opticalZoom": "无",
+    "telephotoCamera": "无"
   },
   {
     "id": "iphone-15-pro-max",
@@ -1485,20 +1244,32 @@
     },
     "colors": [
       {
-        "name": "钛原色",
-        "code": "#E3D0BA"
+        "name": {
+          "zh-CN": "黑色钛金属",
+          "en-US": "黑色钛金属"
+        },
+        "code": "#1b1b1b"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "白色钛金属",
+          "en-US": "白色钛金属"
+        },
+        "code": "#dddddd"
       },
       {
-        "name": "黑色",
-        "code": "#505050"
+        "name": {
+          "zh-CN": "蓝色钛金属",
+          "en-US": "蓝色钛金属"
+        },
+        "code": "#2f4452"
       },
       {
-        "name": "蓝色",
-        "code": "#35455C"
+        "name": {
+          "zh-CN": "原色钛金属",
+          "en-US": "原色钛金属"
+        },
+        "code": "#837f7d"
       }
     ],
     "storage": [
@@ -1725,20 +1496,32 @@
     },
     "colors": [
       {
-        "name": "钛原色",
-        "code": "#E3D0BA"
+        "name": {
+          "zh-CN": "黑色钛金属",
+          "en-US": "黑色钛金属"
+        },
+        "code": "#1b1b1b"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "白色钛金属",
+          "en-US": "白色钛金属"
+        },
+        "code": "#dddddd"
       },
       {
-        "name": "黑色",
-        "code": "#505050"
+        "name": {
+          "zh-CN": "蓝色钛金属",
+          "en-US": "蓝色钛金属"
+        },
+        "code": "#2f4452"
       },
       {
-        "name": "蓝色",
-        "code": "#35455C"
+        "name": {
+          "zh-CN": "原色钛金属",
+          "en-US": "原色钛金属"
+        },
+        "code": "#837f7d"
       }
     ],
     "storage": [
@@ -2069,24 +1852,39 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "黑色",
+          "en-US": "黑色"
+        },
+        "code": "#35393B"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "蓝色",
+          "en-US": "蓝色"
+        },
+        "code": "#CED5D9"
       },
       {
-        "name": "粉色",
-        "code": "#F8D9DF"
+        "name": {
+          "zh-CN": "绿色",
+          "en-US": "绿色"
+        },
+        "code": "#CAD4C5"
       },
       {
-        "name": "黄色",
-        "code": "#FFDB58"
+        "name": {
+          "zh-CN": "黄色",
+          "en-US": "黄色"
+        },
+        "code": "#E6E0C1"
       },
       {
-        "name": "蓝色",
-        "code": "#B0C4DE"
+        "name": {
+          "zh-CN": "粉色",
+          "en-US": "粉色"
+        },
+        "code": "#E3C8CA"
       }
     ],
     "wiredCharging": {
@@ -2310,24 +2108,39 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "黑色",
+          "en-US": "黑色"
+        },
+        "code": "#35393B"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "蓝色",
+          "en-US": "蓝色"
+        },
+        "code": "#CED5D9"
       },
       {
-        "name": "粉色",
-        "code": "#F8D9DF"
+        "name": {
+          "zh-CN": "绿色",
+          "en-US": "绿色"
+        },
+        "code": "#CAD4C5"
       },
       {
-        "name": "黄色",
-        "code": "#FFDB58"
+        "name": {
+          "zh-CN": "黄色",
+          "en-US": "黄色"
+        },
+        "code": "#E6E0C1"
       },
       {
-        "name": "蓝色",
-        "code": "#B0C4DE"
+        "name": {
+          "zh-CN": "粉色",
+          "en-US": "粉色"
+        },
+        "code": "#E3C8CA"
       }
     ],
     "wiredCharging": {
@@ -2554,12 +2367,25 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "红色",
+          "en-US": "Product RED"
+        },
+        "code": "#bf0013"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "星光色",
+          "en-US": "Starlight"
+        },
+        "code": "#faf6f2"
+      },
+      {
+        "name": {
+          "zh-CN": "午夜色",
+          "en-US": "Midnight"
+        },
+        "code": "#232a31"
       }
     ],
     "wiredCharging": {
@@ -2779,12 +2605,46 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "黑色",
+          "en-US": "黑色"
+        },
+        "code": "#25212b"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "#f6f2ef"
+      },
+      {
+        "name": {
+          "zh-CN": "红色",
+          "en-US": "红色"
+        },
+        "code": "#d82e2e"
+      },
+      {
+        "name": {
+          "zh-CN": "绿色",
+          "en-US": "绿色"
+        },
+        "code": "#d8efd5"
+      },
+      {
+        "name": {
+          "zh-CN": "蓝色",
+          "en-US": "蓝色"
+        },
+        "code": "#023b63"
+      },
+      {
+        "name": {
+          "zh-CN": "紫色",
+          "en-US": "紫色"
+        },
+        "code": "#b7afe6"
       }
     ],
     "wiredCharging": {
@@ -3008,12 +2868,46 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "紫色",
+          "en-US": "紫色"
+        },
+        "code": "#d1cdda"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "黄色",
+          "en-US": "黄色"
+        },
+        "code": "#ffe681"
+      },
+      {
+        "name": {
+          "zh-CN": "绿色",
+          "en-US": "绿色"
+        },
+        "code": "#aee1cd"
+      },
+      {
+        "name": {
+          "zh-CN": "红色",
+          "en-US": "红色"
+        },
+        "code": "#ba0c2e"
+      },
+      {
+        "name": {
+          "zh-CN": "黑色",
+          "en-US": "黑色"
+        },
+        "code": "#1f2020"
+      },
+      {
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "#f9f6ef"
       }
     ],
     "wiredCharging": {
@@ -3235,12 +3129,46 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "蓝色",
+          "en-US": "蓝色"
+        },
+        "code": "#48aee6"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "黄色",
+          "en-US": "黄色"
+        },
+        "code": "#f9d045"
+      },
+      {
+        "name": {
+          "zh-CN": "珊瑚色",
+          "en-US": "珊瑚色"
+        },
+        "code": "#ff6e5a"
+      },
+      {
+        "name": {
+          "zh-CN": "红色",
+          "en-US": "红色"
+        },
+        "code": "#b41325"
+      },
+      {
+        "name": {
+          "zh-CN": "黑色",
+          "en-US": "黑色"
+        },
+        "code": "#2e3034"
+      },
+      {
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "#f3f3f3"
       }
     ],
     "wiredCharging": {
@@ -3459,12 +3387,18 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#e4e4e2"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "深空灰色"
+        },
+        "code": "#262529"
       }
     ],
     "wiredCharging": {
@@ -3690,12 +3624,39 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "玫瑰金色",
+          "en-US": "玫瑰金色"
+        },
+        "code": "#ecc6c1"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "金色"
+        },
+        "code": "#e3ccb4"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#e2e3e4"
+      },
+      {
+        "name": {
+          "zh-CN": "黑色",
+          "en-US": "黑色"
+        },
+        "code": "#2e3034"
+      },
+      {
+        "name": {
+          "zh-CN": "红色",
+          "en-US": "红色"
+        },
+        "code": "#b41325"
       }
     ],
     "wiredCharging": {
@@ -3806,16 +3767,13 @@
     },
     "releaseDate": {
       "zh-CN": "2025年2月",
-      "en-US": "2025-02"
+      "en-US": "2025年2月"
     },
     "processor": {
       "zh-CN": "A18 (2P+4E+4GPU)",
-      "en-US": "Apple A18"
+      "en-US": "A18 (2P+4E+4GPU)"
     },
-    "ram": {
-      "zh-CN": "8GB LPDDR5X",
-      "en-US": "8GB"
-    },
+    "ram": "8GB LPDDR5X",
     "gpuPerformance": 24188,
     "displayTechnology": {
       "zh-CN": "6.1英寸 Super Retina XDR OLED，2532×1170分辨率，460ppi，60Hz",
@@ -3829,10 +3787,7 @@
       "zh-CN": "4800万像素主摄 (f/1.6光圈)",
       "en-US": "4800万像素主摄 (f/1.6光圈)"
     },
-    "frontCamera": {
-      "zh-CN": "1200万像素，f/1.9光圈",
-      "en-US": "1200万像素，f/1.9光圈"
-    },
+    "frontCamera": "1200万像素，f/1.9光圈",
     "battery": {
       "zh-CN": "4005 mAh (15.56Wh)，最长视频播放时间26小时",
       "en-US": "4005 mAh (15.56Wh)，最长视频播放时间26小时"
@@ -3849,9 +3804,7 @@
       "zh-CN": "Qi无线充电",
       "en-US": "Qi无线充电"
     },
-    "storage": [
-      "128GB / 256GB / 512GB"
-    ],
+    "storage": "128GB / 256GB / 512GB",
     "dimensions": "71.5×146.7×7.8mm",
     "weight": "167 g",
     "os": "iOS 18",
@@ -3863,27 +3816,18 @@
       "zh-CN": "双卡双待，支持5G",
       "en-US": "双卡双待，支持5G"
     },
-    "satelliteFeatures": {
-      "zh-CN": "紧急求救卫星通信",
-      "en-US": "紧急求救卫星通信"
-    },
+    "satelliteFeatures": "紧急求救卫星通信",
     "materials": {
       "zh-CN": "铝合金中框，强化玻璃前后面板",
       "en-US": "Premiumaterials includinglass and metal"
     },
-    "waterResistance": {
-      "zh-CN": "IP68，水下6米深处可达30分钟",
-      "en-US": "IP68 water andust resistance，水下6米深处可达30分钟"
-    },
+    "waterResistance": "IP68，水下6米深处可达30分钟",
     "security": "Face ID",
     "sensors": {
       "zh-CN": "面容ID传感器，三轴陀螺仪，加速度传感器，接近传感器，环境光传感器",
       "en-US": "面容ID传感器，三轴陀螺仪，加速度传感器，接近传感器，环境光传感器"
     },
-    "ports": {
-      "zh-CN": "USB-C (USB 2.0，480Mbps)",
-      "en-US": "USB-C (USB 2.0，480Mbps)"
-    },
+    "ports": "USB-C (USB 2.0，480Mbps)",
     "model": "iPhone17,5",
     "baseband": "Apple C1",
     "technicalSpecsLink": "https://support.apple.com/zh-cn/122208",
@@ -3892,17 +3836,11 @@
       "en-US": "经济实惠，性能强劲。"
     },
     "cpuPerformance": {
-      "singleCore": "3281",
-      "multiCore": "8035"
+      "singleCore": 3281,
+      "multiCore": 8035
     },
-    "displaySize": {
-      "zh-CN": "6.1英寸",
-      "en-US": "6.1 inches"
-    },
-    "displayResolution": {
-      "zh-CN": "2532×1170 像素",
-      "en-US": "2532×1170 像素"
-    },
+    "displaySize": "6.1英寸",
+    "displayResolution": "2532×1170 像素",
     "displayRefreshRate": "60Hz",
     "processorDetails": {
       "zh-CN": "处理器详情未知",
@@ -3915,24 +3853,39 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "黑色",
+          "en-US": "黑色"
+        },
+        "code": "#363839"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "#F5F5F5"
       },
       {
-        "name": "粉色",
-        "code": "#F8D9DF"
+        "name": {
+          "zh-CN": "粉色",
+          "en-US": "粉色"
+        },
+        "code": "#FFB6C1"
       },
       {
-        "name": "蓝色",
-        "code": "#B0C4DE"
+        "name": {
+          "zh-CN": "蓝色",
+          "en-US": "蓝色"
+        },
+        "code": "#4169E1"
       },
       {
-        "name": "绿色",
-        "code": "#A9C9A9"
+        "name": {
+          "zh-CN": "绿色",
+          "en-US": "绿色"
+        },
+        "code": "#32CD32"
       }
     ],
     "wiredCharging": {
@@ -3943,10 +3896,7 @@
       "zh-CN": "Qi无线充电",
       "en-US": "Qi无线充电"
     },
-    "displayColorGamut": {
-      "zh-CN": "P3广色域和原彩显示",
-      "en-US": "P3Wide color gamut和原彩显示"
-    },
+    "displayColorGamut": "P3广色域和原彩显示",
     "displayPanelType": "OLED",
     "displaySpecialTech": "Super Retina XDR",
     "displayStandardBrightness": "800尼特",
@@ -3956,88 +3906,37 @@
       "en-US": "1200尼特"
     },
     "touchTechnology": "Haptic Touch",
-    "mainCamera": {
-      "zh-CN": "4800万像素主摄 (f/1.6光圈)",
-      "en-US": "4800万像素主摄 (f/1.6光圈)"
-    },
+    "mainCamera": "4800万像素主摄 (f/1.6光圈)",
     "batteryCapacityWh": "15.56",
-    "videoPlaybackTime": {
-      "zh-CN": "最长26小时",
-      "en-US": "Up to 26 hours"
-    },
-    "audioPlaybackTime": {
-      "zh-CN": "最长90小时",
-      "en-US": "Up to 90 hours"
-    },
-    "wirelessChargingSpeed": {
-      "zh-CN": "Qi",
-      "en-US": "Qi wireless charging"
-    },
-    "simCardSupport": {
-      "zh-CN": "双物理SIM",
-      "en-US": "Dual SIM (nano-SIM and nano-SIM)"
-    },
+    "videoPlaybackTime": "最长26小时",
+    "audioPlaybackTime": "最长90小时",
+    "wirelessChargingSpeed": "Qi",
+    "simCardSupport": "双物理SIM",
     "cellularData": "5G",
-    "speakers": {
-      "zh-CN": "2个扬声器",
-      "en-US": "Built-in speaker"
-    },
+    "speakers": "2个扬声器",
     "initialOS": "iOS 18",
-    "maxSupportedOS": {
-      "zh-CN": "最新",
-      "en-US": "Latest"
-    },
+    "maxSupportedOS": "最新",
     "specialSoftwareFeatures": {
       "zh-CN": "Apple Intelligence, 实况照片",
       "en-US": "Apple Intelligence, Live Photos"
     },
-    "batteryCapacityMah": "4005",
-    "bluetoothVersion": {
-      "zh-CN": "5.3",
-      "en-US": "Bluetooth 5.3"
-    },
+    "batteryCapacityMah": 4005,
+    "bluetoothVersion": "5.3",
     "wirelessChargingTech": {
       "zh-CN": "Qi无线充电",
       "en-US": "Qi无线充电"
     },
-    "frontPanel": {
-      "zh-CN": "超瓷晶面板",
-      "en-US": "Ceramic Shield front"
-    },
-    "frameMaterial": {
-      "zh-CN": "铝合金",
-      "en-US": "Aluminum frame"
-    },
-    "backPanelMaterial": {
-      "zh-CN": "铝合金",
-      "en-US": "铝合金"
-    },
-    "microphoneCount": {
-      "zh-CN": "4个麦克风",
-      "en-US": "4 microphones"
-    },
-    "displayPpi": 460,
-    "wifiStandard": {
-      "zh-CN": "802.11ax HT80 2x2 MIMO",
-      "en-US": "802.11ax HT80 2x2 MIMO"
-    },
-    "opticalZoom": {
-      "zh-CN": "无",
-      "en-US": "无"
-    },
-    "processTechnology": {
-      "zh-CN": "台积电第二代3纳米",
-      "en-US": "3nm process"
-    },
+    "frontPanel": "超瓷晶面板",
+    "frameMaterial": "铝合金",
+    "backPanelMaterial": "铝合金",
+    "microphoneCount": "4个麦克风",
+    "displayPpi": "460 PPI",
+    "wifiStandard": "802.11ax HT80 2x2 MIMO",
+    "opticalZoom": "无",
+    "processTechnology": "台积电第二代3纳米",
     "wiredChargingSpeed": "27W",
-    "ultraWideCamera": {
-      "zh-CN": "无",
-      "en-US": "无"
-    },
-    "telephotoCamera": {
-      "zh-CN": "无",
-      "en-US": "无"
-    }
+    "ultraWideCamera": "无",
+    "telephotoCamera": "无"
   },
   {
     "id": "iphone-12",
@@ -4153,12 +4052,46 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "黑色",
+          "en-US": "黑色"
+        },
+        "code": "#25212b"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "#f6f2ef"
+      },
+      {
+        "name": {
+          "zh-CN": "红色",
+          "en-US": "红色"
+        },
+        "code": "#d82e2e"
+      },
+      {
+        "name": {
+          "zh-CN": "绿色",
+          "en-US": "绿色"
+        },
+        "code": "#d8efd5"
+      },
+      {
+        "name": {
+          "zh-CN": "蓝色",
+          "en-US": "蓝色"
+        },
+        "code": "#023b63"
+      },
+      {
+        "name": {
+          "zh-CN": "紫色",
+          "en-US": "紫色"
+        },
+        "code": "#b7afe6"
       }
     ],
     "wiredCharging": {
@@ -4376,12 +4309,32 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#e3e4df"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "石墨色",
+          "en-US": "石墨色"
+        },
+        "code": "#52514d"
+      },
+      {
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "金色"
+        },
+        "code": "#fcebd3"
+      },
+      {
+        "name": {
+          "zh-CN": "海蓝色",
+          "en-US": "海蓝色"
+        },
+        "code": "#2d4e5c"
       }
     ],
     "wiredCharging": {
@@ -4599,12 +4552,32 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#e3e4df"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "石墨色",
+          "en-US": "石墨色"
+        },
+        "code": "#52514d"
+      },
+      {
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "金色"
+        },
+        "code": "#fcebd3"
+      },
+      {
+        "name": {
+          "zh-CN": "海蓝色",
+          "en-US": "海蓝色"
+        },
+        "code": "#2d4e5c"
       }
     ],
     "wiredCharging": {
@@ -4825,12 +4798,32 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "深空灰色"
+        },
+        "code": "#535150"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "暗夜绿色",
+          "en-US": "暗夜绿色"
+        },
+        "code": "#4e5851"
+      },
+      {
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "金色"
+        },
+        "code": "#fad7bd"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#ebebe3"
       }
     ],
     "wiredCharging": {
@@ -5053,12 +5046,32 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "深空灰色"
+        },
+        "code": "#535150"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "暗夜绿色",
+          "en-US": "暗夜绿色"
+        },
+        "code": "#4e5851"
+      },
+      {
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "金色"
+        },
+        "code": "#fad7bd"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#ebebe3"
       }
     ],
     "wiredCharging": {
@@ -5281,12 +5294,25 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "深空灰色"
+        },
+        "code": "#262529"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "金色"
+        },
+        "code": "#fadcc2"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#e4e4e2"
       }
     ],
     "wiredCharging": {
@@ -5506,12 +5532,25 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "深空灰色"
+        },
+        "code": "#262529"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "金色"
+        },
+        "code": "#fadcc2"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#e4e4e2"
       }
     ],
     "wiredCharging": {
@@ -5734,12 +5773,25 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "White"
+        },
+        "code": "#f3f3f3"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "红色",
+          "en-US": "Product RED"
+        },
+        "code": "#b41325"
+      },
+      {
+        "name": {
+          "zh-CN": "黑色",
+          "en-US": "Black"
+        },
+        "code": "#262529"
       }
     ],
     "wiredCharging": {
@@ -5961,12 +6013,32 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "玫瑰金色",
+          "en-US": "Rose Gold"
+        },
+        "code": "#ecc6c1"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "Gold"
+        },
+        "code": "#fadcc2"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e4e4e2"
+      },
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "Space Gray"
+        },
+        "code": "#262529"
       }
     ],
     "cpuPerformance": {},
@@ -6181,12 +6253,32 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "金色"
+        },
+        "code": "#f7e8dd"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#e2e3e4"
+      },
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "深空灰色"
+        },
+        "code": "#272729"
+      },
+      {
+        "name": {
+          "zh-CN": "红色特别版",
+          "en-US": "红色特别版"
+        },
+        "code": "#b41325"
       }
     ],
     "wiredCharging": {
@@ -6405,12 +6497,32 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "金色"
+        },
+        "code": "#f7e8dd"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#e2e3e4"
+      },
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "深空灰色"
+        },
+        "code": "#272729"
+      },
+      {
+        "name": {
+          "zh-CN": "红色特别版",
+          "en-US": "红色特别版"
+        },
+        "code": "#b41325"
       }
     ],
     "wiredCharging": {
@@ -6629,12 +6741,39 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "玫瑰金色",
+          "en-US": "玫瑰金色"
+        },
+        "code": "#ecc6c1"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "金色"
+        },
+        "code": "#e3ccb4"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#e2e3e4"
+      },
+      {
+        "name": {
+          "zh-CN": "黑色",
+          "en-US": "黑色"
+        },
+        "code": "#2e3034"
+      },
+      {
+        "name": {
+          "zh-CN": "红色",
+          "en-US": "红色"
+        },
+        "code": "#b41325"
       }
     ],
     "wiredCharging": {
@@ -6846,12 +6985,32 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "玫瑰金色",
+          "en-US": "玫瑰金色"
+        },
+        "code": "#ecc6c1"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "金色"
+        },
+        "code": "#e3ccb4"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#e2e3e4"
+      },
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "深空灰色"
+        },
+        "code": "#b1b2b7"
       }
     ],
     "wiredCharging": {
@@ -7063,12 +7222,32 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "玫瑰金色",
+          "en-US": "玫瑰金色"
+        },
+        "code": "#ecc6c1"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "金色"
+        },
+        "code": "#e3ccb4"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#e2e3e4"
+      },
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "深空灰色"
+        },
+        "code": "#b1b2b7"
       }
     ],
     "wiredCharging": {
@@ -7276,12 +7455,25 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "金色"
+        },
+        "code": "#e3ccb4"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#e2e3e4"
+      },
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "深空灰色"
+        },
+        "code": "#b1b2b7"
       }
     ],
     "cpuPerformance": {},
@@ -7489,12 +7681,25 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "金色"
+        },
+        "code": "#e3ccb4"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#e2e3e4"
+      },
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "深空灰色"
+        },
+        "code": "#b1b2b7"
       }
     ],
     "cpuPerformance": {},
@@ -7702,12 +7907,25 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "金色"
+        },
+        "code": "rgb(205, 188, 168)"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "rgb(201, 203, 202)"
+      },
+      {
+        "name": {
+          "zh-CN": "深空灰色",
+          "en-US": "深空灰色"
+        },
+        "code": "rgb(117, 117, 119)"
       }
     ],
     "cpuPerformance": {},
@@ -7908,12 +8126,39 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "绿色",
+          "en-US": "绿色"
+        },
+        "code": "rgb(152, 228, 103)"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "蓝色",
+          "en-US": "蓝色"
+        },
+        "code": "rgb(64, 176, 234)"
+      },
+      {
+        "name": {
+          "zh-CN": "黄色",
+          "en-US": "黄色"
+        },
+        "code": "rgb(255, 239, 111)"
+      },
+      {
+        "name": {
+          "zh-CN": "粉色",
+          "en-US": "粉色"
+        },
+        "code": "rgb(255, 108, 108)"
+      },
+      {
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "rgb(240, 240, 242)"
       }
     ],
     "cpuPerformance": {},
@@ -8114,12 +8359,18 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "白色和银色",
+          "en-US": "白色和银色"
+        },
+        "code": "rgb(203, 205, 204)"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "黑色和灰蓝色",
+          "en-US": "黑色和灰蓝色"
+        },
+        "code": "rgb(39, 48, 55)"
       }
     ],
     "cpuPerformance": {},
@@ -8516,12 +8767,18 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "rgb(237, 237, 237)"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "黑色",
+          "en-US": "黑色"
+        },
+        "code": "rgb(0, 0, 0)"
       }
     ],
     "cpuPerformance": {},
@@ -8712,12 +8969,18 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "rgb(237, 237, 237)"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "黑色",
+          "en-US": "黑色"
+        },
+        "code": "rgb(0, 0, 0)"
       }
     ],
     "cpuPerformance": {},
@@ -8906,12 +9169,18 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "白色",
+          "en-US": "白色"
+        },
+        "code": "rgb(237, 237, 237)"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "黑色",
+          "en-US": "黑色"
+        },
+        "code": "rgb(0, 0, 0)"
       }
     ],
     "cpuPerformance": {},
@@ -9298,12 +9567,32 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "深空黑色",
+          "en-US": "深空黑色"
+        },
+        "code": "#403e3d"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#f0f2f2"
+      },
+      {
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "金色"
+        },
+        "code": "#f4e8ce"
+      },
+      {
+        "name": {
+          "zh-CN": "暗紫色",
+          "en-US": "暗紫色"
+        },
+        "code": "#594f63"
       }
     ],
     "wiredCharging": {
@@ -9524,12 +9813,32 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "深空黑色",
+          "en-US": "深空黑色"
+        },
+        "code": "#403e3d"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#f0f2f2"
+      },
+      {
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "金色"
+        },
+        "code": "#f4e8ce"
+      },
+      {
+        "name": {
+          "zh-CN": "暗紫色",
+          "en-US": "暗紫色"
+        },
+        "code": "#594f63"
       }
     ],
     "wiredCharging": {
@@ -9750,12 +10059,46 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "午夜色",
+          "en-US": "午夜色"
+        },
+        "code": "#222930"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "紫色",
+          "en-US": "紫色"
+        },
+        "code": "#e6ddeb"
+      },
+      {
+        "name": {
+          "zh-CN": "星光色",
+          "en-US": "星光色"
+        },
+        "code": "#faf6f2"
+      },
+      {
+        "name": {
+          "zh-CN": "红色",
+          "en-US": "红色"
+        },
+        "code": "#fc0324"
+      },
+      {
+        "name": {
+          "zh-CN": "蓝色",
+          "en-US": "蓝色"
+        },
+        "code": "#a0b4c7"
+      },
+      {
+        "name": {
+          "zh-CN": "黄色",
+          "en-US": "黄色"
+        },
+        "code": "#f5e488"
       }
     ],
     "wiredCharging": {
@@ -9973,12 +10316,46 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "午夜色",
+          "en-US": "午夜色"
+        },
+        "code": "#222930"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "紫色",
+          "en-US": "紫色"
+        },
+        "code": "#e6ddeb"
+      },
+      {
+        "name": {
+          "zh-CN": "星光色",
+          "en-US": "星光色"
+        },
+        "code": "#faf6f2"
+      },
+      {
+        "name": {
+          "zh-CN": "红色",
+          "en-US": "红色"
+        },
+        "code": "#fc0324"
+      },
+      {
+        "name": {
+          "zh-CN": "蓝色",
+          "en-US": "蓝色"
+        },
+        "code": "#a0b4c7"
+      },
+      {
+        "name": {
+          "zh-CN": "黄色",
+          "en-US": "黄色"
+        },
+        "code": "#f5e488"
       }
     ],
     "wiredCharging": {
@@ -10196,12 +10573,39 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "远峰蓝色",
+          "en-US": "远峰蓝色"
+        },
+        "code": "#a7c1d9"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "石墨色",
+          "en-US": "石墨色"
+        },
+        "code": "#54524f"
+      },
+      {
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "金色"
+        },
+        "code": "#fae7cf"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#f1f2ed"
+      },
+      {
+        "name": {
+          "zh-CN": "苍岭绿色",
+          "en-US": "苍岭绿色"
+        },
+        "code": "#576856"
       }
     ],
     "wiredCharging": {
@@ -10422,12 +10826,39 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "远峰蓝色",
+          "en-US": "远峰蓝色"
+        },
+        "code": "#a7c1d9"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "石墨色",
+          "en-US": "石墨色"
+        },
+        "code": "#54524f"
+      },
+      {
+        "name": {
+          "zh-CN": "金色",
+          "en-US": "金色"
+        },
+        "code": "#fae7cf"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "银色"
+        },
+        "code": "#f1f2ed"
+      },
+      {
+        "name": {
+          "zh-CN": "苍岭绿色",
+          "en-US": "苍岭绿色"
+        },
+        "code": "#576856"
       }
     ],
     "wiredCharging": {
@@ -10648,12 +11079,46 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "红色",
+          "en-US": "红色"
+        },
+        "code": "#bf0013"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "星光色",
+          "en-US": "星光色"
+        },
+        "code": "#faf6f2"
+      },
+      {
+        "name": {
+          "zh-CN": "午夜色",
+          "en-US": "午夜色"
+        },
+        "code": "#232a31"
+      },
+      {
+        "name": {
+          "zh-CN": "蓝色",
+          "en-US": "蓝色"
+        },
+        "code": "#276787"
+      },
+      {
+        "name": {
+          "zh-CN": "粉色",
+          "en-US": "粉色"
+        },
+        "code": "#faddd7"
+      },
+      {
+        "name": {
+          "zh-CN": "绿色",
+          "en-US": "绿色"
+        },
+        "code": "#394c38"
       }
     ],
     "wiredCharging": {
@@ -10871,12 +11336,46 @@
     },
     "colors": [
       {
-        "name": "黑色",
-        "code": "#1F2120"
+        "name": {
+          "zh-CN": "红色",
+          "en-US": "红色"
+        },
+        "code": "#bf0013"
       },
       {
-        "name": "白色",
-        "code": "#F5F5F0"
+        "name": {
+          "zh-CN": "星光色",
+          "en-US": "星光色"
+        },
+        "code": "#faf6f2"
+      },
+      {
+        "name": {
+          "zh-CN": "午夜色",
+          "en-US": "午夜色"
+        },
+        "code": "#232a31"
+      },
+      {
+        "name": {
+          "zh-CN": "蓝色",
+          "en-US": "蓝色"
+        },
+        "code": "#276787"
+      },
+      {
+        "name": {
+          "zh-CN": "粉色",
+          "en-US": "粉色"
+        },
+        "code": "#faddd7"
+      },
+      {
+        "name": {
+          "zh-CN": "绿色",
+          "en-US": "绿色"
+        },
+        "code": "#394c38"
       }
     ],
     "wiredCharging": {

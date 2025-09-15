@@ -693,6 +693,25 @@
             text-align: center;
         }
         
+        /* 颜色样本样式 */
+        .color-sample {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            margin-right: 8px;
+            margin-bottom: 4px;
+            vertical-align: middle;
+            border: 1px solid rgba(0,0,0,0.1);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+        
+        .color-sample:hover {
+            transform: scale(1.2);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
         @media (max-width: 768px) {
             .chart-wrapper {
                 flex: 1 1 100%;
@@ -752,7 +771,7 @@
                 <a href="/src/news.html" class="nav-link" data-lang-key="nav.news" style="display: none;">苹果资讯</a>
                 <a href="/src/feedback.html" class="nav-link" data-lang-key="nav.feedback">用户反馈</a>
                 <div class="language-switcher">
-                    <button class="language-btn" data-lang="zh-CN">中</button>
+                    <button class="language-btn active" data-lang="zh-CN">中</button>
                     <button class="language-btn" data-lang="en-US">EN</button>
                 </div>
             </div>
@@ -1246,7 +1265,14 @@
                 { key: 'model', name: '型号标识', langKey: 'param.model', icon: 'ri-barcode-line' },
                 { key: 'colors', name: '颜色', langKey: 'param.colors', formatter: val => {
                   if (!val || !Array.isArray(val)) return '-';
-                  return val.map(c => getLocalizedText(c.name, currentLanguage)).join(', ');
+                  return val.map(c => {
+                    const colorName = getLocalizedText(c.name, currentLanguage);
+                    // 使用色卡样式显示颜色
+                    if (c.code) {
+                      return `<span class="color-sample" style="background-color: ${c.code}" title="${colorName}"></span>`;
+                    }
+                    return colorName || '-';
+                  }).join(' ');
                 }, icon: 'ri-palette-line' },
                 { key: 'dimensions', name: '尺寸', langKey: 'param.dimensions', icon: 'ri-ruler-line', formatter: val => {
                     if (!val || val === '/') return val;
