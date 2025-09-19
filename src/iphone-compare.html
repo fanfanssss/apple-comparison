@@ -743,6 +743,7 @@
             }
         }
 
+        /* 平板端适配 */
         @media (max-width: 1200px) {
             .container {
                 max-width: 100%;
@@ -753,7 +754,6 @@
                 min-width: 120px;
             }
             
-
             /* 产品选择器 - 卡片式设计 */
             .product-selector {
                 display: flex;
@@ -778,6 +778,311 @@
                 max-width: 80px;
                 font-size: 11px;
             }
+        }
+
+        /* 手机端专用样式 - 滑动表格布局 */
+        @media (max-width: 768px) {
+            /* 隐藏桌面端表格 */
+            .desktop-table {
+                display: none;
+            }
+            
+            /* 显示移动端滑动表格 */
+            .mobile-table-container {
+                display: block !important;
+            }
+            
+            /* 表格容器改为滑动布局 */
+            .table-wrapper {
+                position: relative;
+                overflow: visible;
+                border-radius: var(--radius-lg);
+                box-shadow: var(--shadow-sm);
+                background: var(--color-surface);
+            }
+            
+            /* 创建滑动容器 */
+            .mobile-table-container {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                overflow: hidden;
+                border-radius: var(--radius-lg);
+            }
+            
+            /* 移动端表格主体 */
+            .mobile-table-body {
+                display: flex;
+                position: relative;
+                overflow: hidden;
+            }
+            
+            /* 固定参数列 */
+            .mobile-params-column {
+                flex-shrink: 0;
+                width: 120px;
+                background: var(--color-background);
+                border-right: 2px solid var(--color-border-light);
+                z-index: 2;
+            }
+            
+            /* 可滑动的产品列容器 */
+            .mobile-products-scroll {
+                flex: 1;
+                overflow-x: auto;
+                overflow-y: hidden;
+                scroll-behavior: smooth;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+            }
+            
+            .mobile-products-scroll::-webkit-scrollbar {
+                display: none;
+            }
+            
+            /* 产品列表容器 */
+            .mobile-products-container {
+                display: flex;
+                min-width: min-content;
+            }
+            
+            /* 单个产品列 */
+            .mobile-product-column {
+                flex-shrink: 0;
+                width: 140px;
+                border-right: 1px solid var(--color-border-light);
+            }
+            
+            .mobile-product-column:last-child {
+                border-right: none;
+            }
+            
+            /* 表格行样式 */
+            .mobile-table-row {
+                display: flex;
+                min-height: 44px;
+                border-bottom: 1px solid var(--color-border-light);
+            }
+            
+            .mobile-table-row:last-child {
+                border-bottom: none;
+            }
+            
+            .mobile-table-row:nth-child(even) {
+                background: rgba(0, 0, 0, 0.02);
+            }
+            
+            /* 单元格样式 */
+            .mobile-cell {
+                padding: var(--spacing-sm);
+                display: flex;
+                align-items: center;
+                font-size: var(--font-size-sm);
+                line-height: 1.3;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+            }
+            
+            /* 参数名称单元格 */
+            .mobile-param-cell {
+                background: var(--color-background);
+                font-weight: 600;
+                color: var(--color-text-secondary);
+                justify-content: flex-start;
+                text-align: left;
+                border-right: 2px solid var(--color-border-light);
+            }
+            
+            /* 产品值单元格 */
+            .mobile-value-cell {
+                background: var(--color-surface);
+                color: var(--color-text-primary);
+                justify-content: flex-start;
+                text-align: left;
+                position: relative;
+            }
+            
+            /* 产品头部 */
+            .mobile-product-header {
+                background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+                color: white;
+                font-weight: 600;
+                text-align: center;
+                justify-content: center;
+                min-height: 60px;
+                flex-direction: column;
+                padding: var(--spacing-xs);
+            }
+            
+            .mobile-product-name {
+                font-size: var(--font-size-sm);
+                font-weight: 600;
+                margin-bottom: 2px;
+                line-height: 1.2;
+            }
+            
+            .mobile-product-price {
+                font-size: 11px;
+                opacity: 0.9;
+            }
+            
+            /* 滑动指示器 */
+            .mobile-scroll-indicators {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: var(--spacing-sm) 0;
+                gap: var(--spacing-xs);
+                background: var(--color-surface);
+                border-top: 1px solid var(--color-border-light);
+            }
+            
+            .mobile-scroll-indicator {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: var(--color-border);
+                transition: var(--transition-fast);
+                cursor: pointer;
+            }
+            
+            .mobile-scroll-indicator.active {
+                background: var(--color-primary);
+                transform: scale(1.2);
+            }
+            
+            /* 滑动导航按钮 */
+            .mobile-nav-button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 32px;
+                height: 32px;
+                background: rgba(255, 255, 255, 0.9);
+                border: 1px solid var(--color-border);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                z-index: 3;
+                transition: var(--transition-fast);
+                box-shadow: var(--shadow-sm);
+            }
+            
+            .mobile-nav-button:hover {
+                background: white;
+                box-shadow: var(--shadow-md);
+            }
+            
+            .mobile-nav-button.prev {
+                left: 8px;
+            }
+            
+            .mobile-nav-button.next {
+                right: 8px;
+            }
+            
+            .mobile-nav-button:disabled {
+                opacity: 0.3;
+                cursor: not-allowed;
+            }
+            
+            /* 产品选择指示 */
+            .mobile-selection-indicator {
+                position: absolute;
+                top: var(--spacing-xs);
+                right: var(--spacing-xs);
+                width: 16px;
+                height: 16px;
+                background: var(--color-primary);
+                color: white;
+                border-radius: 50%;
+                font-size: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+            }
+            
+            /* 移动端表格头部操作区 */
+            .mobile-table-header {
+                background: var(--color-surface);
+                padding: var(--spacing-md);
+                border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+                border-bottom: 1px solid var(--color-border-light);
+            }
+            
+            .mobile-header-content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: var(--spacing-sm);
+            }
+            
+            .mobile-table-title {
+                font-size: var(--font-size-md);
+                font-weight: 600;
+                color: var(--color-text-primary);
+            }
+            
+            .mobile-table-info {
+                font-size: var(--font-size-sm);
+                color: var(--color-text-secondary);
+                display: flex;
+                align-items: center;
+                gap: var(--spacing-xs);
+            }
+            
+            /* 隐藏移动端卡片布局 */
+            .mobile-cards-container {
+                display: none;
+            }
+            
+            /* 优化滚动性能 */
+            .mobile-products-scroll {
+                will-change: scroll-position;
+            }
+            
+            /* 色卡在移动端的优化 */
+            .mobile-value-cell .color-sample {
+                width: 18px;
+                height: 18px;
+                margin-right: 4px;
+                margin-bottom: 2px;
+            }
+        }
+
+        /* 超小屏幕优化 */
+        @media (max-width: 480px) {
+            .mobile-product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .mobile-product-item .product-name {
+                font-size: 12px;
+            }
+            
+            .mobile-param-name {
+                min-width: 70px;
+                font-size: 12px;
+            }
+            
+            .mobile-param-value {
+                font-size: 12px;
+            }
+            
+            .container {
+                padding: 0 var(--spacing-sm);
+            }
+        }
+
+        /* 默认隐藏移动端布局 */
+        .mobile-cards-container,
+        .mobile-table-container {
+            display: none;
         }
     </style>
 </head>
@@ -823,7 +1128,8 @@
             <!-- 参数表格 -->
             <div class="params-table">
                 <div class="table-wrapper">
-                    <table>
+                    <!-- 桌面端表格 -->
+                    <table class="desktop-table">
                         <thead>
                             <tr>
                                 <th class="param-name" data-lang-key="compare.paramHeader">参数 / 产品</th>
@@ -832,9 +1138,55 @@
                         </thead>
                         <tbody>
                             <!-- 表格内容将由JavaScript动态生成 -->
-
                         </tbody>
                     </table>
+
+                    <!-- 移动端滑动表格 -->
+                    <div class="mobile-table-container" id="mobileTableContainer">
+                        <!-- 表格头部信息 -->
+                        <div class="mobile-table-header">
+                            <div class="mobile-header-content">
+                                <div class="mobile-table-title" data-lang-key="compare.paramHeader">产品参数对比</div>
+                                <div class="mobile-table-info">
+                                    <i class="fas fa-swipe"></i>
+                                    <span data-lang-key="compare.swipeHint">左右滑动查看更多</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 滑动表格主体 -->
+                        <div class="mobile-table-body">
+                            <!-- 固定参数列 -->
+                            <div class="mobile-params-column" id="mobileParamsColumn">
+                                <!-- 参数名称列将由JavaScript动态生成 -->
+                            </div>
+
+                            <!-- 可滑动产品列 -->
+                            <div class="mobile-products-scroll" id="mobileProductsScroll">
+                                <div class="mobile-products-container" id="mobileProductsContainer">
+                                    <!-- 产品列将由JavaScript动态生成 -->
+                                </div>
+                            </div>
+
+                            <!-- 滑动导航按钮 -->
+                            <button class="mobile-nav-button prev" id="mobilePrevBtn">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="mobile-nav-button next" id="mobileNextBtn">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+
+                        <!-- 滑动指示器 -->
+                        <div class="mobile-scroll-indicators" id="mobileScrollIndicators">
+                            <!-- 指示器将由JavaScript动态生成 -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 隐藏卡片布局 -->
+                <div class="mobile-cards-container" style="display: none;">
+                    <!-- 保留但隐藏，以备后用 -->
                 </div>
             </div>
             
@@ -876,6 +1228,13 @@
         let allProducts = [];
         let performanceChart = null;
         let currentChartType = 'cpuSingle'; // 默认显示CPU单核性能
+        
+        // 移动端状态管理
+        const state = {
+            products: null,
+            selectedProducts: [],
+            tableParams: null
+        };
         
         // 初始化当前语言变量
         window.currentLanguage = document.querySelector('.language-btn.active')?.dataset.lang || 'zh-CN';
@@ -988,7 +1347,7 @@
                 
                 // 使用新的细化参数数据文件
                 // 开始加载iPhone数据
-                const response = await fetch('../public/data/iphone_refined.json');
+                 const response = await fetch('../public/data/iphone_refined.json');
                 // 数据获取状态检查
                 if (!response.ok) {
                     throw new Error('网络响应不正常');
@@ -997,8 +1356,8 @@
                 // 数据解析完成
                 
                 // 检查数据结构
-                if (jsonData && jsonData.length > 0) {
-                    // 数据加载完成
+                if (!jsonData || !Array.isArray(jsonData) || jsonData.length === 0) {
+                    throw new Error('数据格式不正确或为空');
                 }
                 
                 allProducts = jsonData;
@@ -1362,6 +1721,14 @@
             if (typeof initLanguage === 'function') {
                 initLanguage();
             }
+            
+            // 生成移动端表格
+            setTimeout(() => {
+                if (window.innerWidth <= 768) {
+                    console.log('桌面表格生成后，检查移动端表格...');
+                    generateMobileTable();
+                }
+            }, 300);
         }
 
         // 初始化产品选择 - 拆分为初始化和事件绑定两个独立函数
@@ -1490,6 +1857,9 @@
             compareButton.removeEventListener('click', handleCompareButtonClick); // 移除可能存在的旧事件监听器
             compareButton.addEventListener('click', handleCompareButtonClick);
             
+            // 移动端事件绑定
+            bindMobileEvents();
+            
             // 添加按钮点击动画
             const buttons = document.querySelectorAll('.btn');
             buttons.forEach(button => {
@@ -1500,6 +1870,381 @@
                     }, 200);
                 });
             });
+        }
+
+        // 移动端事件处理
+        function bindMobileEvents() {
+            // 滑动导航按钮
+            const mobilePrevBtn = document.getElementById('mobilePrevBtn');
+            const mobileNextBtn = document.getElementById('mobileNextBtn');
+            const mobileProductsScroll = document.getElementById('mobileProductsScroll');
+
+            if (mobilePrevBtn) {
+                mobilePrevBtn.addEventListener('click', () => scrollMobileProducts('prev'));
+            }
+            
+            if (mobileNextBtn) {
+                mobileNextBtn.addEventListener('click', () => scrollMobileProducts('next'));
+            }
+
+            if (mobileProductsScroll) {
+                // 监听滚动事件以更新指示器
+                mobileProductsScroll.addEventListener('scroll', updateScrollIndicators);
+                
+                // 触摸事件处理
+                let startX = 0;
+                let scrollStart = 0;
+                
+                mobileProductsScroll.addEventListener('touchstart', (e) => {
+                    startX = e.touches[0].clientX;
+                    scrollStart = mobileProductsScroll.scrollLeft;
+                });
+                
+                mobileProductsScroll.addEventListener('touchmove', (e) => {
+                    if (!startX) return;
+                    
+                    const currentX = e.touches[0].clientX;
+                    const diff = startX - currentX;
+                    mobileProductsScroll.scrollLeft = scrollStart + diff;
+                });
+                
+                mobileProductsScroll.addEventListener('touchend', () => {
+                    startX = 0;
+                    scrollStart = 0;
+                });
+            }
+
+            // 监听屏幕尺寸变化
+            window.addEventListener('resize', handleScreenResize);
+            
+            // 初始化移动端界面
+            handleScreenResize();
+            
+            // 确保移动端表格在数据加载后生成
+            setTimeout(() => {
+                if (window.innerWidth <= 768) {
+                    console.log('延迟初始化移动端表格...');
+                    console.log('当前产品数据:', window.allProducts ? window.allProducts.length : 0);
+                    generateMobileTable();
+                }
+            }, 800);
+        }
+
+        // 处理屏幕尺寸变化
+        function handleScreenResize() {
+            const isMobile = window.innerWidth <= 768;
+            
+            if (isMobile) {
+                // 延迟初始化，确保数据已加载
+                setTimeout(() => {
+                    initializeMobileView();
+                }, 100);
+            }
+        }
+
+        // 初始化移动端视图
+        function initializeMobileView() {
+            generateMobileTable();
+            updateScrollIndicators();
+            updateNavigationButtons();
+        }
+
+        // 生成移动端滑动表格
+        function generateMobileTable() {
+            console.log('开始生成移动端表格...');
+            console.log('产品数据:', window.allProducts ? window.allProducts.length : 0, '个产品');
+            
+            // 确保有产品数据
+            if (!window.allProducts || !Array.isArray(window.allProducts) || window.allProducts.length === 0) {
+                console.log('等待产品数据加载...');
+                return;
+            }
+
+            // 初始化state数据
+            if (!state.products) {
+                state.products = window.allProducts;
+            }
+
+            console.log('开始生成移动端组件...');
+            generateMobileParamsColumn();
+            generateMobileProductColumns();
+            generateScrollIndicators();
+            updateNavigationButtons();
+            console.log('移动端表格生成完成');
+        }
+
+        // 生成移动端参数列
+        function generateMobileParamsColumn() {
+            const paramsColumn = document.getElementById('mobileParamsColumn');
+            if (!paramsColumn) {
+                console.error('未找到移动端参数列容器');
+                return;
+            }
+            console.log('开始生成移动端参数列...');
+
+            paramsColumn.innerHTML = '';
+
+            // 获取当前语言
+            const currentLang = getCurrentLanguage();
+
+            // 添加标题行
+            const headerRow = document.createElement('div');
+            headerRow.className = 'mobile-table-row';
+            headerRow.innerHTML = `
+                <div class="mobile-cell mobile-param-cell" style="min-height: 60px; align-items: center; justify-content: center;">
+                    <div style="font-weight: 600; text-align: center;">参数</div>
+                </div>
+            `;
+            paramsColumn.appendChild(headerRow);
+
+            // 从桌面表格的参数定义中获取参数列表
+            const paramDefinitions = [
+                { key: 'releaseDate', name: { 'zh-CN': '发布日期', 'en-US': 'Release Date' } },
+                { key: 'model', name: { 'zh-CN': '型号标识', 'en-US': 'Model' } },
+                { key: 'colors', name: { 'zh-CN': '颜色', 'en-US': 'Colors' } },
+                { key: 'frontPanel', name: { 'zh-CN': '前面板', 'en-US': 'Front Panel' } },
+                { key: 'frameMaterial', name: { 'zh-CN': '中框材质', 'en-US': 'Frame Material' } },
+                { key: 'backPanelMaterial', name: { 'zh-CN': '背板材质', 'en-US': 'Back Panel' } },
+                { key: 'dimensions', name: { 'zh-CN': '尺寸', 'en-US': 'Dimensions' } },
+                { key: 'weight', name: { 'zh-CN': '重量', 'en-US': 'Weight' } },
+                { key: 'waterResistance', name: { 'zh-CN': '防水等级', 'en-US': 'Water Resistance' } },
+                { key: 'displaySize', name: { 'zh-CN': '屏幕尺寸', 'en-US': 'Display Size' } },
+                { key: 'displayResolution', name: { 'zh-CN': '屏幕分辨率', 'en-US': 'Resolution' } },
+                { key: 'displayPpi', name: { 'zh-CN': '像素密度(PPI)', 'en-US': 'PPI' } },
+                { key: 'displayPanelType', name: { 'zh-CN': '面板类型', 'en-US': 'Panel Type' } },
+                { key: 'displayStandardBrightness', name: { 'zh-CN': '标准亮度', 'en-US': 'Brightness' } },
+                { key: 'displayRefreshRate', name: { 'zh-CN': '屏幕刷新率', 'en-US': 'Refresh Rate' } },
+                { key: 'processor', name: { 'zh-CN': '处理器型号', 'en-US': 'Processor' } },
+                { key: 'ram', name: { 'zh-CN': '内存容量', 'en-US': 'RAM' } },
+                { key: 'storage', name: { 'zh-CN': '存储容量', 'en-US': 'Storage' } },
+                { key: 'price', name: { 'zh-CN': '价格', 'en-US': 'Price' } }
+            ];
+
+            // 保存参数定义到state以供后续使用
+            state.tableParams = paramDefinitions;
+
+            // 添加参数行
+            paramDefinitions.forEach(param => {
+                const row = document.createElement('div');
+                row.className = 'mobile-table-row';
+                row.innerHTML = `
+                    <div class="mobile-cell mobile-param-cell">
+                        ${getLocalizedValue(param.name, currentLang)}
+                    </div>
+                `;
+                paramsColumn.appendChild(row);
+            });
+        }
+
+        // 生成移动端产品列
+        function generateMobileProductColumns() {
+            const productsContainer = document.getElementById('mobileProductsContainer');
+            if (!productsContainer) {
+                console.error('未找到移动端产品容器');
+                return;
+            }
+            console.log('开始生成移动端产品列...');
+
+            productsContainer.innerHTML = '';
+
+            // 使用全局产品数据
+            const displayProducts = window.allProducts || [];
+            console.log('可用产品数据:', displayProducts.length, '个');
+            
+            if (displayProducts.length === 0) {
+                console.log('没有可用的产品数据');
+                return;
+            }
+
+            displayProducts.forEach((product, index) => {
+                const productColumn = createMobileProductColumn(product, index);
+                productsContainer.appendChild(productColumn);
+            });
+            
+            console.log('移动端产品列生成完成，共', displayProducts.length, '列');
+        }
+
+        // 创建移动端产品列
+        function createMobileProductColumn(product, index) {
+            const column = document.createElement('div');
+            column.className = 'mobile-product-column';
+            column.dataset.productId = product.id;
+
+            const currentLang = getCurrentLanguage() || 'zh-CN';
+            const productName = getLocalizedValue(product.name, currentLang) || product.name;
+            const price = getLocalizedValue(product.price, currentLang) || 'N/A';
+
+            // 添加产品头部
+            const headerRow = document.createElement('div');
+            headerRow.className = 'mobile-table-row';
+            headerRow.innerHTML = `
+                <div class="mobile-cell mobile-product-header">
+                    <div class="mobile-product-name">${productName}</div>
+                    <div class="mobile-product-price">${price}</div>
+                </div>
+            `;
+            column.appendChild(headerRow);
+
+            // 获取参数定义（与generateMobileParamsColumn保持一致）
+            const paramDefinitions = [
+                { key: 'releaseDate', name: { 'zh-CN': '发布日期', 'en-US': 'Release Date' } },
+                { key: 'model', name: { 'zh-CN': '型号标识', 'en-US': 'Model' } },
+                { key: 'colors', name: { 'zh-CN': '颜色', 'en-US': 'Colors' } },
+                { key: 'frontPanel', name: { 'zh-CN': '前面板', 'en-US': 'Front Panel' } },
+                { key: 'frameMaterial', name: { 'zh-CN': '中框材质', 'en-US': 'Frame Material' } },
+                { key: 'backPanelMaterial', name: { 'zh-CN': '背板材质', 'en-US': 'Back Panel' } },
+                { key: 'dimensions', name: { 'zh-CN': '尺寸', 'en-US': 'Dimensions' } },
+                { key: 'weight', name: { 'zh-CN': '重量', 'en-US': 'Weight' } },
+                { key: 'waterResistance', name: { 'zh-CN': '防水等级', 'en-US': 'Water Resistance' } },
+                { key: 'displaySize', name: { 'zh-CN': '屏幕尺寸', 'en-US': 'Display Size' } },
+                { key: 'displayResolution', name: { 'zh-CN': '屏幕分辨率', 'en-US': 'Resolution' } },
+                { key: 'displayPpi', name: { 'zh-CN': '像素密度(PPI)', 'en-US': 'PPI' } },
+                { key: 'displayPanelType', name: { 'zh-CN': '面板类型', 'en-US': 'Panel Type' } },
+                { key: 'displayStandardBrightness', name: { 'zh-CN': '标准亮度', 'en-US': 'Brightness' } },
+                { key: 'displayRefreshRate', name: { 'zh-CN': '屏幕刷新率', 'en-US': 'Refresh Rate' } },
+                { key: 'processor', name: { 'zh-CN': '处理器型号', 'en-US': 'Processor' } },
+                { key: 'ram', name: { 'zh-CN': '内存容量', 'en-US': 'RAM' } },
+                { key: 'storage', name: { 'zh-CN': '存储容量', 'en-US': 'Storage' } },
+                { key: 'price', name: { 'zh-CN': '价格', 'en-US': 'Price' } }
+            ];
+
+            // 添加参数值行
+            paramDefinitions.forEach(param => {
+                const row = document.createElement('div');
+                row.className = 'mobile-table-row';
+                
+                let paramValue = getLocalizedValue(product[param.key], currentLang);
+                
+                // 特殊处理颜色参数
+                if (param.key === 'colors' && product[param.key] && Array.isArray(product[param.key])) {
+                    paramValue = product[param.key].map(color => {
+                        const colorName = getLocalizedValue(color.name, currentLang);
+                        if (color.code) {
+                            return `<span class="color-sample" style="background-color: ${color.code}" title="${colorName}"></span>`;
+                        }
+                        return colorName || '-';
+                    }).join(' ');
+                } else if (paramValue === undefined || paramValue === null || paramValue === '') {
+                    paramValue = 'N/A';
+                }
+
+                row.innerHTML = `
+                    <div class="mobile-cell mobile-value-cell">
+                        ${paramValue}
+                    </div>
+                `;
+                column.appendChild(row);
+            });
+
+            return column;
+        }
+
+        // 生成滚动指示器
+        function generateScrollIndicators() {
+            const indicatorsContainer = document.getElementById('mobileScrollIndicators');
+            const productsContainer = document.getElementById('mobileProductsContainer');
+            
+            if (!indicatorsContainer || !productsContainer) return;
+
+            const productColumns = productsContainer.querySelectorAll('.mobile-product-column');
+            const visibleCount = Math.floor(window.innerWidth / 140); // 根据屏幕宽度计算可见数量
+            const totalPages = Math.max(1, Math.ceil(productColumns.length / visibleCount));
+
+            indicatorsContainer.innerHTML = '';
+
+            for (let i = 0; i < totalPages; i++) {
+                const indicator = document.createElement('div');
+                indicator.className = 'mobile-scroll-indicator';
+                indicator.dataset.page = i;
+                indicator.addEventListener('click', () => scrollToPage(i));
+                indicatorsContainer.appendChild(indicator);
+            }
+
+            updateScrollIndicators();
+        }
+
+        // 滚动到指定页面
+        function scrollToPage(pageIndex) {
+            const productsScroll = document.getElementById('mobileProductsScroll');
+            if (!productsScroll) return;
+
+            const scrollWidth = Math.floor(window.innerWidth / 140) * 140; // 每页滚动距离
+            const targetScroll = pageIndex * scrollWidth;
+            
+            productsScroll.scrollTo({
+                left: targetScroll,
+                behavior: 'smooth'
+            });
+        }
+
+        // 滚动产品列
+        function scrollMobileProducts(direction) {
+            const productsScroll = document.getElementById('mobileProductsScroll');
+            if (!productsScroll) return;
+
+            const scrollAmount = 140; // 单次滚动距离
+            const currentScroll = productsScroll.scrollLeft;
+            const maxScroll = productsScroll.scrollWidth - productsScroll.clientWidth;
+
+            let targetScroll;
+            if (direction === 'prev') {
+                targetScroll = Math.max(0, currentScroll - scrollAmount);
+            } else {
+                targetScroll = Math.min(maxScroll, currentScroll + scrollAmount);
+            }
+
+            productsScroll.scrollTo({
+                left: targetScroll,
+                behavior: 'smooth'
+            });
+        }
+
+        // 更新滚动指示器
+        function updateScrollIndicators() {
+            const productsScroll = document.getElementById('mobileProductsScroll');
+            const indicators = document.querySelectorAll('.mobile-scroll-indicator');
+            
+            if (!productsScroll || indicators.length === 0) return;
+
+            const scrollLeft = productsScroll.scrollLeft;
+            const scrollWidth = productsScroll.scrollWidth - productsScroll.clientWidth;
+            const scrollPercent = scrollWidth > 0 ? scrollLeft / scrollWidth : 0;
+            const activeIndex = Math.round(scrollPercent * (indicators.length - 1));
+
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === activeIndex);
+            });
+
+            updateNavigationButtons();
+        }
+
+        // 更新导航按钮状态
+        function updateNavigationButtons() {
+            const productsScroll = document.getElementById('mobileProductsScroll');
+            const prevBtn = document.getElementById('mobilePrevBtn');
+            const nextBtn = document.getElementById('mobileNextBtn');
+            
+            if (!productsScroll || !prevBtn || !nextBtn) return;
+
+            const scrollLeft = productsScroll.scrollLeft;
+            const maxScroll = productsScroll.scrollWidth - productsScroll.clientWidth;
+
+            prevBtn.disabled = scrollLeft <= 0;
+            nextBtn.disabled = scrollLeft >= maxScroll;
+        }
+
+        // 获取当前语言
+        function getCurrentLanguage() {
+            return document.querySelector('.language-btn.active')?.dataset.lang || 'zh-CN';
+        }
+
+        // 获取本地化值
+        function getLocalizedValue(value, lang) {
+            if (!value) return value;
+            if (typeof value === 'object' && value[lang]) {
+                return value[lang];
+            }
+            return value;
         }
         
         // 重置按钮点击事件处理函数
