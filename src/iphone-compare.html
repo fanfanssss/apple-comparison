@@ -782,6 +782,76 @@
 
         /* 手机端专用样式 - 滑动表格布局 */
         @media (max-width: 768px) {
+            /* 移动端导航栏优化 */
+            .navbar-container {
+                height: auto;
+                flex-direction: column;
+                padding: var(--spacing-sm) 0;
+            }
+            
+            .logo {
+                margin-bottom: var(--spacing-xs);
+            }
+            
+            .logo span {
+                font-size: var(--font-size-sm);
+            }
+            
+            .nav-links {
+                gap: var(--spacing-md);
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .nav-link {
+                font-size: var(--font-size-xs);
+                padding: var(--spacing-xs) var(--spacing-sm);
+                border-radius: var(--radius-sm);
+                background: rgba(0, 113, 227, 0.1);
+            }
+            
+            .nav-link.active {
+                background: var(--color-primary);
+                color: white;
+            }
+            
+            .nav-link.active::after,
+            .nav-link::after {
+                display: none;
+            }
+            
+            .language-switcher {
+                margin-left: 0;
+                margin-top: var(--spacing-xs);
+            }
+            
+            /* 移动端顶部操作栏优化 */
+            .action-bar {
+                flex-direction: column;
+                align-items: stretch;
+                gap: var(--spacing-sm);
+                padding: var(--spacing-sm) var(--spacing-md);
+            }
+            
+            .action-bar h1 {
+                font-size: var(--font-size-lg);
+                text-align: center;
+                margin-bottom: var(--spacing-xs);
+                line-height: 1.3;
+            }
+            
+            .action-buttons {
+                justify-content: center;
+                gap: var(--spacing-sm);
+            }
+            
+            .btn {
+                flex: 1;
+                max-width: 120px;
+                font-size: var(--font-size-xs);
+                padding: var(--spacing-xs) var(--spacing-sm);
+            }
+            
             /* 隐藏桌面端表格 */
             .desktop-table {
                 display: none;
@@ -789,7 +859,8 @@
             
             /* 显示移动端滑动表格 */
             .mobile-table-container {
-                display: block !important;
+                display: flex !important;
+                flex-direction: column !important;
             }
             
             /* 表格容器改为滑动布局 */
@@ -803,7 +874,6 @@
             
             /* 创建滑动容器 */
             .mobile-table-container {
-                display: flex;
                 flex-direction: column;
                 position: relative;
                 overflow: hidden;
@@ -861,8 +931,9 @@
             /* 表格行样式 */
             .mobile-table-row {
                 display: flex;
-                min-height: 44px;
+                min-height: 50px;
                 border-bottom: 1px solid var(--color-border-light);
+                align-items: center;
             }
             
             .mobile-table-row:last-child {
@@ -879,9 +950,11 @@
                 display: flex;
                 align-items: center;
                 font-size: var(--font-size-sm);
-                line-height: 1.3;
+                line-height: 1.4;
                 word-wrap: break-word;
                 overflow-wrap: break-word;
+                min-height: 50px;
+                box-sizing: border-box;
             }
             
             /* 参数名称单元格 */
@@ -892,6 +965,10 @@
                 justify-content: flex-start;
                 text-align: left;
                 border-right: 2px solid var(--color-border-light);
+                width: 120px;
+                flex-shrink: 0;
+                min-height: 50px;
+                align-items: center;
             }
             
             /* 产品值单元格 */
@@ -901,6 +978,10 @@
                 justify-content: flex-start;
                 text-align: left;
                 position: relative;
+                width: 140px;
+                flex-shrink: 0;
+                min-height: 50px;
+                align-items: center;
             }
             
             /* 产品头部 */
@@ -911,8 +992,12 @@
                 text-align: center;
                 justify-content: center;
                 min-height: 60px;
+                height: 60px;
                 flex-direction: column;
                 padding: var(--spacing-xs);
+                align-items: center;
+                width: 140px;
+                flex-shrink: 0;
             }
             
             .mobile-product-name {
@@ -1057,6 +1142,53 @@
 
         /* 超小屏幕优化 */
         @media (max-width: 480px) {
+            /* 超小屏幕导航栏进一步优化 */
+            .navbar-container {
+                padding: var(--spacing-xs) 0;
+            }
+            
+            .logo {
+                margin-bottom: 6px;
+            }
+            
+            .logo span {
+                font-size: 12px;
+            }
+            
+            .nav-links {
+                gap: var(--spacing-xs);
+            }
+            
+            .nav-link {
+                font-size: 10px;
+                padding: 4px 8px;
+                white-space: nowrap;
+            }
+            
+            .language-switcher .language-btn {
+                font-size: 10px;
+                padding: 2px 6px;
+            }
+            
+            /* 超小屏幕顶部区域进一步优化 */
+            .action-bar {
+                padding: var(--spacing-xs) var(--spacing-sm);
+                margin-bottom: var(--spacing-md);
+            }
+            
+            .action-bar h1 {
+                font-size: var(--font-size-md);
+                line-height: 1.2;
+                word-break: keep-all;
+                overflow-wrap: break-word;
+            }
+            
+            .btn {
+                font-size: 11px;
+                padding: 6px 8px;
+                max-width: 100px;
+            }
+            
             .mobile-product-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -1225,7 +1357,7 @@
     <!-- 添加页面所需的JavaScript -->
     <script>
         // 全局变量
-        let allProducts = [];
+        window.allProducts = [];
         let performanceChart = null;
         let currentChartType = 'cpuSingle'; // 默认显示CPU单核性能
         
@@ -1313,6 +1445,30 @@
             });
         }
         
+        // 检查并初始化移动端表格
+        function checkAndInitMobileTable() {
+            if (window.innerWidth <= 768) {
+                console.log('最终检查移动端表格状态...');
+                const mobileContainer = document.getElementById('mobileTableContainer');
+                const paramsColumn = document.getElementById('mobileParamsColumn');
+                const productsContainer = document.getElementById('mobileProductsContainer');
+                
+                console.log('移动端容器存在:', !!mobileContainer);
+                console.log('参数列容器存在:', !!paramsColumn);
+                console.log('产品容器存在:', !!productsContainer);
+                console.log('产品数据可用:', window.allProducts ? window.allProducts.length : 0);
+                
+                if (mobileContainer && paramsColumn && productsContainer && window.allProducts && window.allProducts.length > 0) {
+                    if (paramsColumn.children.length === 0 || productsContainer.children.length === 0) {
+                        console.log('移动端表格为空，重新生成...');
+                        generateMobileTable();
+                    } else {
+                        console.log('移动端表格已存在，参数行数:', paramsColumn.children.length, '产品列数:', productsContainer.children.length);
+                    }
+                }
+            }
+        }
+
         // 页面加载完成后初始化
         document.addEventListener('DOMContentLoaded', async () => {
             // 添加防错误处理
@@ -1347,12 +1503,17 @@
                 
                 // 使用新的细化参数数据文件
                 // 开始加载iPhone数据
-                 const response = await fetch('../public/data/iphone_refined.json');
+                console.log('开始加载数据文件...');
+                const response = await fetch('../public/data/iphone_refined.json');
+                console.log('数据请求响应:', response.status, response.statusText);
+                
                 // 数据获取状态检查
                 if (!response.ok) {
+                    console.error('数据请求失败:', response.status, response.statusText);
                     throw new Error('网络响应不正常');
                 }
                 const jsonData = await response.json();
+                console.log('数据解析成功，产品数量:', jsonData ? jsonData.length : 0);
                 // 数据解析完成
                 
                 // 检查数据结构
@@ -1360,10 +1521,11 @@
                     throw new Error('数据格式不正确或为空');
                 }
                 
-                allProducts = jsonData;
+                window.allProducts = jsonData;
+                console.log('全局产品数据已设置，数量:', window.allProducts.length);
                 
                 // 按发布日期从新到旧排序
-                allProducts.sort((a, b) => {
+                window.allProducts.sort((a, b) => {
                     // 获取当前语言
                     const currentLanguage = document.querySelector('.language-btn.active')?.dataset.lang || 'zh-CN';
                     
@@ -1400,7 +1562,8 @@
                 });
                 
                 // 生成表格
-                generateTable(allProducts);
+                console.log('调用generateTable，产品数量:', window.allProducts.length);
+                generateTable(window.allProducts);
                 
                 // 默认选择所有产品
                 initProductSelection();
@@ -1417,9 +1580,9 @@
                 
                 // 尝试修复错误并继续（恢复机制）
                 try {
-                    if (allProducts && allProducts.length > 0) {
+                    if (window.allProducts && window.allProducts.length > 0) {
                         // 尽管有错误但数据已加载，尝试继续处理
-                        generateTable(allProducts);
+                        generateTable(window.allProducts);
                         initProductSelection();
                     }
                 } catch (e) {
@@ -1928,6 +2091,16 @@
                     generateMobileTable();
                 }
             }, 800);
+            
+            // 额外的强制初始化，确保移动端表格一定会生成
+            setTimeout(() => {
+                checkAndInitMobileTable();
+            }, 1500);
+            
+            // 最终检查
+            setTimeout(() => {
+                checkAndInitMobileTable();
+            }, 3000);
         }
 
         // 处理屏幕尺寸变化
@@ -1973,6 +2146,66 @@
             console.log('移动端表格生成完成');
         }
 
+        // 获取完整的参数定义（与PC端保持一致）
+        function getCompleteParamDefinitions() {
+            return [
+                // 基本信息
+                { key: 'releaseDate', name: { 'zh-CN': '发布日期', 'en-US': 'Release Date' }, langKey: 'param.releaseDate', icon: 'ri-calendar-line' },
+                { key: 'model', name: { 'zh-CN': '型号标识', 'en-US': 'Model' }, langKey: 'param.model', icon: 'ri-barcode-line' },
+                { key: 'colors', name: { 'zh-CN': '颜色', 'en-US': 'Colors' }, langKey: 'param.colors', icon: 'ri-palette-line' },
+                { key: 'frontPanel', name: { 'zh-CN': '前面板', 'en-US': 'Front Panel' }, langKey: 'param.frontPanel', icon: 'ri-smartphone-line' },
+                { key: 'frameMaterial', name: { 'zh-CN': '中框材质', 'en-US': 'Frame Material' }, langKey: 'param.frameMaterial', icon: 'ri-layout-right-line' },
+                { key: 'backPanelMaterial', name: { 'zh-CN': '背板材质', 'en-US': 'Back Panel' }, langKey: 'param.backPanelMaterial', icon: 'ri-smartphone-line' },
+                { key: 'dimensions', name: { 'zh-CN': '尺寸', 'en-US': 'Dimensions' }, langKey: 'param.dimensions', icon: 'ri-ruler-line' },
+                { key: 'weight', name: { 'zh-CN': '重量', 'en-US': 'Weight' }, langKey: 'param.weight', icon: 'ri-scales-line' },
+                { key: 'waterResistance', name: { 'zh-CN': '防水等级', 'en-US': 'Water Resistance' }, langKey: 'param.waterResistance', icon: 'ri-water-flash-line' },
+                
+                // 屏幕参数（细分）
+                { key: 'displaySize', name: { 'zh-CN': '屏幕尺寸', 'en-US': 'Display Size' }, langKey: 'param.displaySize', icon: 'ri-fullscreen-line' },
+                { key: 'displayResolution', name: { 'zh-CN': '屏幕分辨率', 'en-US': 'Resolution' }, langKey: 'param.displayResolution', icon: 'ri-aspect-ratio-line' },
+                { key: 'displayPpi', name: { 'zh-CN': '像素密度(PPI)', 'en-US': 'PPI' }, langKey: 'param.displayPpi', icon: 'ri-focus-3-line' },
+                { key: 'displayPanelType', name: { 'zh-CN': '面板类型', 'en-US': 'Panel Type' }, langKey: 'param.displayPanelType', icon: 'ri-tv-2-line' },
+                { key: 'displaySpecialTech', name: { 'zh-CN': '特殊显示技术', 'en-US': 'Special Display Tech' }, langKey: 'param.displaySpecialTech', icon: 'ri-magic-line' },
+                { key: 'displayStandardBrightness', name: { 'zh-CN': '标准亮度', 'en-US': 'Standard Brightness' }, langKey: 'param.displayStandardBrightness', icon: 'ri-sun-line' },
+                { key: 'displayHdrBrightness', name: { 'zh-CN': 'HDR亮度', 'en-US': 'HDR Brightness' }, langKey: 'param.displayHdrBrightness', icon: 'ri-sun-foggy-line' },
+                { key: 'displayRefreshRate', name: { 'zh-CN': '屏幕刷新率', 'en-US': 'Refresh Rate' }, langKey: 'param.displayRefreshRate', icon: 'ri-refresh-line' },
+                { key: 'touchTechnology', name: { 'zh-CN': '触控技术', 'en-US': 'Touch Technology' }, langKey: 'param.touchTechnology', icon: 'ri-fingerprint-line' },
+                { key: 'displayColorGamut', name: { 'zh-CN': '显示色域', 'en-US': 'Color Gamut' }, langKey: 'param.displayColorGamut', icon: 'ri-contrast-2-line' },
+                
+                // 处理器和性能（细分）
+                { key: 'processor', name: { 'zh-CN': '处理器型号', 'en-US': 'Processor' }, langKey: 'param.processor', icon: 'ri-cpu-line' },
+                { key: 'processTechnology', name: { 'zh-CN': '制程工艺', 'en-US': 'Process Technology' }, langKey: 'param.processTechnology', icon: 'ri-cpu-fill' },
+                { key: 'ram', name: { 'zh-CN': '内存容量', 'en-US': 'RAM' }, langKey: 'param.ram', icon: 'ri-database-2-line' },
+                { key: 'cpuPerformance.singleCore', name: { 'zh-CN': 'CPU单核性能', 'en-US': 'CPU Single Core' }, langKey: 'param.cpuSingleCore', icon: 'ri-speed-up-line' },
+                { key: 'cpuPerformance.multiCore', name: { 'zh-CN': 'CPU多核性能', 'en-US': 'CPU Multi Core' }, langKey: 'param.cpuMultiCore', icon: 'ri-dashboard-3-line' },
+                { key: 'gpuPerformance', name: { 'zh-CN': 'GPU性能', 'en-US': 'GPU Performance' }, langKey: 'param.gpuPerformance', icon: 'ri-gamepad-line' },
+                { key: 'storage', name: { 'zh-CN': '存储容量', 'en-US': 'Storage' }, langKey: 'param.storage', icon: 'ri-hard-drive-2-line' },
+                
+                // 摄像头系统
+                { key: 'rearCameraSystem', name: { 'zh-CN': '后置摄像头系统', 'en-US': 'Rear Camera System' }, langKey: 'param.rearCameraSystem', icon: 'ri-camera-line' },
+                { key: 'frontCameraSystem', name: { 'zh-CN': '前置摄像头系统', 'en-US': 'Front Camera System' }, langKey: 'param.frontCameraSystem', icon: 'ri-camera-2-line' },
+                { key: 'videoRecording', name: { 'zh-CN': '视频录制', 'en-US': 'Video Recording' }, langKey: 'param.videoRecording', icon: 'ri-video-line' },
+                
+                // 电池和充电
+                { key: 'batteryCapacity', name: { 'zh-CN': '电池容量', 'en-US': 'Battery Capacity' }, langKey: 'param.batteryCapacity', icon: 'ri-battery-line' },
+                { key: 'batteryLife', name: { 'zh-CN': '电池续航', 'en-US': 'Battery Life' }, langKey: 'param.batteryLife', icon: 'ri-battery-charge-line' },
+                { key: 'chargingCapability', name: { 'zh-CN': '充电能力', 'en-US': 'Charging Capability' }, langKey: 'param.chargingCapability', icon: 'ri-flashlight-line' },
+                
+                // 连接性
+                { key: 'connectivity', name: { 'zh-CN': '连接性', 'en-US': 'Connectivity' }, langKey: 'param.connectivity', icon: 'ri-wifi-line' },
+                { key: 'cellularTechnology', name: { 'zh-CN': '蜂窝技术', 'en-US': 'Cellular Technology' }, langKey: 'param.cellularTechnology', icon: 'ri-signal-tower-line' },
+                
+                // 特色功能和安全
+                { key: 'specialFeatures', name: { 'zh-CN': '特色功能', 'en-US': 'Special Features' }, langKey: 'param.specialFeatures', icon: 'ri-star-line' },
+                { key: 'securityFeatures', name: { 'zh-CN': '安全功能', 'en-US': 'Security Features' }, langKey: 'param.securityFeatures', icon: 'ri-shield-check-line' },
+                { key: 'operatingSystem', name: { 'zh-CN': '操作系统', 'en-US': 'Operating System' }, langKey: 'param.operatingSystem', icon: 'ri-smartphone-line' },
+                
+                // 价格
+                { key: 'price', name: { 'zh-CN': '价格', 'en-US': 'Price' }, langKey: 'param.price', icon: 'ri-price-tag-3-line' },
+                { key: 'technicalSpecsLink', name: { 'zh-CN': '技术规格', 'en-US': 'Technical Specs' }, langKey: 'param.technicalSpecsLink', icon: 'ri-file-text-line' }
+            ];
+        }
+
         // 生成移动端参数列
         function generateMobileParamsColumn() {
             const paramsColumn = document.getElementById('mobileParamsColumn');
@@ -1990,35 +2223,16 @@
             // 添加标题行
             const headerRow = document.createElement('div');
             headerRow.className = 'mobile-table-row';
+            headerRow.style.height = '60px';
             headerRow.innerHTML = `
-                <div class="mobile-cell mobile-param-cell" style="min-height: 60px; align-items: center; justify-content: center;">
+                <div class="mobile-cell mobile-param-cell" style="height: 60px; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark)); color: white;">
                     <div style="font-weight: 600; text-align: center;">参数</div>
                 </div>
             `;
             paramsColumn.appendChild(headerRow);
 
-            // 从桌面表格的参数定义中获取参数列表
-            const paramDefinitions = [
-                { key: 'releaseDate', name: { 'zh-CN': '发布日期', 'en-US': 'Release Date' } },
-                { key: 'model', name: { 'zh-CN': '型号标识', 'en-US': 'Model' } },
-                { key: 'colors', name: { 'zh-CN': '颜色', 'en-US': 'Colors' } },
-                { key: 'frontPanel', name: { 'zh-CN': '前面板', 'en-US': 'Front Panel' } },
-                { key: 'frameMaterial', name: { 'zh-CN': '中框材质', 'en-US': 'Frame Material' } },
-                { key: 'backPanelMaterial', name: { 'zh-CN': '背板材质', 'en-US': 'Back Panel' } },
-                { key: 'dimensions', name: { 'zh-CN': '尺寸', 'en-US': 'Dimensions' } },
-                { key: 'weight', name: { 'zh-CN': '重量', 'en-US': 'Weight' } },
-                { key: 'waterResistance', name: { 'zh-CN': '防水等级', 'en-US': 'Water Resistance' } },
-                { key: 'displaySize', name: { 'zh-CN': '屏幕尺寸', 'en-US': 'Display Size' } },
-                { key: 'displayResolution', name: { 'zh-CN': '屏幕分辨率', 'en-US': 'Resolution' } },
-                { key: 'displayPpi', name: { 'zh-CN': '像素密度(PPI)', 'en-US': 'PPI' } },
-                { key: 'displayPanelType', name: { 'zh-CN': '面板类型', 'en-US': 'Panel Type' } },
-                { key: 'displayStandardBrightness', name: { 'zh-CN': '标准亮度', 'en-US': 'Brightness' } },
-                { key: 'displayRefreshRate', name: { 'zh-CN': '屏幕刷新率', 'en-US': 'Refresh Rate' } },
-                { key: 'processor', name: { 'zh-CN': '处理器型号', 'en-US': 'Processor' } },
-                { key: 'ram', name: { 'zh-CN': '内存容量', 'en-US': 'RAM' } },
-                { key: 'storage', name: { 'zh-CN': '存储容量', 'en-US': 'Storage' } },
-                { key: 'price', name: { 'zh-CN': '价格', 'en-US': 'Price' } }
-            ];
+            // 使用完整的参数定义
+            const paramDefinitions = getCompleteParamDefinitions();
 
             // 保存参数定义到state以供后续使用
             state.tableParams = paramDefinitions;
@@ -2027,8 +2241,9 @@
             paramDefinitions.forEach(param => {
                 const row = document.createElement('div');
                 row.className = 'mobile-table-row';
+                row.style.height = '50px';
                 row.innerHTML = `
-                    <div class="mobile-cell mobile-param-cell">
+                    <div class="mobile-cell mobile-param-cell" style="height: 50px;">
                         ${getLocalizedValue(param.name, currentLang)}
                     </div>
                 `;
@@ -2077,46 +2292,40 @@
             // 添加产品头部
             const headerRow = document.createElement('div');
             headerRow.className = 'mobile-table-row';
+            headerRow.style.height = '60px';
             headerRow.innerHTML = `
-                <div class="mobile-cell mobile-product-header">
+                <div class="mobile-cell mobile-product-header" style="height: 60px;">
                     <div class="mobile-product-name">${productName}</div>
                     <div class="mobile-product-price">${price}</div>
                 </div>
             `;
             column.appendChild(headerRow);
 
-            // 获取参数定义（与generateMobileParamsColumn保持一致）
-            const paramDefinitions = [
-                { key: 'releaseDate', name: { 'zh-CN': '发布日期', 'en-US': 'Release Date' } },
-                { key: 'model', name: { 'zh-CN': '型号标识', 'en-US': 'Model' } },
-                { key: 'colors', name: { 'zh-CN': '颜色', 'en-US': 'Colors' } },
-                { key: 'frontPanel', name: { 'zh-CN': '前面板', 'en-US': 'Front Panel' } },
-                { key: 'frameMaterial', name: { 'zh-CN': '中框材质', 'en-US': 'Frame Material' } },
-                { key: 'backPanelMaterial', name: { 'zh-CN': '背板材质', 'en-US': 'Back Panel' } },
-                { key: 'dimensions', name: { 'zh-CN': '尺寸', 'en-US': 'Dimensions' } },
-                { key: 'weight', name: { 'zh-CN': '重量', 'en-US': 'Weight' } },
-                { key: 'waterResistance', name: { 'zh-CN': '防水等级', 'en-US': 'Water Resistance' } },
-                { key: 'displaySize', name: { 'zh-CN': '屏幕尺寸', 'en-US': 'Display Size' } },
-                { key: 'displayResolution', name: { 'zh-CN': '屏幕分辨率', 'en-US': 'Resolution' } },
-                { key: 'displayPpi', name: { 'zh-CN': '像素密度(PPI)', 'en-US': 'PPI' } },
-                { key: 'displayPanelType', name: { 'zh-CN': '面板类型', 'en-US': 'Panel Type' } },
-                { key: 'displayStandardBrightness', name: { 'zh-CN': '标准亮度', 'en-US': 'Brightness' } },
-                { key: 'displayRefreshRate', name: { 'zh-CN': '屏幕刷新率', 'en-US': 'Refresh Rate' } },
-                { key: 'processor', name: { 'zh-CN': '处理器型号', 'en-US': 'Processor' } },
-                { key: 'ram', name: { 'zh-CN': '内存容量', 'en-US': 'RAM' } },
-                { key: 'storage', name: { 'zh-CN': '存储容量', 'en-US': 'Storage' } },
-                { key: 'price', name: { 'zh-CN': '价格', 'en-US': 'Price' } }
-            ];
+            // 获取完整的参数定义（与generateMobileParamsColumn保持一致）
+            const paramDefinitions = getCompleteParamDefinitions();
 
             // 添加参数值行
             paramDefinitions.forEach(param => {
                 const row = document.createElement('div');
                 row.className = 'mobile-table-row';
                 
-                let paramValue = getLocalizedValue(product[param.key], currentLang);
+                let paramValue;
                 
-                // 特殊处理颜色参数
+                // 处理嵌套属性（如cpuPerformance.singleCore）
+                if (param.key.includes('.')) {
+                    const keys = param.key.split('.');
+                    let value = product;
+                    for (const key of keys) {
+                        value = value ? value[key] : undefined;
+                    }
+                    paramValue = getLocalizedValue(value, currentLang);
+                } else {
+                    paramValue = getLocalizedValue(product[param.key], currentLang);
+                }
+                
+                // 特殊参数处理
                 if (param.key === 'colors' && product[param.key] && Array.isArray(product[param.key])) {
+                    // 颜色参数 - 显示色卡
                     paramValue = product[param.key].map(color => {
                         const colorName = getLocalizedValue(color.name, currentLang);
                         if (color.code) {
@@ -2124,15 +2333,22 @@
                         }
                         return colorName || '-';
                     }).join(' ');
+                } else if (param.key === 'technicalSpecsLink' && product[param.key]) {
+                    // 技术规格链接
+                    paramValue = `<a href="${product[param.key]}" target="_blank" style="color: var(--color-text-primary); text-decoration: none;">查看详情</a>`;
+                } else if (param.key === 'displayPpi' && paramValue) {
+                    // PPI格式化
+                    paramValue = `${paramValue} PPI`;
                 } else if (paramValue === undefined || paramValue === null || paramValue === '') {
                     paramValue = 'N/A';
                 }
 
                 row.innerHTML = `
-                    <div class="mobile-cell mobile-value-cell">
+                    <div class="mobile-cell mobile-value-cell" style="height: 50px;">
                         ${paramValue}
                     </div>
                 `;
+                row.style.height = '50px';
                 column.appendChild(row);
             });
 
@@ -2416,7 +2632,7 @@
         // 更新性能图表
         function updatePerformanceChart(chartType) {
             // 检查allProducts是否已加载
-            if (!allProducts || allProducts.length === 0) {
+            if (!window.allProducts || window.allProducts.length === 0) {
                 console.error('产品数据尚未加载，无法更新性能图表');
                 return;
             }
@@ -2781,6 +2997,7 @@
                 
                 // 更新全局数据
                 window.allProducts = jsonData;
+                console.log('window.allProducts已更新，数量:', window.allProducts.length);
                 
                 // 按发布日期排序
                 window.allProducts.sort((a, b) => {
@@ -2883,7 +3100,7 @@
                 // 检测到非直接触发的语言切换处理
                 
                 // 如果有产品数据且需要强制重载
-                if (allProducts && allProducts.length > 0 && forceReload) {
+                if (window.allProducts && window.allProducts.length > 0 && forceReload) {
                     // 调用重新加载函数
                     window.reloadDataWithLanguage(currentLanguage);
                 } else {

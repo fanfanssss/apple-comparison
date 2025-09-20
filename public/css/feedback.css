@@ -366,6 +366,46 @@
 
 /* 响应式设计调整 */
 @media (max-width: 768px) {
+    /* 移动端导航栏优化 */
+    .navbar-container {
+        flex-direction: column;
+        padding: var(--spacing-sm) 0;
+        gap: var(--spacing-xs);
+    }
+    
+    .logo {
+        margin-bottom: var(--spacing-xs);
+        font-size: 18px;
+    }
+    
+    .nav-links {
+        gap: var(--spacing-md);
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-link {
+        font-size: var(--font-size-xs);
+        padding: var(--spacing-xs) var(--spacing-sm);
+        border-radius: var(--radius-sm);
+        background: rgba(0, 113, 227, 0.1);
+    }
+    
+    .nav-link.active {
+        background: var(--primary-color);
+        color: white;
+    }
+    
+    .nav-link.active::after,
+    .nav-link::after {
+        display: none;
+    }
+    
+    .language-switcher {
+        margin-left: 0;
+        margin-top: var(--spacing-xs);
+    }
+    
     .radio-group {
         flex-direction: column;
         gap: 10px;
@@ -377,6 +417,31 @@
 }
 
 @media (max-width: 480px) {
+    /* 超小屏幕导航栏进一步优化 */
+    .navbar-container {
+        padding: 8px 0;
+    }
+    
+    .logo {
+        margin-bottom: 6px;
+        font-size: 16px;
+    }
+    
+    .nav-links {
+        gap: 8px;
+    }
+    
+    .nav-link {
+        font-size: 10px;
+        padding: 4px 8px;
+        white-space: nowrap;
+    }
+    
+    .language-switcher .language-btn {
+        font-size: 10px;
+        padding: 2px 6px;
+    }
+    
     .feedback-form,
     .feedback-status {
         padding: 20px;
