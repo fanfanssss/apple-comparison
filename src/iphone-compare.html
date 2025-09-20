@@ -1000,11 +1000,29 @@
                 flex-shrink: 0;
             }
             
+            /* 移动端产品选择器 */
+            .mobile-product-selector {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: var(--spacing-xs);
+                width: 100%;
+            }
+
+            .mobile-product-checkbox {
+                width: 18px;
+                height: 18px;
+                accent-color: white;
+                cursor: pointer;
+            }
+
             .mobile-product-name {
                 font-size: var(--font-size-sm);
                 font-weight: 600;
-                margin-bottom: 2px;
+                text-align: center;
+                cursor: pointer;
                 line-height: 1.2;
+                word-break: keep-all;
             }
             
             .mobile-product-price {
@@ -1629,6 +1647,18 @@
                 productSelector.appendChild(checkbox);
                 productSelector.appendChild(label);
                 th.appendChild(productSelector);
+                
+                // 为桌面端勾选框添加事件处理
+                checkbox.addEventListener('change', function() {
+                    // 同步到移动端勾选框
+                    const mobileCheckbox = document.querySelector(`input[type="checkbox"].mobile-product-checkbox[data-product-id="${product.id}"]`);
+                    if (mobileCheckbox) {
+                        mobileCheckbox.checked = this.checked;
+                    }
+                    
+                    // 更新产品选择状态
+                    updateProductSelection();
+                });
                 
                 thead.appendChild(th);
             });
@@ -2312,10 +2342,28 @@
             headerRow.style.height = '60px';
             headerRow.innerHTML = `
                 <div class="mobile-cell mobile-product-header" style="height: 60px;">
-                    <div class="mobile-product-name">${productName}</div>
+                    <div class="mobile-product-selector">
+                        <input type="checkbox" class="mobile-product-checkbox" id="mobile-${product.id}" data-product-id="${product.id}">
+                        <label for="mobile-${product.id}" class="mobile-product-name">${productName}</label>
+                    </div>
                 </div>
             `;
             column.appendChild(headerRow);
+
+            // 为移动端勾选框添加事件处理
+            const mobileCheckbox = column.querySelector('.mobile-product-checkbox');
+            if (mobileCheckbox) {
+                mobileCheckbox.addEventListener('change', function() {
+                    // 同步到桌面端勾选框
+                    const desktopCheckbox = document.querySelector(`input[type="checkbox"][id="${product.id}"]`);
+                    if (desktopCheckbox) {
+                        desktopCheckbox.checked = this.checked;
+                    }
+                    
+                    // 更新产品选择状态
+                    updateProductSelection();
+                });
+            }
 
             // 获取完整的参数定义（与generateMobileParamsColumn保持一致）
             const paramDefinitions = getCompleteParamDefinitions();
@@ -2490,6 +2538,30 @@
         // 获取当前语言
         function getCurrentLanguage() {
             return document.querySelector('.language-btn.active')?.dataset.lang || 'zh-CN';
+        }
+
+        // 更新产品选择状态
+        function updateProductSelection() {
+            // 获取所有选中的产品（包括桌面端和移动端）
+            const desktopCheckboxes = document.querySelectorAll('input[type="checkbox"].product-checkbox:checked');
+            const mobileCheckboxes = document.querySelectorAll('input[type="checkbox"].mobile-product-checkbox:checked');
+            
+            // 合并选中的产品ID
+            const selectedIds = new Set();
+            desktopCheckboxes.forEach(cb => selectedIds.add(cb.id));
+            mobileCheckboxes.forEach(cb => selectedIds.add(cb.dataset.productId));
+            
+            // 更新全局产品状态
+            if (window.productState) {
+                window.productState.setSelectedProducts(Array.from(selectedIds));
+            }
+            
+            // 更新AppState
+            if (window.AppState) {
+                window.AppState.selectedProducts = Array.from(selectedIds);
+            }
+            
+            console.log('产品选择状态已更新:', Array.from(selectedIds));
         }
 
         // 获取本地化值
@@ -3536,6 +3608,110 @@
     </style>
     <!-- 调试辅助代码 -->
     <script>
+        // 页面加载完成后执行初始化
+        window.addEventListener('load', function() {
+            // 初始化按钮事件处理器
+            initializeButtonEvents();
+        });
+
+        // 初始化按钮事件处理器
+        function initializeButtonEvents() {
+            // 查看对比按钮事件处理
+            const compareButton = document.getElementById('compare-button');
+            if (compareButton) {
+                compareButton.addEventListener('click', handleCompareButtonClick);
+            }
+
+            // 重置按钮事件处理
+            const resetButton = document.getElementById('reset-button');
+            if (resetButton) {
+                resetButton.addEventListener('click', handleResetButtonClick);
+            }
+        }
+
+        // 查看对比按钮点击事件处理
+        function handleCompareButtonClick() {
+            console.log('查看对比按钮被点击');
+            
+            // 获取所有选中的产品（包括桌面端和移动端）
+            const desktopCheckboxes = document.querySelectorAll('input[type="checkbox"].product-checkbox:checked');
+            const mobileCheckboxes = document.querySelectorAll('input[type="checkbox"].mobile-product-checkbox:checked');
+            
+            // 合并选中的产品ID
+            const selectedIds = new Set();
+            desktopCheckboxes.forEach(cb => selectedIds.add(cb.id));
+            mobileCheckboxes.forEach(cb => selectedIds.add(cb.dataset.productId));
+            
+            const selectedProducts = Array.from(selectedIds);
+            console.log('选中的产品:', selectedProducts);
+            
+            if (selectedProducts.length === 0) {
+                alert('请至少选择一个产品进行对比');
+                return;
+            }
+            
+            if (selectedProducts.length === 1) {
+                alert('请选择至少两个产品进行对比');
+                return;
+            }
+            
+            // 隐藏未选中的产品列
+            hideUnselectedProducts(selectedProducts);
+            
+            // 滚动到表格顶部
+            const tableWrapper = document.querySelector('.table-wrapper');
+            if (tableWrapper) {
+                tableWrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        // 隐藏未选中的产品列
+        function hideUnselectedProducts(selectedProducts) {
+            // 桌面端表格处理
+            const desktopTable = document.querySelector('.desktop-table');
+            if (desktopTable) {
+                // 处理表头
+                const headerCells = desktopTable.querySelectorAll('thead th');
+                headerCells.forEach((th, index) => {
+                    if (index === 0) return; // 跳过参数名称列
+                    
+                    const checkbox = th.querySelector('.product-checkbox');
+                    if (checkbox && !selectedProducts.includes(checkbox.id)) {
+                        th.style.display = 'none';
+                    } else {
+                        th.style.display = '';
+                    }
+                });
+                
+                // 处理数据行
+                const dataRows = desktopTable.querySelectorAll('tbody tr');
+                dataRows.forEach(row => {
+                    const cells = row.querySelectorAll('td');
+                    cells.forEach((cell, index) => {
+                        if (index === 0) return; // 跳过参数名称列
+                        
+                        const productId = cell.getAttribute('data-product');
+                        if (productId && !selectedProducts.includes(productId)) {
+                            cell.style.display = 'none';
+                        } else {
+                            cell.style.display = '';
+                        }
+                    });
+                });
+            }
+            
+            // 移动端表格处理
+            const mobileProductColumns = document.querySelectorAll('.mobile-product-column');
+            mobileProductColumns.forEach(column => {
+                const productId = column.dataset.productId;
+                if (productId && !selectedProducts.includes(productId)) {
+                    column.style.display = 'none';
+                } else {
+                    column.style.display = '';
+                }
+            });
+        }
+
         // 页面加载完成后执行进一步检查
         window.addEventListener('load', function() {
             // 检查是否成功显示表格数据
