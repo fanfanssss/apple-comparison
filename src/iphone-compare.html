@@ -2179,29 +2179,47 @@
                 { key: 'cpuPerformance.singleCore', name: { 'zh-CN': 'CPU单核性能', 'en-US': 'CPU Single Core' }, langKey: 'param.cpuSingleCore', icon: 'ri-speed-up-line' },
                 { key: 'cpuPerformance.multiCore', name: { 'zh-CN': 'CPU多核性能', 'en-US': 'CPU Multi Core' }, langKey: 'param.cpuMultiCore', icon: 'ri-dashboard-3-line' },
                 { key: 'gpuPerformance', name: { 'zh-CN': 'GPU性能', 'en-US': 'GPU Performance' }, langKey: 'param.gpuPerformance', icon: 'ri-gamepad-line' },
-                { key: 'storage', name: { 'zh-CN': '存储容量', 'en-US': 'Storage' }, langKey: 'param.storage', icon: 'ri-hard-drive-2-line' },
+                // 存储容量 - 移动端不显示存储容量信息
                 
                 // 摄像头系统
-                { key: 'rearCameraSystem', name: { 'zh-CN': '后置摄像头系统', 'en-US': 'Rear Camera System' }, langKey: 'param.rearCameraSystem', icon: 'ri-camera-line' },
-                { key: 'frontCameraSystem', name: { 'zh-CN': '前置摄像头系统', 'en-US': 'Front Camera System' }, langKey: 'param.frontCameraSystem', icon: 'ri-camera-2-line' },
-                { key: 'videoRecording', name: { 'zh-CN': '视频录制', 'en-US': 'Video Recording' }, langKey: 'param.videoRecording', icon: 'ri-video-line' },
+                { key: 'camera', name: { 'zh-CN': '主摄像头', 'en-US': 'Main Camera' }, langKey: 'param.mainCamera', icon: 'ri-camera-3-line' },
+                { key: 'camera', name: { 'zh-CN': '长焦摄像头', 'en-US': 'Telephoto Camera' }, langKey: 'param.telephotoCamera', icon: 'ri-camera-line' },
+                { key: 'camera', name: { 'zh-CN': '广角摄像头', 'en-US': 'Ultra-wide Camera' }, langKey: 'param.ultraWideCamera', icon: 'ri-camera-2-line' },
+                { key: 'opticalZoom', name: { 'zh-CN': '光学变焦', 'en-US': 'Optical Zoom' }, langKey: 'param.opticalZoom', icon: 'ri-focus-2-line' },
+                { key: 'frontCamera', name: { 'zh-CN': '前置摄像头', 'en-US': 'Front Camera' }, langKey: 'param.frontCamera', icon: 'ri-camera-2-line' },
                 
                 // 电池和充电
                 { key: 'batteryCapacity', name: { 'zh-CN': '电池容量', 'en-US': 'Battery Capacity' }, langKey: 'param.batteryCapacity', icon: 'ri-battery-line' },
-                { key: 'batteryLife', name: { 'zh-CN': '电池续航', 'en-US': 'Battery Life' }, langKey: 'param.batteryLife', icon: 'ri-battery-charge-line' },
-                { key: 'chargingCapability', name: { 'zh-CN': '充电能力', 'en-US': 'Charging Capability' }, langKey: 'param.chargingCapability', icon: 'ri-flashlight-line' },
+                { key: 'batteryCapacityMah', name: { 'zh-CN': '电池容量(mAh)', 'en-US': 'Battery Capacity (mAh)' }, langKey: 'param.batteryCapacityMah', icon: 'ri-battery-2-line' },
+                { key: 'batteryCapacityWh', name: { 'zh-CN': '电池容量(Wh)', 'en-US': 'Battery Capacity (Wh)' }, langKey: 'param.batteryCapacityWh', icon: 'ri-battery-charge-line' },
+                { key: 'videoPlaybackTime', name: { 'zh-CN': '视频播放时间', 'en-US': 'Video Playback Time' }, langKey: 'param.videoPlaybackTime', icon: 'ri-video-line' },
+                { key: 'audioPlaybackTime', name: { 'zh-CN': '音频播放时间', 'en-US': 'Audio Playback Time' }, langKey: 'param.audioPlaybackTime', icon: 'ri-music-line' },
+                { key: 'wiredChargingSpeed', name: { 'zh-CN': '有线充电速度', 'en-US': 'Wired Charging Speed' }, langKey: 'param.wiredChargingSpeed', icon: 'ri-plug-line' },
+                { key: 'wirelessChargingSpeed', name: { 'zh-CN': '无线充电', 'en-US': 'Wireless Charging' }, langKey: 'param.wirelessChargingSpeed', icon: 'ri-wireless-charging-line' },
                 
-                // 连接性
-                { key: 'connectivity', name: { 'zh-CN': '连接性', 'en-US': 'Connectivity' }, langKey: 'param.connectivity', icon: 'ri-wifi-line' },
-                { key: 'cellularTechnology', name: { 'zh-CN': '蜂窝技术', 'en-US': 'Cellular Technology' }, langKey: 'param.cellularTechnology', icon: 'ri-signal-tower-line' },
+                // 连接和接口
+                { key: 'wifiStandard', name: { 'zh-CN': 'Wi-Fi标准', 'en-US': 'Wi-Fi Standard' }, langKey: 'param.wifiStandard', icon: 'ri-wifi-line' },
+                { key: 'bluetoothVersion', name: { 'zh-CN': '蓝牙版本', 'en-US': 'Bluetooth Version' }, langKey: 'param.bluetoothVersion', icon: 'ri-bluetooth-line' },
+                { key: 'ports', name: { 'zh-CN': '接口类型', 'en-US': 'Ports' }, langKey: 'param.ports', icon: 'ri-usb-line' },
+                { key: 'simCardSupport', name: { 'zh-CN': 'SIM卡', 'en-US': 'SIM Card' }, langKey: 'param.simCardSupport', icon: 'ri-sim-card-line' },
+                { key: 'cellularData', name: { 'zh-CN': '蜂窝数据', 'en-US': 'Cellular Data' }, langKey: 'param.cellularData', icon: 'ri-signal-tower-line' },
+                { key: 'baseband', name: { 'zh-CN': '基带芯片', 'en-US': 'Baseband' }, langKey: 'param.baseband', icon: 'ri-base-station-line' },
+                { key: 'satelliteFeatures', name: { 'zh-CN': '卫星功能', 'en-US': 'Satellite Features' }, langKey: 'param.satelliteFeatures', icon: 'ri-rocket-line' },
                 
-                // 特色功能和安全
+                // 音频系统
+                { key: 'speakers', name: { 'zh-CN': '扬声器', 'en-US': 'Speakers' }, langKey: 'param.speakers', icon: 'ri-speaker-line' },
+                { key: 'microphoneCount', name: { 'zh-CN': '麦克风', 'en-US': 'Microphones' }, langKey: 'param.microphones', icon: 'ri-mic-line' },
+                
+                // 软件和系统
+                { key: 'initialOS', name: { 'zh-CN': '初始系统版本', 'en-US': 'Initial OS' }, langKey: 'param.initialOS', icon: 'ri-apple-line' },
+                { key: 'maxSupportedOS', name: { 'zh-CN': '最高支持系统版本', 'en-US': 'Max Supported OS' }, langKey: 'param.maxSupportedOS', icon: 'ri-apple-fill' },
+                
+                // 其他功能
+                { key: 'security', name: { 'zh-CN': '安全功能', 'en-US': 'Security' }, langKey: 'param.security', icon: 'ri-lock-line' },
                 { key: 'specialFeatures', name: { 'zh-CN': '特色功能', 'en-US': 'Special Features' }, langKey: 'param.specialFeatures', icon: 'ri-star-line' },
-                { key: 'securityFeatures', name: { 'zh-CN': '安全功能', 'en-US': 'Security Features' }, langKey: 'param.securityFeatures', icon: 'ri-shield-check-line' },
-                { key: 'operatingSystem', name: { 'zh-CN': '操作系统', 'en-US': 'Operating System' }, langKey: 'param.operatingSystem', icon: 'ri-smartphone-line' },
+                { key: 'marketingSlogan', name: { 'zh-CN': '宣传口号', 'en-US': 'Marketing Slogan' }, langKey: 'param.marketingSlogan', icon: 'ri-advertisement-line' },
                 
-                // 价格
-                { key: 'price', name: { 'zh-CN': '价格', 'en-US': 'Price' }, langKey: 'param.price', icon: 'ri-price-tag-3-line' },
+                // 价格 - 移动端不显示价格信息
                 { key: 'technicalSpecsLink', name: { 'zh-CN': '技术规格', 'en-US': 'Technical Specs' }, langKey: 'param.technicalSpecsLink', icon: 'ri-file-text-line' }
             ];
         }
@@ -2287,7 +2305,6 @@
 
             const currentLang = getCurrentLanguage() || 'zh-CN';
             const productName = getLocalizedValue(product.name, currentLang) || product.name;
-            const price = getLocalizedValue(product.price, currentLang) || 'N/A';
 
             // 添加产品头部
             const headerRow = document.createElement('div');
@@ -2296,7 +2313,6 @@
             headerRow.innerHTML = `
                 <div class="mobile-cell mobile-product-header" style="height: 60px;">
                     <div class="mobile-product-name">${productName}</div>
-                    <div class="mobile-product-price">${price}</div>
                 </div>
             `;
             column.appendChild(headerRow);
@@ -2333,6 +2349,28 @@
                         }
                         return colorName || '-';
                     }).join(' ');
+                } else if (param.key === 'camera' && product[param.key]) {
+                    // 摄像头参数 - 根据参数名称提取对应信息
+                    const cameraData = getLocalizedValue(product[param.key], currentLang);
+                    if (cameraData) {
+                        if (param.name['zh-CN'] === '主摄像头') {
+                            // 提取主摄像头信息
+                            const mainMatch = cameraData.match(/主摄[：:]([^超广角长焦]+)/);
+                            paramValue = mainMatch ? mainMatch[1].trim() : 'N/A';
+                        } else if (param.name['zh-CN'] === '长焦摄像头') {
+                            // 提取长焦摄像头信息
+                            const telephotoMatch = cameraData.match(/长焦[：:]([^主摄超广角]+)/);
+                            paramValue = telephotoMatch ? telephotoMatch[1].trim() : 'N/A';
+                        } else if (param.name['zh-CN'] === '广角摄像头') {
+                            // 提取超广角摄像头信息
+                            const ultraWideMatch = cameraData.match(/超广角[：:]([^主摄长焦]+)/);
+                            paramValue = ultraWideMatch ? ultraWideMatch[1].trim() : 'N/A';
+                        } else {
+                            paramValue = cameraData;
+                        }
+                    } else {
+                        paramValue = 'N/A';
+                    }
                 } else if (param.key === 'technicalSpecsLink' && product[param.key]) {
                     // 技术规格链接
                     paramValue = `<a href="${product[param.key]}" target="_blank" style="color: var(--color-text-primary); text-decoration: none;">查看详情</a>`;
