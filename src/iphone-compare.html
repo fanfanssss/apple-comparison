@@ -890,7 +890,7 @@
             /* 固定参数列 */
             .mobile-params-column {
                 flex-shrink: 0;
-                width: 120px;
+                width: 60px; /* 标准手机参数列宽度 */
                 background: var(--color-background);
                 border-right: 2px solid var(--color-border-light);
                 z-index: 2;
@@ -965,7 +965,7 @@
                 justify-content: flex-start;
                 text-align: left;
                 border-right: 2px solid var(--color-border-light);
-                width: 120px;
+                width: 60px; /* 与参数列宽度保持一致 */
                 flex-shrink: 0;
                 min-height: 50px;
                 align-items: center;
@@ -1226,6 +1226,16 @@
             
             .container {
                 padding: 0 var(--spacing-sm);
+            }
+            
+            /* 超小屏幕参数列优化 */
+            .mobile-params-column {
+                width: 60px; /* 小屏手机参数列宽度 */
+            }
+            
+            .mobile-param-cell {
+                width: 60px; /* 与参数列宽度保持一致 */
+                font-size: 11px; /* 稍微减小字体 */
             }
         }
 
@@ -2290,9 +2300,11 @@
                 const row = document.createElement('div');
                 row.className = 'mobile-table-row';
                 row.style.height = '50px';
+                const paramName = getLocalizedValue(param.name, currentLang);
+                const mobileParamName = getMobileParamName(paramName, currentLang);
                 row.innerHTML = `
                     <div class="mobile-cell mobile-param-cell" style="height: 50px;">
-                        ${getLocalizedValue(param.name, currentLang)}
+                        ${mobileParamName}
                     </div>
                 `;
                 paramsColumn.appendChild(row);
@@ -2538,6 +2550,124 @@
         // 获取当前语言
         function getCurrentLanguage() {
             return document.querySelector('.language-btn.active')?.dataset.lang || 'zh-CN';
+        }
+
+        // 移动端参数名称缩写映射
+        const mobileParamAbbreviations = {
+            'zh-CN': {
+                '发布日期': '发布日期',
+                '型号标识': '型号',
+                '颜色': '颜色',
+                '前面板': '前面板',
+                '中框材质': '中框',
+                '背板材质': '背板',
+                '尺寸': '尺寸',
+                '重量': '重量',
+                '防水等级': '防水',
+                '屏幕尺寸': '屏幕',
+                '屏幕分辨率': '分辨率',
+                '像素密度(PPI)': 'PPI',
+                '面板类型': '面板',
+                '特殊显示技术': '显示技术',
+                '标准亮度': '亮度',
+                'HDR亮度': 'HDR',
+                '屏幕刷新率': '刷新率',
+                '触控技术': '触控',
+                '显示色域': '色域',
+                '处理器型号': '处理器',
+                '制程工艺': '制程',
+                '内存容量': '内存',
+                'CPU单核性能': '单核',
+                'CPU多核性能': '多核',
+                'GPU性能': 'GPU',
+                '主摄像头': '主摄',
+                '长焦摄像头': '长焦',
+                '广角摄像头': '广角',
+                '光学变焦': '变焦',
+                '前置摄像头': '前置',
+                '电池容量': '电池',
+                '电池容量(mAh)': '电池(mAh)',
+                '电池容量(Wh)': '电池(Wh)',
+                '视频播放时间': '视频',
+                '音频播放时间': '音频',
+                '有线充电速度': '有线',
+                '无线充电': '无线',
+                'Wi-Fi标准': 'Wi-Fi',
+                '蓝牙版本': '蓝牙',
+                '接口类型': '接口',
+                'SIM卡': 'SIM',
+                '蜂窝数据': '蜂窝',
+                '基带芯片': '基带',
+                '卫星功能': '卫星',
+                '扬声器': '扬声器',
+                '麦克风': '麦克风',
+                '初始系统版本': '初始系统',
+                '最高支持系统版本': '最高系统',
+                '安全功能': '安全',
+                '特色功能': '特色',
+                '宣传口号': '口号',
+                '技术规格': '规格'
+            },
+            'en-US': {
+                'Release Date': 'Release',
+                'Model': 'Model',
+                'Colors': 'Colors',
+                'Front Panel': 'Front',
+                'Frame Material': 'Frame',
+                'Back Panel Material': 'Back',
+                'Dimensions': 'Size',
+                'Weight': 'Weight',
+                'Water Resistance': 'Water',
+                'Display Size': 'Display',
+                'Resolution': 'Resolution',
+                'PPI': 'PPI',
+                'Panel Type': 'Panel',
+                'Special Display Tech': 'Display Tech',
+                'Standard Brightness': 'Brightness',
+                'HDR Brightness': 'HDR',
+                'Refresh Rate': 'Refresh',
+                'Touch Technology': 'Touch',
+                'Color Gamut': 'Gamut',
+                'Processor': 'CPU',
+                'Process Technology': 'Process',
+                'RAM': 'RAM',
+                'CPU Single Core': 'Single',
+                'CPU Multi Core': 'Multi',
+                'GPU Performance': 'GPU',
+                'Main Camera': 'Main',
+                'Telephoto Camera': 'Tele',
+                'Ultra-wide Camera': 'Ultra',
+                'Optical Zoom': 'Zoom',
+                'Front Camera': 'Front',
+                'Battery Capacity': 'Battery',
+                'Battery Capacity (mAh)': 'Battery(mAh)',
+                'Battery Capacity (Wh)': 'Battery(Wh)',
+                'Video Playback Time': 'Video',
+                'Audio Playback Time': 'Audio',
+                'Wired Charging Speed': 'Wired',
+                'Wireless Charging': 'Wireless',
+                'Wi-Fi Standard': 'Wi-Fi',
+                'Bluetooth Version': 'Bluetooth',
+                'Ports': 'Ports',
+                'SIM Card': 'SIM',
+                'Cellular Data': 'Cellular',
+                'Baseband': 'Baseband',
+                'Satellite Features': 'Satellite',
+                'Speakers': 'Speakers',
+                'Microphones': 'Mic',
+                'Initial OS': 'Initial OS',
+                'Max Supported OS': 'Max OS',
+                'Security': 'Security',
+                'Special Features': 'Features',
+                'Marketing Slogan': 'Slogan',
+                'Technical Specs': 'Specs'
+            }
+        };
+
+        // 获取移动端参数名称缩写
+        function getMobileParamName(paramName, language) {
+            const abbreviations = mobileParamAbbreviations[language];
+            return abbreviations && abbreviations[paramName] ? abbreviations[paramName] : paramName;
         }
 
         // 更新产品选择状态
