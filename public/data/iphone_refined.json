@@ -84,7 +84,7 @@
       "en-US": "/"
     },
     "ports": "USB-C (最高可达 480Mb/s)",
-    "baseband": "Qualcomm X75M",
+    "baseband": "Qualcomm X80M",
     "wifiStandard": "802.11be 2x2 MIMO",
     "bluetoothVersion": "Bluetooth 6.0",
     "nfc": "支持读卡器模式 NFC",
@@ -222,7 +222,7 @@
       "en-US": "/"
     },
     "ports": "USB-C (最高可达 480Mb/s)",
-    "baseband": "Apple C1X",
+    "baseband": "Qualcomm X80M",
     "wifiStandard": "802.11be 2x2 MIMO",
     "bluetoothVersion": "Bluetooth 6.0",
     "nfc": "支持读卡器模式 NFC",
@@ -352,7 +352,7 @@
       "en-US": "dToF 距离感应"
     },
     "ports": "USB-C (最高可达 10Gb/s)",
-    "baseband": "Qualcomm X75M",
+    "baseband": "Qualcomm X80M",
     "wifiStandard": "802.11be 2x2 MIMO",
     "bluetoothVersion": "Bluetooth 6.0",
     "nfc": "支持读卡器模式 NFC",
@@ -485,7 +485,7 @@
       "en-US": "dToF 距离感应"
     },
     "ports": "USB-C (最高可达 10Gb/s)",
-    "baseband": "Qualcomm X75M",
+    "baseband": "Qualcomm X80M",
     "wifiStandard": "802.11be 2x2 MIMO",
     "bluetoothVersion": "Bluetooth 6.0",
     "nfc": "支持读卡器模式 NFC",
@@ -662,7 +662,7 @@
       "zh-CN": "激光雷达扫描仪，三轴陀螺仪，高动态范围加速度传感器，接近传感器，环境光传感器，气压计",
       "en-US": "激光雷达扫描仪，三轴陀螺仪，高动态范围加速度传感器，接近传感器，环境光传感器，气压计"
     },
-    "baseband": "骁龙X71",
+    "baseband": "Qualcomm X71M",
     "wiredCharging": {
       "zh-CN": "最高27W有线快充",
       "en-US": "最高27W有线快充"
@@ -828,7 +828,7 @@
       "zh-CN": "激光雷达扫描仪，三轴陀螺仪，高动态范围加速度传感器，接近传感器，环境光传感器，气压计",
       "en-US": "激光雷达扫描仪，三轴陀螺仪，高动态范围加速度传感器，接近传感器，环境光传感器，气压计"
     },
-    "baseband": "骁龙X71",
+    "baseband": "Qualcomm X71M",
     "wiredCharging": {
       "zh-CN": "最高27W有线快充",
       "en-US": "最高27W有线快充"
@@ -1004,7 +1004,7 @@
       "zh-CN": "面容ID传感器，三轴陀螺仪，加速度传感器，接近传感器，环境光传感器，气压计",
       "en-US": "面容ID传感器，三轴陀螺仪，加速度传感器，接近传感器，环境光传感器，气压计"
     },
-    "baseband": "Qualcomm X70",
+    "baseband": "Qualcomm X71M",
     "wiredCharging": {
       "zh-CN": "最高27W有线快充",
       "en-US": "最高27W有线快充"
@@ -1180,7 +1180,7 @@
       "zh-CN": "面容ID传感器，三轴陀螺仪，加速度传感器，接近传感器，环境光传感器，气压计",
       "en-US": "面容ID传感器，三轴陀螺仪，加速度传感器，接近传感器，环境光传感器，气压计"
     },
-    "baseband": "Qualcomm X70",
+    "baseband": "Qualcomm X71M",
     "wiredCharging": {
       "zh-CN": "最高27W有线快充",
       "en-US": "最高27W有线快充"
