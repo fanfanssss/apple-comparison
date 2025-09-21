@@ -228,8 +228,8 @@
     "nfc": "支持读卡器模式 NFC",
     "security": "面容 ID",
     "batteryCapacity": {
-      "zh-CN": "11.823Wh (3036mAh)",
-      "en-US": "11.823Wh (3036mAh)"
+      "zh-CN": "11.823Wh (3149mAh)",
+      "en-US": "11.823Wh (3149mAh)"
     },
     "charging": "USB-C/MagSafe/Qi/Qi2",
     "batteryLife": {
@@ -265,7 +265,7 @@
     "ram": "12GB LPDDR5X",
     "storage": "256GB / 512GB / 1TB",
     "mainCamera": "4800万像素主摄 (f/1.6光圈)",
-    "batteryCapacityMah": 3036,
+    "batteryCapacityMah": 3149,
     "batteryCapacityWh": "11.823",
     "videoPlaybackTime": "最长27小时",
     "simCardSupport": "国行双 eSIM",
