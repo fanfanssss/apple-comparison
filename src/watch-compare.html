@@ -2182,6 +2182,18 @@ function generateTable(products) {
                 column.appendChild(row);
             });
 
+            // 为移动端勾选框添加事件处理
+            const mobileCheckbox = column.querySelector('.mobile-product-checkbox');
+            if (mobileCheckbox) {
+                mobileCheckbox.addEventListener('change', function() {
+                    // 同步到桌面端勾选框
+                    const desktopCheckbox = document.querySelector(`input[type="checkbox"][id="${product.id}"]`);
+                    if (desktopCheckbox) {
+                        desktopCheckbox.checked = this.checked;
+                    }
+                });
+            }
+
             return column;
         }
 
