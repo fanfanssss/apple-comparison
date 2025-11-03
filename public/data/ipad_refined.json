@@ -120,9 +120,10 @@
       "en-US": "Wi-Fi 256GB:¥11,499 512GB:¥13,199 1TB:¥16,599 2TB:¥19,999 / Cellular 256GB:¥13,199 512GB:¥14,899 1TB:¥18,299 2TB:¥21,699"
     },
     "ram": {
-      "zh-CN": "12GB LPDDR5X (256GB/512GB) / 16GB LPDDR5X (1TB/2TB)",
-      "en-US": "12GB LPDDR5X (256GB/512GB) / 16GB LPDDR5X (1TB/2TB)"
+      "zh-CN": "12GB / 16GB",
+      "en-US": "12GB / 16GB"
     },
+    "ramType": "LPDDR5X",
     "storage": {
       "zh-CN": "256GB、512GB、1TB、2TB",
       "en-US": "256GB, 512GB, 1TB, 2TB"
@@ -250,9 +251,10 @@
       "en-US": "Wi-Fi 256GB:¥8,999 512GB:¥10,699 1TB:¥14,099 2TB:¥17,499 / Cellular 256GB:¥10,699 512GB:¥12,399 1TB:¥15,799 2TB:¥19,199"
     },
     "ram": {
-      "zh-CN": "12GB LPDDR5X (256GB/512GB) / 16GB LPDDR5X (1TB/2TB)",
-      "en-US": "12GB LPDDR5X (256GB/512GB) / 16GB LPDDR5X (1TB/2TB)"
+      "zh-CN": "12GB / 16GB",
+      "en-US": "12GB / 16GB"
     },
+    "ramType": "LPDDR5X",
     "storage": {
       "zh-CN": "256GB、512GB、1TB、2TB",
       "en-US": "256GB, 512GB, 1TB, 2TB"
