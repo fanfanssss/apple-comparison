@@ -1517,6 +1517,9 @@ renderParams(localStorage.getItem('preferredLanguage') || 'en-US');
                         return dateB - dateA;
                     });
                     
+                    // 设置全局变量以供移动端使用
+                    window.allProducts = allProducts;
+                    
                     // 初始化产品状态对象
                     initProductState();
                     
@@ -1620,6 +1623,9 @@ renderParams(localStorage.getItem('preferredLanguage') || 'en-US');
                     const dateB = new Date(dateStrB.split('.').reverse().join('-'));
                     return dateB - dateA;
                 });
+                
+                // 设置全局变量以供移动端使用
+                window.allProducts = allProducts;
                 
                 // 生成表格
                 generateTable(allProducts);
