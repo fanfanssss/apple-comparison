@@ -2585,84 +2585,85 @@ function generateTable(products) {
         
         // 对比按钮点击事件处理函数
         function handleCompareButtonClick() {
-            // 对比按钮点击处理
+            console.log('查看对比按钮被点击');
             
-            // 获取当前选中的产品
-            const checkboxes = document.querySelectorAll('.product-checkbox:checked');
-            const selectedProductIds = Array.from(checkboxes).map(checkbox => checkbox.id);
+            // 获取所有选中的产品（包括桌面端和移动端）
+            const desktopCheckboxes = document.querySelectorAll('input[type="checkbox"].product-checkbox:checked');
+            const mobileCheckboxes = document.querySelectorAll('input[type="checkbox"].mobile-product-checkbox:checked');
             
-            // 更新全局产品状态
-            if (window.productState && typeof window.productState.setSelectedProducts === 'function') {
-                window.productState.setSelectedProducts(selectedProductIds);
-                // 使用productState更新选中产品
-            } else {
-                // 兼容旧的AppState对象
-                AppState.selectedProducts = selectedProductIds;
-            }
+            // 合并选中的产品ID
+            const selectedIds = new Set();
+            desktopCheckboxes.forEach(cb => selectedIds.add(cb.id));
+            mobileCheckboxes.forEach(cb => selectedIds.add(cb.dataset.productId));
             
-            // 获取当前选中的产品ID
-            let selectedProducts = selectedProductIds;
-            // 当前选中产品状态
+            const selectedProducts = Array.from(selectedIds);
+            console.log('选中的产品:', selectedProducts);
             
-            // 检查是否选择了足够的产品
-            if (selectedProducts.length < 1) {
-                alert('请至少选择一个产品进行查看');
+            if (selectedProducts.length === 0) {
+                alert('请至少选择一个产品进行对比');
                 return;
             }
             
-            // 如果只选择了一个产品，提示但允许继续
             if (selectedProducts.length === 1) {
-                // 仅选择了一个产品进行查看
+                alert('请选择至少两个产品进行对比');
+                return;
             }
-            
-            // 执行产品对比处理
             
             // 隐藏未选中的产品列
-            const table = document.querySelector('table');
-            if (!table) {
-                console.error('未找到表格元素');
-                return;
+            hideUnselectedProducts(selectedProducts);
+            
+            // 滚动到表格顶部
+            const tableWrapper = document.querySelector('.table-wrapper');
+            if (tableWrapper) {
+                tableWrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
-            
-            const rows = table.querySelectorAll('tr');
-            
-            // 处理表头行
-            const headerRow = rows[0];
-            const headerCells = headerRow.querySelectorAll('th');
-            
-            // 跳过第一个单元格（参数名称列）
-            for (let i = 1; i < headerCells.length; i++) {
-                const cell = headerCells[i];
-                const checkbox = cell.querySelector('.product-checkbox');
-                const productId = checkbox ? checkbox.id : null;
-                
-                if (productId && !selectedProducts.includes(productId)) {
-                    cell.style.display = 'none';
-                } else {
-                    cell.style.display = '';
-                }
-            }
-            
-            // 处理数据行
-            for (let i = 1; i < rows.length; i++) {
-                const row = rows[i];
-                const cells = row.querySelectorAll('td');
-                
-                // 跳过第一个单元格（参数名称列）
-                for (let j = 1; j < cells.length; j++) {
-                    const cell = cells[j];
-                    const productId = cell.getAttribute('data-product');
+        }
+
+        // 隐藏未选中的产品列
+        function hideUnselectedProducts(selectedProducts) {
+            // 桌面端表格处理
+            const desktopTable = document.querySelector('.desktop-table');
+            if (desktopTable) {
+                // 处理表头
+                const headerCells = desktopTable.querySelectorAll('thead th');
+                headerCells.forEach((th, index) => {
+                    if (index === 0) return; // 跳过参数名称列
                     
-                    if (!selectedProducts.includes(productId)) {
-                        cell.style.display = 'none';
+                    const checkbox = th.querySelector('.product-checkbox');
+                    if (checkbox && !selectedProducts.includes(checkbox.id)) {
+                        th.style.display = 'none';
                     } else {
-                        cell.style.display = '';
+                        th.style.display = '';
                     }
-                }
+                });
+                
+                // 处理数据行
+                const dataRows = desktopTable.querySelectorAll('tbody tr');
+                dataRows.forEach(row => {
+                    const cells = row.querySelectorAll('td');
+                    cells.forEach((cell, index) => {
+                        if (index === 0) return; // 跳过参数名称列
+                        
+                        const productId = cell.getAttribute('data-product');
+                        if (productId && !selectedProducts.includes(productId)) {
+                            cell.style.display = 'none';
+                        } else {
+                            cell.style.display = '';
+                        }
+                    });
+                });
             }
             
-            // 滚动到页面顶部
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            // 移动端表格处理
+            const mobileProductColumns = document.querySelectorAll('.mobile-product-column');
+            mobileProductColumns.forEach(column => {
+                const productId = column.dataset.productId;
+                if (productId && !selectedProducts.includes(productId)) {
+                    column.style.display = 'none';
+                } else {
+                    column.style.display = '';
+                }
+            });
         }
 
         // 绑定图表相关事件
