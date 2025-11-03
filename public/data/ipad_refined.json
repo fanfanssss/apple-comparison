@@ -1,6 +1,266 @@
 [
   {
     "name": {
+      "zh-CN": "iPad Pro 13 英寸(M5)",
+      "en-US": "iPad Pro 13-inch (M5)"
+    },
+    "id": "ipad-pro-13-inch-m5",
+    "marketingSlogan": {
+      "zh-CN": "高能猛进",
+      "en-US": "High Performance Forward"
+    },
+    "releaseDate": {
+      "zh-CN": "2025.10.15",
+      "en-US": "October 15, 2025"
+    },
+    "os": {
+      "zh-CN": "iPadOS 26 ~ 最新",
+      "en-US": "iPadOS 26 ~ Latest"
+    },
+    "model": "iPad17,3 / iPad17,4",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空黑色",
+          "en-US": "Space Black"
+        },
+        "code": "#2e2c2e"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e3e4e5"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "当前浏览器不支持深空黑色银色",
+      "en-US": "Current browser doesn't support Space Black Silver"
+    },
+    "processor": {
+      "zh-CN": "M5(3/4P+6E+10GPU)",
+      "en-US": "M5(3/4P+6E+10GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "13\" 双层串联 OLED",
+      "en-US": "13\" Tandem OLED"
+    },
+    "displayResolution": {
+      "zh-CN": "2752×2064, 264ppi",
+      "en-US": "2752×2064, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "10-120Hz ProMotion",
+      "en-US": "10-120Hz ProMotion"
+    },
+    "displayBrightness": {
+      "zh-CN": "1000(典型), 1600(HDR)",
+      "en-US": "1000(typical), 1600(HDR)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "主摄：1200W 像素 ƒ/1.8",
+      "en-US": "Main: 12MP ƒ/1.8"
+    },
+    "frontCamera": {
+      "zh-CN": "1200W 像素 ƒ/2.0",
+      "en-US": "12MP ƒ/2.0"
+    },
+    "lidar": {
+      "zh-CN": "IMX591 dToF 距离感应",
+      "en-US": "IMX591 dToF LiDAR Scanner"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil Pro, Apple Pencil (USB‑C)",
+      "en-US": "Apple Pencil Pro, Apple Pencil (USB‑C)"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 40Gb/s)",
+      "en-US": "USB-C (up to 40Gb/s)"
+    },
+    "baseband": "Apple C1X",
+    "wifiStandard": {
+      "zh-CN": "802.11be 2x2 MIMO",
+      "en-US": "802.11be 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 6.0",
+      "en-US": "Bluetooth 6.0"
+    },
+    "security": {
+      "zh-CN": "面容 ID",
+      "en-US": "Face ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "38.99Wh",
+      "en-US": "38.99Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h, 蜂窝网络浏览网页：9h",
+      "en-US": "Wi-Fi browsing: 10h, Cellular browsing: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×4 + 扬声器系统 ×4",
+      "en-US": "4 microphones + 4 speaker system"
+    },
+    "dimensions": {
+      "zh-CN": "215.5×281.6×5.1mm",
+      "en-US": "215.5×281.6×5.1mm"
+    },
+    "weight": {
+      "zh-CN": "579g(Wi-Fi) / 582g(蜂窝网络)",
+      "en-US": "579g(Wi-Fi) / 582g(Cellular)"
+    },
+    "price": {
+      "zh-CN": "Wi-Fi版 256GB:¥11,499 512GB:¥13,199 1TB:¥16,599 2TB:¥19,999 / Cellular版 256GB:¥13,199 512GB:¥14,899 1TB:¥18,299 2TB:¥21,699",
+      "en-US": "Wi-Fi 256GB:¥11,499 512GB:¥13,199 1TB:¥16,599 2TB:¥19,999 / Cellular 256GB:¥13,199 512GB:¥14,899 1TB:¥18,299 2TB:¥21,699"
+    },
+    "ram": {
+      "zh-CN": "12GB LPDDR5X (256GB/512GB) / 16GB LPDDR5X (1TB/2TB)",
+      "en-US": "12GB LPDDR5X (256GB/512GB) / 16GB LPDDR5X (1TB/2TB)"
+    },
+    "storage": {
+      "zh-CN": "256GB、512GB、1TB、2TB",
+      "en-US": "256GB, 512GB, 1TB, 2TB"
+    },
+    "technicalSpecsLink": "https://support.apple.com/zh-cn/125407"
+  },
+  {
+    "name": {
+      "zh-CN": "iPad Pro 11 英寸(M5)",
+      "en-US": "iPad Pro 11-inch (M5)"
+    },
+    "id": "ipad-pro-11-inch-m5",
+    "marketingSlogan": {
+      "zh-CN": "高能猛进",
+      "en-US": "High Performance Forward"
+    },
+    "releaseDate": {
+      "zh-CN": "2025.10.15",
+      "en-US": "October 15, 2025"
+    },
+    "os": {
+      "zh-CN": "iPadOS 26 ~ 最新",
+      "en-US": "iPadOS 26 ~ Latest"
+    },
+    "model": "iPad17,1 / iPad17,2",
+    "colors": [
+      {
+        "name": {
+          "zh-CN": "深空黑色",
+          "en-US": "Space Black"
+        },
+        "code": "#2e2c2e"
+      },
+      {
+        "name": {
+          "zh-CN": "银色",
+          "en-US": "Silver"
+        },
+        "code": "#e3e4e5"
+      }
+    ],
+    "arSupport": {
+      "zh-CN": "-",
+      "en-US": "-"
+    },
+    "processor": {
+      "zh-CN": "M5(3/4P+6E+10GPU)",
+      "en-US": "M5(3/4P+6E+10GPU)"
+    },
+    "displayTechnology": {
+      "zh-CN": "11\" 双层串联 OLED",
+      "en-US": "11\" Tandem OLED"
+    },
+    "displayResolution": {
+      "zh-CN": "2420×1668, 264ppi",
+      "en-US": "2420×1668, 264ppi"
+    },
+    "displayRefreshRate": {
+      "zh-CN": "10-120Hz ProMotion",
+      "en-US": "10-120Hz ProMotion"
+    },
+    "displayBrightness": {
+      "zh-CN": "1000(典型), 1600(HDR)",
+      "en-US": "1000(typical), 1600(HDR)"
+    },
+    "displayColorGamut": {
+      "zh-CN": "原彩显示, 广色域显示(P3)",
+      "en-US": "True Tone display, Wide color display (P3)"
+    },
+    "camera": {
+      "zh-CN": "主摄：1200W 像素 ƒ/1.8",
+      "en-US": "Main: 12MP ƒ/1.8"
+    },
+    "frontCamera": {
+      "zh-CN": "1200W 像素 ƒ/2.0",
+      "en-US": "12MP ƒ/2.0"
+    },
+    "lidar": {
+      "zh-CN": "IMX591 dToF 距离感应",
+      "en-US": "IMX591 dToF LiDAR Scanner"
+    },
+    "pencilSupport": {
+      "zh-CN": "Apple Pencil Pro, Apple Pencil (USB‑C)",
+      "en-US": "Apple Pencil Pro, Apple Pencil (USB‑C)"
+    },
+    "ports": {
+      "zh-CN": "USB-C (最高可达 40Gb/s)",
+      "en-US": "USB-C (up to 40Gb/s)"
+    },
+    "baseband": "Apple C1X",
+    "wifiStandard": {
+      "zh-CN": "802.11be 2x2 MIMO",
+      "en-US": "802.11be 2x2 MIMO"
+    },
+    "bluetoothVersion": {
+      "zh-CN": "Bluetooth 6.0",
+      "en-US": "Bluetooth 6.0"
+    },
+    "security": {
+      "zh-CN": "面容 ID",
+      "en-US": "Face ID"
+    },
+    "batteryCapacity": {
+      "zh-CN": "31.29Wh",
+      "en-US": "31.29Wh"
+    },
+    "batteryLife": {
+      "zh-CN": "无线局域网浏览网页：10h, 蜂窝网络浏览网页：9h",
+      "en-US": "Wi-Fi browsing: 10h, Cellular browsing: 9h"
+    },
+    "audioFeatures": {
+      "zh-CN": "麦克风 ×4 + 扬声器 ×4",
+      "en-US": "4 microphones + 4 speakers"
+    },
+    "dimensions": {
+      "zh-CN": "177.5×249.7×5.3mm",
+      "en-US": "177.5×249.7×5.3mm"
+    },
+    "weight": {
+      "zh-CN": "444g(Wi-Fi) / 446g(蜂窝网络)",
+      "en-US": "444g(Wi-Fi) / 446g(Cellular)"
+    },
+    "price": {
+      "zh-CN": "Wi-Fi版 256GB:¥8,999 512GB:¥10,699 1TB:¥14,099 2TB:¥17,499 / Cellular版 256GB:¥10,699 512GB:¥12,399 1TB:¥15,799 2TB:¥19,199",
+      "en-US": "Wi-Fi 256GB:¥8,999 512GB:¥10,699 1TB:¥14,099 2TB:¥17,499 / Cellular 256GB:¥10,699 512GB:¥12,399 1TB:¥15,799 2TB:¥19,199"
+    },
+    "ram": {
+      "zh-CN": "12GB LPDDR5X (256GB/512GB) / 16GB LPDDR5X (1TB/2TB)",
+      "en-US": "12GB LPDDR5X (256GB/512GB) / 16GB LPDDR5X (1TB/2TB)"
+    },
+    "storage": {
+      "zh-CN": "256GB、512GB、1TB、2TB",
+      "en-US": "256GB, 512GB, 1TB, 2TB"
+    },
+    "technicalSpecsLink": "https://support.apple.com/zh-cn/125406"
+  },
+  {
+    "name": {
       "zh-CN": "iPad Pro 13 英寸(M4)",
       "en-US": "iPad Pro 13-inch (M4)"
     },
