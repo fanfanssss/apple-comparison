@@ -877,6 +877,267 @@
                 font-size: 11px;
             }
         }
+
+        /* 默认隐藏移动端布局 */
+        .mobile-cards-container,
+        .mobile-table-container {
+            display: none;
+        }
+
+        /* 手机端专用样式 */
+        @media (max-width: 768px) {
+            /* 隐藏桌面端表格 */
+            .desktop-table {
+                display: none;
+            }
+            
+            /* 显示移动端滑动表格 */
+            .mobile-table-container {
+                display: flex !important;
+                flex-direction: column !important;
+            }
+            
+            /* 表格容器改为滑动布局 */
+            .table-wrapper {
+                position: relative;
+                overflow: visible;
+                border-radius: var(--radius-lg);
+                box-shadow: var(--shadow-sm);
+                background: var(--color-surface);
+            }
+            
+            /* 创建滑动容器 */
+            .mobile-table-container {
+                flex-direction: column;
+                position: relative;
+                overflow: hidden;
+                border-radius: var(--radius-lg);
+            }
+            
+            /* 移动端表格主体 */
+            .mobile-table-body {
+                display: flex;
+                position: relative;
+                overflow: hidden;
+            }
+            
+            /* 固定参数列 */
+            .mobile-params-column {
+                flex-shrink: 0;
+                width: 60px; /* 标准手机参数列宽度 */
+                background: var(--color-background);
+                border-right: 2px solid var(--color-border-light);
+                z-index: 2;
+            }
+            
+            /* 可滑动的产品列容器 */
+            .mobile-products-scroll {
+                flex: 1;
+                overflow-x: auto;
+                overflow-y: hidden;
+                scroll-behavior: smooth;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+            }
+            
+            .mobile-products-scroll::-webkit-scrollbar {
+                display: none;
+            }
+            
+            /* 产品列表容器 */
+            .mobile-products-container {
+                display: flex;
+                min-width: min-content;
+            }
+            
+            /* 单个产品列 */
+            .mobile-product-column {
+                flex-shrink: 0;
+                width: 140px;
+                border-right: 1px solid var(--color-border-light);
+            }
+            
+            .mobile-product-column:last-child {
+                border-right: none;
+            }
+            
+            /* 表格行样式 */
+            .mobile-table-row {
+                display: flex;
+                min-height: 50px;
+                border-bottom: 1px solid var(--color-border-light);
+                align-items: center;
+            }
+            
+            .mobile-table-row:last-child {
+                border-bottom: none;
+            }
+            
+            .mobile-table-row:nth-child(even) {
+                background: rgba(0, 0, 0, 0.02);
+            }
+            
+            /* 单元格样式 */
+            .mobile-cell {
+                padding: var(--spacing-sm);
+                display: flex;
+                align-items: center;
+                font-size: var(--font-size-sm);
+                line-height: 1.4;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                min-height: 50px;
+                box-sizing: border-box;
+            }
+            
+            /* 参数名称单元格 */
+            .mobile-param-cell {
+                background: var(--color-background);
+                font-weight: 600;
+                color: var(--color-text-secondary);
+                justify-content: flex-start;
+                text-align: left;
+                border-right: 2px solid var(--color-border-light);
+                width: 60px; /* 与参数列宽度保持一致 */
+                flex-shrink: 0;
+                min-height: 50px;
+                align-items: center;
+            }
+            
+            /* 产品值单元格 */
+            .mobile-value-cell {
+                background: var(--color-surface);
+                color: var(--color-text-primary);
+                justify-content: flex-start;
+                text-align: left;
+                position: relative;
+                width: 140px;
+                flex-shrink: 0;
+                min-height: 50px;
+                align-items: center;
+            }
+            
+            /* 产品头部 */
+            .mobile-product-header {
+                background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+                color: white;
+                font-weight: 600;
+                text-align: center;
+                justify-content: center;
+                min-height: 60px;
+                height: 60px;
+                flex-direction: column;
+                padding: var(--spacing-xs);
+                align-items: center;
+                width: 140px;
+                flex-shrink: 0;
+            }
+            
+            /* 移动端产品选择器 */
+            .mobile-product-selector {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: var(--spacing-xs);
+                width: 100%;
+            }
+
+            .mobile-product-checkbox {
+                width: 18px;
+                height: 18px;
+                accent-color: white;
+                cursor: pointer;
+            }
+
+            .mobile-product-name {
+                font-size: var(--font-size-sm);
+                font-weight: 600;
+                text-align: center;
+                cursor: pointer;
+                line-height: 1.2;
+                word-break: keep-all;
+            }
+            
+            /* 滑动指示器 */
+            .mobile-scroll-indicators {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: var(--spacing-sm) 0;
+                gap: var(--spacing-xs);
+                background: var(--color-surface);
+                border-top: 1px solid var(--color-border-light);
+            }
+            
+            .mobile-scroll-indicator {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: var(--color-border);
+                transition: var(--transition-fast);
+                cursor: pointer;
+            }
+            
+            .mobile-scroll-indicator.active {
+                background: var(--color-primary);
+                transform: scale(1.2);
+            }
+            
+            /* 导航按钮 */
+            .mobile-nav-button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 32px;
+                height: 32px;
+                background: var(--color-surface);
+                border: 1px solid var(--color-border);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                z-index: 3;
+                transition: var(--transition-fast);
+                box-shadow: var(--shadow-sm);
+            }
+            
+            .mobile-nav-button:hover {
+                background: var(--color-hover);
+                transform: translateY(-50%) scale(1.05);
+            }
+            
+            .mobile-nav-prev {
+                left: var(--spacing-sm);
+            }
+            
+            .mobile-nav-next {
+                right: var(--spacing-sm);
+            }
+            
+            .mobile-nav-button i {
+                font-size: 16px;
+                color: var(--color-text-primary);
+            }
+        }
+
+        /* 超小屏幕优化 */
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 var(--spacing-sm);
+            }
+            
+            /* 超小屏幕参数列优化 */
+            .mobile-params-column {
+                width: 60px; /* 小屏手机参数列宽度 */
+            }
+            
+            .mobile-param-cell {
+                width: 60px; /* 与参数列宽度保持一致 */
+                font-size: 11px; /* 稍微减小字体 */
+            }
+        }
     </style>
 </head>
 <body>
@@ -922,7 +1183,8 @@
             <!-- 参数表格 -->
             <div class="params-table">
                 <div class="table-wrapper">
-                    <table>
+                    <!-- 桌面端表格 -->
+                    <table class="desktop-table">
                         <thead>
                             <tr>
                                 <th class="param-name" data-lang-key="compare.paramHeader">参数 / 产品</th>
@@ -934,6 +1196,41 @@
 
                         </tbody>
                     </table>
+                    
+                    <!-- 移动端表格 -->
+                    <div class="mobile-table-container">
+                        <div class="mobile-table-header">
+                            <div class="mobile-params-column">
+                                <div class="mobile-table-row">
+                                    <div class="mobile-cell mobile-param-cell">参数</div>
+                                </div>
+                            </div>
+                            <div class="mobile-products-scroll">
+                                <div class="mobile-products-container">
+                                    <!-- 产品列将由JavaScript动态生成 -->
+                                </div>
+                                <div class="mobile-nav-button mobile-nav-prev">
+                                    <i class="ri-arrow-left-s-line"></i>
+                                </div>
+                                <div class="mobile-nav-button mobile-nav-next">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile-table-body">
+                            <div class="mobile-params-column" id="mobileParamsColumn">
+                                <!-- 参数列将由JavaScript动态生成 -->
+                            </div>
+                            <div class="mobile-products-scroll">
+                                <div class="mobile-products-container">
+                                    <!-- 产品列将由JavaScript动态生成 -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile-scroll-indicators">
+                            <!-- 滚动指示器将由JavaScript动态生成 -->
+                        </div>
+                    </div>
                 </div>
             </div>
             
@@ -972,9 +1269,16 @@
     <!-- 添加页面所需的JavaScript -->
     <script>
         // 全局变量
-        let allProducts = [];
+        window.allProducts = [];
         let performanceChart = null;
         let currentChartType = 'cpuSingle'; // 默认显示CPU单核性能
+        
+        // 移动端状态管理
+        const state = {
+            products: null,
+            selectedProducts: [],
+            tableParams: null
+        };
         
         // 状态管理系统
         const AppState = {
@@ -1100,6 +1404,21 @@
                 return paramNameTranslations[paramKey][language];
             }
             return paramKey; // 如果没有找到翻译，返回参数键名
+        }
+
+        // 获取本地化文本
+        function getLocalizedText(value, language) {
+            if (!value) return '';
+            if (typeof value === 'string') return value;
+            if (typeof value === 'object' && value[language]) {
+                return value[language];
+            }
+            return value;
+        }
+
+        // 获取本地化值（兼容函数）
+        function getLocalizedValue(value, language) {
+            return getLocalizedText(value, language);
         }
         
         // 初始化产品状态管理对象，确保在全局范围内可用
@@ -1271,13 +1590,16 @@
         // 加载产品数据
         async function loadProductData() {
             try {
+                console.log('开始加载iPad数据...');
                 // 开始加载 iPad 参数数据文件
                 // 使用iPad参数数据文件
                 const response = await fetch('../public/data/ipad_refined.json');
+                console.log('数据请求响应状态:', response.status);
                 if (!response.ok) {
                     throw new Error('网络响应不正常');
                 }
                 const data = await response.json();
+                console.log('成功加载iPad数据，产品数量:', data.length);
                 // 成功加载 iPad 型号数据
                 
                 // 处理双语数据
@@ -1295,7 +1617,7 @@
                 };
                 
                 // 按产品系列优先，然后按发布日期降序排序
-                allProducts = data.sort((a, b) => {
+                window.allProducts = data.sort((a, b) => {
                     // 获取产品系列
                     const seriesA = a.series || 'Standard';
                     const seriesB = b.series || 'Standard';
@@ -1321,7 +1643,7 @@
                 });
                 
                 // 生成表格
-                generateTable(allProducts);
+                generateTable(window.allProducts);
                 
                 // 初始化产品选择（默认不选择任何产品）
                 initProductSelection();
@@ -1340,6 +1662,7 @@
 
         // 生成表格
         function generateTable(products) {
+            console.log('开始生成iPad表格，产品数量:', products ? products.length : 0);
             // 开始生成iPad产品参数表格
             // 处理产品数量信息
             const tableContainer = document.querySelector('.params-table');
@@ -1378,6 +1701,13 @@
             const tbody = document.querySelector('table tbody');
             // 清空现有表格内容
             tbody.innerHTML = '';
+            
+            // 移动端表格生成
+            setTimeout(() => {
+                if (window.innerWidth <= 768) {
+                    generateMobileTable();
+                }
+            }, 300);
                         // 定义要显示的参数列表
             // 开始处理iPad特有参数
             const params = [
@@ -1836,6 +2166,9 @@
             compareButton.removeEventListener('click', handleCompareButtonClick); // 移除可能存在的旧事件监听器
             compareButton.addEventListener('click', handleCompareButtonClick);
             
+            // 移动端事件绑定
+            bindMobileEvents();
+            
             // 添加按钮点击动画
             const buttons = document.querySelectorAll('.btn');
             buttons.forEach(button => {
@@ -1848,15 +2181,617 @@
             });
         }
         
+        // 移动端事件处理
+        function bindMobileEvents() {
+            // 滑动导航按钮
+            const mobilePrevBtn = document.querySelector('.mobile-nav-prev');
+            const mobileNextBtn = document.querySelector('.mobile-nav-next');
+            const mobileProductsScroll = document.querySelector('.mobile-products-scroll');
+
+            if (mobilePrevBtn) {
+                mobilePrevBtn.addEventListener('click', () => scrollMobileProducts('prev'));
+            }
+            
+            if (mobileNextBtn) {
+                mobileNextBtn.addEventListener('click', () => scrollMobileProducts('next'));
+            }
+
+            if (mobileProductsScroll) {
+                // 监听滚动事件以更新指示器
+                mobileProductsScroll.addEventListener('scroll', updateScrollIndicators);
+                
+                // 触摸事件处理
+                let startX = 0;
+                let scrollStart = 0;
+                
+                mobileProductsScroll.addEventListener('touchstart', (e) => {
+                    startX = e.touches[0].clientX;
+                    scrollStart = mobileProductsScroll.scrollLeft;
+                });
+                
+                mobileProductsScroll.addEventListener('touchmove', (e) => {
+                    if (!startX) return;
+                    
+                    const currentX = e.touches[0].clientX;
+                    const diff = startX - currentX;
+                    mobileProductsScroll.scrollLeft = scrollStart + diff;
+                });
+                
+                mobileProductsScroll.addEventListener('touchend', () => {
+                    startX = 0;
+                    scrollStart = 0;
+                });
+            }
+
+            // 监听屏幕尺寸变化
+            window.addEventListener('resize', handleScreenResize);
+            
+            // 初始化移动端界面
+            handleScreenResize();
+            
+            // 确保移动端表格在数据加载后生成
+            setTimeout(() => {
+                if (window.innerWidth <= 768) {
+                    console.log('延迟初始化移动端表格...');
+                    console.log('当前产品数据:', window.allProducts ? window.allProducts.length : 0);
+                    generateMobileTable();
+                }
+            }, 800);
+            
+            // 额外的强制初始化，确保移动端表格一定会生成
+            setTimeout(() => {
+                checkAndInitMobileTable();
+            }, 1500);
+            
+            // 最终检查
+            setTimeout(() => {
+                checkAndInitMobileTable();
+            }, 3000);
+        }
+
+        // 处理屏幕尺寸变化
+        function handleScreenResize() {
+            const isMobile = window.innerWidth <= 768;
+            
+            if (isMobile) {
+                // 延迟初始化，确保数据已加载
+                setTimeout(() => {
+                    initializeMobileView();
+                }, 100);
+            }
+        }
+
+        // 初始化移动端视图
+        function initializeMobileView() {
+            generateMobileTable();
+            updateScrollIndicators();
+            updateNavigationButtons();
+        }
+
+        // 生成移动端滑动表格
+        function generateMobileTable() {
+            console.log('开始生成移动端表格...');
+            console.log('产品数据:', window.allProducts ? window.allProducts.length : 0, '个产品');
+            
+            // 确保有产品数据
+            if (!window.allProducts || !Array.isArray(window.allProducts) || window.allProducts.length === 0) {
+                console.log('等待产品数据加载...');
+                return;
+            }
+
+            // 初始化state数据
+            if (!state.products) {
+                state.products = window.allProducts;
+            }
+
+            console.log('开始生成移动端组件...');
+            generateMobileParamsColumn();
+            generateMobileProductColumns();
+            generateScrollIndicators();
+            updateNavigationButtons();
+            console.log('移动端表格生成完成');
+        }
+
+        // 获取完整的参数定义（与PC端保持一致）
+        function getCompleteParamDefinitions() {
+            return [
+                // 基本信息
+                { key: 'marketingSlogan', name: { 'zh-CN': '宣传口号', 'en-US': 'Marketing Slogan' }, langKey: 'param.marketingSlogan', icon: 'ri-advertisement-line' },
+                { key: 'releaseDate', name: { 'zh-CN': '发布日期', 'en-US': 'Release Date' }, langKey: 'param.releaseDate', icon: 'ri-calendar-line' },
+                { key: 'os', name: { 'zh-CN': '系统版本', 'en-US': 'OS' }, langKey: 'param.os', icon: 'ri-apple-line' },
+                { key: 'model', name: { 'zh-CN': '型号标识', 'en-US': 'Model' }, langKey: 'param.model', icon: 'ri-barcode-line' },
+                { key: 'colors', name: { 'zh-CN': '颜色', 'en-US': 'Colors' }, langKey: 'param.colors', icon: 'ri-palette-line' },
+                { key: 'dimensions', name: { 'zh-CN': '尺寸', 'en-US': 'Dimensions' }, langKey: 'param.dimensions', icon: 'ri-ruler-line' },
+                { key: 'waterResistance', name: { 'zh-CN': '防水等级', 'en-US': 'Water Resistance' }, langKey: 'param.waterResistance', icon: 'ri-drop-line' },
+                
+                // Geekbench 跑分数据
+                { key: 'benchmarks.singleCore', name: { 'zh-CN': 'Geekbench 单核跑分', 'en-US': 'Geekbench Single Core' }, langKey: 'param.benchmarks.singleCore', icon: 'ri-cpu-line' },
+                { key: 'benchmarks.multiCore', name: { 'zh-CN': 'Geekbench 多核跑分', 'en-US': 'Geekbench Multi Core' }, langKey: 'param.benchmarks.multiCore', icon: 'ri-cpu-line' },
+                { key: 'benchmarks.gpu', name: { 'zh-CN': 'Geekbench GPU跑分', 'en-US': 'Geekbench GPU' }, langKey: 'param.benchmarks.gpu', icon: 'ri-gpu-line' },
+                
+                // 屏幕参数
+                { key: 'displayTechnology', name: { 'zh-CN': '屏幕参数', 'en-US': 'Display Technology' }, langKey: 'param.displayTechnology', icon: 'ri-tv-2-line' },
+                { key: 'displayResolution', name: { 'zh-CN': '屏幕分辨率', 'en-US': 'Display Resolution' }, langKey: 'param.displayResolution', icon: 'ri-hd-line' },
+                { key: 'displayRefreshRate', name: { 'zh-CN': '屏幕刷新率', 'en-US': 'Display Refresh Rate' }, langKey: 'param.displayRefreshRate', icon: 'ri-refresh-line' },
+                { key: 'displayBrightness', name: { 'zh-CN': '亮度', 'en-US': 'Brightness' }, langKey: 'param.displayBrightness', icon: 'ri-sun-line' },
+                { key: 'displayColorGamut', name: { 'zh-CN': '显示色域', 'en-US': 'Display Color Gamut' }, langKey: 'param.displayColorGamut', icon: 'ri-contrast-2-line' },
+                
+                // 性能参数
+                { key: 'processor', name: { 'zh-CN': '处理器型号', 'en-US': 'Processor' }, langKey: 'param.processor', icon: 'ri-cpu-line' },
+                { key: 'ram', name: { 'zh-CN': '内存容量', 'en-US': 'RAM' }, langKey: 'param.ram', icon: 'ri-memory-line' },
+                { key: 'ramType', name: { 'zh-CN': '内存规格', 'en-US': 'RAM Type' }, langKey: 'param.ramType', icon: 'ri-chip-line' },
+                { key: 'storage', name: { 'zh-CN': '存储容量', 'en-US': 'Storage' }, langKey: 'param.storage', icon: 'ri-hard-drive-line' },
+                
+                // 摄像头参数
+                { key: 'camera', name: { 'zh-CN': '后置摄像头', 'en-US': 'Rear Camera' }, langKey: 'param.camera', icon: 'ri-camera-line' },
+                { key: 'mainCamera', name: { 'zh-CN': '主摄像头', 'en-US': 'Main Camera' }, langKey: 'param.mainCamera', icon: 'ri-camera-line' },
+                { key: 'telephotoCamera', name: { 'zh-CN': '长焦摄像头', 'en-US': 'Telephoto Camera' }, langKey: 'param.telephotoCamera', icon: 'ri-camera-line' },
+                { key: 'ultraWideCamera', name: { 'zh-CN': '广角摄像头', 'en-US': 'Ultra-wide Camera' }, langKey: 'param.ultraWideCamera', icon: 'ri-camera-line' },
+                { key: 'frontCamera', name: { 'zh-CN': '前置摄像头', 'en-US': 'Front Camera' }, langKey: 'param.frontCamera', icon: 'ri-camera-line' },
+                { key: 'lidar', name: { 'zh-CN': '激光雷达', 'en-US': 'LiDAR' }, langKey: 'param.lidar', icon: 'ri-radar-line' },
+                
+                // 电池参数
+                { key: 'batteryCapacity', name: { 'zh-CN': '电池容量', 'en-US': 'Battery Capacity' }, langKey: 'param.batteryCapacity', icon: 'ri-battery-line' },
+                { key: 'batteryLife', name: { 'zh-CN': '续航时长', 'en-US': 'Battery Life' }, langKey: 'param.batteryLife', icon: 'ri-battery-charge-line' },
+                
+                // 连接参数
+                { key: 'wifiStandard', name: { 'zh-CN': 'Wi-Fi标准', 'en-US': 'Wi-Fi Standard' }, langKey: 'param.wifiStandard', icon: 'ri-wifi-line' },
+                { key: 'bluetoothVersion', name: { 'zh-CN': '蓝牙版本', 'en-US': 'Bluetooth Version' }, langKey: 'param.bluetoothVersion', icon: 'ri-bluetooth-line' },
+                { key: 'ports', name: { 'zh-CN': '接口类型', 'en-US': 'Ports' }, langKey: 'param.ports', icon: 'ri-plug-line' },
+                { key: 'baseband', name: { 'zh-CN': '基带芯片', 'en-US': 'Baseband' }, langKey: 'param.baseband', icon: 'ri-chip-line' },
+                
+                // 音频参数
+                { key: 'audioFeatures', name: { 'zh-CN': '音频功能', 'en-US': 'Audio Features' }, langKey: 'param.audioFeatures', icon: 'ri-volume-up-line' },
+                
+                // 系统参数
+                { key: 'security', name: { 'zh-CN': '安全功能', 'en-US': 'Security' }, langKey: 'param.security', icon: 'ri-shield-check-line' },
+                
+                // 特色功能
+                { key: 'pencilSupport', name: { 'zh-CN': 'Apple Pencil支持', 'en-US': 'Apple Pencil Support' }, langKey: 'param.pencilSupport', icon: 'ri-pencil-line' },
+                { key: 'series', name: { 'zh-CN': '产品系列', 'en-US': 'Product Series' }, langKey: 'param.series', icon: 'ri-apple-line' },
+                { key: 'marketingSlogan', name: { 'zh-CN': '宣传口号', 'en-US': 'Marketing Slogan' }, langKey: 'param.marketingSlogan', icon: 'ri-advertisement-line' },
+                { key: 'technicalSpecsLink', name: { 'zh-CN': '技术规格', 'en-US': 'Technical Specs' }, langKey: 'param.technicalSpecsLink', icon: 'ri-external-link-line' }
+            ];
+        }
+
+        // 生成移动端参数列
+        function generateMobileParamsColumn() {
+            const paramsColumn = document.getElementById('mobileParamsColumn');
+            if (!paramsColumn) {
+                console.error('未找到移动端参数列容器');
+                return;
+            }
+
+            // 清空现有内容
+            paramsColumn.innerHTML = '';
+
+            // 获取参数定义
+            const paramDefinitions = getCompleteParamDefinitions();
+            const currentLang = window.currentLanguage || 'zh-CN';
+
+            // 添加参数行
+            paramDefinitions.forEach(param => {
+                const row = document.createElement('div');
+                row.className = 'mobile-table-row';
+                row.style.height = '50px';
+                const paramName = getLocalizedValue(param.name, currentLang);
+                const mobileParamName = getMobileParamName(paramName, currentLang);
+                row.innerHTML = `
+                    <div class="mobile-cell mobile-param-cell" style="height: 50px; align-items: center; justify-content: flex-start;">
+                        ${mobileParamName}
+                    </div>
+                `;
+                paramsColumn.appendChild(row);
+            });
+        }
+
+        // 生成移动端产品列
+        function generateMobileProductColumns() {
+            const productsContainer = document.querySelector('.mobile-table-body .mobile-products-container');
+            if (!productsContainer) {
+                console.error('未找到移动端产品容器');
+                return;
+            }
+
+            // 清空现有内容
+            productsContainer.innerHTML = '';
+
+            // 为每个产品创建列
+            window.allProducts.forEach(product => {
+                const column = createMobileProductColumn(product);
+                productsContainer.appendChild(column);
+            });
+        }
+
+        // 创建移动端产品列
+        function createMobileProductColumn(product) {
+            const column = document.createElement('div');
+            column.className = 'mobile-product-column';
+            column.dataset.productId = product.id;
+
+            const currentLang = window.currentLanguage || 'zh-CN';
+            const productName = getLocalizedValue(product.name, currentLang) || product.name;
+
+            // 添加产品头部
+            const headerRow = document.createElement('div');
+            headerRow.className = 'mobile-table-row';
+            headerRow.style.height = '60px';
+            headerRow.innerHTML = `
+                <div class="mobile-cell mobile-product-header" style="height: 60px;">
+                    <div class="mobile-product-selector">
+                        <input type="checkbox" class="mobile-product-checkbox" id="mobile-${product.id}" data-product-id="${product.id}">
+                        <label for="mobile-${product.id}" class="mobile-product-name">${productName}</label>
+                    </div>
+                </div>
+            `;
+            column.appendChild(headerRow);
+
+            // 添加参数行
+            const paramDefinitions = getCompleteParamDefinitions();
+            paramDefinitions.forEach(param => {
+                const row = document.createElement('div');
+                row.className = 'mobile-table-row';
+                row.style.height = '50px';
+                
+                const value = getProductParamValue(product, param.key, currentLang);
+                const formattedValue = formatMobileParamValue(value, param.key, currentLang);
+                
+                row.innerHTML = `
+                    <div class="mobile-cell mobile-value-cell" style="height: 50px; align-items: center; justify-content: flex-start;">
+                        ${formattedValue}
+                    </div>
+                `;
+                column.appendChild(row);
+            });
+
+            // 为移动端勾选框添加事件处理
+            const mobileCheckbox = column.querySelector('.mobile-product-checkbox');
+            if (mobileCheckbox) {
+                mobileCheckbox.addEventListener('change', function() {
+                    // 同步到桌面端勾选框
+                    const desktopCheckbox = document.querySelector(`input[type="checkbox"][id="${product.id}"]`);
+                    if (desktopCheckbox) {
+                        desktopCheckbox.checked = this.checked;
+                    }
+                    
+                    // 更新产品选择状态
+                    updateProductSelection();
+                });
+            }
+
+            return column;
+        }
+
+        // 获取产品参数值
+        function getProductParamValue(product, paramKey, language) {
+            if (paramKey === 'mainCamera' || paramKey === 'telephotoCamera' || paramKey === 'ultraWideCamera') {
+                // 处理摄像头参数
+                const cameraValue = product.camera || '';
+                // 确保cameraValue是字符串类型
+                const cameraString = typeof cameraValue === 'string' ? cameraValue : String(cameraValue || '');
+                
+                if (paramKey === 'mainCamera') {
+                    const mainMatch = cameraString.match(/主摄像头[：:]\s*([^，,]+)/);
+                    return mainMatch ? mainMatch[1].trim() : '';
+                } else if (paramKey === 'telephotoCamera') {
+                    const teleMatch = cameraString.match(/长焦[：:]\s*([^，,]+)/);
+                    return teleMatch ? teleMatch[1].trim() : '';
+                } else if (paramKey === 'ultraWideCamera') {
+                    const ultraMatch = cameraString.match(/广角[：:]\s*([^，,]+)/);
+                    return ultraMatch ? ultraMatch[1].trim() : '';
+                }
+            }
+            
+            // 处理嵌套属性
+            if (paramKey.includes('.')) {
+                const keys = paramKey.split('.');
+                let value = product;
+                for (const key of keys) {
+                    value = value?.[key];
+                }
+                // 处理双语数据
+                return getLocalizedText(value, language);
+            }
+            
+            // 获取参数值
+            let value = product[paramKey];
+            
+            // 处理双语数据
+            return getLocalizedText(value, language);
+        }
+
+        // 格式化移动端参数值
+        function formatMobileParamValue(value, paramKey, language) {
+            if (!value) return '-';
+            
+            // 处理颜色参数
+            if (paramKey === 'colors' && Array.isArray(value)) {
+                return value.map(color => {
+                    const colorName = getLocalizedValue(color.name, language) || color.name;
+                    const colorCode = color.code || '#000000';
+                    return `<span class="color-sample" style="background-color: ${colorCode};" title="${colorName}"></span>`;
+                }).join('');
+            }
+            
+            // 处理技术规格链接
+            if (paramKey === 'technicalSpecsLink' && value) {
+                return `<a href="${value}" target="_blank" style="color: black; text-decoration: underline;">查看详情</a>`;
+            }
+            
+            // 处理PPI参数
+            if (paramKey === 'displayPpi' && value) {
+                return `${value} PPI`;
+            }
+            
+            // 处理多语言值
+            if (typeof value === 'object' && value[language]) {
+                return value[language];
+            }
+            
+            return value;
+        }
+
+        // 移动端参数名称缩写映射
+        const mobileParamAbbreviations = {
+            'zh-CN': {
+                '发布日期': '发布日期',
+                '型号标识': '型号',
+                '颜色': '颜色',
+                '前面板': '前面板',
+                '中框材质': '中框',
+                '背板材质': '背板',
+                '尺寸': '尺寸',
+                '重量': '重量',
+                '防水等级': '防水',
+                '屏幕尺寸': '屏幕',
+                '屏幕分辨率': '分辨率',
+                '像素密度(PPI)': 'PPI',
+                '面板类型': '面板',
+                '特殊显示技术': '显示技术',
+                '标准亮度': '亮度',
+                'HDR亮度': 'HDR',
+                '屏幕刷新率': '刷新率',
+                '触控技术': '触控',
+                '显示色域': '色域',
+                '处理器型号': '处理器',
+                '制程工艺': '制程',
+                '内存容量': '内存',
+                'CPU单核性能': '单核',
+                'CPU多核性能': '多核',
+                'GPU性能': 'GPU',
+                '主摄像头': '主摄',
+                '长焦摄像头': '长焦',
+                '广角摄像头': '广角',
+                '光学变焦': '变焦',
+                '前置摄像头': '前置',
+                '电池容量': '电池',
+                '电池容量(mAh)': '电池(mAh)',
+                '电池容量(Wh)': '电池(Wh)',
+                '视频播放时间': '视频',
+                '音频播放时间': '音频',
+                '有线充电速度': '有线',
+                '无线充电': '无线',
+                'Wi-Fi标准': 'Wi-Fi',
+                '蓝牙版本': '蓝牙',
+                '接口类型': '接口',
+                'SIM卡': 'SIM',
+                '蜂窝数据': '蜂窝',
+                '基带芯片': '基带',
+                '卫星功能': '卫星',
+                '扬声器': '扬声器',
+                '麦克风': '麦克风',
+                '初始系统版本': '初始系统',
+                '最高支持系统版本': '最高系统',
+                '安全功能': '安全',
+                '特色功能': '特色',
+                '宣传口号': '口号',
+                '技术规格': '规格'
+            },
+            'en-US': {
+                'Release Date': 'Release',
+                'Model': 'Model',
+                'Colors': 'Colors',
+                'Front Panel': 'Front',
+                'Frame Material': 'Frame',
+                'Back Panel Material': 'Back',
+                'Dimensions': 'Size',
+                'Weight': 'Weight',
+                'Water Resistance': 'Water',
+                'Display Size': 'Display',
+                'Resolution': 'Resolution',
+                'PPI': 'PPI',
+                'Panel Type': 'Panel',
+                'Special Display Tech': 'Display Tech',
+                'Standard Brightness': 'Brightness',
+                'HDR Brightness': 'HDR',
+                'Refresh Rate': 'Refresh',
+                'Touch Technology': 'Touch',
+                'Color Gamut': 'Gamut',
+                'Processor': 'CPU',
+                'Process Technology': 'Process',
+                'RAM': 'RAM',
+                'CPU Single Core': 'Single',
+                'CPU Multi Core': 'Multi',
+                'GPU Performance': 'GPU',
+                'Main Camera': 'Main',
+                'Telephoto Camera': 'Tele',
+                'Ultra-wide Camera': 'Ultra',
+                'Optical Zoom': 'Zoom',
+                'Front Camera': 'Front',
+                'Battery Capacity': 'Battery',
+                'Battery Capacity (mAh)': 'Battery(mAh)',
+                'Battery Capacity (Wh)': 'Battery(Wh)',
+                'Video Playback Time': 'Video',
+                'Audio Playback Time': 'Audio',
+                'Wired Charging Speed': 'Wired',
+                'Wireless Charging': 'Wireless',
+                'Wi-Fi Standard': 'Wi-Fi',
+                'Bluetooth Version': 'Bluetooth',
+                'Ports': 'Ports',
+                'SIM Card': 'SIM',
+                'Cellular Data': 'Cellular',
+                'Baseband': 'Baseband',
+                'Satellite Features': 'Satellite',
+                'Speakers': 'Speakers',
+                'Microphones': 'Mic',
+                'Initial OS': 'Initial OS',
+                'Max Supported OS': 'Max OS',
+                'Security': 'Security',
+                'Special Features': 'Features',
+                'Marketing Slogan': 'Slogan',
+                'Technical Specs': 'Specs'
+            }
+        };
+
+        // 获取移动端参数名称缩写
+        function getMobileParamName(paramName, language) {
+            const abbreviations = mobileParamAbbreviations[language];
+            return abbreviations && abbreviations[paramName] ? abbreviations[paramName] : paramName;
+        }
+
+        // 生成滚动指示器
+        function generateScrollIndicators() {
+            const indicatorsContainer = document.querySelector('.mobile-scroll-indicators');
+            if (!indicatorsContainer) return;
+
+            indicatorsContainer.innerHTML = '';
+            
+            // 根据产品数量生成指示器
+            const productCount = window.allProducts.length;
+            const maxVisible = 3; // 最多显示3个产品
+            const pageCount = Math.ceil(productCount / maxVisible);
+            
+            for (let i = 0; i < pageCount; i++) {
+                const indicator = document.createElement('div');
+                indicator.className = 'mobile-scroll-indicator';
+                if (i === 0) indicator.classList.add('active');
+                indicator.addEventListener('click', () => scrollToPage(i));
+                indicatorsContainer.appendChild(indicator);
+            }
+        }
+
+        // 滚动到指定页面
+        function scrollToPage(pageIndex) {
+            const productsScroll = document.querySelector('.mobile-products-scroll');
+            if (!productsScroll) return;
+
+            const productWidth = 140; // 产品列宽度
+            const maxVisible = 3; // 最多显示3个产品
+            const scrollLeft = pageIndex * (productWidth * maxVisible);
+            
+            productsScroll.scrollTo({
+                left: scrollLeft,
+                behavior: 'smooth'
+            });
+        }
+
+        // 滚动移动端产品
+        function scrollMobileProducts(direction) {
+            const productsScroll = document.querySelector('.mobile-products-scroll');
+            if (!productsScroll) return;
+
+            const scrollAmount = 140; // 一个产品列的宽度
+            const currentScroll = productsScroll.scrollLeft;
+            const newScroll = direction === 'next' 
+                ? currentScroll + scrollAmount 
+                : currentScroll - scrollAmount;
+            
+            productsScroll.scrollTo({
+                left: newScroll,
+                behavior: 'smooth'
+            });
+        }
+
+        // 更新滚动指示器
+        function updateScrollIndicators() {
+            const productsScroll = document.querySelector('.mobile-products-scroll');
+            const indicators = document.querySelectorAll('.mobile-scroll-indicator');
+            
+            if (!productsScroll || !indicators.length) return;
+
+            const scrollLeft = productsScroll.scrollLeft;
+            const productWidth = 140;
+            const maxVisible = 3;
+            const pageWidth = productWidth * maxVisible;
+            const currentPage = Math.round(scrollLeft / pageWidth);
+            
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentPage);
+            });
+        }
+
+        // 更新导航按钮状态
+        function updateNavigationButtons() {
+            const productsScroll = document.querySelector('.mobile-products-scroll');
+            const prevBtn = document.querySelector('.mobile-nav-prev');
+            const nextBtn = document.querySelector('.mobile-nav-next');
+            
+            if (!productsScroll || !prevBtn || !nextBtn) return;
+
+            const scrollLeft = productsScroll.scrollLeft;
+            const maxScroll = productsScroll.scrollWidth - productsScroll.clientWidth;
+            
+            prevBtn.style.opacity = scrollLeft <= 0 ? '0.5' : '1';
+            nextBtn.style.opacity = scrollLeft >= maxScroll ? '0.5' : '1';
+        }
+
+        // 检查并初始化移动端表格
+        function checkAndInitMobileTable() {
+            const mobileContainer = document.querySelector('.mobile-table-container');
+            const paramsColumn = document.querySelector('.mobile-params-column');
+            const productsContainer = document.querySelector('.mobile-products-container');
+            
+            console.log('最终检查移动端表格状态...');
+            console.log('移动端容器存在:', !!mobileContainer);
+            console.log('参数列容器存在:', !!paramsColumn);
+            console.log('产品容器存在:', !!productsContainer);
+            console.log('产品数据可用:', window.allProducts ? window.allProducts.length : 0);
+            
+            if (mobileContainer && paramsColumn && productsContainer && window.allProducts && window.allProducts.length > 0) {
+                const paramsRows = paramsColumn.querySelectorAll('.mobile-table-row');
+                const productColumns = productsContainer.querySelectorAll('.mobile-product-column');
+                
+                if (paramsRows.length === 0 || productColumns.length === 0) {
+                    console.log('移动端表格为空，重新生成...');
+                    generateMobileTable();
+                }
+            }
+        }
+
+        // 更新产品选择状态
+        function updateProductSelection() {
+            // 获取所有选中的产品（包括桌面端和移动端）
+            const desktopCheckboxes = document.querySelectorAll('input[type="checkbox"].product-checkbox:checked');
+            const mobileCheckboxes = document.querySelectorAll('input[type="checkbox"].mobile-product-checkbox:checked');
+            
+            // 合并选中的产品ID
+            const selectedIds = new Set();
+            desktopCheckboxes.forEach(cb => selectedIds.add(cb.id));
+            mobileCheckboxes.forEach(cb => selectedIds.add(cb.dataset.productId));
+            
+            // 更新全局产品状态
+            if (window.productState) {
+                window.productState.setSelectedProducts(Array.from(selectedIds));
+            }
+            
+            // 更新AppState
+            if (window.AppState) {
+                window.AppState.selectedProducts = Array.from(selectedIds);
+            }
+            
+            console.log('产品选择状态已更新:', Array.from(selectedIds));
+        }
+
         // 重置按钮点击事件处理函数
         function handleResetButtonClick() {
-            // 重置按钮点击处理
+            console.log('重置按钮被点击');
             
-            // 获取所有产品复选框
-            const checkboxes = document.querySelectorAll('.product-checkbox');
+            // 获取所有产品复选框（桌面端和移动端）
+            const desktopCheckboxes = document.querySelectorAll('.product-checkbox');
+            const mobileCheckboxes = document.querySelectorAll('.mobile-product-checkbox');
             
-            // 重置复选框状态为未选中
-            checkboxes.forEach(checkbox => {
+            // 重置桌面端复选框状态
+            desktopCheckboxes.forEach(checkbox => {
                 checkbox.checked = false;
                 const productElement = checkbox.closest('.product-selector');
                 if (productElement) {
@@ -1864,27 +2799,144 @@
                 }
             });
             
-            // 显示所有产品列
-            document.querySelectorAll('th:not(:first-child)').forEach(cell => {
-                cell.style.display = '';
+            // 重置移动端复选框状态
+            mobileCheckboxes.forEach(checkbox => {
+                checkbox.checked = false;
             });
             
-            document.querySelectorAll('td.param-value').forEach(cell => {
-                cell.style.display = '';
+            // 显示所有桌面端产品列
+            const desktopTable = document.querySelector('.desktop-table');
+            if (desktopTable) {
+                const headerCells = desktopTable.querySelectorAll('thead th');
+                headerCells.forEach((th, index) => {
+                    if (index === 0) return; // 跳过参数名称列
+                    th.style.display = '';
+                });
+                
+                const dataRows = desktopTable.querySelectorAll('tbody tr');
+                dataRows.forEach(row => {
+                    const cells = row.querySelectorAll('td');
+                    cells.forEach((cell, index) => {
+                        if (index === 0) return; // 跳过参数名称列
+                        cell.style.display = '';
+                    });
+                });
+            }
+            
+            // 显示所有移动端产品列
+            const mobileProductColumns = document.querySelectorAll('.mobile-product-column');
+            mobileProductColumns.forEach(column => {
+                column.style.display = '';
             });
             
             // 重置产品选择状态
-            if (window.productState && typeof window.productState.setSelectedProducts === 'function') {
-                window.productState.setSelectedProducts([]);
-                // 使用productState重置产品选择
+            AppState.selectedProducts = [];
+            
+            console.log('重置完成，所有产品已显示');
+        }
+
+        // 查看对比按钮点击事件处理
+        function handleCompareButtonClick() {
+            console.log('查看对比按钮被点击');
+            
+            // 获取所有选中的产品（包括桌面端和移动端）
+            const desktopCheckboxes = document.querySelectorAll('input[type="checkbox"].product-checkbox:checked');
+            const mobileCheckboxes = document.querySelectorAll('input[type="checkbox"].mobile-product-checkbox:checked');
+            
+            // 合并选中的产品ID
+            const selectedIds = new Set();
+            desktopCheckboxes.forEach(cb => selectedIds.add(cb.id));
+            mobileCheckboxes.forEach(cb => selectedIds.add(cb.dataset.productId));
+            
+            const selectedProducts = Array.from(selectedIds);
+            console.log('选中的产品:', selectedProducts);
+            
+            if (selectedProducts.length === 0) {
+                alert('请至少选择一个产品进行对比');
+                return;
             }
             
-            // 清除参数差异高亮
-            document.querySelectorAll('td.param-value.highlight-diff').forEach(cell => {
-                cell.classList.remove('highlight-diff');
-            });
+            if (selectedProducts.length === 1) {
+                alert('请选择至少两个产品进行对比');
+                return;
+            }
             
-            // 重置完成处理
+            // 隐藏未选中的产品列
+            hideUnselectedProducts(selectedProducts);
+            
+            // 滚动到表格顶部
+            const tableWrapper = document.querySelector('.table-wrapper');
+            if (tableWrapper) {
+                tableWrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        // 隐藏未选中的产品列
+        function hideUnselectedProducts(selectedProducts) {
+            // 桌面端表格处理
+            const desktopTable = document.querySelector('.desktop-table');
+            if (desktopTable) {
+                // 处理表头
+                const headerCells = desktopTable.querySelectorAll('thead th');
+                headerCells.forEach((th, index) => {
+                    if (index === 0) return; // 跳过参数名称列
+                    
+                    const checkbox = th.querySelector('.product-checkbox');
+                    if (checkbox && !selectedProducts.includes(checkbox.id)) {
+                        th.style.display = 'none';
+                    } else {
+                        th.style.display = '';
+                    }
+                });
+                
+                // 处理数据行
+                const dataRows = desktopTable.querySelectorAll('tbody tr');
+                dataRows.forEach(row => {
+                    const cells = row.querySelectorAll('td');
+                    cells.forEach((cell, index) => {
+                        if (index === 0) return; // 跳过参数名称列
+                        
+                        const productId = cell.getAttribute('data-product');
+                        if (productId && !selectedProducts.includes(productId)) {
+                            cell.style.display = 'none';
+                        } else {
+                            cell.style.display = '';
+                        }
+                    });
+                });
+            }
+            
+            // 移动端表格处理
+            const mobileProductColumns = document.querySelectorAll('.mobile-product-column');
+            mobileProductColumns.forEach(column => {
+                const productId = column.dataset.productId;
+                if (productId && !selectedProducts.includes(productId)) {
+                    column.style.display = 'none';
+                } else {
+                    column.style.display = '';
+                }
+            });
+        }
+
+        // 页面加载完成后执行初始化
+        window.addEventListener('load', function() {
+            // 初始化按钮事件处理器
+            initializeButtonEvents();
+        });
+
+        // 初始化按钮事件处理器
+        function initializeButtonEvents() {
+            // 查看对比按钮事件处理
+            const compareButton = document.getElementById('compare-button');
+            if (compareButton) {
+                compareButton.addEventListener('click', handleCompareButtonClick);
+            }
+
+            // 重置按钮事件处理
+            const resetButton = document.getElementById('reset-button');
+            if (resetButton) {
+                resetButton.addEventListener('click', handleResetButtonClick);
+            }
         }
         
         // 对比按钮点击事件处理函数

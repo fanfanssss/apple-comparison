@@ -753,7 +753,7 @@
             .param-name {
                 min-width: 120px;
             }
-            
+
             /* 产品选择器 - 卡片式设计 */
             .product-selector {
                 display: flex;
@@ -1496,7 +1496,7 @@
                 }
             }
         }
-
+        
         // 页面加载完成后初始化
         document.addEventListener('DOMContentLoaded', async () => {
             // 添加防错误处理
@@ -2074,7 +2074,7 @@
                 });
             });
         }
-
+        
         // 移动端事件处理
         function bindMobileEvents() {
             // 滑动导航按钮
@@ -2705,20 +2705,14 @@
         
         // 重置按钮点击事件处理函数
         function handleResetButtonClick() {
-            // 获取所有产品复选框
-            const checkboxes = document.querySelectorAll('.product-checkbox');
+            console.log('重置按钮被点击');
             
-            // 当前选中的产品
-            const currentSelectedProducts = AppState.selectedProducts;
+            // 获取所有产品复选框（桌面端和移动端）
+            const desktopCheckboxes = document.querySelectorAll('.product-checkbox');
+            const mobileCheckboxes = document.querySelectorAll('.mobile-product-checkbox');
             
-            // 检查是否所有产品都已取消选中
-            const allUnselected = currentSelectedProducts.length === 0;
-            
-            if (!allUnselected) {
-                // 重置产品选择状态
-                
-                // 重置复选框状态为非选中
-                checkboxes.forEach(checkbox => {
+            // 重置桌面端复选框状态
+            desktopCheckboxes.forEach(checkbox => {
                     checkbox.checked = false;
                     const productElement = checkbox.closest('.product-selector');
                     if (productElement) {
@@ -2726,16 +2720,40 @@
                     }
                 });
                 
-                // 显示所有产品列
-                document.querySelectorAll('td, th').forEach(cell => {
-                    cell.style.display = '';
+            // 重置移动端复选框状态
+            mobileCheckboxes.forEach(checkbox => {
+                checkbox.checked = false;
+            });
+            
+            // 显示所有桌面端产品列
+            const desktopTable = document.querySelector('.desktop-table');
+            if (desktopTable) {
+                const headerCells = desktopTable.querySelectorAll('thead th');
+                headerCells.forEach((th, index) => {
+                    if (index === 0) return; // 跳过参数名称列
+                    th.style.display = '';
                 });
                 
-                // 使用状态管理系统重置产品选择为空
-                AppState.selectedProducts = [];
-            } else {
-                // 所有产品已取消选中，无需重置
+                const dataRows = desktopTable.querySelectorAll('tbody tr');
+                dataRows.forEach(row => {
+                    const cells = row.querySelectorAll('td');
+                    cells.forEach((cell, index) => {
+                        if (index === 0) return; // 跳过参数名称列
+                    cell.style.display = '';
+                });
+                });
             }
+            
+            // 显示所有移动端产品列
+            const mobileProductColumns = document.querySelectorAll('.mobile-product-column');
+            mobileProductColumns.forEach(column => {
+                column.style.display = '';
+            });
+            
+            // 重置产品选择状态
+                AppState.selectedProducts = [];
+            
+            console.log('重置完成，所有产品已显示');
         }
         
         // 对比按钮点击事件处理函数
@@ -2897,14 +2915,8 @@
                 // 提取单核性能数据
                 productData = productData.map(p => {
                     let score = 0;
-                    // 检查是否为iPhone 17系列（没有跑分数据的产品）
-                    const isIphone17Series = p.id && (p.id.includes('iphone-17') || p.id === 'iphone-air');
-                    
-                    if (isIphone17Series) {
-                        // iPhone 17系列显示为"-"
-                        score = '-';
-                    } else if (p.cpuPerformance && typeof p.cpuPerformance === 'object' && p.cpuPerformance.singleCore) {
-                        score = p.cpuPerformance.singleCore;
+                    if (p.cpuPerformance && typeof p.cpuPerformance === 'object' && p.cpuPerformance.singleCore) {
+                        score = parseInt(p.cpuPerformance.singleCore, 10) || 0;
                     } else if (typeof p.cpuSingleCore === 'number') {
                         score = p.cpuSingleCore;
                     }
@@ -2917,14 +2929,8 @@
                 // 提取多核性能数据
                 productData = productData.map(p => {
                     let score = 0;
-                    // 检查是否为iPhone 17系列（没有跑分数据的产品）
-                    const isIphone17Series = p.id && (p.id.includes('iphone-17') || p.id === 'iphone-air');
-                    
-                    if (isIphone17Series) {
-                        // iPhone 17系列显示为"-"
-                        score = '-';
-                    } else if (p.cpuPerformance && typeof p.cpuPerformance === 'object' && p.cpuPerformance.multiCore) {
-                        score = p.cpuPerformance.multiCore;
+                    if (p.cpuPerformance && typeof p.cpuPerformance === 'object' && p.cpuPerformance.multiCore) {
+                        score = parseInt(p.cpuPerformance.multiCore, 10) || 0;
                     } else if (typeof p.cpuMultiCore === 'number') {
                         score = p.cpuMultiCore;
                     }
@@ -2937,14 +2943,8 @@
                 // 提取GPU性能数据
                 productData = productData.map(p => {
                     let score = 0;
-                    // 检查是否为iPhone 17系列（没有跑分数据的产品）
-                    const isIphone17Series = p.id && (p.id.includes('iphone-17') || p.id === 'iphone-air');
-                    
-                    if (isIphone17Series) {
-                        // iPhone 17系列显示为"-"
-                        score = '-';
-                    } else if (p.gpuPerformance) {
-                        score = p.gpuPerformance;
+                    if (p.gpuPerformance) {
+                        score = typeof p.gpuPerformance === 'number' ? p.gpuPerformance : parseInt(p.gpuPerformance, 10) || 0;
                     }
                     // 处理双语名称
                     const localizedName = getLocalizedText(p.name, currentLanguage);
@@ -2952,14 +2952,12 @@
                 });
             }
             
-            // 按性能从高到低排序，但将"-"符号的产品放在最后
+            // 按性能从高到低排序
             productData.sort((a, b) => {
-                // 如果a是"-"符号，放在后面
-                if (a.score === '-') return 1;
-                // 如果b是"-"符号，放在后面
-                if (b.score === '-') return -1;
-                // 其他情况按数值排序
-                return b.score - a.score;
+                // 处理非数字值（如字符串"-"）
+                const scoreA = typeof a.score === 'number' ? a.score : 0;
+                const scoreB = typeof b.score === 'number' ? b.score : 0;
+                return scoreB - scoreA;
             });
             
             // 不过滤"-"符号的产品，让它们显示在图表中

@@ -142,7 +142,12 @@
       "zh-CN": "碰撞检测，拍照按钮",
       "en-US": "碰撞检测，拍照按钮"
     },
-    "technicalSpecsLink": "https://www.apple.com.cn/iphone-17/specs/"
+    "technicalSpecsLink": "https://www.apple.com.cn/iphone-17/specs/",
+    "cpuPerformance": {
+      "singleCore": "3593",
+      "multiCore": "9125"
+    },
+    "gpuPerformance": 37118
   },
   {
     "id": "iphone-air",
@@ -279,7 +284,12 @@
       "zh-CN": "碰撞检测，拍照按钮",
       "en-US": "碰撞检测，拍照按钮"
     },
-    "technicalSpecsLink": "https://www.apple.com.cn/iphone-air/specs/"
+    "technicalSpecsLink": "https://www.apple.com.cn/iphone-air/specs/",
+    "cpuPerformance": {
+      "singleCore": "3624",
+      "multiCore": "9239"
+    },
+    "gpuPerformance": 37693
   },
   {
     "id": "iphone-17-pro",
@@ -412,7 +422,12 @@
       "zh-CN": "碰撞检测，拍照按钮",
       "en-US": "碰撞检测，拍照按钮"
     },
-    "technicalSpecsLink": "https://www.apple.com.cn/iphone-17-pro/specs/"
+    "technicalSpecsLink": "https://www.apple.com.cn/iphone-17-pro/specs/",
+    "cpuPerformance": {
+      "singleCore": "3751",
+      "multiCore": "9710"
+    },
+    "gpuPerformance": 45532
   },
   {
     "id": "iphone-17-pro-max",
@@ -545,7 +560,12 @@
       "zh-CN": "碰撞检测，拍照按钮",
       "en-US": "碰撞检测，拍照按钮"
     },
-    "technicalSpecsLink": "https://www.apple.com.cn/iphone-17-pro/specs/"
+    "technicalSpecsLink": "https://www.apple.com.cn/iphone-17-pro/specs/",
+    "cpuPerformance": {
+      "singleCore": "3756",
+      "multiCore": "9711"
+    },
+    "gpuPerformance": 45489
   },
   {
     "id": "iphone-16-pro-max",
