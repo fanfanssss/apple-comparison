@@ -2533,13 +2533,17 @@ function generateTable(products) {
         function bindEvents() {
             // 重置按钮事件
             const resetButton = document.getElementById('reset-button');
-            resetButton.removeEventListener('click', handleResetButtonClick); // 移除可能存在的旧事件监听器
-            resetButton.addEventListener('click', handleResetButtonClick);
+            if (resetButton) {
+                resetButton.removeEventListener('click', handleResetButtonClick); // 移除可能存在的旧事件监听器
+                resetButton.addEventListener('click', handleResetButtonClick);
+            }
             
             // 对比按钮事件
             const compareButton = document.getElementById('compare-button');
-            compareButton.removeEventListener('click', handleCompareButtonClick); // 移除可能存在的旧事件监听器
-            compareButton.addEventListener('click', handleCompareButtonClick);
+            if (compareButton) {
+                compareButton.removeEventListener('click', handleCompareButtonClick); // 移除可能存在的旧事件监听器
+                compareButton.addEventListener('click', handleCompareButtonClick);
+            }
             
             // 添加按钮点击动画
             const buttons = document.querySelectorAll('.btn');
@@ -2555,13 +2559,14 @@ function generateTable(products) {
         
         // 重置按钮点击事件处理函数
         function handleResetButtonClick() {
-            // 重置按钮点击处理
+            console.log('重置按钮被点击');
             
-            // 获取所有产品复选框
-            const checkboxes = document.querySelectorAll('.product-checkbox');
+            // 获取所有产品复选框（桌面端和移动端）
+            const desktopCheckboxes = document.querySelectorAll('.product-checkbox');
+            const mobileCheckboxes = document.querySelectorAll('.mobile-product-checkbox');
             
-            // 重置复选框状态为非选中
-            checkboxes.forEach(checkbox => {
+            // 重置桌面端复选框状态为非选中
+            desktopCheckboxes.forEach(checkbox => {
                 checkbox.checked = false;
                 const productElement = checkbox.closest('.product-selector');
                 if (productElement) {
@@ -2569,13 +2574,27 @@ function generateTable(products) {
                 }
             });
             
-            // 显示所有产品列
-            document.querySelectorAll('th:not(:first-child)').forEach(cell => {
-                cell.style.display = '';
+            // 重置移动端复选框状态为非选中
+            mobileCheckboxes.forEach(checkbox => {
+                checkbox.checked = false;
             });
             
-            document.querySelectorAll('td.param-value').forEach(cell => {
-                cell.style.display = '';
+            // 显示所有桌面端产品列
+            const desktopTable = document.querySelector('.desktop-table');
+            if (desktopTable) {
+                document.querySelectorAll('th:not(:first-child)').forEach(cell => {
+                    cell.style.display = '';
+                });
+                
+                document.querySelectorAll('td.param-value').forEach(cell => {
+                    cell.style.display = '';
+                });
+            }
+            
+            // 显示所有移动端产品列
+            const mobileProductColumns = document.querySelectorAll('.mobile-product-column');
+            mobileProductColumns.forEach(column => {
+                column.style.display = '';
             });
             
             // 重置产品选择状态

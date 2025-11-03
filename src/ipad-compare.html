@@ -2166,13 +2166,17 @@
         function bindEvents() {
             // 重置按钮事件
             const resetButton = document.getElementById('reset-button');
-            resetButton.removeEventListener('click', handleResetButtonClick); // 移除可能存在的旧事件监听器
-            resetButton.addEventListener('click', handleResetButtonClick);
+            if (resetButton) {
+                resetButton.removeEventListener('click', handleResetButtonClick); // 移除可能存在的旧事件监听器
+                resetButton.addEventListener('click', handleResetButtonClick);
+            }
             
             // 对比按钮事件
             const compareButton = document.getElementById('compare-button');
-            compareButton.removeEventListener('click', handleCompareButtonClick); // 移除可能存在的旧事件监听器
-            compareButton.addEventListener('click', handleCompareButtonClick);
+            if (compareButton) {
+                compareButton.removeEventListener('click', handleCompareButtonClick); // 移除可能存在的旧事件监听器
+                compareButton.addEventListener('click', handleCompareButtonClick);
+            }
             
             // 移动端事件绑定
             bindMobileEvents();
