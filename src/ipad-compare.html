@@ -2365,6 +2365,17 @@
             // 清空现有内容
             paramsColumn.innerHTML = '';
 
+            // 添加头部行（与产品名称行对齐）
+            const headerRow = document.createElement('div');
+            headerRow.className = 'mobile-table-row';
+            headerRow.style.height = '60px';
+            headerRow.innerHTML = `
+                <div class="mobile-cell mobile-param-cell" style="height: 60px; align-items: center; justify-content: center; font-size: 11px;">
+                    型号
+                </div>
+            `;
+            paramsColumn.appendChild(headerRow);
+
             // 获取参数定义
             const paramDefinitions = getCompleteParamDefinitions();
             const currentLang = window.currentLanguage || 'zh-CN';
