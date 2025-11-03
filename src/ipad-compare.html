@@ -1029,8 +1029,8 @@
                 font-weight: 600;
                 text-align: center;
                 justify-content: center;
-                min-height: 60px;
-                height: 60px;
+                min-height: 90px;
+                height: 90px;
                 flex-direction: column;
                 padding: var(--spacing-xs);
                 align-items: center;
@@ -2372,9 +2372,9 @@
             // 添加头部行（与产品名称行对齐）
             const headerRow = document.createElement('div');
             headerRow.className = 'mobile-table-row';
-            headerRow.style.height = '60px';
+            headerRow.style.height = '90px';
             headerRow.innerHTML = `
-                <div class="mobile-cell mobile-param-cell" style="height: 60px; align-items: center; justify-content: center; font-size: 11px;">
+                <div class="mobile-cell mobile-param-cell" style="height: 90px; align-items: center; justify-content: center; font-size: 11px;">
                     型号
                 </div>
             `;
@@ -2430,9 +2430,9 @@
             // 添加产品头部
             const headerRow = document.createElement('div');
             headerRow.className = 'mobile-table-row';
-            headerRow.style.height = '60px';
+            headerRow.style.height = '90px';
             headerRow.innerHTML = `
-                <div class="mobile-cell mobile-product-header" style="height: 60px;">
+                <div class="mobile-cell mobile-product-header" style="height: 90px;">
                     <div class="mobile-product-selector">
                         <input type="checkbox" class="mobile-product-checkbox" id="mobile-${product.id}" data-product-id="${product.id}">
                         <label for="mobile-${product.id}" class="mobile-product-name">${productName}</label>
