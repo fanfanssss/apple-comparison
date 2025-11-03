@@ -1638,17 +1638,23 @@ renderParams(localStorage.getItem('preferredLanguage') || 'en-US');
             }
         }
 
+        // 全局辅助函数 - 获取本地化值
+        function getLocalizedValue(value, lang) {
+            if (typeof value === 'object' && value !== null && !Array.isArray(value) && value[lang]) {
+                return value[lang];
+            }
+            return value;
+        }
+
+        // 全局辅助函数 - 支持嵌套属性访问
+        function getNestedProperty(obj, path) {
+            return path.split('.').reduce((prev, curr) => 
+                prev && prev[curr] !== undefined ? prev[curr] : null, obj);
+        }
+
         // 生成表格
 function generateTable(products) {
     const currentLang = localStorage.getItem('preferredLanguage') || 'zh-CN';
-
-    // 定义一个辅助函数来获取本地化值
-    function getLocalizedValue(value, lang) {
-        if (typeof value === 'object' && value !== null && !Array.isArray(value) && value[lang]) {
-            return value[lang];
-        }
-        return value;
-    }
     
     // 参数名称翻译映射表
     const paramTranslations = {
@@ -1767,12 +1773,6 @@ function generateTable(products) {
         }
         // 如果找不到翻译，返回原始键名或中文名称
         return paramTranslations['zh-CN'][paramKey] || paramKey;
-    }
-
-    // 支持嵌套属性访问
-    function getNestedProperty(obj, path) {
-        return path.split('.').reduce((prev, curr) => 
-            prev && prev[curr] !== undefined ? prev[curr] : null, obj);
     }
 
     // 开始生成Apple Watch产品参数表格
