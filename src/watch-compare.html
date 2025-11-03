@@ -1652,12 +1652,8 @@ renderParams(localStorage.getItem('preferredLanguage') || 'en-US');
                 prev && prev[curr] !== undefined ? prev[curr] : null, obj);
         }
 
-        // 生成表格
-function generateTable(products) {
-    const currentLang = localStorage.getItem('preferredLanguage') || 'zh-CN';
-    
-    // 参数名称翻译映射表
-    const paramTranslations = {
+        // 全局参数名称翻译映射表
+        const paramTranslations = {
         'zh-CN': {
             'marketingSlogan': '宣传口号',
             'releaseDate': '发布日期',
@@ -1765,8 +1761,8 @@ function generateTable(products) {
             'technicalSpecsLink': 'Technical Specs'
         }
     };
-    
-    // 获取参数的本地化名称
+
+    // 全局辅助函数 - 获取参数的本地化名称
     function getLocalizedParamName(paramKey, lang) {
         if (paramTranslations[lang] && paramTranslations[lang][paramKey]) {
             return paramTranslations[lang][paramKey];
@@ -1774,6 +1770,10 @@ function generateTable(products) {
         // 如果找不到翻译，返回原始键名或中文名称
         return paramTranslations['zh-CN'][paramKey] || paramKey;
     }
+
+    // 生成表格
+function generateTable(products) {
+    const currentLang = localStorage.getItem('preferredLanguage') || 'zh-CN';
 
     // 开始生成Apple Watch产品参数表格
     // 处理产品数量信息
