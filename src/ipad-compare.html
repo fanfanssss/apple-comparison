@@ -965,9 +965,12 @@
             /* 表格行样式 */
             .mobile-table-row {
                 display: flex;
+                height: 50px;
                 min-height: 50px;
+                max-height: 50px;
                 border-bottom: 1px solid var(--color-border-light);
                 align-items: center;
+                overflow: hidden;
             }
             
             .mobile-table-row:last-child {
@@ -980,15 +983,16 @@
             
             /* 单元格样式 */
             .mobile-cell {
-                padding: var(--spacing-sm);
+                padding: 4px;
                 display: flex;
                 align-items: center;
-                font-size: var(--font-size-sm);
-                line-height: 1.4;
+                font-size: 11px;
+                line-height: 1.2;
                 word-wrap: break-word;
                 overflow-wrap: break-word;
-                min-height: 50px;
+                height: 100%;
                 box-sizing: border-box;
+                overflow: hidden;
             }
             
             /* 参数名称单元格 */
@@ -1001,7 +1005,7 @@
                 border-right: 2px solid var(--color-border-light);
                 width: 60px; /* 与参数列宽度保持一致 */
                 flex-shrink: 0;
-                min-height: 50px;
+                height: 100%;
                 align-items: center;
             }
             
@@ -1014,7 +1018,7 @@
                 position: relative;
                 width: 140px;
                 flex-shrink: 0;
-                min-height: 50px;
+                height: 100%;
                 align-items: center;
             }
             
