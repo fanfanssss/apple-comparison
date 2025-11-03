@@ -1157,8 +1157,18 @@ renderParams(localStorage.getItem('preferredLanguage') || 'en-US');
                     
                     // 按发布日期降序排序
                     allProducts = data.sort((a, b) => {
-                        const dateA = new Date(a.releaseDate.split('.').reverse().join('-'));
-                        const dateB = new Date(b.releaseDate.split('.').reverse().join('-'));
+                        // 处理双语格式的日期
+                        const getDateString = (dateObj) => {
+                            if (typeof dateObj === 'object' && dateObj !== null) {
+                                return dateObj['zh-CN'] || dateObj['en-US'] || '';
+                            }
+                            return dateObj || '';
+                        };
+                        
+                        const dateStrA = getDateString(a.releaseDate);
+                        const dateStrB = getDateString(b.releaseDate);
+                        const dateA = new Date(dateStrA.split('.').reverse().join('-'));
+                        const dateB = new Date(dateStrB.split('.').reverse().join('-'));
                         return dateB - dateA;
                     });
                     
@@ -1251,8 +1261,18 @@ renderParams(localStorage.getItem('preferredLanguage') || 'en-US');
                 
                 // 按发布日期降序排序
                 allProducts = data.sort((a, b) => {
-                    const dateA = new Date(a.releaseDate.split('.').reverse().join('-'));
-                    const dateB = new Date(b.releaseDate.split('.').reverse().join('-'));
+                    // 处理双语格式的日期
+                    const getDateString = (dateObj) => {
+                        if (typeof dateObj === 'object' && dateObj !== null) {
+                            return dateObj['zh-CN'] || dateObj['en-US'] || '';
+                        }
+                        return dateObj || '';
+                    };
+                    
+                    const dateStrA = getDateString(a.releaseDate);
+                    const dateStrB = getDateString(b.releaseDate);
+                    const dateA = new Date(dateStrA.split('.').reverse().join('-'));
+                    const dateB = new Date(dateStrB.split('.').reverse().join('-'));
                     return dateB - dateA;
                 });
                 
