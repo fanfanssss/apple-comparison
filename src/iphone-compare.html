@@ -1532,7 +1532,7 @@
                 // 使用新的细化参数数据文件
                 // 开始加载iPhone数据
                 console.log('开始加载数据文件...');
-                const response = await fetch('../public/data/iphone_refined.json');
+                const response = await fetch('../public/data/iphone_refined.json?v=' + new Date().getTime());
                 console.log('数据请求响应:', response.status, response.statusText);
                 
                 // 数据获取状态检查
